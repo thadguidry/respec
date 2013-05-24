@@ -19,7 +19,7 @@ Trying to organise the content into more usable sections. This is far from compl
     * Linking
     * WebIDL markup
     * Bibliographical references
-* Development
+* Development/Contributing
     * Making a build
     * Adding a plugin
     * Making an alternative profile
