@@ -31,6 +31,7 @@ xxx
 
 ### Header stuff
 * how to add additional links to the header. 
+
 ### Biblio
 * Best practices for adding stuff to the biblio.
 * ```previousVersions``` 
