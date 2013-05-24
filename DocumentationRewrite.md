@@ -27,9 +27,17 @@ Trying to organise the content into more usable sections. This is far from compl
 
 This section is intended to list the features that aren't currently documented (or not in full).
 
-XXX
+xxx 
+
+### Header stuff
+* how to add additional links to the header. 
+### Biblio
+* Best practices for adding stuff to the biblio.
+* ```previousVersions``` 
 
 ## Misc
+
+* better example for attribute definition (follow best practice for integration with WebIDL). 
 
 **Redirection.** The docs in CVS need to redirect to the docs on GitHub.
 
