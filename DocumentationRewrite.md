@@ -9,6 +9,7 @@ I've divided this page into various tasks that need to be carried out. It is mea
 Trying to organise the content into more usable sections. This is far from complete.
 
 * Getting Started
+    * Getting set up. 
     * Basic principles
     * Starting from a template
 * Reference
