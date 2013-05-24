@@ -1,1 +1,1 @@
-[Documentation Rewrite project](DocumentationRewrite)
+[Documentation Rewrite project](https://github.com/darobin/respec/wiki/DocumentationRewrite)
