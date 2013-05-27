@@ -19,6 +19,8 @@ Trying to organise the content into more usable sections. This is far from compl
     * Linking
     * WebIDL markup
     * Bibliographical references
+* FAQ
+    * How to publish a Note? (see http://lists.w3.org/Archives/Public/spec-prod/2013AprJun/0033.html)
 * Development/Contributing
     * Making a build
     * Adding a plugin
