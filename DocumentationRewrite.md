@@ -18,7 +18,7 @@ Trying to organise the content into more usable sections. This is far from compl
     * Inline text
     * Linking
     * WebIDL markup
-    * Bibliographical references
+    * Bibliographical references (to specific section/definitions)
 * FAQ
     * How to publish a Note? (see http://lists.w3.org/Archives/Public/spec-prod/2013AprJun/0033.html)
 * Development/Contributing
