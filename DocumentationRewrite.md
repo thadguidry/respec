@@ -30,6 +30,7 @@ Trying to organise the content into more usable sections. This is far from compl
 
 This section is intended to list the features that aren't currently documented (or not in full).
 
+* noLegacyStyle
 xxx 
 
 ### Header stuff
