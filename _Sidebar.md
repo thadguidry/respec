@@ -1,3 +1,3 @@
 ### configuration options
-
-* [addPatentNote](addPatentNote)
+* The `[respecConfig](configuration)` variable
+* `[addPatentNote](addPatentNote)`
