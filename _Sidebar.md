@@ -12,7 +12,6 @@
 * [edDraftURI](edDraftURI)
 * [editors](editors)
 * [errata](errata)
-* [extraCSS](extraCSS)
 * [format](format) (markdown)
 * [implementationReportURI](implementationReportURI)
 * [includePermalinks](includePermalinks)
