@@ -4,6 +4,6 @@ A date in the format `YYYY-MM-DD`. Documents that are in Last Call ([`specStatus
 ```JS
 var respecConfig = {
   specStatus: "LC",
-  lcEnd, "2016-01-01",
+  lcEnd: "2016-01-01",
 }
 ```
