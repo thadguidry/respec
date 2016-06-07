@@ -15,19 +15,19 @@ var respecConfig = {
 ## Markdown 
 When `format` is set to "markdown", you can use a mix of HTML and markdown: 
 
-```MD
+```HTML
 ## Using markdown
 This will be a paragraph. 
 
 <pre class="example" title="A markdown example">
 function thisIsNice(){
-becauseWeCanUseMarkdown();
+  becauseWeCanUseMarkdown();
 }
 
 // And using markdown is pretty sweet!
 const foo = "FOO";
 while(foo){
-Promise.all([...lotsOfPromises])
+  Promise.all([...lotsOfPromises])
 }
 </pre>
 ```
