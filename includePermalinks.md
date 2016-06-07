@@ -20,5 +20,6 @@ var respecConfig = {
   includePermalinks: true,
   permalinkEdge: true,
   permalinkHide: false,
+  permalinkSymbol: "🔗",
 }
 ```
