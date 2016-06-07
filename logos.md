@@ -3,9 +3,9 @@ Overrides the standard W3C logo with one or more other logos.
 The `logos` property takes an array that contains a set of objects. Each of these objects contains:
 
 <dl>
-  <dt>`src`</dt>
+  <dt>src</dt>
   <dd>URL to the source.</dd>
-  <dt>`alt`</dt>
+  <dt>alt</dt>
   <dd>The alt attribute value.</dd>
   <dt>height</dt>
   <dd>The height of the image.</dd>
