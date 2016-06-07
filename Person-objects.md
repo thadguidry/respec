@@ -46,7 +46,8 @@ A person object is a JavaScript object literal with the following properties:
 
 ## Example
 This example shows a group of person objects being used to define the editors of a spec. 
-```
+
+```JS
 var respecConfig = {
     editors: [{
       name: "Marcos Caceres",
