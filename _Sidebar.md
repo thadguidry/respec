@@ -4,3 +4,4 @@
 * [additionalCopyrightHolders](additionalCopyrightHolders)
 * [authors](authors)
 * [alternateFormats](alternateFormats)
+* [charterDisclosureURI](charterDisclosureURI)
