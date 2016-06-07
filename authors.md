@@ -9,12 +9,12 @@ var respecConfig = {
     name: "Marcos Caceres",
     company: "Mozilla Corporation",
     companyURL: "https://mozilla.org/",
-    w3cid: 39125
+    w3cid: 39125,
   }, {
     name: "Kenneth Rohde Christiansen",
     company: "Intel Corporation",
     companyURL: "http://intel.com",
-    w3cid: 57705
+    w3cid: 57705,
   }, {
     name: "Mounir Lamouri",
     company: "Google Inc.",
@@ -24,7 +24,7 @@ var respecConfig = {
     name: "Anssi Kostiainen",
     company: "Intel Corporation",
     companyURL: "http://intel.com",
-    w3cid: 41974
+    w3cid: 41974,
   }],
 }
 ```
