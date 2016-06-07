@@ -10,7 +10,9 @@ All you need is a HTML Document and to set some configuration options. Each conf
   <head>
     <meta charset='utf-8'>
     <title>Replace me with a real title</title>
-    <script src='//www.w3.org/Tools/respec/respec-w3c-common' async class='remove'></script>
+    <script 
+     src='//www.w3.org/Tools/respec/respec-w3c-common' 
+     class='remove'></script>
     <script class='remove'>
       var respecConfig = {
         specStatus: "ED",
