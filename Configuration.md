@@ -13,5 +13,3 @@ Configuring ReSpec is straight forward.  Simply place a `<script class=remove>` 
   };
 </script>
 ```
-
-### Test 
