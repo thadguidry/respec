@@ -6,7 +6,7 @@ Tells ReSpec to treat the document as being in a format other than HTML. Support
 </dl>
 
 ## Example
-```
+```JS
 var respecConfig = {
   format: "markdown",
 }
