@@ -1,4 +1,4 @@
-Configuring ReSpec is straight forward.  Simply place a `<script class=remove>` at the top of your document
+Configuring ReSpec is straight forward. Simply place a `<script class=remove>` at the top of your document. The `remove` class tells ReSpec to remove this element from the final specification. 
 
 ```HTML 
 <script class='remove'>
