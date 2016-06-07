@@ -1,9 +1,11 @@
-An array of [person objects](person) describing the authors of the document. 
+Similar to editors, an array of [person objects](person) describing the authors of the document. 
+
+Note: In most cases, [`editors`](editors) is preferred over `authors`. 
 
 ## Example
 ```
 var respecConfig = {
-    editors: [{
+    authors: [{
       name: "Marcos Caceres",
       company: "Mozilla Corporation",
       companyURL: "https://mozilla.org/",
