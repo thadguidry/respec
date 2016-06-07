@@ -1,1 +1,3 @@
 ### configuration options
+
+* [addPatentNote](addPatentNote)
