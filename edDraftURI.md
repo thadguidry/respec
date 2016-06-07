@@ -9,3 +9,4 @@ Note: it is strongly recommended that you don't publish Editor's drafts, and ins
   "specStatus": "ED",
   "edDraftURI": "http://www.w3.org/TR/example",
 }
+```
