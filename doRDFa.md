@@ -10,6 +10,7 @@ A setting indicating what version of RDFa to use when annotating the specificati
 </dl>
 
 ## Example
+The following example would disable RDFa. 
 
 ```JS
 var respecConfig = {
