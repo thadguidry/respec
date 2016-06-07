@@ -5,7 +5,7 @@ If you need to include a one-off reference that isn't in the [SpecRef database](
 You can find the format for these entries in the [SpecRef repository](https://github.com/tobie/specref/). 
 
 ### Example
-```
+```JS
 var respecConfig = {
   localBiblio: {
     "WEREWOLF": {
