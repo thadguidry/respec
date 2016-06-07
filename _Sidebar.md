@@ -3,3 +3,4 @@
 * [`addPatentNote`](addPatentNote)
 * [`additionalCopyrightHolders`](additionalCopyrightHolders)
 * [`authors`](authors)
+* [`alternateFormats`](alternateFormats)
