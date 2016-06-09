@@ -43,5 +43,3 @@
 * [wgPatentURI](wgPatentURI)
 * [wgPublicList](wgPublicList)
 * [wgURI](wgURI)
-* [xgrDocShortName](xgrDocShortName)
-* [xgrGroupShortName](xgrGroupShortName)
