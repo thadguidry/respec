@@ -224,3 +224,10 @@ is on a publication track but can also take other values for other types of docu
     </tr>
   </tbody>
 </table>
+
+## Example
+```js
+var respecConfig = {
+  specStatus: "unofficial",
+}
+```
