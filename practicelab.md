@@ -4,6 +4,7 @@
 ```HTML
 <div class="practice">
   <span class="practicelab">Best practice</span>
-  <p class="practicedesc">Practice makes perfect, but perfect is the enemy of the good.
+  <p class="practicedesc">Practice makes perfect, 
+    but perfect is the enemy of the good.
 </div>
 ```
