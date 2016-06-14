@@ -3,7 +3,7 @@ When set on a section, `introductory` indicates that it is meant as introductory
 If you do wish all the introductory sections to be present in the ToC, see [tocIntroductory](tocIntroductory). 
 
 ### Example
-```
+```HTML
 <section class="introductory">
   <p>This document can be folded into a paper airplane.</p> 
 </section>
