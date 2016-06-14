@@ -43,3 +43,34 @@
 * [wgPatentURI](wgPatentURI)
 * [wgPublicList](wgPublicList)
 * [wgURI](wgURI)
+
+### HTML elements
+* figure
+* section
+* title
+
+### HTML attributes
+* data-include
+* data-include-format
+* data-include-replace
+* data-include-sync
+* data-merge
+* data-number
+* data-oninclude
+* data-transform
+* dir
+* lang
+
+### CSS Classes
+* appendix
+* ednote
+* example
+* informative
+* introductory
+* nohighlight
+* nolinks
+* note
+* practice
+* practicedesc
+* practicelab
+* remove
