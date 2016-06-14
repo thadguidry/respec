@@ -5,16 +5,16 @@ This block will not be syntax highlighted:
 ```
 <pre class=nohighlight>
 function foo(){
-  ...
+  const a = "foo!";
 }
 </pre> 
 ```
 
 But this one will be
-```JS
+```HTML
 <pre>
 function foo(){
-  ...
+  const a = "foo!";
 }
 </pre> 
 ```
