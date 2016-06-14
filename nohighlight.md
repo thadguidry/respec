@@ -10,7 +10,7 @@ function foo(){
 </pre> 
 ```
 
-But this one will be
+But this one will be syntax-highlighted by default:
 ```HTML
 <pre>
 function foo(){
