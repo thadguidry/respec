@@ -49,3 +49,7 @@ All you need is a HTML Document and to set some configuration options. Each conf
   </body>
 </html>
 ```
+
+### Getting Support
+The official support channel for ReSpec is [spec-prod@w3.org](mailto:spec-prod@w3.org). The [mailing list archives](http://lists.w3.org/Archives/Public/spec-prod/) are available. You can subscribe by sending email to [spec-prod-request@w3.org](mailto:spec-prod-request@w3.org?subject=subscribe) with "subscribe" as the subject line.
+
