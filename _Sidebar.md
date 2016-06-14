@@ -45,32 +45,32 @@
 * [wgURI](wgURI)
 
 ### HTML elements
-* figure
-* section
-* title
+* [figure](figure)
+* [section](section)
+* [title](title)
 
 ### HTML attributes
-* data-include
-* data-include-format
-* data-include-replace
-* data-include-sync
-* data-merge
-* data-number
-* data-oninclude
-* data-transform
-* dir
-* lang
+* [data-include](data-include)
+* [data-include-format](data-include-format)
+* [data-include-replace](data-include-replace)
+* [data-include-sync](data-include-sync)
+* [data-merge](data-merge)
+* [data-number](data-number)
+* [data-oninclude](data-oninclude)
+* [data-transform](data-transform)
+* [dir](dir)
+* [lang](lang)
 
 ### CSS Classes
-* appendix
-* ednote
-* example
-* informative
-* introductory
-* nohighlight
-* nolinks
-* note
-* practice
-* practicedesc
-* practicelab
-* remove
+* [appendix](appendix)
+* [ednote](ednote)
+* [example](example)
+* [informative](informative)
+* [introductory](introductory)
+* [nohighlight](nohighlight)
+* [nolinks](nolinks)
+* [note](note)
+* [practice](practice)
+* [practicedesc](practicedesc)
+* [practicelab](practicelab)
+* [remove](remove)
