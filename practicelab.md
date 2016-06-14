@@ -3,8 +3,8 @@
 ### Example 
 ```HTML
 <div class="practice">
+  <p class="practicedesc">
   <span class="practicelab">Best practice</span>
-  <p class="practicedesc">Practice makes perfect, 
-    but perfect is the enemy of the good.
+  Practice makes perfect, but perfect is the enemy of the good.
 </div>
 ```
