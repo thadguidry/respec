@@ -10,7 +10,7 @@ The `respecConfig` object literal provides ReSpec with the metadata needed to pr
     specStatus: "FPWD",
     editors: [{
       name: "Margarete Smith",
-      url: "http://exmaple.com/",
+      url: "http://example.com/",
     }],
     processVersion: 2015,
     shortName: "super-feature",
