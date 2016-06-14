@@ -1,4 +1,4 @@
- A `<span>` containing the title of a best practice, inside a practice description.
+ A `<span>` containing the title of a best practice, inside a `<p class=practicedesc>`.
 
 ### Example 
 ```HTML
