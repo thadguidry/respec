@@ -3,6 +3,7 @@ Used for regular sections or appendices that are not meant to contain normative 
 ### Examples
 ```HTML
 <section class=informative>
+  <h2>A bit of history!</h2>
   <p>A really cool thing is that ... 
 </section>
 ```
