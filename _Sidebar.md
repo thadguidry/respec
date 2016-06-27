@@ -59,7 +59,7 @@
 * [data-merge](data-merge)
 * [data-number](data-number)
 * [data-oninclude](data-oninclude)
-* [data-transform](data-transform)
+* [data-transform](data-transform) (Deprecated)
 * [dir](dir)
 * [lang](lang)
 
