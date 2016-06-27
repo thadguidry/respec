@@ -21,6 +21,6 @@ function replaceUnicorns(utils, content, url ){
 }
 <script>
 
-<section data- data-oninclude="" data-include="content.fragment">
+<section data-oninclude="toRainbows replaceUnicorns" data-include="content.fragment">
 </section>
 ```
