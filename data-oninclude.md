@@ -20,7 +20,11 @@ function replaceUnicorns(utils, content, url ){
   return content.replace("🦄", "🐴");
 }
 <script>
-
-<section data-oninclude="toRainbows replaceUnicorns" data-include="content.fragment">
+<!-- 
+Include content.fragment file, but then process it on include.
+-->
+<section 
+  data-oninclude="toRainbows replaceUnicorns" 
+  data-include="content.fragment">
 </section>
 ```
