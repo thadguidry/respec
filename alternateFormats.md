@@ -12,7 +12,7 @@ var respecConfig = {
   alternateFormats: [{
     label: "PDF",
     uri: "https://example.w3.org/TR/example.pdf",
-  },{
+  }, {
     label: "XML",
     uri: "https://example.w3.org/TR/example.xml",
   }],
