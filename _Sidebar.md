@@ -1,4 +1,5 @@
 * [Configuring ReSpec](configuration)(respecConfig)
+
 ### configuration options
 * [additionalCopyrightHolders](additionalCopyrightHolders)
 * [addPatentNote](addPatentNote)
