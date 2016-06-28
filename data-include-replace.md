@@ -3,7 +3,7 @@ By default inclusion happens by placing the content inside the including element
 ### Example
 Pretending that "section.frag" is a `<section>` element, the `<div>` below would be replaced with a `<section>`. 
 
-```
+```HTML
 <div 
   data-include="section.frag"
   data-include-replace=true>
