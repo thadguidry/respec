@@ -13,5 +13,3 @@ ReSpec uses the `<title>` element to generate the title of your specification. T
 <section id="abstract">
 </section>
 ```
-
-Will be converted to a `<h1>`.
