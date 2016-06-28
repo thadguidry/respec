@@ -1,4 +1,4 @@
-* [Configuring ReSpec](configuration)(respecConfig)
+### [Configuring ReSpec](configuration)
 
 ### configuration options
 * [additionalCopyrightHolders](additionalCopyrightHolders)
