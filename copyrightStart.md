@@ -7,7 +7,7 @@ The following appears as "Copyright © 1977-2016".
 
 ```JS
 var respecConfig = {
-  copyrightStart: 2014,
+  copyrightStart: 1977,
   publishDate: "01-01-2016"
 }
 ```
