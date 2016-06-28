@@ -2,7 +2,7 @@ For regular documents, this is used to specify that additional parties hold a co
 
 The option is simply some text giving the additional copyright holders. For unofficial documents, this string is used to replace the default CC license. 
 
-## Example
+### Example
 
 ```JS
 var respecConfig = {
