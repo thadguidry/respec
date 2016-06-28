@@ -5,14 +5,14 @@ Tells ReSpec to treat the document as being in a format other than HTML. Support
   <dd>Interpreted as <a href="https://guides.github.com/features/mastering-markdown/">GitHub flavored markdown</a>
 </dl>
 
-## Example
+### Example
 ```JS
 var respecConfig = {
   format: "markdown",
 }
 ```
 
-## Markdown 
+### Markdown 
 When `format` is set to "markdown", you can use a mix of HTML and markdown: 
 
 ```HTML
