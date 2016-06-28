@@ -9,6 +9,7 @@ var respecConfig = {
 };
 </script>
 <p class="issue" data-number="1">
-Will be automatically entitled "ISSUE 1", with a link to the corresponding Github issue.
+Will be automatically entitled "ISSUE 1", with a link to
+the corresponding Github issue.
 </p>
 ``` 
