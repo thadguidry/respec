@@ -2,7 +2,7 @@ ReSpec knows to include a copyright year that matches the [`publishDate`](publis
 
 Note that this can always be safely specified since if `copyrightStart` is the same as the [`publishDate`](publishDate)'s year it is ignored. 
 
-## Example
+### Example
 The following appears as "Copyright © 1977-2016".
 
 ```JS
