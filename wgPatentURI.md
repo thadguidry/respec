@@ -6,5 +6,5 @@ The URL of the public list of patent disclosures for the group.
 ```js
 var respecConfig = {
   wgPatentURI: "http://www.w3.org/2004/01/pp-impl/GO_FIND_YOURS",
-}
+};
 ```
