@@ -6,7 +6,7 @@ An array of objects, each of which has two required fields:
   <dd>for a human readable string that matches it. This is used to link to alternate formats for the same content (e.g. PDF, ePub, PS).</dd>
 </dl>
 
-## Example
+### Example
 ```JS
 var respecConfig = {
   alternateFormats: [{
