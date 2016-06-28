@@ -1,5 +1,5 @@
+* [Configuring ReSpec](configuration)(respecConfig)
 ### configuration options
-* [respecConfig](configuration)
 * [additionalCopyrightHolders](additionalCopyrightHolders)
 * [addPatentNote](addPatentNote)
 * [alternateFormats](alternateFormats)
