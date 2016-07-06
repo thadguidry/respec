@@ -4,7 +4,7 @@ The User's Guide is organized in such a way that a complete newcomer may read it
 ### Basic Layout
 A ReSpec document is a straightforward HTML document that brings in the ReSpec script, defines a few configuration variables, and follows a few conventions.
 
-```
+```HTML
 <!DOCTYPE html>
 <html>
   <head>
