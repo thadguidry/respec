@@ -80,8 +80,6 @@ W3C boilerplate is extremely repetitive, but beneath the tedium is a wealth of o
 
 We will start by using an example of a basic specification very similar to the one used in the previous section.
 
-You can see the result in action.
-
 There's a nifty trick that you will likely want to keep in your toolbox: many of ReSpec's configuration options can be specified in the query string (separated by semicolons) and they override the options specified in the source. We will use it a lot in this documentation so as to avoid having to generate examples for each small change that is possible (there are quite a few). So if I want to test the subtitle option without generating a copy of the same example with just that option changed, instead of accessing examples/boilerplate.html I can simply go to examples/boilerplate.html?subtitle=This%20is%20a%20subtitle.
 Title, Subtitle, Short Name
 
