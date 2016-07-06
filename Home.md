@@ -1,5 +1,8 @@
 ReSpec is a tool that makes writing specifications easier. ReSpec handles things like styling, referential integrity, bibliographical data, and other mundane tasks. 
 
+## User's guide
+A [detailed user's guide](User's-Guide) is available. 
+
 ## Getting up and running
 
 All you need is a HTML Document and to set some configuration options. Each configuration option is documented in this Wiki. 
