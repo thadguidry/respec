@@ -1,6 +1,6 @@
 ### [User's-Guide](User's-Guide)
 
-### [Configuring ReSpec](configuration)
+### [Configuring ReSpec](Configuration-(respecConfig))
 
 ### configuration options
 * [additionalCopyrightHolders](additionalCopyrightHolders)
