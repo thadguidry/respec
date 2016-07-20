@@ -187,19 +187,19 @@ The first child element of a section is expected to be one of the h1-h6 elements
 
 Sections will be automatically numbered. If you wish a section to have a specific ID, then simply use an id attribute on it. If you don't, ReSpec will generate one for you based on the section title, and will ensure that it is unique.
 
-ReSpec sections understand some specific classes. First is the introductory class. It is used (rarely) for preliminary content that sits at the beginning of the document and which is not expected to be linked to from the table of contents. The abstract, SotD, and ToC sections automatically fall into this category (you need not worry about flagging them as such); the example above adds an “Overview” section exemplifying the behaviour. If you do wish all the introductory sections to be present in the ToC, see tocIntroductory.
+ReSpec sections understand some specific classes. First is the `introductory` class. It is used (rarely) for preliminary content that sits at the beginning of the document and which is not expected to be linked to from the table of contents. The abstract, SotD, and ToC sections automatically fall into this category (you need not worry about flagging them as such); the example above adds an “Overview” section exemplifying the behaviour. If you do wish all the introductory sections to be present in the ToC, see tocIntroductory.
 
-Then is the informative class. It is used for regular sections or appendices that are not meant to contain normative material. It will automatically preface its content with the well-know “This section is non-normative” paragraph. The “Introduction” section in the example shows how it works.
+Then is the `informative` class. It is used for regular sections or appendices that are not meant to contain normative material. It will automatically preface its content with the well-know “This section is non-normative” paragraph. The “Introduction” section in the example shows how it works.
 
-And finally is the appendix class. It marks a section as being an appendix, as can be seen appearing at the end of the example. One important thing to know about appendix sections is that all the sections that follow an appendix will also be marked as appendices.
+And finally is the `appendix` class. It marks a section as being an appendix, as can be seen appearing at the end of the example. One important thing to know about appendix sections is that all the sections that follow an appendix will also be marked as appendices.
 
 If you wish to link to a section and have its number and title automatically appear as part of the link, then you can use an empty anchor pointing to that ID, as in <a href='#foo'></a>. The “Overview” section contains an example of that.
 
-A table of contents is generated automatically and placed right after the SotD. If you have a deeply nested document structure and find that the ToC is either too long or too deep, you can use the maxTocLevel option to limit how deep it goes. In the example used above, there is no limit and indeed one section is numbered 4.1.1.1.1.1 — rather deep. Setting `maxTocLevel` to other values will yield different results (other example with `maxTocLevel: 2`).
+A table of contents is generated automatically and placed right after the SotD. If you have a deeply nested document structure and find that the ToC is either too long or too deep, you can use the maxTocLevel option to limit how deep it goes. In the example used above, there is no limit and indeed one section is numbered 4.1.1.1.1.1 — rather deep. Setting `maxTocLevel` to other values will yield different results (other example with `maxTocLevel: 2`).  If you only have some sections that you would like excluded from the ToC, you can add the class `notoc` to the section element.
 
 The more observant readers will have noted that ReSpec also inserts some strange-looking comments in the generated source, that look like `<!-- OddPage -->`. These are present so that html2ps knows how to paginate correctly. Perhaps not useful to most but helpful to those who rely on it for printing, and harmless.
 
-If for whatever reason you wish to have no table of contents, simply set noTOC to true.
+If for whatever reason you wish to have no table of contents, simply set the configuration option `noTOC` to true.
 
 ### Figures
 
