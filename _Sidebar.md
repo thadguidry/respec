@@ -19,6 +19,7 @@
 * [implementationReportURI](implementationReportURI)
 * [includePermalinks](includePermalinks)
 * [lcEnd](lcEnd)
+* [lint](lint)
 * [localBiblio](localBiblio)
 * [logos](logos)
 * [maxTocLevel](maxTocLevel)
