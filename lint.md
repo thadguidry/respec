@@ -9,6 +9,6 @@ If you want to turn off the linter:
 
 ```JS
 var respecConfig = {
-  linter: false,
+  lint: false,
 }
 ```
