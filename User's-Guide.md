@@ -316,4 +316,4 @@ dictionary Things{
 <pre>
 ```
 
-See the [Contiguous IDL](http://w3c.github.io/respec/examples/webidl-contiguous.html) document for an introduction and exhaustive examples.
+See the [Contiguous IDL](http://w3c.github.io/respec-docs/examples/webidl-contiguous.html) document for an introduction and exhaustive examples.
