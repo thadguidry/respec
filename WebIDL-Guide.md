@@ -49,7 +49,7 @@ interface Request {
 
 For example, to define `Request.url`, you'd write `<dfn>Request.url</dfn>`. This also automatically links the IDL declaration to the prose definition. 
 
-Similarly, to define `Request.clone()`, you'd write `<dfn>Request.clone</dfn>()`. 
+Similarly, to define the `Request.clone()` method, you'd write `<dfn>Request.clone</dfn>()</dfn>`.
 
 Alternatively, if you would prefer not to use the dot notation, you can use `data-dfn-for`. 
 
