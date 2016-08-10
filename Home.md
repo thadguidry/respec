@@ -48,8 +48,9 @@ All you need is a HTML Document and to set some configuration options. Each conf
         void doTheFoo();
       };
       </pre>
+     <p>The <dfn>Foo</dfn> interface is nice. Let's you do stuff.</p>
      <p>The <dfn data-dfn-for="Foo">bar</dfn> attribute, returns 🍺.</p>
-     <p>The <dfn data-dfn-for="Foo">doTheFoo</dfn>() method, returns a foo.</p>
+     <p>The <dfn data-dfn-for="Foo">doTheFoo</dfn>() method, returns nothing.</p>
     </section>
   </body>
 </html>
