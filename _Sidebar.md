@@ -1,5 +1,5 @@
 ### [User's-Guide](User's-Guide)
-
+### [WebIDL Guide](WebIDL-Guide)
 ### [Configuring ReSpec](Configuration-(respecConfig))
 
 ### Configuration options
