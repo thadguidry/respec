@@ -47,7 +47,7 @@ interface Request {
 </pre>
 ```
 
-For example, to define `Request.url`, you'd write `<dfn>Request.url</dfn>. This also automatically links the IDL declaration to the prose definition. 
+For example, to define `Request.url`, you'd write `<dfn>Request.url</dfn>`. This also automatically links the IDL declaration to the prose definition. 
 
 Similarly, to define `Request.clone()`, you'd write `<dfn>Request.clone</dfn>()`. 
 
