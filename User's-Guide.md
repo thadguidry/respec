@@ -40,11 +40,13 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
     <section>
       <h2>Start your spec!</h2>
       <pre class="idl">
-      interface Foo{
+      interface Foo {
         attribute Bar bar;
         void doTheFoo();
       };
       </pre>
+      <p>The <dfn>Foo</dfn> interface represents a Foo.</p>
+      <p>The <dfn>doTheFoo</dfn> method does the foo</p>.  
     </section>
   </body>
 </html>
