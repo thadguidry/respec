@@ -55,7 +55,7 @@
 * [section](section)
 * [title](title)
 
-## WebIDL helper attributes
+## WebIDL attributes
 * [data-dfn-for](data-dfn-for) 
 
 ### HTML attributes
