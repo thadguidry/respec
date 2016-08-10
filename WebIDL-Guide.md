@@ -53,11 +53,11 @@ Similarly, to define the `Request.clone()` method, you'd write `<dfn>Request.clo
 
 Alternatively, if you would prefer not to use the dot notation, you can use `data-dfn-for`. 
 
-#### Using `data-dfn-for` and `data-links-for`
+#### Using `data-dfn-for` and `data-link-for`
 
 The `data-dfn-for` attribute allows you to describe one or more aspects of an interface at once.
 
-Similarly, the `data-links-for` attribute allows you to link to one or more aspects of an interface at once.
+Similarly, the `data-link-for` attribute allows you to link to one or more aspects of an interface at once.
 
 For example, the following defines both the `url` and the `clone` method.
 
