@@ -14,7 +14,7 @@ All you need is a HTML Document and to set some configuration options. Each conf
     <meta charset='utf-8'>
     <title>Replace me with a real title</title>
     <script 
-     src='//www.w3.org/Tools/respec/respec-w3c-common' 
+     src='https://www.w3.org/Tools/respec/respec-w3c-common' 
      class='remove'></script>
     <script class='remove'>
       var respecConfig = {
@@ -43,11 +43,13 @@ All you need is a HTML Document and to set some configuration options. Each conf
     <section>
       <h2>Start your spec!</h2>
       <pre class="idl">
-      interface Foo{
+      interface Foo {
         attribute Bar bar;
         void doTheFoo();
       };
       </pre>
+     <p>The <dfn data-dfn-for="Foo">bar</dfn> attribute, returns 🍺.</p>
+     <p>The <dfn data-dfn-for="Foo">doTheFoo</dfn>() method, returns a foo.</p>
     </section>
   </body>
 </html>
@@ -55,4 +57,3 @@ All you need is a HTML Document and to set some configuration options. Each conf
 
 ### Getting Support
 The official support channel for ReSpec is [spec-prod@w3.org](mailto:spec-prod@w3.org). The [mailing list archives](http://lists.w3.org/Archives/Public/spec-prod/) are available. You can subscribe by sending email to [spec-prod-request@w3.org](mailto:spec-prod-request@w3.org?subject=subscribe) with "subscribe" as the subject line.
-
