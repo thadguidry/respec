@@ -46,7 +46,7 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
       };
       </pre>
       <p>The <dfn>Foo</dfn> interface represents a Foo.</p>
-      <p>The <dfn>doTheFoo</dfn> method does the foo</p>.  
+      <p>The <dfn>doTheFoo</dfn> method does the foo.</p>
     </section>
   </body>
 </html>
