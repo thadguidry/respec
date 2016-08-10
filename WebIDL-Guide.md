@@ -9,14 +9,13 @@ interface Request {
 </pre>
 ```
 
-## Defining the interface
-
+## Defining an interface
 There are two ways to define an interface. 
 
- 1. Use a `<dfn>` element directly.
+ 1. Directly, using a `<dfn>` element directly.
  1. Use the `data-dfn-for` attribute on a parent element. 
 
-### Interface: simple definition and linking 
+### Simple definition and linking 
 
 Given `interface Request {};`, you can define the interface like so:
 
