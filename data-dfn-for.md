@@ -10,7 +10,7 @@ interface Foo {
   void doTheFoo();
 };
 </pre>
-<p>The <dfn>Foo</dfn> interface is nice. Let's you do stuff.</p>
+<p>The <dfn>Foo</dfn> interface is nice. Lets you do stuff.</p>
 <p>The <dfn data-dfn-for="Foo">bar</dfn> attribute, returns 🍺.</p>
 <p>The <dfn data-dfn-for="Foo">doTheFoo</dfn>() method, returns nothing.</p>
 ```
