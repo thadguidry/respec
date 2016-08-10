@@ -2,7 +2,7 @@
 
 ### [Configuring ReSpec](Configuration-(respecConfig))
 
-### configuration options
+### Configuration options
 * [additionalCopyrightHolders](additionalCopyrightHolders)
 * [addPatentNote](addPatentNote)
 * [alternateFormats](alternateFormats)
@@ -55,7 +55,7 @@
 * [section](section)
 * [title](title)
 
-## WebIDL attributes
+### WebIDL attributes
 * [data-dfn-for](data-dfn-for) 
 
 ### HTML attributes
