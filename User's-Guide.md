@@ -11,7 +11,7 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
     <meta charset='utf-8'>
     <title>Replace me with a real title</title>
     <script 
-     src='//www.w3.org/Tools/respec/respec-w3c-common' 
+     src='https://www.w3.org/Tools/respec/respec-w3c-common' 
      class='remove'></script>
     <script class='remove'>
       var respecConfig = {
