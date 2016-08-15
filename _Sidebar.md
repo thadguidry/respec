@@ -79,6 +79,7 @@
 * [introductory](introductory)
 * [nohighlight](nohighlight)
 * [nolinks](nolinks)
+* [notoc](notoc)
 * [note](note)
 * [practice](practice)
 * [practicedesc](practicedesc)
