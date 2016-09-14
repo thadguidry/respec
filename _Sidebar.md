@@ -85,3 +85,6 @@
 * [practicedesc](practicedesc)
 * [practicelab](practicelab)
 * [remove](remove)
+
+### Special properties
+* [`document.respecIsReady`](respecIsReady)
