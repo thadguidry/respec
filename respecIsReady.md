@@ -7,18 +7,15 @@ The promise resolves with a reference to ReSpec's final configuration object. Yo
 The following example shows how to use `document.respecIsReady`.
 
 ```HTML
-<script src='https://www.w3.org/Tools/respec/respec-w3c-common'
-  class='remove'>
-</script>
 <script>
 // Wait until resources have loaded, including ReSpec
-document.addEventListener("load", function(){
-  document.respecIsReady.then(function(conf){
+document.addEventListener("load", function() {
+  document.respecIsReady.then(function(conf) {
     // Do things based on conf?
-    if(conf.someThing){
-      document.querySelector("#thing").style.color = "red"; 
+    if (conf.someThing) {
+      document.querySelector("#thing").style.color = "red";
     }
-  })
+  });
 });
 </script>
 ```
