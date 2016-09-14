@@ -1,7 +1,7 @@
 ### [User's Guide](User's-Guide)
 ### [WebIDL Guide](WebIDL-Guide)
 ### [Configuring ReSpec](Configuration-(respecConfig))
-
+### [Developers Guide](Developers-Guide)
 ### Configuration options
 * [additionalCopyrightHolders](additionalCopyrightHolders)
 * [addPatentNote](addPatentNote)
