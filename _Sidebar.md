@@ -7,6 +7,7 @@
 * [addPatentNote](addPatentNote)
 * [alternateFormats](alternateFormats)
 * [authors](authors)
+* [canonicalURI](canonicalURI)
 * [charterDisclosureURI](charterDisclosureURI)
 * [copyrightStart](copyrightStart)
 * [crEnd](crEnd)
