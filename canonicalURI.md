@@ -14,7 +14,7 @@ The following will result in a canonical URL of `https://www.w3.org/TR/fooAPI`.
 
 ```JS
 const respecConfig = {
-  "shortName": "fooAPI"
+  "shortName": "fooAPI",
   "canonicalURI": "TR",
 }
 ```
