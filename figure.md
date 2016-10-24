@@ -2,7 +2,7 @@ Specification figures are indicated using the `<figure>` element, with a nested 
 
 A Table of Figures is generated and inserted in the document if you include an `<section>` element with ID `tof`.
 
-Figures can be automatically linked to using a link pointing to their ID with no content (e.g. <a href='#foo-figures'></a>). 
+Figures can be automatically linked to using a link pointing to their ID with no content (e.g. `<a href='#foo-figures'></a>`). 
 
 ### Examples
 
