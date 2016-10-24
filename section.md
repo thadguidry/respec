@@ -4,13 +4,13 @@ The first h* child element is taken to be the section's title. You do not need t
 
 If you nest deeper than the h6 level, apart from having a hard-to-navigate document you will keep getting h6 elements.
 
-Section can be automatically linked to using a link pointing to their ID with no content (e.g. <a href='#foo-section'></a>). 
+Section can be automatically linked to using a link pointing to their ID with no content (e.g. `<a href='#foo-section'></a>`). 
 
 ### Example
 
 ```HTML
 <section>
-  <h2>The <cod>foo</foo> Element</h2>
+  <h2>The <code>foo</code> Element</h2>
   <p>The <code>foo</code> Element allows you too...
 </section>
 ```
