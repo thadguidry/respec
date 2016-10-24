@@ -10,9 +10,10 @@ Figures can be automatically linked to using a link pointing to their ID with no
 <!-- generate the table of figures here -->
 <section id="tof"></section>
 <section id="buckets">
-  <figure>
+  <figure id="flowchart">
     <img src="flowchart.svg" alt="">
     <figcaption>The water flows from bucket A to bucket B.</figcaption>
   </figure>
+<p>The flowchart shown in <a href="#flowchart"></a> is quite impressive.</p>
 </section>
 ```
