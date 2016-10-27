@@ -5,7 +5,7 @@ A typical example for a file in the Github repository https:/github.com/w3c/dpub
 ```HTML
 <script>
 var respecConfig = {
-  "issueBase": "https:/github.com/w3c/dpub-pwd/issues",
+  "issueBase": "https:/github.com/w3c/dpub-pwd/issues/",
 };
 </script>
 <p class="issue" data-number="1">
