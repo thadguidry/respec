@@ -13,7 +13,7 @@ Additional options can also be set as ReSpec configuration options, but only hav
   <dd>Setting this to true tells the system to hide the permalink symbol unless the heading is being hovered over. The default is to show the symbol at all times.</dd>
 </dl>
 
-If you do not want a section to have a permlink indicator, a class of "nolink" on that heading will exclude it.
+If you do not want a section to have a permalink indicator, a class of "nolink" on that heading will exclude it.
 
 ### Example
 
