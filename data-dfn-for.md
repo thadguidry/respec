@@ -1,4 +1,4 @@
-The `data-dan-for` attribute links a WebIDL attribute or method to a definition.   
+The `data-dfn-for` attribute links a WebIDL attribute or method to a definition.   
 
 ### Example 
 The following example automatically links up the `bar` attribute and the `doTheFoo` method to the `Foo` interface. 
