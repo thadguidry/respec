@@ -302,20 +302,4 @@ ReSpec is also capable of producing a diff-marked version if you have a configur
 
 ### WebIDL Support
 
-This chapter is about WebIDL, the binding language for APIs. ReSpec has extensive WebIDL support, but naturally if you're not writing an API specification then you can definitely save yourself the trouble and skip this section.
-
-ReSpec allows you to write WebIDL into pre blocks. Simply:
-
-```HTML
-<pre>
-interface Foo(){
-  readonly attribte bar;
-  Promise toDoSomething(Thing withThing);
-};
-dictionary Things{
-  color;
-};
-<pre>
-```
-
-See the [Contiguous IDL](http://w3c.github.io/respec-docs/examples/webidl-contiguous.html) document for an introduction and exhaustive examples.
+[See WebIDL guide](https://github.com/w3c/respec/wiki/WebIDL-Guide). 
