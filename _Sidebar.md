@@ -51,6 +51,9 @@
 * [wgPublicList](wgPublicList)
 * [wgURI](wgURI)
 
+### Special `<section>` IDs
+* [idl-index](idl-index)
+
 ### HTML elements
 * [figure](figure)
 * [section](section)
