@@ -20,5 +20,5 @@ That automatically creates the following:
 
  * Links the text "fire an event" to https://dom.spec.whatwg.org/#concept-event-fire
  * Links to the XML spec, to the right anchor.
- * Add "WHATWG-DOM" to the Normative References section. And "XML" to the Informative References section. 
+ * Add "WHATWG-DOM" to the Normative References section and "XML" to the Informative References section. 
 
