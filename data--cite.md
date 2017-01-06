@@ -7,10 +7,12 @@ Add "!" on the front of the spec ID makes it a "normative" citation. Excluding i
 ```JS
 <p>
   <!-- normative citation to WHATWG DOM Spec --> 
-  You then <a data-cite="!WHATWG-DOM" data-cite-frag="fire-an-event">fire an event</a>
+  You then <a data-cite="!WHATWG-DOM" data-cite-frag="fire-an-event">
+  fire an event</a>.
 
   <!-- Informative citation to XML's XML Documents --> 
-  Using <a data-cite="xml" data-cite-frag=dt-xml-doc>XML Documents</a> is fun.
+  Using <a data-cite="xml" data-cite-frag=dt-xml-doc>XML Documents</a>
+  is fun.
 </p>
 ``` 
 
