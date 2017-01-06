@@ -19,5 +19,6 @@ Add "!" on the front of the spec ID makes it a "normative" citation. Excluding i
 That automatically creates the following:
 
  * Links the text "fire an event" to https://dom.spec.whatwg.org/#concept-event-fire
- * Add "WHATWG-DOM" to your citations. 
+ * Links to the XML spec, to the right anchor.
+ * Add "WHATWG-DOM" to the Normative References section. And "XML" to the Informative References section. 
 
