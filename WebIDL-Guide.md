@@ -63,7 +63,7 @@ For example, the following defines both the `url` and the `clone` method.
 
 ```HTML
   <p data-dfn-for="Request">
-    The <dfn data-lt="clone()">clone</dfn> method.
+    The <dfn>clone()</dfn> method.
     The <dfn>url</dfn> attribute.
   </p>
   <!-- Linking to definitions works the same -->
@@ -72,8 +72,6 @@ For example, the following defines both the `url` and the `clone` method.
     Links to the <a>url</a> attribute.
   </p>
 ```
-
-Note we can use `data-lt="clone()"` to create a nice way of linking to the method.
 
 ## Multiple interfaces with same attributes/methods
 
@@ -103,6 +101,8 @@ You explicitly distinguish between them like so:
   <p>The <dfn>url</dfn> of <a>Response</a>...</p>
 </section>
 ```
+
+
 
 ## Limitations
 
