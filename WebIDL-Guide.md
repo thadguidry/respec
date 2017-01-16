@@ -23,7 +23,7 @@ The recommended way to code up your WebIDL is as follows:
   </pre>
   <dl>
     <dt><dfn>exampleMethod()</dfn></dt>
-    <dd>Define <a>exampleMethod</a> here...</dd>
+    <dd>Define <a>exampleMethod()</a> here...</dd>
     <dt><dfn>url</dfn></dt>
     <dd>Define <a>url</a> here...</dd>
   </dl>
