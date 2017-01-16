@@ -7,6 +7,10 @@ Add "!" on the front of the spec ID makes it a "normative" citation. Excluding i
 ```JS
 <p>
   <!-- normative citation to WHATWG DOM Spec --> 
+  You then <a data-cite="!WHATWG-DOM#fire-an-event">
+  fire an event</a>.
+  
+  <!-- Alternative -->
   You then <a data-cite="!WHATWG-DOM" data-cite-frag="fire-an-event">
   fire an event</a>.
 
