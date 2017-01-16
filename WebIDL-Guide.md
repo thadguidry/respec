@@ -9,26 +9,47 @@ interface Request {
 </pre>
 ```
 
-## Defining an interface
-There are two ways to define an interface. 
+## tl;dr - ideal linking setup
+The recommended way to code up your WebIDL is as follows:
 
- 1. Directly, using a `<dfn>` element directly.
- 1. Use the `data-dfn-for` attribute on a parent element. 
+```HTML
+<section data-dfn-for="ExampleInterface" data-link-for="ExampleInterface">
+  <h2><dfn>ExampleInterface</dfn> interface</h2>
+  <pre class="idl">
+  interface ExampleInterface {
+    void exampleMethod();
+    readonly attribute USVString url;
+  };
+  </pre>
+  <dl>
+    <dt><dfn>exampleMethod()</dfn></dt>
+    <dd>Define <a>exampleMethod</a> here...</dd>
+    <dt><dfn>url</dfn></dt>
+    <dd>Define <a>url</a> here...</dd>
+  </dl>
+</section>
+<section data-link-for="ExampleInterface">
+  <h2>Here is how you link!</h2>
+  <p>The <a>ExampleInterface</a> or the <a>ExampleInterface.exampleMethod()</a>.</p>
+  <p>Or like this: <a>exampleMethod</a> - which uses "data-link-for" to link.</p>
+</section>
+```
 
-### Simple definition and linking 
+## Defining the interface
 
-Given `interface Request {};`, you can define the interface like so:
+Given `interface Request {};`, you can define the interface inside a heading like so:
 
 ```HTML
 <section>
-  <h2>The <code>Request</code> interface</h2>
+  <h2><dfn>Request</dfn> interface</h2>
   <pre class="idl">
     interface Request {};
   </pre>
-  <p>The <dfn>Request</dfn> interface represents a request.</p>
   <p>An instance of <a>Request</a> allows you to make a request.</a>
 </section>
 ```
+
+The above provides convenient linking to the section where the interface is defined.
 
 ### Defining methods and attributes
 There are multiple ways to define the methods or attributes of an interface: 
@@ -49,9 +70,9 @@ interface Request {
 
 For example, to define `Request.url`, you'd write `<dfn>Request.url</dfn>`. This also automatically links the IDL declaration to the prose definition. 
 
-Similarly, to define the `Request.clone()` method, you'd write `<dfn>Request.clone</dfn>()</dfn>`.
+Similarly, to define the `Request.clone()` method, you'd write `<dfn>Request.clone()</dfn>`.
 
-Alternatively, if you would prefer not to use the dot notation, you can use `data-dfn-for`. 
+Alternatively, if you would prefer not to use the dot notation, you can use `data-dfn-for`.
 
 #### Using `data-dfn-for` and `data-link-for`
 
@@ -101,8 +122,6 @@ You explicitly distinguish between them like so:
   <p>The <dfn>url</dfn> of <a>Response</a>...</p>
 </section>
 ```
-
-
 
 ## Limitations
 
