@@ -65,6 +65,7 @@
 * [WebIDL Guide](WebIDL-Guide)
 
 ### HTML attributes
+* [data-cite](data--cite)
 * [data-include](data--include)
 * [data-include-format](data-include-format)
 * [data-include-replace](data-include-replace)
