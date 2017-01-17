@@ -3,7 +3,24 @@ Using `data-cite`, allows you do cite a spec directly in text by using a spec's 
 
 Add "!" on the front of the spec ID makes it a "normative" citation. Excluding it, makes it informative.
 
-### Example of usage
+It is currently supported on elements: 
+
+  * `<a data-cite="">`
+  * `<dfn data-cite="">`
+
+### Example of usage with `dfn` element
+This example shows how to
+ 
+```HTML
+<!-- this automatically links to the WHATWG-DOM spec -->
+<p><a>Fire an event</a> named "foo".</p> 
+<p>The concept of 
+  <dfn data-cite="!WHATWG-DOM#fire-an-event">fire an event</a>
+  is defined in the [[!WHATWG-DOM]] spec.
+</p>
+```
+
+### Example of usage with `a` element
 ```JS
 <p>
   <!-- normative citation to WHATWG DOM Spec --> 
