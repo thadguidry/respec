@@ -9,7 +9,7 @@ It is currently supported on elements:
   * `<dfn data-cite="">`
 
 ### Example of usage with `dfn` element
-This example shows how to
+This example shows how to use `data-cite` with an `dfn` element to cite an external spec.
  
 ```HTML
 <!-- this automatically links to the WHATWG-DOM spec -->
