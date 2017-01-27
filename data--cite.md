@@ -21,7 +21,7 @@ This example shows how to use `data-cite` with an `dfn` element to cite an exter
 ```
 
 ### Example of usage with `a` element
-```JS
+```HTML
 <p>
   <!-- normative citation to WHATWG DOM Spec --> 
   You then <a data-cite="!WHATWG-DOM#fire-an-event">
