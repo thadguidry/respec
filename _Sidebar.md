@@ -69,7 +69,6 @@
 * [data-include](data--include)
 * [data-include-format](data-include-format)
 * [data-include-replace](data-include-replace)
-* [data-merge](data-merge)
 * [data-number](data-number)
 * [data-oninclude](data-oninclude)
 * [data-transform](data-transform) (Deprecated)
