@@ -79,6 +79,7 @@
 * [appendix](appendix)
 * [ednote](ednote)
 * [example](example)
+* [highlight](highlight)
 * [informative](informative)
 * [introductory](introductory)
 * [nohighlight](nohighlight)
