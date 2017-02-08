@@ -30,6 +30,7 @@ The “extras” are objects, each rendered as a separate `span` element, with t
 	<dd>if set, the content within the enclosing <code>span</code> is turned into an active link pointing to the value of <code>href</code></dd>
 </dl>
 
+### Examples
 A simple example:
 
 ```js
