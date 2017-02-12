@@ -50,7 +50,7 @@ All you need is a HTML Document and to set some configuration options. Each conf
       </pre>
      <p>The <a>Foo</a> interface is nice. Lets you do stuff.</p>
      <p>The <dfn>bar</dfn> attribute, returns 🍺.</p>
-     <p>The <dfn>doTheFoo</dfn>() method, returns nothing.</p>
+     <p>The <dfn>doTheFoo()</dfn> method, returns nothing.</p>
     </section>
   </body>
 </html>
