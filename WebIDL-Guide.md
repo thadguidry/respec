@@ -45,7 +45,7 @@ Given `interface Request {};`, you can define the interface inside a heading lik
   <pre class="idl">
     interface Request {};
   </pre>
-  <p>An instance of <a>Request</a> allows you to make a request.</a>
+  <p>An instance of <a>Request</a> allows you to make a request.</p>
 </section>
 ```
 
