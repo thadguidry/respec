@@ -8,6 +8,21 @@ It is currently supported on elements:
   * `<a data-cite="">`
   * `<dfn data-cite="">`
 
+### Example if IDL is not linked
+If you fail to link a WebIDL interface, ReSpec generates a warning. This example shows how to link to the `Navigator` interface, and silence ReSpec's warning.
+
+```HTML
+<pre class="idl"> 
+partial interface Navigator {
+  // Other stuff
+};
+</pre>
+<p>
+  The <code><dfn data-cite="!HTML#Navigator">Navigator</dfn></code> object 
+  is defined in [[!HTML]].
+</p>
+```
+
 ### Example of usage with `dfn` element
 This example shows how to use `data-cite` with an `dfn` element to cite an external spec.
  
