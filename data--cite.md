@@ -23,6 +23,8 @@ partial interface Navigator {
 </p>
 ```
 
+Wrapping the `dfn` in a `code` element assures that other references to the definition are also marked up as `code`. 
+
 ### Example of usage with `dfn` element
 This example shows how to use `data-cite` with an `dfn` element to cite an external spec.
  
