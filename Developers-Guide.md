@@ -45,7 +45,7 @@ This is potentially useful for scripts that depend on ReSpec's output. They can 
 Alternatively, if you really need to run things immediately before or after ReSpec runs the plugins, you can define `preProcess` or `postProcess` properties on the configuration object. See [`preProcess](preProcess) and [`postProcess`](postProcess) more details and for examples. 
 
 ## Plugins 
-Plugins are simple ES6 modules that live in the "src/" folder. They have two parts: A synchronous initialization, and a optionally "run" method that is called asynchronously. 
+Plugins are simple ES6 modules that live in the "[src/](https://github.com/w3c/respec/tree/develop/src)" folder. They have two parts: A synchronous initialization, and a optionally "run" method that is called asynchronously. 
 
 A plugin looks like this: 
 
@@ -75,6 +75,11 @@ The exported run method SHOULD have arguments (conf, doc, cb):
  * bc: a callback function, which you should call when the plugin's work is done. Note, eventually, cb() will be deprecated in favor of simply returning a promise. However, right now we use callbacks. 
 
 As shown in the example above, a plugin should use the "conf" object to act on the "doc" in some way. And then call cb() when the work is done.  
+
+**IMPORTANT**: Don't forget to run `npm run babel:build` to make sure your code gets compiled. Compiled plugins end up in the `js/` folder. You can also `npm run babel:watch`.  
+
+### Built-in HTTP server
+You can launch a built in HTTP server during development by simply typing: `npm start`.
 
 ### Warning users of errors 
 If you are creating a plugin that needs to show warnings to a user, you can use the "core/pubsubhub" utility. As the name suggests, this is a simple pub-sub-hub dispatcher. You should use this to dispatch "warn" or "error" messages to a user:  
