@@ -20,7 +20,7 @@ ReSpec will automatically download the issue and include it for you.
 You can also have ReSpec include a summary of all the issues in the spec by adding `section` element with id "issue-summary":
 
 ```HTML
-<section  class="appendix" id="issue-summary">
+<section class="appendix" id="issue-summary">
   <!-- Issues will magically be listed here! -->
 </section>
 ```
