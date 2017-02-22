@@ -18,6 +18,8 @@
 * [errata](errata)
 * [format](format) (markdown)
 * [implementationReportURI](implementationReportURI)
+* [issueBase](issueBase),
+* [githubAPI](githubAPI),
 * [includePermalinks](includePermalinks)
 * [lcEnd](lcEnd)
 * [lint](lint)
