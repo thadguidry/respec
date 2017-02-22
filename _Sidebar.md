@@ -55,6 +55,7 @@
 
 ### Special `<section>` IDs
 * [idl-index](idl-index)
+* [issue-summary](issue-summary)
 
 ### HTML elements
 * [figure](figure)
