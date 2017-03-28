@@ -72,7 +72,7 @@ The exported run method SHOULD have arguments (conf, doc, cb):
 
  * conf: is the ReSpec configuration object (`window.respecConfig`) - which the user defined. Be careful not to modify this object.  
  * doc: a reference to the Document on which the plugin will operate - this is _always_ `window.document`. 
- * bc: a callback function, which you should call when the plugin's work is done. Note, eventually, cb() will be deprecated in favor of simply returning a promise. However, right now we use callbacks. 
+ * cb: a callback function, which you should call when the plugin's work is done. Note, eventually, cb() will be deprecated in favor of simply returning a promise. However, right now we use callbacks. 
 
 As shown in the example above, a plugin should use the "conf" object to act on the "doc" in some way. And then call cb() when the work is done.  
 
