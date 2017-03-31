@@ -1,5 +1,7 @@
 Marks the contents of an element as a "Note". If the element is a 'block' element (e.g., div or p) then the Note will be generate in a block that includes a Note "header" and the contents of the element as the text of the note. If the element also has a title attribute, the content of the title will be appended to the header (e.g., "Note: This is my note"). 
 
+Note that the content of the `title` attribute will be interpreted as HTML markup. See [`title` attributes](title-attributes) for details.
+
 ### Example
 
 ```HTML
