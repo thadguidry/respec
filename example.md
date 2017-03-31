@@ -2,7 +2,7 @@ Marks a `pre`, or `aside` as being an example. This wraps the element in a heade
 
 For a contra-example, replace the `example` class with `illegal-example`.
 
-Note that the text in the `title` attribute is interpreted as HTML markup. See [`title` attributes](title-attributes) for details.
+Note that the content of the `title` attribute will be interpreted as HTML markup. See [`title` attributes](title-attributes) for details.
 
 ### Example
 ```HTML
