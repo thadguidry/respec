@@ -2,9 +2,11 @@ Marks a `pre`, or `aside` as being an example. This wraps the element in a heade
 
 For a contra-example, replace the `example` class with `illegal-example`.
 
+Note that the text in the `title` attribute is interpreted as HTML markup. See [`title` attributes](title-attributes) for details.
+
 ### Example
 ```HTML
-<aside class="example" title='Fat arrows'>
+<aside class="example" title='Fat arrows (<code>=></code>)'>
   <p>Here we see how to use a fat arrow in ES.
   <pre>
   const sum = [...items]
