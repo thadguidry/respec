@@ -18,9 +18,7 @@
 * [errata](errata)
 * [format](format) (markdown)
 * [implementationReportURI](implementationReportURI)
-* [issueBase](issueBase),
-* [github](github),
-* [githubAPI](githubAPI),
+* [github](github)
 * [includePermalinks](includePermalinks)
 * [lcEnd](lcEnd)
 * [lint](lint)
@@ -53,6 +51,11 @@
 * [wgPatentURI](wgPatentURI)
 * [wgPublicList](wgPublicList)
 * [wgURI](wgURI)
+
+### Internal properties
+Handled by ReSpec for you.
+* [issueBase](issueBase)
+* [githubAPI](githubAPI)
 
 ### Special `<section>` IDs
 * [idl-index](idl-index)
@@ -98,3 +101,4 @@
 
 ### Special properties
 * [`document.respecIsReady`](respecIsReady)
+
