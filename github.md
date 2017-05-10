@@ -1,8 +1,9 @@
-## github
-The `github` option allows you associate your specification with a repository on GitHub. It takes an object with the following properties:
+The `github` option allows you associate your specification with a repository on GitHub. 
 
-  * repoURL - the URL for the repository (e.g., https://github.com/w3c/browser-payment-api)
-  * branch - *optional*, the branch you are using for GitHub pages. It defaults to "gh-pages". 
+It takes either a string (URL to your repo) or an object with the following properties:
+
+  * `repoURL` - the URL for the repository (e.g., https://github.com/w3c/browser-payment-api)
+  * `branch` - *optional*, the branch you are using for GitHub pages. It defaults to "gh-pages". 
 
 This automatically generates:
 
@@ -12,11 +13,23 @@ This automatically generates:
 
 It also adds an object to [otherLinks](otherLinks) for under "Participate", with the appropriate links to your github repository.
 
-### Example of usage 
+### Examples of usage 
+This is normally what you want:
 
 ```JS
 const respecConfig = {
-  github: "https://github.com/w3c/browser-payment-api",
+  github: "https://github.com/w3c/browser-payment-api"
+}
+```
+
+This example shows a repository whose specs are being served from a "public-docs" branch. 
+
+```JS
+const respecConfig = {
+  github: {
+    repoURL: "https://github.com/w3c/browser-payment-api",
+    branch: "public-docs", // alternative branch 
+  },
 }
 ```
 
