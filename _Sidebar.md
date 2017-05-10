@@ -19,6 +19,7 @@
 * [format](format) (markdown)
 * [implementationReportURI](implementationReportURI)
 * [issueBase](issueBase),
+* [github](github),
 * [githubAPI](githubAPI),
 * [includePermalinks](includePermalinks)
 * [lcEnd](lcEnd)
