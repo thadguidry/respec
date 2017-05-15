@@ -69,6 +69,7 @@ Handled by ReSpec for you.
 ### WebIDL
 * [data-link-for](data-link-for)
 * [data-dfn-for](data-dfn-for) 
+* [data-format](data-format)
 * [WebIDL Guide](WebIDL-Guide)
 
 ### HTML attributes
@@ -101,4 +102,3 @@ Handled by ReSpec for you.
 
 ### Special properties
 * [`document.respecIsReady`](respecIsReady)
-
