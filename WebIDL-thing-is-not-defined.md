@@ -38,3 +38,13 @@ interface SomeInterface {
   </section>
 </section>
 ```
+
+## Defined in a different spec?
+If the `SomeThing` interface is defined in a different spec, then all you need to do is link to it like this:
+
+```HTML
+<p>
+  The <code><dfn data-cite="SOME-SPEC#dom-SomeThing">SomeThing</dfn></code> interface
+  is defined by [[!SOME-SPEC]].
+</p>
+```
