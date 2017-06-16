@@ -19,25 +19,41 @@ interface SomeInterface {
 </section>
 ```
 
-You want to add the following [`data-dfn-for`] and [`data-link-for`] attributes:
+You want to add the following:
 
 ```HTML
+
+<!-- 1. add data-dfn-for, and data-link-for to section --> 
 <section data-dfn-for="SomeInterface" data-dfn-for="SomeInterface">
-<!-- explicitly define the interface -->
-<h2><dfn>SomeInterface</dfn> interface</h2>
-<pre class="idl">
-interface SomeInterface {
-  readonly attribute DOMString thing;
-}
-</pre>
-<p>The <a>SomeInterface</a> let's you do really neat things!</p>
-<!-- define the thing attribute -->
+
+  <!-- 2. explicitly define the interface: in the heading works best! -->
+  <h2><dfn>SomeInterface</dfn> interface</h2>
+
+  <pre class="idl">
+  interface SomeInterface {
+    readonly attribute DOMString thing;
+    void someMethod();
+  }
+  </pre>
+   
+  <!-- 3. Actually write something meaningful about the interface -->
+  <p>The <a>SomeInterface</a> let's you do really neat things!</p>
+
+  <!-- 4. define the `thing` attribute -->
   <section>
-    <h3><dnf>thing</dfn> attribute</h3>
+    <h3><dfn>thing</dfn> attribute</h3>
+    <p>The <a>thing</a> attribute, when getting, gives you the thing.</p> 
+  </section>
+
+  <!-- 5. define the `someMethod()` attribute -->
+  <section>
+    <h3><dfn>someMethod()</dfn> attribute</h3>
     <p>The <a>thing</a> attribute, when getting, gives you the thing.</p> 
   </section>
 </section>
 ```
+
+The above structure will give result in a nice structure for users. The ToC and links will all work as expected. 
 
 ## Defined in a different spec?
 If the `SomeThing` interface is defined in a different spec, then all you need to do is link to it like this:
