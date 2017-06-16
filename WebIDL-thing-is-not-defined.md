@@ -32,7 +32,7 @@ You want to add the following:
   <pre class="idl">
   interface SomeInterface {
     readonly attribute DOMString thing;
-    void someMethod();
+    OtherInterface someMethod();
   }
   </pre>
    
@@ -56,11 +56,11 @@ You want to add the following:
 The above structure will give result in a nice structure for users. The ToC and links will all work as expected. 
 
 ## Defined in a different spec?
-If the `SomeThing` interface is defined in a different spec, then all you need to do is link to it like this:
+If the `OtherInterface` interface is defined in a different spec, then all you need to do is link to it like this:
 
 ```HTML
 <p>
-  The <code><dfn data-cite="SOME-SPEC#dom-SomeThing">SomeThing</dfn></code> interface
-  is defined by [[!SOME-SPEC]].
+  The <code><dfn data-cite="SOME-SPEC#dom-SomeThing"> OtherInterface</dfn></code>
+  interface is defined by [[!SOME-SPEC]].
 </p>
 ```
