@@ -1,5 +1,5 @@
 ## ReSpec's architecture  
-ReSpec is a very simple application that runs mostly synchronous bits of javascript after a Document loads. These javascript fragments are referred to as "plugins". When a bunch of plugins are combined together, they create a "profile".  
+ReSpec is a very simple application that runs mostly synchronous bits of JS after a `Document` loads. These javascript fragments are referred to as "plugins". When a bunch of plugins are combined together, they create a "profile".  
 
 So, for instance, the W3C's profile, located at "[js/profile-w3c-common.js](https://github.com/w3c/respec/blob/develop/js/profile-w3c-common.js)", loads the following plugins (not the full list, just for illustrative purposes): 
 
@@ -34,9 +34,9 @@ After that, the Base Runner starts looping over an array of given plugins: liter
 
 Once all the plugins have "run", ReSpec resolves the `respecIsReady` promise on the Document object.   
 
-``` 
-document.respecIsReady.then(function(){ 
-   console.log("ReSpec has finished processing this document"); 
+```JS
+document.respecIsReady.then(() => { 
+ console.log("ReSpec has finished processing this document"); 
 }); 
 ``` 
 
@@ -50,7 +50,8 @@ Plugins are simple ES6 modules that live in the "[src/](https://github.com/w3c/r
 A plugin looks like this: 
 
 ```JS 
-// import things you need
+import "deps/regenerator";
+// import other things you need
 import utils from "core/utils";
 
 // This part runs synchronously and an indeterminate order.  
@@ -60,21 +61,20 @@ import utils from "core/utils";
 
 // Optionally, export "run" function
 //   See below for description of arguments.
-export async function run(conf, doc, cb){ 
-  // do some DOM work the "doc" with "conf" 
-  await someTask();
-  //finally call cb()   
-  cb(); 
-} 
+export async function run(conf){  
+  if ("something" in conf) {
+    await someAsyncTask();
+  }
+}
+
+async function someAsyncTask(){
+  // Your code here
+}
 ``` 
 
-The exported run method SHOULD have arguments (conf, doc, cb): 
+The exported run method SHOULD have arguments (conf): 
 
  * conf: is the ReSpec configuration object (`window.respecConfig`) - which the user defined. Be careful not to modify this object.  
- * doc: a reference to the Document on which the plugin will operate - this is _always_ `window.document`. 
- * cb: a callback function, which you should call when the plugin's work is done. Note, eventually, cb() will be deprecated in favor of simply returning a promise. However, right now we use callbacks. 
-
-As shown in the example above, a plugin should use the "conf" object to act on the "doc" in some way. And then call cb() when the work is done.  
 
 **IMPORTANT**: Don't forget to run `npm run babel:build` to make sure your code gets compiled. Compiled plugins end up in the `js/` folder. You can also `npm run babel:watch`.  
 
@@ -86,14 +86,55 @@ If you are creating a plugin that needs to show warnings to a user, you can use 
 
 ```JS 
 import { pub } from "core/pubsubhub";
-export async function run(conf, doc, cb) {
+export async function run(conf) {
   if (!"something" in conf) {
     pubsubhub.pub("warn", "A string that represents a warning");
   }
-  cb();
 }
 ``` 
 
 These "warn" and "error" messages will be picked up by ReSpec's UI (the "pill"), and displayed to the end-user. You should only "error" on things that the user needs to fix to successfully publish their document. Likewise, only warn on things the user SHOULD fix. 
 
 IMPORTANT: Don't show JavaScript errors to the user - as they won't be able to fix these, and they minified JS output will make these messages really unhelpful!
+
+## Custom profiles
+
+To create a custom profile, it's recommended that you clone this repository (don't fork it, as you probably want to change things - you can still receive the latest changes by setting this repo as an upstream - more later). 
+
+1. Make a copy of "[js/profile-w3c-common.js](https://github.com/w3c/respec/blob/develop/js/profile-w3c-common.js)", but rename it "profile-YOUR-PROFILE-NAME.js". 
+1. Open "profile-YOUR-PROFILE-NAME.js", and remove, add, etc. any plugins you want. 
+1. run: `node ./tools/builder.js --profile=YOUR-PROFILE-NAME`. That will generate a bundle in the build directory.
+
+### Working with your new profile
+In `examples/`, make a copy of "basic.html" and point the `<script>` tag at your new profile. Now run:
+
+```Bash
+npm install
+npm run build
+npm start
+```
+
+That will start a web server, so you can now load up `http://localhost:8080/examples` and have play with your custom profile.
+
+When you are ready to deploy it:
+
+```
+node ./tools/builder.js --profile=YOUR-PROFILE-NAME
+``` 
+
+### Testing 
+If you are writing custom [Jasmine](https://jasmine.github.io/) tests, simply place them into `tests/YOUR-PROFILE-NAME/`. 
+
+Then run:
+
+```Bash
+./tools/make-test-file-build.js
+```
+
+That will add your tests to a JSON file used in testing. Then, in your browser, just navigate to:
+
+```
+http://localhost:8080/tests/SpecRunner.html
+``` 
+
+And the tests will run. 
