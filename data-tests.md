@@ -13,6 +13,6 @@ const respecConfig = {
 </script>
 
 <p data-tests="test-1.html test-2.html">
-  The user agent MUST do this stuff.... 
+  The user agent MUST do this stuff...  
 </p>
 ```
