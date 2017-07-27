@@ -18,6 +18,7 @@
 * [errata](errata)
 * [format](format) (markdown)
 * [implementationReportURI](implementationReportURI)
+* [isPreview](isPreview)
 * [github](github)
 * [includePermalinks](includePermalinks)
 * [lcEnd](lcEnd)
