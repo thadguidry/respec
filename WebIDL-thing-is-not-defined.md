@@ -23,7 +23,11 @@ You want to add the following:
 
 ```HTML
 
-<!-- 1. add data-dfn-for, and data-link-for to section --> 
+<!-- 
+  1. add data-dfn-for, and data-link-for to section,
+     with the name of the interface, dictionary, or enum 
+     you are defining. 
+--> 
 <section data-dfn-for="SomeInterface" data-dfn-for="SomeInterface">
 
   <!-- 2. explicitly define the interface: in the heading works best! -->
