@@ -5,6 +5,13 @@ You probably landed here because you got a warning like:
 
 This is trying to tell you that you forgot to define this part of the interface. Or that you forgot to explicitly define the interface itself!
 
+Tl;dr:
+  * Add `data-dfn-for="SomeInterface"` `data-dfn-for="SomeInterface"` to container `<section>`.
+  * Change `SomeInterface` to the name of the Interface, Dictionary, or Enum you are defining.
+  * Now use `<dfn>` to define the methods, attributes, or enum values.
+
+Full example below...   
+
 ### What you need to do
 
 Given: 
