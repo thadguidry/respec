@@ -67,11 +67,11 @@ You want to add the following:
 The above structure will give result in a nice structure for users. The ToC and links will all work as expected. 
 
 ## Defined in a different spec?
-If the `OtherInterface` interface is defined in a different spec, then all you need to do is link to it like this:
+If the `OtherInterface` interface is defined in a different spec, then all you need to do is link to it like this. **Note that the `code` element needs to surround the `<dfn>` element**:
 
 ```HTML
 <p>
-  The <code><dfn data-cite="SOME-SPEC#dom-SomeThing"> OtherInterface</dfn></code>
+  The <code><dfn data-cite="SOME-SPEC#dom-SomeThing">OtherInterface</dfn></code>
   interface is defined by [[!SOME-SPEC]].
 </p>
 ```
