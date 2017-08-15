@@ -6,7 +6,7 @@ You probably landed here because you got a warning like:
 This is trying to tell you that you forgot to define this part of the interface. Or that you forgot to explicitly define the interface itself!
 
 Tl;dr:
-  * Add `data-dfn-for="SomeInterface"` `data-dfn-for="SomeInterface"` to the container `<section>`.
+  * Add `data-dfn-for="SomeInterface"` `data-link-for="SomeInterface"` to the container `<section>`.
   * Change `SomeInterface` to the name of the Interface, Dictionary, or Enum you are defining.
   * Now use `<dfn>` to define the methods, attributes, or enum values.
 
@@ -35,7 +35,7 @@ You want to add the following:
      with the name of the interface, dictionary, or enum 
      you are defining. 
 --> 
-<section data-dfn-for="SomeInterface" data-dfn-for="SomeInterface">
+<section data-dfn-for="SomeInterface" data-link-for="SomeInterface">
 
   <!-- 2. explicitly define the interface: in the heading works best! -->
   <h2><dfn>SomeInterface</dfn> interface</h2>
