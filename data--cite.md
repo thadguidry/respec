@@ -18,7 +18,7 @@ partial interface Navigator {
 };
 </pre>
 <p>
-  The <code><dfn data-cite="!HTML#navigator">Navigator</dfn></code> object 
+  The <code><dfn data-cite="!HTML/system-state.html#navigator">Navigator</dfn></code> object 
   is defined in [[!HTML]].
 </p>
 ```
