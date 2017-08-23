@@ -48,6 +48,10 @@ This example shows how to use `data-cite` with an `dfn` element to cite an exter
   You then <a data-cite="!WHATWG-DOM" data-cite-frag="fire-an-event">
   fire an event</a>.
 
+  <!-- Link to  a subpage with a / -->
+  If the page <a data-cite="!WHATWG-HTML/interaction.html#gains-focus">gains-focus</a>,
+  do not lose it yourself.
+
   <!-- Informative citation to XML's XML Documents --> 
   Using <a data-cite="xml" data-cite-frag=dt-xml-doc>XML Documents</a>
   is fun.
@@ -57,6 +61,7 @@ This example shows how to use `data-cite` with an `dfn` element to cite an exter
 That automatically creates the following:
 
  * Links the text "fire an event" to https://dom.spec.whatwg.org/#concept-event-fire
+ * Links the test "gains focus" to https://html.spec.whatwg.org/multipage/interaction.html#gains-focus
  * Links to the XML spec, to the right anchor.
  * Add "WHATWG-DOM" to the Normative References section and "XML" to the Informative References section. 
 
