@@ -122,8 +122,3 @@ You explicitly distinguish between them like so:
   <p>The <dfn>url</dfn> of <a>Response</a>...</p>
 </section>
 ```
-
-## Limitations
-
-We currently don't support:
- * linking to constructors ([bug 900](https://github.com/w3c/respec/issues/900)). 
