@@ -10,6 +10,7 @@ The author can add any additional conformance clause(s) which will follow this b
 
 ```HTML
 <section id="conformance">
+  <!-- boilerplate will be added here -->
   <p>The specification specific conformance text…</p>
 </section>
 ```
