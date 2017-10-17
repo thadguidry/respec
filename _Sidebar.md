@@ -59,6 +59,7 @@ Handled by ReSpec for you.
 * [githubAPI](githubAPI)
 
 ### Special `<section>` IDs
+* [conformance](conformance)
 * [idl-index](idl-index)
 * [issue-summary](issue-summary)
 
