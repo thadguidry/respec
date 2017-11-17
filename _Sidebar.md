@@ -81,7 +81,7 @@ Handled by ReSpec for you.
 * [data-format](data-format)
 * [data-number](data-number)
 * [data-oninclude](data-oninclude)
-* [data-sort](data-sort)
+* [data-sort](data--sort-attribute)
 * [data-transform](data-transform) (Deprecated)
 * [data-tests](data-tests)
 * [dir](dir)
