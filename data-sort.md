@@ -28,7 +28,7 @@ Sorting a definition list ("ascending" by default, so A-to-0Z locale dependent).
   <!--
     The following three elements are first after sorting
   -->
-  <dt>Apple</dt>
+  <dt>Apples</dt>
   <dd>Are delicious 🍎.</dd>
   <dd>They really really are!🍏.</dd>
 </dl>
