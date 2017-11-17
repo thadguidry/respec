@@ -25,9 +25,11 @@ Sorting a definition list ("ascending" by default, so A-to-0Z locale dependent).
   <dd>Are the best!</dd>
   <dt>Zebra</dt>
   <dd>Are quite stripy.</dd>
-  <!-- The following tree are first after sorting -->
+  <!--
+    The following three elements are first after sorting
+  -->
   <dt>Apple</dt>
-  <dd>Are delicious. 🍎</dd>
-  <dd>They really really are! 🍏</dd>
+  <dd>Are delicious 🍎.</dd>
+  <dd>They really really are!🍏.</dd>
 </dl>
 ```
