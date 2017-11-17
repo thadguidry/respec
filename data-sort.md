@@ -1,8 +1,8 @@
 ## `data-sort` attribute
 By using `data-sort="ascending"` or `"descending"`, ReSpec can shallow sort lists of type `ol`, `ul`, and `dl` elements. Shallow sort meaning that only the first level of the list is sorted, and any nested lists are left alone. This is nice for Dependency sections, IDL member definitions, etc.
 
-You can also just write `data-sort` and no value, and it will default to "ascending".
-
+You can also just write `data-sort` and exclude the attribute value, and it will default to "ascending" (i.e., from A-to-Z).
+ 
 ## Examples of usage
 
 ### Regular list
