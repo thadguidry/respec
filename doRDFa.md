@@ -10,10 +10,10 @@ A setting indicating what version of RDFa to use when annotating the specificati
 </dl>
 
 ## Example
-The following example would disable RDFa. 
+The following example would enable RDFa 1.1 annotations. 
 
 ```JS
 var respecConfig = {
-  doRDFa: false,
+  doRDFa: "1.1",
 }
 ```
