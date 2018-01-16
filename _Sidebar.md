@@ -22,6 +22,7 @@
 * [github](github)
 * [includePermalinks](includePermalinks)
 * [lcEnd](lcEnd)
+* [license](license)
 * [lint](lint)
 * [localBiblio](localBiblio)
 * [logos](logos)
