@@ -37,7 +37,7 @@ ReSpec will do its best to correctly format the markdown. Please remember that m
 ```HTML
 <section>
   ## This is ok
-  Event tho it is not flush to the left margin.
+  Even though it is not flush to the left margin.
 </section> 
 ```
 
