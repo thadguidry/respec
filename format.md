@@ -36,8 +36,11 @@ ReSpec will do its best to correctly format the markdown. Please remember that m
 
 ```HTML
 <section>
-  ## This is ok
-  Even though it is not flush to the left margin.
+  ## This is heading
+  This is a paragraph, though it is not flush to the left margin.
+
+    * this will be a list item. 
+    * so will this.
 </section> 
 ```
 
