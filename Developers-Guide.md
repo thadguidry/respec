@@ -45,12 +45,11 @@ This is potentially useful for scripts that depend on ReSpec's output. They can 
 Alternatively, if you really need to run things immediately before or after ReSpec runs the plugins, you can define `preProcess` or `postProcess` properties on the configuration object. See [`preProcess](preProcess) and [`postProcess`](postProcess) more details and for examples. 
 
 ## Plugins 
-Plugins are simple ES6 modules that live in the "[src/](https://github.com/w3c/respec/tree/develop/src)" folder. They have two parts: A synchronous initialization, and a optionally "run" method that is called asynchronously. 
+Plugins are simple ES6 modules that live in the "[src/](https://github.com/w3c/respec/tree/develop/src)" folder. They have two parts: A synchronous initialization, and a optionally exported `run()` function that is called asynchronously. 
 
 A plugin looks like this: 
 
 ```JS 
-import "deps/regenerator";
 // import other things you need
 import utils from "core/utils";
 
@@ -60,7 +59,7 @@ import utils from "core/utils";
 // the DOM here! 
 
 // Optionally, export "run" function
-//   See below for description of arguments.
+// See below for description of arguments.
 export async function run(conf){  
   if ("something" in conf) {
     await someAsyncTask();
