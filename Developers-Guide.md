@@ -1,4 +1,9 @@
 ## Super fast get-up-and-running
+Clone the repo:
+
+```Bash
+git clone git@github.com:w3c/respec.git
+```
 
 To install the needed things, and copy over the dependencies:
  
