@@ -1,3 +1,26 @@
+## Super fast get-up-and-running
+
+To install the needed things, and copy over the dependencies:
+ 
+```Bash
+npm install
+```
+
+In a new console window or tab, we get Babel to compile the code (stuff in the "src" directory): 
+
+```Bash
+npm run babel:watch 
+```
+
+In a new console window or tab, start the development web server: 
+```Bash
+npm start
+```
+
+Open the url given (usually http://127.0.0.1:8080). And go to "examples". 
+
+Usually "basic.html" is a good place to start hacking from.  
+
 ## ReSpec's architecture  
 ReSpec is a very simple application that runs mostly synchronous bits of JS after a `Document` loads. These javascript fragments are referred to as "plugins". When a bunch of plugins are combined together, they create a "profile".  
 
