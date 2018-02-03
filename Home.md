@@ -23,7 +23,7 @@ All you need is a HTML Document and to set some configuration options. Each conf
           name: "Your Name",
           url: "http://your-site.com",
         }],
-        processVersion: 2017,
+        processVersion: 2018,
         edDraftURI: "http://some.github.repo",
         shortName: "dahut"
       };
