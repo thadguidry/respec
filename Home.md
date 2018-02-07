@@ -3,7 +3,7 @@ ReSpec is a tool that makes writing specifications easier. ReSpec handles things
 ## User's guide
 A [detailed user's guide](User's-Guide) is available. 
 
-We also have a Developers Guide.
+If you want to hack on ReSpec, we also have a [Developers Guide](Developers-Guide).
 
 ## Getting up and running
 
