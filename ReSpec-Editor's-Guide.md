@@ -1,4 +1,4 @@
-## User's guide
+## User's (spec editor) guide
 The User's Guide is organized in such a way that a complete newcomer may read it linearly and understand everything. That being said, read it in whatever order you like.
 
 ### Basic Layout
