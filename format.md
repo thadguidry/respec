@@ -56,7 +56,7 @@ In some cases, the markdown processor gets confused. For example, given:
 </pre>
 ``` 
 
-The "*"s get converted to an `<em>`. Obviously, that's not great. A workaround is to wrap the "*" in back-ticks, like this:
+The "`*`"s get converted to an `<em>`. Obviously, that's not ideal. A workaround is to wrap the "*" in back-ticks, like this:
 
 ```HTML
 <pre class="example">
