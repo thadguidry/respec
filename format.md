@@ -44,4 +44,22 @@ ReSpec will do its best to correctly format the markdown. Please remember that m
 </section> 
 ```
 
-See also: [`nolink`](nolink) class to disable automatic linking in code blocks, if needed. 
+See also: [`nolink`](nolink) class to disable automatic linking in code blocks, if needed.
+
+## Known issues
+
+In some cases, the markdown processor gets confused. For example, given: 
+
+```HTML
+<pre class="example">
+1 * 2 * 3;
+</pre>
+``` 
+
+The "*"s get converted to an `<em>`. Obviously, that's not great. A workaround is to wrap the "*" in back-ticks, like this:
+
+```HTML
+<pre class="example">
+1 `*` 2 `*` 3;
+</pre>
+```
