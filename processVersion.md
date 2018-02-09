@@ -4,6 +4,9 @@ ReSpec knows to include an indication of the W3C process under which the documen
 
 ```js
 var respecConfig = {
-  processVersion: `2015`,
+  // Generally, you want ReSpec to set this for you
+  // unless there is a good reason to use an old 
+  // process! 
+  processVersion: 2015,
 }
 ```
