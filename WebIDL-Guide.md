@@ -21,12 +21,14 @@ The recommended way to code up your WebIDL is as follows:
     readonly attribute USVString url;
   };
   </pre>
-  <dl>
-    <dt><dfn>exampleMethod()</dfn></dt>
-    <dd>Define <a>exampleMethod()</a> here...</dd>
-    <dt><dfn>url</dfn></dt>
-    <dd>Define <a>url</a> here...</dd>
-  </dl>
+  <section>
+    <h2><dfn>exampleMethod()</dfn> method</h2>
+    <p>Define <a>exampleMethod()</a> here...<p>
+  </section>
+  <section>
+    <h2><dfn>url</dfn> attribute</h2>
+    <p>Define <a>url</a> here...<p>
+  </section>
 </section>
 <section data-link-for="ExampleInterface">
   <h2>Here is how you link!</h2>
