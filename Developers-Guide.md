@@ -103,7 +103,7 @@ The exported run method SHOULD have arguments (conf):
 
  * conf: is the ReSpec configuration object (`window.respecConfig`) - which the user defined. Be careful not to modify this object.  
 
-**IMPORTANT**: Don't forget to run `npm run babel:build` to make sure your code gets compiled. Compiled plugins end up in the `js/` folder. You can also `npm run babel:watch`.  
+**IMPORTANT**: Don't forget to run `npm run babel:build` to make sure your code gets compiled. Compiled plugins end up in the `js/` folder. You can also run `npm run babel:watch`.  
 
 ### Built-in HTTP server
 You can launch a built in HTTP server during development by simply typing: `npm start`.
@@ -122,7 +122,7 @@ export async function run(conf) {
 
 These "warn" and "error" messages will be picked up by ReSpec's UI (the "pill"), and displayed to the end-user. You should only "error" on things that the user needs to fix to successfully publish their document. Likewise, only warn on things the user SHOULD fix. 
 
-IMPORTANT: Don't show JavaScript errors to the user - as they won't be able to fix these, and they minified JS output will make these messages really unhelpful!
+IMPORTANT: Don't show JavaScript errors to the user - as they won't be able to fix these, and the minified JS output will make these messages really unhelpful!
 
 ## Custom profiles
 
