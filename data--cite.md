@@ -32,7 +32,7 @@ This example shows how to use `data-cite` with an `dfn` element to cite an exter
 <!-- this automatically links to the WHATWG-DOM spec -->
 <p><a>Fire an event</a> named "foo".</p> 
 <p>The concept of 
-  <dfn data-cite="!WHATWG-DOM#fire-an-event">fire an event</a>
+  <dfn data-cite="!WHATWG-DOM#fire-an-event">fire an event</dfn>
   is defined in the [[!WHATWG-DOM]] spec.
 </p>
 ```
