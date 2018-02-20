@@ -6,7 +6,7 @@ The option is simply some text giving the additional copyright holders. For unof
 
 ```JS
 var respecConfig = {
-  additionalCopyrightHolders = "Internet Engineering Task Force",
+  additionalCopyrightHolders: "Internet Engineering Task Force",
 };
 ```
 
