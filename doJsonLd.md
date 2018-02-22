@@ -41,7 +41,7 @@ When configured, a script element similar to the following will be added:
     "url": "https://www.w3.org/"
   },
   "discussionUrl": "https://github.com/w3c/some-API/issues/",
-  "description": "Abstract\n      \n        This is required.\n      \n    ",
+  "description": "Abstract \n bla bla",
   "editor": [
     {
       "type": "Person",
