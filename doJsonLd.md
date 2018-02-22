@@ -4,7 +4,7 @@ Adds a JSON-LD `script` element containing schema.org information useful for sea
 
 The following entry in `respecConfig` can be used to configure JSON-LD support, which currently defaults to `false`.
 
-```
+```javascript
 var respecConfig = {
   doJsonLd: true
 }
