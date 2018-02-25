@@ -13,7 +13,6 @@
 * [crEnd](crEnd)
 * [diffTool](diffTool)
 * [doJsonLd](doJsonLd)
-* [doRDFa](doRDFa)
 * [edDraftURI](edDraftURI)
 * [editors](editors)
 * [errata](errata)
