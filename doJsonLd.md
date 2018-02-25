@@ -1,4 +1,4 @@
-Adds a JSON-LD `script` element containing schema.org information useful for search engines to properly index the document. This is also a functional replacement for the [doRDFa](doRDFa) configuration.
+Adds a JSON-LD `script` element containing schema.org information useful for search engines to properly index the document. This is also a functional replacement for the former `doRDFa` configuration.
 
 ## Example
 
