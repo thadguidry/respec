@@ -1,4 +1,4 @@
-An array of [person objects](person) describing the past editors of the document. `formerEditors` were added so as to avoid cluttering the present `editors` list and are shown just below the list of present editors.
+An array of [person objects](person) describing the past editors of the document. `formerEditors` were added so as to avoid cluttering the present [`editors`](editors) list and are shown just below the list of present editors.
 
 ### Example
 ```JS
