@@ -5,12 +5,8 @@ ReSpec warns if the `<title>` and the `<h1>` text content match.
 ## Example 
 
 ```HTML
-<doctype html>
-<title>The Whatever Interface</title>
-<body>
   <h1 id="title">The <code>Whatever</code> Interface</h1>
   <section id="abstract">
    <p>...</p>
   </section>
-</body>
 ``` 
