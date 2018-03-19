@@ -66,9 +66,10 @@ Handled by ReSpec for you.
 * [issue-summary](issue-summary)
 
 ### HTML elements
-* [figure](figure)
-* [section](section)
-* [title](title)
+* [`<figure>`](figure)
+* [`<section>`](section)
+* [`<title>`](title)
+* [`<h1>`](h1)
 
 ### WebIDL
 * [data-link-for](data-link-for)
