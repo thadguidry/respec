@@ -5,8 +5,9 @@ ReSpec warns if the `<title>` and the `<h1>` text content match.
 ## Example 
 
 ```HTML
-  <h1 id="title">The <code>Whatever</code> Interface</h1>
-  <section id="abstract">
-   <p>...</p>
-  </section>
+<body>
+<h1 id="title">The <code>Whatever</code> Interface</h1>
+<section id="abstract">
+<p>...</p>
+</section>
 ``` 
