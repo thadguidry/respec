@@ -69,7 +69,7 @@ Handled by ReSpec for you.
 * [`<figure>`](figure)
 * [`<section>`](section)
 * [`<title>`](title)
-* [`<h1>`](h1)
+* [`<h1>`](h1-element)
 
 ### WebIDL
 * [data-link-for](data-link-for)
