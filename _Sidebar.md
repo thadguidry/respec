@@ -18,6 +18,7 @@
 * [errata](errata)
 * [format](format) (markdown)
 * [formerEditors](formerEditors)
+* [highlightVars](highlightVars)
 * [implementationReportURI](implementationReportURI)
 * [isPreview](isPreview)
 * [github](github)
