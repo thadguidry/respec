@@ -264,6 +264,8 @@ On occasion that won't be enough since you may be using the term in plural or co
 ```
 which can be referenced by any of `<a>my terms</a>`, `<a>some term</a>`, `<a>my term<a>`.
 
+Definitions may be links to (anchors in) external specifications by adding a `data-cite="spec-name#some-anchor"` attribute. The anchor is optional but the spec-name must match an entry in the [specref database](https://github.com/tobie/specref/tree/master/refs) or a custom entry defined in your [localBiblio](../localBiblio).
+
 Also note that the href-less a element is not limited to linking to definitions but also knows how to link to other items such as WebIDL interfaces.
 
 ### References
@@ -273,7 +275,7 @@ ReSpec takes the pain out of this with multiple features that are used together.
 
 Then, using all the collected references from the document, ReSpec will generate a “References” section with subsections for normative and informative references (when they appear). Inside the latter, it will place the relevant bibliographical data for those references, using the conventional markup.
 
-References are loaded from a shared database that is maintained by a group of volunteers. If you need a reference that is not in the database, then the right thing to do is to submit it for inclusion so that others can benefit from it too. However, if that is not possible then you can make use of the [`localBiblio`](../localBiblio) configuration option.
+References are loaded from a [shared database](https://github.com/tobie/specref/tree/master/refs) that is maintained by a group of volunteers. If you need a reference that is not in the database, then the right thing to do is to [submit it for inclusion](https://github.com/tobie/specref#manual-changes) so that others can benefit from it too. However, if that is not possible then you can make use of the [`localBiblio`](../localBiblio) configuration option.
 
 If you wish the “References” section to be prefaced with some text, you can set the [`refNote`](refNote) option to the content you wish to use.
 
