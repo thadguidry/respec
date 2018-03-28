@@ -4,6 +4,7 @@ Allows W3C staff to link to a comment number.
 
 ```JS
 var respecConfig = {
+  specStatus: "Member-SUBM",
   submissionCommentNumber: "03"
 }
 ```
@@ -11,7 +12,7 @@ var respecConfig = {
 Which shows up as:
 
 ```HTML
-<a href="https://www.w3.org/Submission/2018/01/Comment/">
+<a href="https://www.w3.org/Submission/2018/03/Comment/">
   W3C Team Comment
 </a>
 ``` 
