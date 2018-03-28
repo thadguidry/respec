@@ -191,12 +191,10 @@ is on a publication track but can also take other values for other types of docu
         that you are entitled to retain your own copyright instead of transferring
         it to W3C. Use the copyright options for this.
       </td>
-      <td>None.</td>
-    </tr>
-    <tr>
-      <td>Team-SUBM</td>
-      <td>Team Submission.</td>
-      <td>None.
+      <td>
+       <ul>
+          <li><a href="submissionCommentNumber">submissionCommentNumber</a></li>
+       </ul>
       </td>
     </tr>
     <tr>
