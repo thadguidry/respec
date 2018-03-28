@@ -11,5 +11,7 @@ var respecConfig = {
 Which shows up as:
 
 ```HTML
-<a href="https://www.w3.org/Submission/2018/01/Comment/">W3C Team Comment</a>
+<a href="https://www.w3.org/Submission/2018/01/Comment/">
+  W3C Team Comment
+</a>
 ``` 
