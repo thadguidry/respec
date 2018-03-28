@@ -48,6 +48,7 @@
 * [shortName](shortName)
 * [specStatus](specStatus)
 * [subjectPrefix](subjectPrefix)
+* [submissionCommentNumber](submissionCommentNumber)
 * [subtitle](subtitle)
 * [testSuiteURI](testSuiteURI)
 * [tocIntroductory](tocIntroductory)
