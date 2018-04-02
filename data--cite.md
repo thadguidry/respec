@@ -32,8 +32,8 @@ This example shows how to use `data-cite` with an `dfn` element to cite an exter
 <!-- this automatically links to the WHATWG-DOM spec -->
 <p><a>Fire an event</a> named "foo".</p> 
 <p>The concept of 
-  <dfn data-cite="!WHATWG-DOM#fire-an-event">fire an event</dfn>
-  is defined in the [[!WHATWG-DOM]] spec.
+  <dfn data-cite="!DOM#fire-an-event">fire an event</dfn>
+  is defined in the [[!DOM]] spec.
 </p>
 ```
 
@@ -41,7 +41,7 @@ This example shows how to use `data-cite` with an `dfn` element to cite an exter
 ```HTML
 <p>
   <!-- normative citation to WHATWG DOM Spec --> 
-  You then <a data-cite="!WHATWG-DOM#fire-an-event">
+  You then <a data-cite="!DOM#fire-an-event">
   fire an event</a>.
   
   <!-- Alternative -->
@@ -63,5 +63,5 @@ That automatically creates the following:
  * Links the text "fire an event" to https://dom.spec.whatwg.org/#concept-event-fire
  * Links the test "gains focus" to https://html.spec.whatwg.org/multipage/interaction.html#gains-focus
  * Links to the XML spec, to the right anchor.
- * Add "WHATWG-DOM" to the Normative References section and "XML" to the Informative References section. 
+ * Add "DOM" to the Normative References section and "XML" to the Informative References section. 
 
