@@ -39,7 +39,6 @@
 * [previousDiffURI](previousDiffURI)
 * [previousMaturity](previousMaturity)
 * [previousPublishDate](previousPublishDate)
-* [previousURI](previousURI)
 * [prevRecShortname](prevRecShortname)
 * [prevRecURI](prevRecURI)
 * [processVersion](processVersion)
