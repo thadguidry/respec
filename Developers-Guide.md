@@ -115,7 +115,7 @@ If you are creating a plugin that needs to show warnings to a user, you can use 
 import { pub } from "core/pubsubhub";
 export async function run(conf) {
   if (!"something" in conf) {
-    pubsubhub.pub("warn", "A string that represents a warning");
+    pub("warn", "Markdown that represents a warning");
   }
 }
 ``` 
