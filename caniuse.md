@@ -1,7 +1,6 @@
 
-Adds a [Can I Use](http://caniuse.com) support table in header (before the copyright message). [(Preview)](https://i.imgur.com/WEqFraF.png)
-
-# This documents an unreleased feature.
+Adds a [Can I Use](http://caniuse.com) support table in header (before the copyright message).
+![Can I Use preview for Payment Request api](https://user-images.githubusercontent.com/8426945/39532698-f23688c6-4e4a-11e8-93a7-ab501fc1ecfe.png)
 
 ## Example:
 
@@ -21,6 +20,8 @@ var respecConfig = {
   },
 };
 ```
+
+**Note:** This feature is only available in "live" Editor's Drafts. Because this feature relies on JavaScript, it's not exported out when a document is saved as HTML. In exported document, we replace the table with a link to caniuse.com.
 
 ## Configuration Options: 
 
