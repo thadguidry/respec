@@ -12,6 +12,6 @@ var respecConfig = {
 
 It renders as:
 
-![ReSpec highlightVars demo](https://user-images.githubusercontent.com/8426945/39560796-c2bca160-4ebe-11e8-8b05-6e3ce25f5af4.gif)
+<img width="600" alt="ReSpec highlightVars demo" src="https://user-images.githubusercontent.com/8426945/39560796-c2bca160-4ebe-11e8-8b05-6e3ce25f5af4.gif">
 
 **Note:** This feature is only available in "live" Editor's Drafts. Because this feature relies on JavaScript, it's not exported out when a document is saved as HTML.
