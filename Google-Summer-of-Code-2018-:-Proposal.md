@@ -8,7 +8,7 @@
 
 **IRC nick:** sid-vishnoi
 
-**Telephone:** +91-9990227122
+**Telephone:** NOT_PUBLIC
 
 **Other contact methods:**
 
