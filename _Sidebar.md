@@ -84,6 +84,8 @@ Handled by ReSpec for you.
 * [data-include-format](data-include-format)
 * [data-include-replace](data-include-replace)
 * [data-format](data-format)
+* [data-lt](data-lt-noDefault)
+* [data-lt-noDefault](data-lt-noDefault)
 * [data-number](data-number)
 * [data-oninclude](data-oninclude)
 * [data-sort](data--sort-attribute)
