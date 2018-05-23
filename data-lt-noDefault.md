@@ -2,7 +2,7 @@ Allow you to ignore data-lt-noDefault definition of a defined term. This is some
 
 ## Example   
 
-```
+```HTML
 <dfn>The Foo</dfn>
 <!-- the text content definition is not used -->
 <dfn data-lt="other foo" data-lt-noDefault>The Foo</dfn>
