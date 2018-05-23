@@ -3,7 +3,7 @@
 ### Example
 
 ```HTML
-<dfn data-lt="my terms|some term|my term">my term</dfn>...
+<dfn data-lt="best fruit|apples">Apple</dfn>...
 ```
 
-Which can be referenced by any of `<a>my terms</a>`, `<a>some term</a>`, `<a>my term<a>`.
+Which can be referenced by any of `<a>best fruit</a>`, `<a>apples</a>`, `<a>apple<a>`.
