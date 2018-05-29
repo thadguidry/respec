@@ -19,13 +19,13 @@ Below are some more examples:
      <a data-lt="get apple">obtain apples</a>.
 </dfn>
 
-<dfn data-lt="foo">bar</a> can be referenced as
-     <a>foo</a>
+<dfn data-lt="pub">bar</a> can be referenced as
+     <a>pub</a>
      <a>bar</a>
      <a>bars</a>
-     <a data-lt="foo">baz</a>
-     <a data-lt="bar">baz</a>
-     <a data-lt="bars">baz</a>
+     <a data-lt="pub">drinking establishment</a>
+     <a data-lt="bar">drinking establishment</a>
+     <a data-lt="bars">drinking establishment</a>
 </dfn>
 ```
 
