@@ -34,6 +34,7 @@
 * [noRecTrack](noRecTrack)
 * [noTOC](noTOC)
 * [otherLinks](otherLinks)
+* [pluralize](pluralize)
 * [postProcess](postProcess)
 * [preProcess](preProcess)
 * [prevED](prevED)
