@@ -29,7 +29,9 @@ Below are some more examples:
 </dfn>
 ```
 
-If you want to selectively disable pluralization on certain `<dfn>`, you can make use of `data-lt-no-plural` attribute like:
+Note: We tried to make the pluralization as smart as possible, so that it won't break existing specs easily. It adds plurals only for those terms which are referenced. So in the above example if you don't reference `<a>fetches</a>` or `<a data-lt="fetches">fetch request</a>`, we won't add a pluralization of `fetch`.
+
+If you want to selectively disable pluralization on certain `<dfn>`, you can make use of [`data-lt-no-plural`](data-lt-no-plural) attribute like:
 
 ``` html
 <dfn data-lt-no-plural>html</dfn>
