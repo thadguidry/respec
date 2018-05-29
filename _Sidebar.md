@@ -86,6 +86,7 @@ Handled by ReSpec for you.
 * [data-format](data-format)
 * [data-lt](data-lt)
 * [data-lt-noDefault](data-lt-noDefault)
+* [data-lt-no-plural](data-lt-no-plural)
 * [data-number](data-number)
 * [data-oninclude](data-oninclude)
 * [data-sort](data--sort-attribute)
