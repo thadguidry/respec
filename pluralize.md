@@ -13,10 +13,10 @@ You can define a term as `<dfn>fetch</dfn>` and reference it as either `<a>fetch
 Below are some more examples:
 
 ``` html
-<dfn>get apple</dfn> can be referenced as
-     <a>get apples</a>
-     <a>get apple</a>
-     <a data-lt="get apple">obtain apples</a>.
+<dfn>user agent</dfn> can be referenced as
+     <a>user agents</a>
+     <a>user agent</a>
+     <a data-lt="user agent">browser</a>.
 </dfn>
 
 <dfn data-lt="pub">bar</a> can be referenced as
