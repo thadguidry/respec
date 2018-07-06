@@ -1,126 +1,77 @@
-To specify an interface using [WebIDL](http://heycam.github.io/webidl/), you define a `<pre class="idl">` block. For example:
+## Defining WebIDL things
+You probably landed here because you got a warning like:
 
-```HTML
-<pre class="idl">
-interface Request {
-  readonly attribute ByteString method;
-  readonly attribute USVString url;
-};
-</pre>
-```
+ * attribute `thing` not defined in `SomeInterface`.
 
-## tl;dr - ideal linking setup
-The recommended way to code up your WebIDL is as follows:
+This is trying to tell you that you forgot to define this part of the interface. Or that you forgot to explicitly define the interface itself!
 
-```HTML
-<section data-dfn-for="ExampleInterface" data-link-for="ExampleInterface">
-  <h2><dfn>ExampleInterface</dfn> interface</h2>
-  <pre class="idl">
-  interface ExampleInterface {
-    void exampleMethod();
-    readonly attribute USVString url;
-  };
-  </pre>
-  <section>
-    <h2><dfn>exampleMethod()</dfn> method</h2>
-    <p>Define <a>exampleMethod()</a> here...<p>
-  </section>
-  <section>
-    <h2><dfn>url</dfn> attribute</h2>
-    <p>Define <a>url</a> here...<p>
-  </section>
-</section>
-<section data-link-for="ExampleInterface">
-  <h2>Here is how you link!</h2>
-  <p>The <a>ExampleInterface</a> or the <a>ExampleInterface.exampleMethod()</a>.</p>
-  <p>Or like this: <a>exampleMethod</a> - which uses "data-link-for" to link.</p>
-</section>
-```
+Tl;dr:
+  * Add `data-dfn-for="SomeInterface"` `data-link-for="SomeInterface"` to the container `<section>`.
+  * Change `SomeInterface` to the name of the Interface, Dictionary, or Enum you are defining.
+  * Now use `<dfn>` to define the methods, attributes, or enum values.
 
-## Defining the interface
+Full example below...   
 
-Given `interface Request {};`, you can define the interface inside a heading like so:
+### What you need to do
+
+Given: 
 
 ```HTML
 <section>
-  <h2><dfn>Request</dfn> interface</h2>
+<pre class="idl">
+interface SomeInterface {
+  readonly attribute DOMString thing;
+}
+</pre>
+</section>
+```
+
+You want to add the following:
+
+```HTML
+
+<!-- 
+  1. add data-dfn-for, and data-link-for to section,
+     with the name of the interface, dictionary, or enum 
+     you are defining. 
+--> 
+<section data-dfn-for="SomeInterface" data-link-for="SomeInterface">
+
+  <!-- 2. explicitly define the interface: in the heading works best! -->
+  <h2><dfn>SomeInterface</dfn> interface</h2>
+
   <pre class="idl">
-    interface Request {};
+  interface SomeInterface {
+    readonly attribute DOMString thing;
+    OtherInterface someMethod();
+  }
   </pre>
-  <p>An instance of <a>Request</a> allows you to make a request.</p>
+   
+  <!-- 3. Actually write something meaningful about the interface -->
+  <p>The <a>SomeInterface</a> let's you do really neat things!</p>
+
+  <!-- 4. define the `thing` attribute -->
+  <section>
+    <h3><dfn>thing</dfn> attribute</h3>
+    <p>The <a>thing</a> attribute, when getting, gives you the thing.</p> 
+  </section>
+
+  <!-- 5. define the `someMethod()` attribute -->
+  <section>
+    <h3><dfn>someMethod()</dfn> attribute</h3>
+    <p>The <a>thing</a> attribute, when getting, gives you the thing.</p> 
+  </section>
 </section>
 ```
 
-The above provides convenient linking to the section where the interface is defined.
+The above structure will give result in a nice structure for users. The ToC and links will all work as expected. 
 
-### Defining methods and attributes
-There are multiple ways to define the methods or attributes of an interface: 
-
- 1. Using dot notation, like `<dfn>interfaceName.memberName</dfn>`
- 1. Using `data-dfn-for` wrapper attribute.
-
-Given:
+## Defined in a different spec?
+If the `OtherInterface` interface is defined in a different spec, then all you need to do is link to it like this. **Note that the `code` element needs to surround the `<dfn>` element**:
 
 ```HTML
-<pre class=idl>
-interface Request {
-  readonly attribute USVString url;
-  Request clone();
-};
-</pre>
-```
-
-For example, to define `Request.url`, you'd write `<dfn>Request.url</dfn>`. This also automatically links the IDL declaration to the prose definition. 
-
-Similarly, to define the `Request.clone()` method, you'd write `<dfn>Request.clone()</dfn>`.
-
-Alternatively, if you would prefer not to use the dot notation, you can use `data-dfn-for`.
-
-#### Using `data-dfn-for` and `data-link-for`
-
-The `data-dfn-for` attribute allows you to describe one or more aspects of an interface at once.
-
-Similarly, the `data-link-for` attribute allows you to link to one or more aspects of an interface at once.
-
-For example, the following defines both the `url` and the `clone` method.
-
-```HTML
-  <p data-dfn-for="Request">
-    The <dfn>clone()</dfn> method.
-    The <dfn>url</dfn> attribute.
-  </p>
-  <!-- Linking to definitions works the same -->
-  <p data-link-for="Request">
-    Links to <a>clone()</a> method.
-    Links to the <a>url</a> attribute.
-  </p>
-```
-
-## Multiple interfaces with same attributes/methods
-
-If, for instance, you have two interfaces with methods or attributes that are the same: 
-
-```HTML
-<pre class="idl">
-interface Request {
-  readonly attribute USVString url;
-};
-</pre>
-<pre class="idl">
-interface Response {
-  readonly attribute USVString url;
-};
-</pre>
-```
-
-You explicitly distinguish between them like so: 
-
-```HTML
-<section data-dfn-for="Request">
-  <p>The <dfn>url</dfn> of <a>Request</a>...</p>
-</section>
-
-<section data-dfn-for="Response">
-  <p>The <dfn>url</dfn> of <a>Response</a>...</p>
-</section>
+<p>
+  The <code><dfn data-cite="SOME-SPEC#dom-SomeThing">OtherInterface</dfn></code>
+  interface is defined by [[!SOME-SPEC]].
+</p>
 ```
