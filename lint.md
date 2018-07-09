@@ -12,3 +12,8 @@ var respecConfig = {
   lint: false,
 }
 ```
+
+The following lint rules are available:
+- [`no-http-props`](no-http-props)
+- [`local-refs-exist`](local-refs-exist)
+- [`no-headingless-sections`](no-headingless-sections)
