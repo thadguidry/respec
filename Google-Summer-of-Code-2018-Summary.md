@@ -1,4 +1,4 @@
-This issue documents the work done by @sidvishnoi (Sudhanshu Vishnoi) during his GSoC internship and serves as the final official submission.
+This issue documents the work done by [@sidvishnoi](https://github.com/sidvishnoi) (Sudhanshu Vishnoi) during his GSoC internship and serves as the final official submission.
 
 ## tl;dr
 
