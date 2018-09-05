@@ -39,16 +39,22 @@ It renders as:
 Default: <code>["chrome", "firefox", "safari", "edge"]</code><br>
 Supported Values: 
 <ul>
-	<li><code>chrome</code> -- Chrome</li>
-	<li><code>firefox</code> -- Firefox</li>
-	<li><code>ie</code> -- IE</li>
-	<li><code>edge</code> -- Edge</li>
-	<li><code>android</code> -- Android</li>
-	<li><code>safari</code> -- Safari</li>
-	<li><code>opera</code> -- Opera</li>
-	<li><code>bb</code> -- Blackberry</li>
-	<li><code>and_uc</code> -- UC (Android)</li>
-	<li><code>and_ff</code> -- Firefox (Android)</li></ul>
+ <li><code>and_chr</code> - Chrome (Android)</li>
+ <li><code>and_ff</code> - Firefox (Android)</li>
+ <li><code>and_uc</code> - UC Browser (Android)</li>
+ <li><code>android</code> - Android</li>
+ <li><code>bb</code> - Blackberry</li>
+ <li><code>chrome</code> - Chrome</li>
+ <li><code>edge</code> - Edge</li>
+ <li><code>firefox</code> - Firefox</li>
+ <li><code>ie</code> - IE</li>
+ <li><code>ios_saf</code> - Safari (iOS)</li>
+ <li><code>op_mini</code> - Opera Mini</li>
+ <li><code>op_mob</code> - Opera Mobile</li>
+ <li><code>opera</code> - Opera</li>
+ <li><code>safari</code> - Safari</li>
+ <li><code>samsung</code> - Samsung Internet</li>
+</ul>
 </dd>
 
 <dt><code>versions</code></dt>
