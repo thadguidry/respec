@@ -1,4 +1,4 @@
-### [User's Guide](ReSpec-Editor's-Guide)
+# ### [User's Guide](ReSpec-Editor's-Guide)
 ### [WebIDL Guide](WebIDL-Guide)
 ### [Configuring ReSpec](Configuration-(respecConfig))
 ### [Developers Guide](Developers-Guide)
