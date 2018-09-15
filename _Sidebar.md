@@ -5,6 +5,7 @@
 ### Configuration options
 * [additionalCopyrightHolders](additionalCopyrightHolders)
 * [addPatentNote](addPatentNote)
+* [addSectionLinks](addSectionLinks)
 * [alternateFormats](alternateFormats)
 * [authors](authors)
 * [caniuse](caniuse)
