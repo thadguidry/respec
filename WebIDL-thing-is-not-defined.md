@@ -3,7 +3,7 @@ You probably landed here because you got a warning like:
 
  * attribute `thing` not defined in `SomeInterface`.
 
-This is trying to tell you that you forgot to define this part of the interface. Or that you forgot to explicitly define the interface itself!
+This is trying to tell you that you forgot to define this part of the interface. * Or that you forgot to explicitly define the interface itself!
 
 Tl;dr:
   * Add `data-dfn-for="SomeInterface"` `data-link-for="SomeInterface"` to the container `<section>`.
