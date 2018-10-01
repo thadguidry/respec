@@ -28,3 +28,35 @@ Respec supports the following languages by default:
 * JavaScript
 * JSON
 * XML
+
+Code in other languages **will be supported if PR #1835 lands**. You **will** then need to define a function that loads a highlighter.js package for the language you want, and to request the language be loaded as a respec `preProcess` option:
+
+```html
+<script>
+  async function loadSolidity() {    //this is the function you call in 'preProcess'
+    const worker = await new Promise(resolve => {
+      require(["core/worker"], ({ worker }) => resolve(worker));
+    });
+    const action = "highlight-load-lang";
+    const langURL =
+      "https://cdn.rawgit.com/pospi/highlightjs-solidity/b058d0f9d39065fde7303ab5b9a1005912cc3b6a/solidity.js";
+    const propName = "hljsDefineSolidity";
+    const lang = "solidity";     // this is the class you use to identify the language
+    worker.postMessage({ action, langURL, propName, lang });
+    return new Promise(resolve => {
+      worker.addEventListener("message", function listener({ data }) {
+        const { action: responseAction, lang: responseLang } = data;
+        if (responseAction === action && responseLang === lang) {
+          worker.removeEventListener("message", listener);
+          resolve();
+        }
+      });
+    });
+  }
+
+
+ var respecConfig = {
+        preProcess: [loadSolidity],
+        /// other configuration information 
+ }
+```
