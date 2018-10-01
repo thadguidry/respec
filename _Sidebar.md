@@ -74,6 +74,7 @@ Handled by ReSpec for you.
 * [`<section>`](section)
 * [`<title>`](title)
 * [`<h1>`](h1-element)
+* [`<pre>`/`<code>`](pre-code-elements)
 
 ### WebIDL
 * [data-link-for](data-link-for)
