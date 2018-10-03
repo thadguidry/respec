@@ -8,7 +8,7 @@ ReSpec provides code highlighting for blocks of code marked up with the `<pre>` 
 
 In Markdown, they should be marked with `\`` followed by the code language:
 
-<pre lang="html">
+
 ```html
 <script>
 function magic() {
@@ -16,8 +16,8 @@ function magic() {
   doThat(noop);
 }
 </script>
-\```
-</pre>
+```
+
 
 Respec supports the following languages by default:
 
