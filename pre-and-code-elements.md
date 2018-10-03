@@ -1,6 +1,20 @@
 ReSpec provides code highlighting for blocks of code marked up with the `<pre>` or `<code>` elements. ReSpec will try to guess the code language, or it can be added as a class:
 
-`\``HTML
+``` html
+<pre> <!-- or <pre class="html"> -->
+<script>
+function magic() {
+  const noop = "this";
+  doThat(noop);
+}
+</script>
+</pre>
+```
+
+
+In Markdown, they should be marked with <code>```</code> followed by the code language:
+
+<pre class="markdown">
 ```html
 <script>
 function magic() {
@@ -8,22 +22,8 @@ function magic() {
   doThat(noop);
 }
 </script>
-```
 `\``
-
-
-In Markdown, they should be marked with `\`` followed by the code language:
-
-`\``HTML
-```html
-<script>
-function magic() {
-  const noop = "this";
-  doThat(noop);
-}
-</script>
-```
-`\``
+</pre>
 
 
 Respec supports the following languages by default:
