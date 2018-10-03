@@ -11,20 +11,7 @@ function magic() {
 </pre>
 ```
 
-
-In Markdown, they should be marked with <code>```</code> followed by the code language:
-
-<pre class="markdown">
-```html
-<script>
-function magic() {
-  const noop = "this";
-  doThat(noop);
-}
-</script>
-`\``
-</pre>
-
+(Markdown `\`` are currently not supported)
 
 Respec supports the following languages by default:
 
