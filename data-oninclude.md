@@ -19,7 +19,7 @@ function replaceUnicorns(utils, content, url ){
   // Replaces unicorns rainbows where appropriate.
   return content.replace("🦄", "🐴");
 }
-<script>
+</script>
 <!-- 
 Include content.fragment file, but then process it on include.
 -->
