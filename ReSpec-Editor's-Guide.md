@@ -179,7 +179,7 @@ Structure
 This chapter covers all the aspects of a ReSpec document's structure that were not covered as part of the very basics. As usual, let's start with an example. It is fairly long as it needs a decent amount of content in order to exemplify some features, but it should nevertheless be easy to understand.
 
 ### Sections
-ReSpec-based specifications require you to wrap your content is `section` elements. We provide specific information and examples on [how to use `<section>` elements](https://github.com/w3c/respec/wiki/section).
+ReSpec-based specifications require you to wrap your content in `section` elements. We provide specific information and examples on [how to use `<section>` elements](https://github.com/w3c/respec/wiki/section).
 
 Sections, subsections, appendices, and whatever other structural items are marked up in ReSpec using `<section>` elements.
 
