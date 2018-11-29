@@ -271,7 +271,11 @@ Also note that the href-less a element is not limited to linking to definitions 
 ### References
 Specifications typically need to have references to other specifications on which they build to define their own technology. Managing references is a pain, as is linking to them every time that they are mentioned.
 
-ReSpec takes the pain out of this with multiple features that are used together. First, when you need to refer to a given specification in the body of the text, simply do so using `[[FOO]]` for informative references (those that are just intended to clarify the matter at hand) and `[[!FOO]]` for normative ones (those which are required for the implementation of the specification at hand). ReSpec will replace those with the link the reference and the appropriate markup around it.
+ReSpec takes the pain out of this with multiple features that are used together. First, when you need to refer to a given specification in the body of the text, simply do so using `[[FOO]]`. ReSpec uses the context of the reference to work out if the reference is normative or informative. That is, if the reference is in a section marked "informative", or an example, note, or figure, then ReSpec automatically makes the reference non-normative. Otherwise, the reference is treated as normative. ReSpec will replace those with the link the reference and the appropriate markup around it.
+
+If you need a non-normative reference in a normative section, you can use a `?` like so: 
+
+> This is normative and MUST be followed. But, sometimes we need a non-normative example reference [[?FOO]].
 
 Then, using all the collected references from the document, ReSpec will generate a “References” section with subsections for normative and informative references (when they appear). Inside the latter, it will place the relevant bibliographical data for those references, using the conventional markup.
 
