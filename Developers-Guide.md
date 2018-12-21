@@ -22,7 +22,7 @@ In a new console window or tab, start the development web server:
 npm start
 ```
 
-Open the url given (usually http://127.0.0.1:8080). And go to "examples". 
+Open the url given (usually http://127.0.0.1:5000). And go to "examples". 
 
 Usually "basic.html" is a good place to start hacking from.  
 
@@ -141,7 +141,7 @@ npm run build:components
 npm start
 ```
 
-That will start a web server, so you can now load up `http://localhost:8080/examples` and have play with your custom profile.
+That will start a web server, so you can now load up `http://localhost:5000/examples` and have play with your custom profile.
 
 When you are ready to deploy it:
 
@@ -161,7 +161,7 @@ Then run:
 That will add your tests to a JSON file used in testing. Then, in your browser, just navigate to:
 
 ```
-http://localhost:8080/tests/SpecRunner.html
+http://localhost:5000/tests/SpecRunner.html
 ``` 
 
 And the tests will run. 
