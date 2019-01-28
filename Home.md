@@ -7,7 +7,7 @@ If you want to hack on ReSpec, we also have a [Developers Guide](Developers-Guid
 
 ## Getting up and running
 
-All you need is a HTML Document and to set some configuration options. Each configuration option is documented in this Wiki. 
+All you need is an HTML document and to set some configuration options. Each configuration option is documented in this Wiki. 
 
 ```HTML
 <!DOCTYPE html>
