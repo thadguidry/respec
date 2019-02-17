@@ -17,3 +17,4 @@ The following lint rules are available:
 - [`no-http-props`](no-http-props)
 - [`local-refs-exist`](local-refs-exist)
 - [`no-headingless-sections`](no-headingless-sections)
+- [`check-punctuation`](check-punctuation)
