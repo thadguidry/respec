@@ -59,6 +59,10 @@
 * [wgPublicList](wgPublicList)
 * [wgURI](wgURI)
 
+### Linter rules
+
+ * [`check-punctuation`](check-punctuation)
+
 ### Internal properties
 Handled by ReSpec for you.
 * [issueBase](issueBase)
