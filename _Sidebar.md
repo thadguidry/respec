@@ -63,6 +63,8 @@
 ### Linter rules
 
  * [`check-punctuation`](check-punctuation)
+ * [`local-refs-exist`](local-refs-exist) 
+ * [`no-http-props`](no-http-props)
 
 ### Internal properties
 Handled by ReSpec for you.
