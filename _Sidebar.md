@@ -89,6 +89,7 @@ Handled by ReSpec for you.
 * [WebIDL Guide](WebIDL-Guide)
 
 ### HTML attributes
+* [data-abbr](data-abbr)
 * [data-cite](data--cite)
 * [data-include](data--include)
 * [data-include-format](data-include-format)
