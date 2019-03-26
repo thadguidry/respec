@@ -16,5 +16,5 @@ Becomes: <dfn>user agent</dfn> (<abbr title="user agent">UA</abbr>).
 <!-- Alternatively -->
 <dfn data-abbr="PoS">point of sale</dfn>
 
-Becomes: <dfn>point of sale</dfn> (<abbr title="PoS">PoS</abbr>)
+Becomes: <dfn>point of sale</dfn> (<abbr title="point of sale">PoS</abbr>)
 ```  
