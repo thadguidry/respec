@@ -1,26 +1,3 @@
-Earlier, in order to create a cross reference in ReSpec, Editors required to manually search for the `id` of a term by going into another spec and copying the URL and linking it like:
-
-``` html
-<a data-cite="HTML/webappapis.html#event-handlers">event handler</a>
-<a data-cite="SPEC/PATH#ID">TERM</a>
-```
-
-This can be quite labor intensive and error prone. Also, the `id` being referenced might be removed or changed, causing cross references to break.
-
-ReSpec now supports auto-linking external references. The Editor can now just write:
-
-``` html
-<a>event handler</a>
-```
-
-ReSpec will first look for locally defined terms, and when it cannot find them locally, it'll look for them externally in other specs.
-
-And ReSpec, together with some hints, will know what the user means. In case ReSpec is not able to find a reference, or if there is some ambiguity, it will inform Editors so they can take appropriate action.
-
----
-
-## How to enable
-
 You can enable automatic external reference linking (xref) in ReSpec as:
 
 ``` js
@@ -31,7 +8,7 @@ var respecConfig = {
 
 ## Linking regular definitions
 
-In most cases, the editor can just wrap a term in `<a>` (like `<a>TERM</a>`) and ReSpec will be able to link it correctly. Examples:
+In most cases, you can just wrap a term in `<a>` (like `<a>TERM</a>`) and ReSpec will be able to link it correctly. Examples:
 
 ``` html
 <a>event handler</a> <!-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers -->
@@ -139,11 +116,3 @@ In case ReSpec cannot find find an external reference, it will give a warning sa
 The warning is not necessarily due to non-existence of a term. It could be due to a "bad context". ReSpec will point you to the terms with error, so you can make a fix, if possible.
 
 You may require to add `data-cite` attributes for ReSpec to look for the term in the right spec.
-
-## More examples
-
-To see what ReSpec's auto-linking actually supports, we recommend you to look at our [[test suite](https://github.com/w3c/respec/blob/develop/tests/spec/core/xref-spec.js)]. Most of them are written such that they can be referred for usage, and not just for testing purposes.
-
-## How ReSpec does it?
-
-ReSpec makes uses of CSSWG's Shepherd database (and its API) to keep track of all terms in many documents. ReSpec collects the external terms and sends a request to the Shepherd API to find matching results. The requests include information necessary to find and disambiguate each term and its information. The disambiguation also runs on client side to give you best results.
