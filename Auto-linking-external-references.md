@@ -1,3 +1,7 @@
+***
+**This feature is currently experimental.**
+***
+
 You can enable automatic external reference linking (xref) in ReSpec as:
 
 ``` js
@@ -5,6 +9,7 @@ var respecConfig = {
   xref: true,
 };
 ```
+Additional xref configuration options with usage examples can be seen [here](https://github.com/w3c/respec/wiki/xref).
 
 ## Linking regular definitions
 
