@@ -13,6 +13,8 @@ A person object (used for [`editors`](editors)  [`authors`](authors)) contains t
 	<dd>url of the company</dd>
 	<dt><code>w3cid</code></dt>
 	<dd>identifier of the persons’ W3C account, if applicable. (This id can be found through the <a href="https://www.w3.org/users/myprofile">“my profile”</a> URL that will be redirected to the user’s page; the id appears in the address bar).</dd>
+        <dt><code>orcid</code></dt>
+        <dd>identifier or full URL of the persons' <a href="https://orcid.org/">ORCID</a> account.</dd>
 	<dt><code>note</code></dt>
 	<dd>any text in this field will appear at the end of the person’s identification in parenthesis</dd>
 	<dt><code>extras</code></dt>
