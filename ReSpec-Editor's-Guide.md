@@ -277,6 +277,10 @@ If you need a non-normative reference in a normative section, you can use a `?` 
 
 > This is normative and MUST be followed. But, sometimes we need a non-normative example reference [[?FOO]].
 
+You can also link to a specification directly in text by using `[[[FOO]]]`, where FOO is the specification's id. When ReSpec finds the specification in the references database, this gets converted to a link to the specification in the text i.e. `<a href="link-to-FOO">FOO Spec Title</a>`. This is actually a shorthand for using the `data-cite` attribute and you can learn more ways of using `data-cite` [here](data--cite).
+
+The difference between `[[[FOO]]]` and `[[FOO]]` is that `[[[FOO]]]` links directly to the referenced specification, while `[[FOO]]` links to the entry in the "References" section (see below). Normative and informative references work similarly for `[[[FOO]]]` as they work for `[[FOO]]`, and `[[[?FOO]]]` can be used to have a non-normative reference in a normative section. 
+
 Then, using all the collected references from the document, ReSpec will generate a “References” section with subsections for normative and informative references (when they appear). Inside the latter, it will place the relevant bibliographical data for those references, using the conventional markup.
 
 References are loaded from a [shared database](https://github.com/tobie/specref/tree/master/refs) that is maintained by a group of volunteers. If you need a reference that is not in the database, then the right thing to do is to [submit it for inclusion](https://github.com/tobie/specref#manual-changes) so that others can benefit from it too. However, if that is not possible then you can make use of the [`localBiblio`](https://github.com/w3c/respec/wiki/localBiblio) configuration option.
