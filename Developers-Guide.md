@@ -2,7 +2,8 @@
 Clone the repo and install the needed dependencies:
 
 ```Bash
-git clone git@github.com:w3c/respec.git; npm install
+git clone git@github.com:w3c/respec.git
+npm install
 ```
 
 In a new console window or tab, we get Babel to compile the code (stuff in the "src" directory): 
