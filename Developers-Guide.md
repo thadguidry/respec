@@ -150,18 +150,10 @@ node ./tools/builder.js --profile=YOUR-PROFILE-NAME
 ``` 
 
 ### Testing 
-If you are writing custom [Jasmine](https://jasmine.github.io/) tests, simply place them into `tests/YOUR-PROFILE-NAME/`. 
-
-Then run:
-
-```Bash
-./tools/make-test-file-build.js
-```
-
-That will add your tests to a JSON file used in testing. Then, in your browser, just navigate to:
+If you are writing custom [Jasmine](https://jasmine.github.io/) tests, simply place them into `tests/spec/YOUR-PROFILE-NAME/`. And then run:
 
 ```
-http://localhost:5000/tests/SpecRunner.html
-``` 
+karma start
+```
 
 And the tests will run. 
