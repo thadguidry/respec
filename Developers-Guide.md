@@ -156,4 +156,4 @@ If you are writing custom [Jasmine](https://jasmine.github.io/) tests, simply pl
 karma start
 ```
 
-And the tests will run. 
+And the tests will run. For debugging purposes, you can click on the Debug button when the tests start in the browser - this will allow you to see the tests summary in browser itself as well as allow you to re-run any particular test. You can also refer to Jasmine documentation regarding focused specs to see how to run only specific tests when running `karma start`. 
