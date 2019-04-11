@@ -1,14 +1,8 @@
 ## Super fast get-up-and-running
-Clone the repo:
+Clone the repo and install the needed dependencies:
 
 ```Bash
-git clone git@github.com:w3c/respec.git
-```
-
-To install the needed things, and copy over the dependencies:
- 
-```Bash
-npm install
+git clone git@github.com:w3c/respec.git; npm install
 ```
 
 In a new console window or tab, we get Babel to compile the code (stuff in the "src" directory): 
@@ -25,6 +19,12 @@ npm start
 Open the url given (usually http://127.0.0.1:5000). And go to "examples". 
 
 Usually "basic.html" is a good place to start hacking from.  
+
+You can then test things by running:
+
+```Bash
+npm run karma
+```
 
 ## ReSpec's architecture  
 ReSpec is a very simple application that runs mostly synchronous bits of JS after a `Document` loads. These javascript fragments are referred to as "plugins". When a bunch of plugins are combined together, they create a "profile".  
@@ -73,7 +73,7 @@ This is potentially useful for scripts that depend on ReSpec's output. They can 
 Alternatively, if you really need to run things immediately before or after ReSpec runs the plugins, you can define `preProcess` or `postProcess` properties on the configuration object. See [`preProcess](preProcess) and [`postProcess`](postProcess) more details and for examples. 
 
 ## Plugins 
-Plugins are simple ES6 modules that live in the "[src/](https://github.com/w3c/respec/tree/develop/src)" folder. They have two parts: A synchronous initialization, and a optionally exported `run()` function that is called asynchronously. 
+Plugins are simple ES6 modules that live in the "[src/](https://github.com/w3c/respec/tree/develop/src)" folder. They have two parts: A synchronous initialization, and an optionally exported `run()` function that is called asynchronously. 
 
 A plugin looks like this: 
 
@@ -89,7 +89,7 @@ import utils from "core/utils";
 // Optionally, export "run" function
 // See below for description of arguments.
 export async function run(conf){  
-  if ("something" in conf) {
+  if ("something" in conf || document.querySelector("#important-element")) {
     await someAsyncTask();
   }
 }
@@ -101,7 +101,7 @@ async function someAsyncTask(){
 
 The exported run method SHOULD have arguments (conf): 
 
- * conf: is the ReSpec configuration object (`window.respecConfig`) - which the user defined. Be careful not to modify this object.  
+ * conf: is the ReSpec configuration object (`window.respecConfig`) - which the user defined. Be careful not to modify this object.
 
 **IMPORTANT**: Don't forget to run `npm run babel:build` to make sure your code gets compiled. Compiled plugins end up in the `js/` folder. You can also run `npm run babel:watch`.  
 
@@ -125,12 +125,13 @@ These "warn" and "error" messages will be picked up by ReSpec's UI (the "pill"),
 IMPORTANT: Don't show JavaScript errors to the user - as they won't be able to fix these, and the minified JS output will make these messages really unhelpful!
 
 ## Custom profiles
-
 To create a custom profile, it's recommended that you clone this repository (don't fork it, as you probably want to change things - you can still receive the latest changes by setting this repo as an upstream - more later). 
 
 1. Make a copy of "[js/profile-w3c-common.js](https://github.com/w3c/respec/blob/develop/js/profile-w3c-common.js)", but rename it "profile-YOUR-PROFILE-NAME.js". 
 1. Open "profile-YOUR-PROFILE-NAME.js", and remove, add, etc. any plugins you want. 
 1. run: `node ./tools/builder.js --profile=YOUR-PROFILE-NAME`. That will generate a bundle in the build directory.
+
+If the profile if popular, then please send a pull request to the main repository and we can host as part of the main project.
 
 ### Working with your new profile
 In `examples/`, make a copy of "basic.html" and point the `<script>` tag at your new profile. Now run:
@@ -149,11 +150,13 @@ When you are ready to deploy it:
 node ./tools/builder.js --profile=YOUR-PROFILE-NAME
 ``` 
 
-### Testing 
+### Testing your profile
 If you are writing custom [Jasmine](https://jasmine.github.io/) tests, simply place them into `tests/spec/YOUR-PROFILE-NAME/`. And then run:
 
 ```
 karma start
 ```
 
-And the tests will run. For debugging purposes, you can click on the Debug button when the tests start in the browser - this will allow you to see the tests summary in browser itself as well as allow you to re-run any particular test. You can also refer to Jasmine documentation regarding focused specs to see how to run only specific tests when running `karma start`. 
+And the tests will run. For debugging purposes, you can click on the Debug button when the tests start in the browser - this will allow you to see the tests summary in browser itself as well as allow you to re-run any particular test. 
+
+Please refer to [Jasmine documentation](https://jasmine.github.io) regarding [focused specs](https://jasmine.github.io/2.1/focused_specs.html) (`fdescribe()`, `fit()`) to see how to run only specific tests when running `karma start`. This will save you a lot of time and pain. 
