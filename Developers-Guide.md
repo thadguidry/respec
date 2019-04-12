@@ -154,8 +154,8 @@ node ./tools/builder.js --profile=YOUR-PROFILE-NAME
 ### Testing your profile
 If you are writing custom [Jasmine](https://jasmine.github.io/) tests, simply place them into `tests/spec/YOUR-PROFILE-NAME/`. And then run:
 
-```
-karma start
+```bash
+npm run karma
 ```
 
 And the tests will run. For debugging purposes, you can click on the Debug button when the tests start in the browser - this will allow you to see the tests summary in browser itself as well as allow you to re-run any particular test. 
