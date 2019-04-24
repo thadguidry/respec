@@ -1,0 +1,1 @@
+Support ReSpec by [becoming a sponsor](https://opencollective.com/respec) via Open Collective.
