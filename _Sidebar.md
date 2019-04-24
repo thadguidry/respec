@@ -62,9 +62,11 @@
 
 ### Linter rules
 
+ * [`no-headingless-sections`](no-headingless-sections)
  * [`check-punctuation`](check-punctuation)
  * [`local-refs-exist`](local-refs-exist) 
  * [`no-http-props`](no-http-props)
+ * [`privsec-section`](privsec-section)
 
 ### Internal properties
 Handled by ReSpec for you.
