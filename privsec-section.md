@@ -7,6 +7,7 @@ For certain types of documents, this [lint rule](lint) warns if the documents is
 ``` js
 var respecConfig = {
   lint: {
+    // turn the rule off
     "privsec-section": false,
   },
 }
