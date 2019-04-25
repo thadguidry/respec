@@ -20,6 +20,7 @@
 * [localBiblio](localBiblio)
 * [logos](logos)
 * [maxTocLevel](maxTocLevel)
+* [mdn](mdn)
 * [noTOC](noTOC)
 * [otherLinks](otherLinks)
 * [pluralize](pluralize)
