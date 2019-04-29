@@ -45,7 +45,8 @@
 * [wgPatentURI](wgPatentURI)
 * [wgPublicList](wgPublicList)
 * [wgURI](wgURI)
-
+* [xref](xref)
+ 
 ### W3C Configuration options
 * [charterDisclosureURI](charterDisclosureURI)
 * [additionalCopyrightHolders](additionalCopyrightHolders)
