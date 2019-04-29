@@ -39,7 +39,7 @@ var respecConfig = {
 
 ``` js
 var respecConfig = {
-  xref: "WEB-PLATFORM",
+  xref: "web-platform",
 };
 ```
 
