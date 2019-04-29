@@ -29,7 +29,7 @@ Profiles are pre-defined lists of specifications. Using a profile means adding a
 1. `web-platform`. Specifications included: `HTML`, `INFRA`, `URL`, `WEBIDL`, `DOM`, `FETCH`.
 
 ## Examples
-1. Simply enable xref.
+1. Simply enable xref (**Preferred**)
 ``` js
 var respecConfig = {
   xref: true,
