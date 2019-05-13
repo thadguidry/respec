@@ -87,6 +87,22 @@ is on a publication track but can also take other values for other types of docu
       </td>
     </tr>
     <tr>
+      <td>LD</td>
+      <td>
+        Living Document.
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
+      <td>LS</td>
+      <td>
+        Living Standard.
+      </td>
+      <td>
+      </td>
+    </tr>
+    <tr>
       <td>CR</td>
       <td>
         Candidate Recommendation.
