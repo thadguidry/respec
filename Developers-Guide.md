@@ -132,7 +132,7 @@ To create a custom profile, it's recommended that you clone this repository (don
 1. Open "profile-YOUR-PROFILE-NAME.js", and remove, add, etc. any plugins you want. 
 1. run: `node ./tools/builder.js --profile=YOUR-PROFILE-NAME`. That will generate a bundle in the build directory.
 
-If the profile if popular, then please send a pull request to the main repository and we can host as part of the main project.
+If the profile is popular, then please send a pull request to the main repository and we can host as part of the main project.
 
 ### Working with your new profile
 In `examples/`, make a copy of "basic.html" and point the `<script>` tag at your new profile. Now run:
