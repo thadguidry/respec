@@ -6,21 +6,6 @@ The `otherLinks` property takes an array that contains a set of objects. Each of
 ```JS
 var respecConfig = {
   otherLinks: [{
-    key: 'Repository',
-    data: [{
-      value: 'We are on Github.',
-      href: 'https://github.com/w3c/repo'
-    }, {
-      value: 'File a bug.',
-      href: 'https://github.com/w3c/repo/issues'
-    }, {
-      value: 'Commit history.',
-      href: 'https://github.com/w3c/repo/commits/gh-pages'
-    }, {
-      value: 'Mailing list.',
-      href: 'https://lists.w3.org/Archives/Public/public-webapps/'
-    }]
-  }, {
     key: "Implementation status",
     data: [{
       value: "Gecko",
