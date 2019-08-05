@@ -19,7 +19,7 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
           name: "Your Name",
           url: "http://your-site.com",
         }],
-        edDraftURI: "http://some.github.repo",
+        gitHub: "some-org/mySpec",
         shortName: "dahut"
       };
     </script>
