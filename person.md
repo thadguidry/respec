@@ -51,16 +51,13 @@ A more complex example, using the <code>extras</code> field to include a referen
 
 ```js
 {              
-	name:       "Ben De Meester",
-	mailto:     "ben.demeester@ugent.be",
-	company:    "Ghent University - iMinds - Data Science Lab",
-	companyURL: "http://www.iminds.be/",
-	url:        "http://users.ugent.be/~bjdmeest/",
-	extras: [{
-		name:  "<img src='figures/orcid_logo.png' alt='orcid logo'/>",
-		href:  "http://orcid.org/0000-0003-0248-0987",
-		class: "orcid"
-	}],
-	w3cid:      "73403"
-}
+  name: "Ben De Meester",
+  mailto: "ben.demeester@ugent.be",
+  company: "Ghent University - iMinds - Data Science Lab",
+  companyURL: "http://www.iminds.be/",
+  url: "http://users.ugent.be/~bjdmeest/",
+  retiredDate: "2020-03-26",
+  orcid: "0000-0003-0248-0987",
+  w3cid: "73403"
+};
 ```
