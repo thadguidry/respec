@@ -39,7 +39,9 @@ is on a publication track but can also take other values for other types of docu
         licenses the content under CC-BY v3.0. If you want a different copyright,
         you will need to set the various copyright configuration options.
       </td>
-      <td>None.
+      <td><ul>
+          <li><a href="xref">xref</a> (required only if linking built-in IDL types).</li>
+        </ul>
       </td>
     </tr>
     <tr>
