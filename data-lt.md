@@ -7,3 +7,7 @@
 ```
 
 Which can be referenced by any of `<a>best fruit</a>`, `<a>apples</a>`, `<a>apple<a>`.
+
+---
+
+See also: [Automatic pluralization with `respecConfig.pluralize`](https://github.com/w3c/respec/wiki/pluralize)
