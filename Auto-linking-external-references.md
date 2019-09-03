@@ -19,12 +19,18 @@ In most cases, you can just wrap a term in `<a>` (like `<a>TERM</a>`) and ReSpec
 <a>event handler</a> <!-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers -->
 <a>URL parser</a> <!-- https://url.spec.whatwg.org/#concept-url-parser -->
 <!-- The search terms here are case insensitive. -->
+
+<!-- There is also a shorthand/inline syntax for above -->
+[= event handler =] <!-- equivalent to <a>event handler</a> -->
 ```
 
-If we want to link a term which is not the same as what we want to display to user, we can make use of `data-lt` attributes, as:
+If we want to link a term that is not defined the same way as what we want to display it to the user, we can make use of [`data-lt`](https://github.com/w3c/respec/wiki/data-lt) attribute for term aliasing, as:
 
 ``` html
 <a data-lt="url parser">parsing URLs</a>
+
+<!-- shorthand syntax simplifies above as -->
+[= url parser | parsing URLs =]
 ```
 
 We can also add link to `<dfn>` as shown below.
