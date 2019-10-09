@@ -1,6 +1,6 @@
 The `github` option allows you associate your specification with a repository on GitHub. 
 
-It takes either a string (URL to your repo) or an object with the following properties:
+It takes either a string (URL to your repo or a string of format: `org/repo`) or an object with the following properties:
 
   * `repoURL` - the URL for the repository (e.g., https://github.com/w3c/browser-payment-api)
   * `branch` - *optional*, the branch you are using for GitHub pages. It defaults to "gh-pages". 
@@ -18,7 +18,9 @@ This is normally what you want:
 
 ```JS
 const respecConfig = {
-  github: "https://github.com/w3c/browser-payment-api"
+  github: "w3c/browser-payment-api",
+  // OR
+  github: "https://github.com/w3c/browser-payment-api",
 }
 ```
 
