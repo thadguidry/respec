@@ -47,49 +47,36 @@ We can also add link to `<dfn>` as shown below.
 We can link IDL terms using an inline shorthand. ReSpec parses the string inside `{{{ }}}` as IDL and adds corresponding external links. Examples:
 
 ``` html
-<p>{{{ Window }}}</p>
-<p>{{{ Credential.[[CollectFromCredentialStore]] }}}</p>
+<p>{{ Window }}</p>
+<p>{{ Credential.[[CollectFromCredentialStore]] }}</p>
 ```
 
 ``` html
-{{{ Window }}}
+{{ Window }}
 <!-- links as:
   <code>
     <a href="https://html.spec.whatwg.org/multipage/window-object.html#window">Window</a>
   </code>
  -->
 
-{{{ Window.event }}}
+{{ Window/event }} attribute.
 <!--
   <code>
-    <a href="https://html.spec.whatwg.org/multipage/window-object.html#window">Window</a>.
     <a href="https://dom.spec.whatwg.org/#dom-window-event">event</a>
   </code>
 
   links "event" attribute corresponding to "Window" interface (and not any other definition for "event")
  -->
 
-{{{ EventTarget.addEventListener(type, callback) }}}
+{{ EventTarget/addEventListener(type, callback) }}
 <!--
   <code>
-    <a href="https://dom.spec.whatwg.org/#eventtarget">EventTarget</a>.
     <a href="https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener">addEventListener</a>
     (<var>type</var>, <var>callback</var>)
   </code>
 
-  links "EventTarget" interface and its "addEventListener(type, callback)" method.
+  links "addEventListener(type, callback)" method.
  -->
-
-{{{ TextDecoderOptions["fatal"] }}}
-<!--
-  <code>
-    <a href="https://encoding.spec.whatwg.org/#textdecoderoptions">TextDecoderOptions</a>
-    ["<a href='https://encoding.spec.whatwg.org/#dom-textdecoderoptions-fatal'>fatal</a>"]
-  </code>
-
-  links "TextDecoderOptions" as dictionary and "fatal" as it's member.
- -->
-```
 
 IDL terms are case sensitive.
 
