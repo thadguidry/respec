@@ -15,7 +15,7 @@ Additional xref configuration options with usage examples can be seen [here](htt
 
 In most cases, you can just wrap a term in `<a>` (like `<a>TERM</a>`) and ReSpec will be able to link it correctly. Examples:
 
-``` html
+```html
 <a>event handler</a> <!-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers -->
 <a>URL parser</a> <!-- https://url.spec.whatwg.org/#concept-url-parser -->
 <!-- The search terms here are case insensitive. -->
@@ -26,7 +26,7 @@ In most cases, you can just wrap a term in `<a>` (like `<a>TERM</a>`) and ReSpec
 
 If we want to link a term that is not defined the same way as what we want to display it to the user, we can make use of [`data-lt`](https://github.com/w3c/respec/wiki/data-lt) attribute for term aliasing, as:
 
-``` html
+```html
 <a data-lt="url parser">parsing URLs</a>
 
 <!-- shorthand syntax simplifies above as -->
@@ -35,7 +35,7 @@ If we want to link a term that is not defined the same way as what we want to di
 
 We can also add link to `<dfn>` as shown below.
 
-``` html
+```html
 <!-- before -->
 <dfn data-cite="HTML/webappapis.html#event-handlers">event handler</dfn>
 <!-- now -->
@@ -46,12 +46,12 @@ We can also add link to `<dfn>` as shown below.
 
 We can link IDL terms using an inline shorthand. ReSpec parses the string inside `{{{ }}}` as IDL and adds corresponding external links. Examples:
 
-``` html
+```html
 <p>{{ Window }}</p>
 <p>{{ Credential.[[CollectFromCredentialStore]] }}</p>
 ```
 
-``` html
+```html
 {{ Window }}
 <!-- links as:
   <code>
@@ -76,7 +76,8 @@ We can link IDL terms using an inline shorthand. ReSpec parses the string inside
   </code>
 
   links "addEventListener(type, callback)" method.
- -->
+-->
+```
 
 IDL terms are case sensitive.
 
@@ -92,7 +93,7 @@ Use [`data-cite`](data-cite) attributes to help ReSpec disambiguate results. `da
 
 It is recommended to add `data-cite` attribute on the `<body>`. For example, if our document refers to terms in WebIDL, Infra, DOM specs, we can add `data-cite` as:
 
-``` html
+```html
 <body data-cite="webidl infra dom">
 ```
 
@@ -102,7 +103,7 @@ It is recommended to add `data-cite` attribute on the `<body>`. For example, if 
 
 ReSpec can also make use of a common spec writing pattern to help disambiguate external terms. Example:
 
-``` html
+```html
 <p>Look in [[WEBIDL]] spec for the term <a>object</a></p>
 <p>The term <a>object</a> is looked in [[html]] spec</p>
 ```
