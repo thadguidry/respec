@@ -4,6 +4,11 @@
 * [Configuring ReSpec](Configuration-(respecConfig))
 * [Developers Guide](Developers-Guide)
 
+## Shorthands
+* {{ WebIDL }}
+* [= concept links =]
+* |variable| and |var:type|
+
 ### Configuration options
 * [addSectionLinks](addSectionLinks)
 * [authors](authors)
