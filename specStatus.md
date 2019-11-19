@@ -114,6 +114,7 @@ is on a publication track but can also take other values for other types of docu
           <li><a href="previouspublishdate">previousPublishDate</a></li>
           <li><a href="previousmaturity">previousMaturity</a></li>
           <li><a href="crend">crEnd</a></li>
+          <li><a href="implementationReportURI">implementationReportURI</a></li>
         </ul>
       </td>
     </tr>
