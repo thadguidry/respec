@@ -9,6 +9,7 @@ var respecConfig = {
   doJsonLd: true
 }
 ```
+In addition, you will also need to provide a `canonicalUri` and a `license` in your `respecConfig` for the JSON-LD data to be generated.
 
 ## Example Output
 
