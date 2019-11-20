@@ -92,6 +92,10 @@ Handled by ReSpec for you.
 * [`<h1>`](h1-element)
 * [`<pre>`/`<code>`](pre-code-elements)
 
+
+### Custom Elements
+* [`rs-changelog`](rs-changelog)
+
 ### WebIDL
 * [data-link-for](data-link-for)
 * [data-dfn-for](data-dfn-for) 
