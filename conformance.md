@@ -4,7 +4,9 @@ When present, the `conformance` id tells ReSpec to add the standard boilerplate 
 >
 > The key words MAY, MUST, MUST NOT, NOT RECOMMENDED, RECOMMENDED, SHOULD, and SHOULD NOT are to be interpreted as described in [RFC2119]. 
 
-The author can add any additional conformance clause(s) which will follow this boilerplate
+The author can add any additional conformance clause(s) which will follow this boilerplate.
+
+This section is required for specifications that contain normative material.
 
 ### Example of usage
 
