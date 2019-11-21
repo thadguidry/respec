@@ -94,7 +94,7 @@ Handled by ReSpec for you.
 
 
 ### Custom Elements
-* [`rs-changelog`](rs-changelog)
+* [`<rs-changelog>`](rs-changelog)
 
 ### WebIDL
 * [data-link-for](data-link-for)
