@@ -41,6 +41,11 @@ All you need is an HTML document and to set some configuration options. Each con
         This is required.
       </p>
     </section>
+    <section id='conformance'>
+      <p>
+        This is required for specifications that contain normative material.
+      </p>
+    </section>
     <section data-dfn-for="Foo">
       <h2><dfn>Foo</dfn> interface</h2>
       <pre class="idl">
