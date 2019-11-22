@@ -3,7 +3,7 @@ The `<rs-changelog>` custom element to show a list of commits between two commit
 ## Attributes
 
  * `from`: a commit hash or git tag, from when (inclusive). 
- * `to`: optional, a commit hash or git tag until when (inclusive). If omitted, it just does to the last commit. 
+ * `to`: optional, a commit hash or git tag until when (inclusive). If omitted, it just does to the latest commit. 
  * `filter`: the name of a JS function to call, which allows you to filter out commits. 
 
 ## Filtering
