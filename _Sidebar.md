@@ -6,7 +6,7 @@
 
 ## Shorthands
 * {{ WebIDL }}
-* [= concept links =]
+* [= concept links | alias =]
 * |variable| and |var:type|
 
 ### Configuration options
