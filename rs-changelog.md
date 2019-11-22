@@ -26,14 +26,16 @@ function respecChangelogFilter(commit) {
 ## Usage examples
 
 ```html
-<!-- Show all commits since "CR" tag -->
+<p>Commits since "CR":</p>
 <rs-changelog from="CR"></rs-changelog>
 
-<!-- Show all commits between "CR" tag and a commit "5b1a9da" -->
+<p>All commits between "CR" tag and a commit "5b1a9da":</p>
 <rs-changelog from="CR" to="5b1a9da"></rs-changelog>
 
-<!-- Show commits since "CR", but filter the commits to be shown using a
-  function called `respecChangelogFilter` which is defined globally -->
+<p>
+  Show commits since "CR", but filter the commits to be shown using a
+  function called `respecChangelogFilter` which is defined globally:
+</p>
 <rs-changelog from="CR" filter="respecChangelogFilter"></rs-changelog>
 ```
 
