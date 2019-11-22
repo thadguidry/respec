@@ -33,15 +33,6 @@ If we want to link a term that is not defined the same way as what we want to di
 [= url parser | parsing URLs =]
 ```
 
-We can also add link to `<dfn>` as shown below.
-
-```html
-<!-- before -->
-<dfn data-cite="HTML/webappapis.html#event-handlers">event handler</dfn>
-<!-- now -->
-<dfn class="externalDFN">event handler</dfn>
-```
-
 ## Linking IDL terms
 
 We can link IDL terms using an inline shorthand. ReSpec parses the string inside `{{{ }}}` as IDL and adds corresponding external links. Examples:
