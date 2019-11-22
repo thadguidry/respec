@@ -35,37 +35,30 @@ If we want to link a term that is not defined the same way as what we want to di
 
 ## Linking IDL terms
 
-We can link IDL terms using an inline shorthand. ReSpec parses the string inside `{{{ }}}` as IDL and adds corresponding external links. Examples:
-
-```html
-<p>{{ Window }}</p>
-<p>{{ Credential.[[CollectFromCredentialStore]] }}</p>
-```
+We can link IDL terms using an inline shorthand. ReSpec parses the string inside `{{ }}` as IDL and adds corresponding external links. Examples:
 
 ```html
 {{ Window }}
 <!-- links as:
-  <code>
-    <a href="https://html.spec.whatwg.org/multipage/window-object.html#window">Window</a>
-  </code>
+  <a href="https://html.spec.whatwg.org/multipage/window-object.html#window"><code>Window</code></a>
  -->
 
 {{ Window/event }} attribute.
 <!--
-  <code>
-    <a href="https://dom.spec.whatwg.org/#dom-window-event">event</a>
-  </code>
-
+  <a href="https://dom.spec.whatwg.org/#dom-window-event"><code>event</code></a>
   links "event" attribute corresponding to "Window" interface (and not any other definition for "event")
+ -->
+
+{{ Window.event }} attribute.
+<!--
+  <a href="https://html.spec.whatwg.org/multipage/window-object.html#window"><code>Window</code></a>.<a href="https://dom.spec.whatwg.org/#dom-window-event"><code>event</code></a>
+  links "event" attribute corresponding to "Window" interface, and renders links to both Window and event
  -->
 
 {{ EventTarget/addEventListener(type, callback) }}
 <!--
-  <code>
-    <a href="https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener">addEventListener</a>
-    (<var>type</var>, <var>callback</var>)
-  </code>
-
+  <a href="https://dom.spec.whatwg.org/#dom-eventtarget-addeventlistener"><code>addEventListener</code></a>
+    <code>(<var>type</var>, <var>callback</var>)</code>
   links "addEventListener(type, callback)" method.
 -->
 ```
