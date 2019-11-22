@@ -9,7 +9,7 @@ The `<rs-changelog>` custom element to show a list of commits between two commit
 ## Filtering
 The filter function takes one argument, which is a commit object. The object is composed of two properties:
 
- * `commit` - the commit hash. 
+ * `hash` - the abbreviated commit hash.
  * `message` - the headline of the commit message. 
 
 ### Filtering example
