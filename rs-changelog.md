@@ -39,6 +39,6 @@ function respecChangelogFilter(commit) {
 <rs-changelog from="CR" filter="respecChangelogFilter"></rs-changelog>
 ```
 
-## Demo
+## Screenshot
 
 ![image](https://user-images.githubusercontent.com/8426945/69219953-f4039a00-0b99-11ea-9205-6d005e8b94cc.png)
