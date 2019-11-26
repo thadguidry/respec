@@ -27,6 +27,20 @@ You can then test things by running:
 npm run karma
 ```
 
+You can debug tests as follows:
+```Bash
+# run following each time ./src is changed
+npm run build:w3c -- --debug
+npm run karma -- start --browsers ChromeHeadless
+```
+and then use your web browser's developer tools (such as breakpoints) by viewing http://localhost:9876/debug.html.
+
+Once karma is running, you can also select individual tests by filtering those which match a particular pattern:
+```Bash
+npm run karma -- run --grep="SEO"
+```
+if you want to run all tests whose description includes "SEO".
+
 ## ReSpec's architecture  
 ReSpec is a very simple application that runs mostly synchronous bits of JS after a `Document` loads. These javascript fragments are referred to as "plugins". When a bunch of plugins are combined together, they create a "profile".  
 
