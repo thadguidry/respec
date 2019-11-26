@@ -112,8 +112,6 @@ The exported run method SHOULD have arguments (conf):
 
  * conf: is the ReSpec configuration object (`window.respecConfig`) - which the user defined. Be careful not to modify this object.
 
-**IMPORTANT**: Don't forget to run `npm run babel:build` to make sure your code gets compiled. Compiled plugins end up in the `js/` folder. You can also run `npm run babel:watch`.  
-
 ### Built-in HTTP server
 You can launch a built in HTTP server during development by simply typing: `npm start`.
 
