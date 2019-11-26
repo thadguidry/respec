@@ -18,7 +18,7 @@ Open the url given (usually http://127.0.0.1:5000). And go to "examples".
 
 Usually "basic.html" is a good place to start hacking from.  
 
-Once karma is running, you can also select individual tests by filtering those which match a particular pattern:
+You can also select individual tests by filtering those which match a particular pattern:
 
 ```Bash
 npm start -- --grep="SEO"
