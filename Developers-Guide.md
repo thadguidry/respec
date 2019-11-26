@@ -6,12 +6,6 @@ git clone git@github.com:w3c/respec.git
 npm install
 ```
 
-In a new console window or tab, we get Babel to compile the code (stuff in the "src" directory): 
-
-```Bash
-npm run babel:watch 
-```
-
 In a new console window or tab, start the development web server: 
 ```Bash
 npm start
