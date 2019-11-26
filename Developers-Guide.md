@@ -6,34 +6,35 @@ git clone git@github.com:w3c/respec.git
 npm install
 ```
 
-In a new console window or tab, start the development web server: 
+Now you can start the development servers: 
+
 ```Bash
 npm start
 ```
+
+That will start up "karma" and a local web server for you. 
 
 Open the url given (usually http://127.0.0.1:5000). And go to "examples". 
 
 Usually "basic.html" is a good place to start hacking from.  
 
-You can then test things by running:
-
-```Bash
-npm run karma
-```
-
-You can debug tests as follows:
-```Bash
-# run following each time ./src is changed
-npm run build:w3c -- --debug
-npm run karma -- start --browsers ChromeHeadless
-```
-and then use your web browser's developer tools (such as breakpoints) by viewing http://localhost:9876/debug.html.
-
 Once karma is running, you can also select individual tests by filtering those which match a particular pattern:
+
 ```Bash
-npm run karma -- run --grep="SEO"
+npm start -- --grep="SEO"
 ```
-if you want to run all tests whose description includes "SEO".
+
+If you want to run all tests whose description includes "SEO".
+
+### Interactive mode
+
+You can also `run start` in "interactive" mode. This gives you more control over when tests are run and, by default, turns off automatic file watching. 
+
+```Bash
+npm start -- --interactive
+```
+
+This is useful for more advanced debugging sessions, and can be combined with `--grep` to test just what you want, when you want. 😎
 
 ## ReSpec's architecture  
 ReSpec is a very simple application that runs mostly synchronous bits of JS after a `Document` loads. These javascript fragments are referred to as "plugins". When a bunch of plugins are combined together, they create a "profile".  
