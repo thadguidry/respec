@@ -122,6 +122,22 @@ IMPORTANT: Don't show JavaScript errors to the user - as they won't be able to f
 
 ## Testing
 
+ReSpec's unit tests are written using [Jasmine](https://jasmine.github.io) and run on [Karma](https://karma-runner.github.io/latest/index.html). To start the testing server:
+
+```Bash
+npm start
+```
+
+or, for a "single run" across multiple browsers:
+
+```Bash
+npm run karma
+```
+
+For debugging purposes, you can click on the Debug button when the tests start in the browser - this will allow you to see the tests summary in browser itself as well as allow you to re-run any particular test.
+
+Please refer to [Jasmine documentation](https://jasmine.github.io) regarding [focused specs](https://jasmine.github.io/2.1/focused_specs.html) (`fdescribe()`, `fit()`) to see how to run only specific tests when running `npm run karma`. This will save you a lot of time and pain.
+
 You can also select individual tests by filtering those which match a particular pattern:
 
 ```Bash
@@ -171,7 +187,3 @@ If you are writing custom [Jasmine](https://jasmine.github.io/) tests, simply pl
 ```bash
 npm start -- --interactive --profile=YOUR-PROFILE-NAME
 ```
-
-For debugging purposes, you can click on the Debug button when the tests start in the browser - this will allow you to see the tests summary in browser itself as well as allow you to re-run any particular test.
-
-Please refer to [Jasmine documentation](https://jasmine.github.io) regarding [focused specs](https://jasmine.github.io/2.1/focused_specs.html) (`fdescribe()`, `fit()`) to see how to run only specific tests when running `npm run karma`. This will save you a lot of time and pain.
