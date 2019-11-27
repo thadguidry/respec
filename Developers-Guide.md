@@ -6,13 +6,13 @@ git clone git@github.com:w3c/respec.git
 npm install
 ```
 
-Now you can start the development servers: 
+Now you can start the local development servers: 
 
 ```Bash
 npm start
 ```
 
-That will start up "karma" and a local web server for you. 
+That will start up "[Karma](https://karma-runner.github.io/latest/index.html)" and a local http server for you. 
 
 Open the url given (usually http://127.0.0.1:5000). And go to "examples". 
 
