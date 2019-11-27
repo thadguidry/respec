@@ -1,4 +1,4 @@
-## Super fast get-up-and-running
+## Quick start
 
 Clone the repo and install the needed dependencies:
 
