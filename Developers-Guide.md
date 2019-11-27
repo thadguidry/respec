@@ -18,25 +18,8 @@ Open the url given (usually http://127.0.0.1:5000). And go to "examples".
 
 Usually "basic.html" is a good place to start hacking from.  
 
-You can also select individual tests by filtering those which match a particular pattern:
-
-```Bash
-npm start -- --grep="SEO"
-```
-
-If you want to run all tests whose description includes "SEO".
-
-### Interactive mode
-
-You can also `run start` in "interactive" mode. This gives you more control over when tests are run and, by default, turns off automatic file watching. 
-
-```Bash
-npm start -- --interactive
-```
-
-This is useful for more advanced debugging sessions, and can be combined with `--grep` to test just what you want, when you want. 😎
-
 ## ReSpec's architecture  
+
 ReSpec is a very simple application that runs mostly synchronous bits of JS after a `Document` loads. These javascript fragments are referred to as "plugins". When a bunch of plugins are combined together, they create a "profile".  
 
 So, for instance, the W3C's profile, located at "[js/profile-w3c-common.js](https://github.com/w3c/respec/blob/develop/js/profile-w3c-common.js)", loads the following plugins (not the full list, just for illustrative purposes): 
@@ -57,7 +40,8 @@ See  "[js/profile-w3c-common.js](https://github.com/w3c/respec/blob/develop/js/p
 1. Wait for the document's "DOMContentLoaded" event to fire.  
 1. Once DOM is ready, run each plugin in order, waiting for each plugin to finish.  
 
-## Core Base runner ("core/base-runner.js") 
+## Core Base runner ("core/base-runner.js")
+
 The first and most important plugin ("[core/base-runner](https://github.com/w3c/respec/blob/develop/src/core/base-runner.js)"), is actually the "brains" of ReSpec: it is the thing that "runs" all other plugins in order.  
 
 Before any plugins are run, however, it adds the following property to the `document` object: 
@@ -132,11 +116,29 @@ These "warn" and "error" messages will be picked up by ReSpec's UI (the "pill"),
 
 IMPORTANT: Don't show JavaScript errors to the user - as they won't be able to fix these, and the minified JS output will make these messages really unhelpful!
 
-## Custom profiles
-To create a custom profile, it's recommended that you clone this repository (don't fork it, as you probably want to change things - you can still receive the latest changes by setting this repo as an upstream - more later). 
+## Testing 
+You can also select individual tests by filtering those which match a particular pattern:
 
-1. Make a copy of "[js/profile-w3c-common.js](https://github.com/w3c/respec/blob/develop/js/profile-w3c-common.js)", but rename it "profile-YOUR-PROFILE-NAME.js". 
-1. Open "profile-YOUR-PROFILE-NAME.js", and remove, add, etc. any plugins you want. 
+```Bash
+npm start -- --grep="SEO"
+```
+
+If you want to run all tests whose description includes "SEO".
+
+### Interactive mode
+
+You can also `run start` in "interactive" mode. This gives you more control over when tests are run and, by default, turns off automatic file watching. 
+
+```Bash
+npm start -- --interactive
+```
+
+This is useful for more advanced debugging sessions, and can be combined with `--grep` to test just what you want, when you want. 😎
+
+## Custom profiles
+
+1. Make a copy of "[profiles/w3c.js](https://github.com/w3c/respec/blob/develop/profiles/w3c.js)", but rename it "YOUR-PROFILE-NAME.js". 
+1. Open "YOUR-PROFILE-NAME.js", and remove, add, etc. any plugins you want. 
 1. run: `node ./tools/builder.js --profile=YOUR-PROFILE-NAME`. That will generate a bundle in the build directory.
 
 If the profile is popular, then please send a pull request to the main repository and we can host as part of the main project.
@@ -145,8 +147,6 @@ If the profile is popular, then please send a pull request to the main repositor
 In `examples/`, make a copy of "basic.html" and point the `<script>` tag at your new profile. Now run:
 
 ```Bash
-npm install
-npm run build:components
 npm start
 ```
 
@@ -162,9 +162,9 @@ node ./tools/builder.js --profile=YOUR-PROFILE-NAME
 If you are writing custom [Jasmine](https://jasmine.github.io/) tests, simply place them into `tests/spec/YOUR-PROFILE-NAME/`. And then run:
 
 ```bash
-npm run karma
+npm start -- --interactive
 ```
 
-And the tests will run. For debugging purposes, you can click on the Debug button when the tests start in the browser - this will allow you to see the tests summary in browser itself as well as allow you to re-run any particular test. 
+For debugging purposes, you can click on the Debug button when the tests start in the browser - this will allow you to see the tests summary in browser itself as well as allow you to re-run any particular test. 
 
 Please refer to [Jasmine documentation](https://jasmine.github.io) regarding [focused specs](https://jasmine.github.io/2.1/focused_specs.html) (`fdescribe()`, `fit()`) to see how to run only specific tests when running `npm run karma`. This will save you a lot of time and pain. 
