@@ -65,7 +65,7 @@ document.respecIsReady.then(() => {
 
 This is potentially useful for scripts that depend on ReSpec's output. They can wait for the promise to settle before doing their own work.
 
-Alternatively, if you really need to run things immediately before or after ReSpec runs the plugins, you can define `preProcess` or `postProcess` properties on the configuration object. See [`preProcess](preProcess) and [`postProcess`](postProcess) more details and for examples.
+Alternatively, if you really need to run things immediately before or after ReSpec runs the plugins, you can define `preProcess` or `postProcess` properties on the configuration object. See [`preProcess`](preProcess) and [`postProcess`](postProcess) more details and for examples.
 
 ## Plugins
 
