@@ -109,6 +109,7 @@ Handled by ReSpec for you.
 * [data-include-replace](data-include-replace)
 * [data-format](data-format)
 * [data-lt](data-lt)
+* [data-local-lt](data-local-lt)
 * [data-lt-noDefault](data-lt-noDefault)
 * [data-lt-no-plural](data-lt-no-plural)
 * [data-number](data-number)
