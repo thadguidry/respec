@@ -50,7 +50,8 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
       };
       </pre>
       <p>The <dfn>Foo</dfn> interface represents a {{Foo}}.</p>
-      <p>The <dfn>doTheFoo()</dfn> method does the foo. Call it by running {{Foo/doTheFoo()}}.</p>
+      <p>The <dfn>doTheFoo()</dfn> method does the foo.
+         Call it by running {{Foo/doTheFoo()}}.</p>
     </section>
   </body>
 </html>
@@ -152,13 +153,13 @@ var respecConfig = {
     name: "Ada Lovelace",
     url: "http://findingada.com/",
     company: "Aristocracy",
-    note: "until <time>1852-11-27</time>"
+    retiredDate: "1852-11-27"
   }],
   // ...
 };
 ```
       
-Just like with `editors`, you can also specify [`formerEditors`](formerEditors). This is useful for when Editors step down, but allows they contributions to continue to be acknowledged at the top of a document. 
+You can use `retiredDate` to retire either an author or an editor. 
    
 ### Editor's Drafts
 Most groups maintain some form of version control system which is exposed over the web so that people can keep track of what edits are being made to a specification in between official releases. It is often useful to point to such documents, including from released specifications, so that people wishing to report issues can make sure that they aren't already fixed, and in general get the very latest version. In fact, EDs are often considered to be the most useful reference to have to a group's work. Two options control this.
