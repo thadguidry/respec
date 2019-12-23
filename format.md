@@ -32,15 +32,33 @@ while(foo){
 </pre>
 ```
 
-ReSpec will do its best to correctly format the markdown. Please remember that markdown is supposed to be placed flush against the left margin - but we do support padded sections.
+ReSpec will detect minimum common indentation and deduct them so that indented texts won't be consider as code blocks.
 
-```HTML
+```markdown
+<body>
+
+  # This is indented markdown
+  Since the minimum common indentation is 2, ReSpec will deduct them before parsing
+
+    Indented code block
+
+</body>
+```
+
+
+Please remember that markdown requires double newlines between an HTML tag and markdown text - but we do support single newline.
+
+```markdown
 <section>
-  ## This is heading
-  This is a paragraph, though it is not flush to the left margin.
 
-    * this will be a list item. 
-    * so will this.
+## Markdown inside HTML tags
+This is the correct way to insert markdown inside HTML.
+
+</section>
+
+<section>
+## Markdown inside HTML tags
+This is supported for backward compatibility sake.
 </section> 
 ```
 
