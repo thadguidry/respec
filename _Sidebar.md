@@ -42,7 +42,6 @@
 * [shortName](shortName)
 * [specStatus](specStatus)
 * [subjectPrefix](subjectPrefix)
-* [submissionCommentNumber](submissionCommentNumber)
 * [subtitle](subtitle)
 * [testSuiteURI](testSuiteURI)
 * [tocIntroductory](tocIntroductory)
@@ -53,11 +52,11 @@
 * [xref](xref)
  
 ### W3C Configuration options
-* [charterDisclosureURI](charterDisclosureURI)
 * [additionalCopyrightHolders](additionalCopyrightHolders)
 * [addPatentNote](addPatentNote)
 * [alternateFormats](alternateFormats)
 * [canonicalURI](canonicalURI)
+* [charterDisclosureURI](charterDisclosureURI)
 * [copyrightStart](copyrightStart)
 * [crEnd](crEnd)
 * [doJsonLd](doJsonLd)
@@ -66,6 +65,7 @@
 * [lcEnd](lcEnd)
 * [noRecTrack](noRecTrack)
 * [prevED](prevED)
+* [submissionCommentNumber](submissionCommentNumber)
 
 ### Linter rules
 
