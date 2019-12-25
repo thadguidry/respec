@@ -123,7 +123,6 @@ Handled by ReSpec for you.
 * [appendix](appendix)
 * [ednote](ednote)
 * [example](example)
-* [highlight](highlight)
 * [informative](informative)
 * [introductory](introductory)
 * [nohighlight](nohighlight)
