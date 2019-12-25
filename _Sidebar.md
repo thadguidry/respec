@@ -17,9 +17,9 @@
 * [editors](editors)
 * [format](format) (markdown)
 * [formerEditors](formerEditors)
+* [github](github)
 * [highlightVars](highlightVars)
 * [isPreview](isPreview)
-* [github](github)
 * [license](license)
 * [lint](lint)
 * [localBiblio](localBiblio)
@@ -50,7 +50,7 @@
 * [wgPublicList](wgPublicList)
 * [wgURI](wgURI)
 * [xref](xref)
- 
+
 ### W3C Configuration options
 * [additionalCopyrightHolders](additionalCopyrightHolders)
 * [addPatentNote](addPatentNote)
@@ -68,12 +68,11 @@
 * [submissionCommentNumber](submissionCommentNumber)
 
 ### Linter rules
-
- * [`no-headingless-sections`](no-headingless-sections)
- * [`check-punctuation`](check-punctuation)
- * [`local-refs-exist`](local-refs-exist) 
- * [`no-http-props`](no-http-props)
- * [`privsec-section`](privsec-section)
+* [`check-punctuation`](check-punctuation)
+* [`local-refs-exist`](local-refs-exist) 
+* [`no-headingless-sections`](no-headingless-sections)
+* [`no-http-props`](no-http-props)
+* [`privsec-section`](privsec-section)
 
 ### Internal properties
 Handled by ReSpec for you.
@@ -84,6 +83,7 @@ Handled by ReSpec for you.
 * [conformance](conformance)
 * [idl-index](idl-index)
 * [issue-summary](issue-summary)
+* [references](references)
 
 ### HTML elements
 * [`<figure>`](figure)
