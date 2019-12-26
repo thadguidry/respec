@@ -129,6 +129,7 @@ Handled by ReSpec for you.
 * [nolinks](nolinks)
 * [notoc](notoc)
 * [note](note)
+* [override](override)
 * [practice](practice)
 * [practicedesc](practicedesc)
 * [practicelab](practicelab)
