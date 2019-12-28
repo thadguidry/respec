@@ -73,7 +73,7 @@
 * [`no-headingless-sections`](no-headingless-sections)
 * [`no-http-props`](no-http-props)
 * [`privsec-section`](privsec-section)
-
+* [`wpt-tests-exist`](wpt-tests-exist)
 ### Internal properties
 Handled by ReSpec for you.
 * [issueBase](issueBase)
