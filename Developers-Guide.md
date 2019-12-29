@@ -35,7 +35,7 @@ So, for instance, the W3C's profile, located at "[profiles/w3c.js](https://githu
 
 What each plugin above does doesn't matter, though you can deduce what each does by the name. What matters is that ordering is important - and we mix together W3C plugins and "core" plugins. And that it's these plugins coming together that form a profile, in this case the "W3C profile". Each of the plugins are run only once - and the thing that runs them is the "[core/base-runner](https://github.com/w3c/respec/blob/develop/src/core/base-runner.js)" plugin.
 
-See "[js/w3c.js](https://github.com/w3c/respec/blob/develop/profiles/w3c.js)" for the actual details of how the profile is set up. But it's essentially:
+See "[profile/w3c.js](https://github.com/w3c/respec/blob/develop/profiles/w3c.js)" for the actual details of how the profile is set up. But it's essentially:
 
 1. Load the profile + all the plugins (but don't "run" them yet!).
 1. Wait for the document's "DOMContentLoaded" event to fire.
