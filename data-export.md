@@ -1,6 +1,6 @@
 Use the `data-export` to export a `<dfn>` definition to W3C's [Shepherd database](https://api.csswg.org/shepherd/). 
 
-**⚠️ Only export things that other specifications might use (e.g., specific algorithms). **
+**⚠️ Only export things that other specifications might use (e.g., specific algorithms).**
 
 If you'd like to have your specification indexed in Shepherd, please email marcos@marcosc.com.  
 
