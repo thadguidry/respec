@@ -103,6 +103,7 @@ Handled by ReSpec for you.
 ### HTML attributes
 * [data-abbr](data-abbr-(dfn-element-only))
 * [data-cite](data--cite)
+* [data-dfn-type](data--dfn--type)
 * [data-include](data--include)
 * [data-include-format](data-include-format)
 * [data-include-replace](data-include-replace)
