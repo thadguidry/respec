@@ -291,7 +291,10 @@ ReSpec takes the pain out of this with multiple features that are used together.
 
 If you need a non-normative reference in a normative section, you can use a `?` like so: 
 
-> This is normative and MUST be followed. But, sometimes we need a non-normative example reference [[?FOO]].
+```HTML
+This is normative and MUST be followed. But, sometimes we need 
+a non-normative example reference [[?FOO]].
+```
 
 You can also link to a specification directly in text by using `[[[FOO]]]`, where FOO is the specification's id. When ReSpec finds the specification in the references database, this gets converted to a link to the specification in the text i.e. `<a href="link-to-FOO">FOO Spec Title</a>`. This is actually a shorthand for using the `data-cite` attribute and you can learn more ways of using `data-cite` [here](data--cite).
 
