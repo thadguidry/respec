@@ -6,7 +6,7 @@
 <dfn data-lt="best fruit|fruits of the gods">Apple</dfn>...
 ```
 
-Which can be referenced by any of `<a>best fruit</a>`, `<a>fruits of the gods</a>`, `[=fruits of the gods=]`.
+Which can be referenced by any of `<a>best fruit</a>`, `<a>fruits of the gods</a>`, or even `[=fruits of the gods=]` will link.
 
 ---
 
