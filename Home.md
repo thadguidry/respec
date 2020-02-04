@@ -15,9 +15,7 @@ All you need is an HTML document and to set some configuration options. Each con
   <head>
     <meta charset='utf-8'>
     <title>Replace me with a real title</title>
-    <script 
-     src='https://www.w3.org/Tools/respec/respec-w3c-common' 
-     class='remove'></script>
+    <script src='https://www.w3.org/Tools/respec/respec-w3c' class='remove'></script>
     <script class='remove'>
       var respecConfig = {
         specStatus: "ED",
