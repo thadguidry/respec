@@ -1,4 +1,4 @@
-# ReSpec's Micro-Syntaxes
+# ReSpec's Micro-Syntaxes / Shorthands
 ## Overview of Micro-Syntaxes
 ### What are micro-syntaxes?
 * Similar to markdown, micro-syntaxes are custom ways of writing things that trigger special behavior in ReSpec. The most commonly used one you've likely seen is `[[Reference]]`.
