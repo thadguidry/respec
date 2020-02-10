@@ -3,11 +3,7 @@
 * [WebIDL Guide](WebIDL-Guide)
 * [Configuring ReSpec](Configuration-(respecConfig))
 * [Developers Guide](Developers-Guide)
-
-## Shorthands
-* {{ WebIDL }}
-* [= concept links | alias =]
-* |variable| and |var:type|
+* [Shorthands](Shorthands-Guide)
 
 ### Configuration options
 * [addSectionLinks](addSectionLinks)
