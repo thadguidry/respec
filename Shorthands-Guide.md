@@ -119,7 +119,7 @@ For example, `|value:DOMString|` tells Respec that the variable `value` is of ty
 
 ReSpec tracks declared variables within algorithms, allowing users to click on them to have them highlighted. 
 
-This helps readers know where variables were declared and where they are used. If the variable has is type information, ReSpec also propagates this throughout an algorithm. When a reader hovers over a variable, Respec presents information about the variable's type.
+This helps readers know where variables were declared and where they are used. If the variable has is type information, ReSpec also propagates this throughout an algorithm. When a reader hovers over a variable, Respec presents information about the variable's type ([see an example - GIF, 2.8MB](https://user-images.githubusercontent.com/8426945/74150174-5adf9f00-4c2f-11ea-82ee-d7c059a8f772.gif)).
 
 ### Examples
 | **Type** | **Syntax** | **Examples** |
