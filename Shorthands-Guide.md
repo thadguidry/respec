@@ -1,4 +1,4 @@
-### What are shorthands?
+## What are shorthands?
 * Similar to markdown, shorthands are custom ways of writing things that trigger special behaviour in ReSpec. The most commonly used one you've likely seen is `[[Reference]]`.
 * Each of these special character combinations, as well as what behaviour they trigger, are detailed below.
 * Note that only WebIDL identifiers are case sensitive.
@@ -12,7 +12,7 @@
 |[References](#referencing-other-specifications)|`[[shortName]]`|`[[RFC2119]]`|
 |[Expansions](#referencing-other-specifications)|`[[[#some-id]]]`|`[[[#example-2]]]` expands and links to `"Example 2"`|
 
-### Why should I use ReSpec’s shorthands?
+## Why should I use ReSpec’s shorthands?
 * Knowing the shorthands saves you time and work: you write _a lot less HTML_, and ReSpec does all the linking and error checking for you.
 * By design, we also share a lot of syntax with our friend, the [BikeShed](https://github.com/tabatkins/bikeshed/) document processor. This makes it easier for everyone to edit both ReSpec and BikeShed specifications at the same time.
 
