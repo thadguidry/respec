@@ -1,5 +1,3 @@
-# ReSpec's Shorthands
-## Overview of Shorthands
 ### What are shorthands?
 * Similar to markdown, shorthands are custom ways of writing things that trigger special behaviour in ReSpec. The most commonly used one you've likely seen is `[[Reference]]`.
 * Each of these special character combinations, as well as what behaviour they trigger, are detailed below.
