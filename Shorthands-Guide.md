@@ -19,7 +19,7 @@ By design, we also share a lot of syntax with the [BikeShed](https://github.com/
 ---
 
 ## WebIDL
-On the Web, and in Web Standards, WebIDL is a meta language that we use to define Javascript APIs. Please see our [WebIDL Guide](WebIDL-Guide). Please see the [WebIDL spec](heycam.github.io/webidl) for more info. 
+On the Web, and in Web Standards, WebIDL is a meta language that we use to define Javascript APIs. Please see our [WebIDL Guide](WebIDL-Guide). Please see the [WebIDL spec](https://heycam.github.io/webidl) for more info. 
 
 To link to something in WebIDL, you need to know its `identifier`. An `identifier` is the name of the interface, dictionary, or enum.
 
