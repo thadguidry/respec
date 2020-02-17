@@ -21,9 +21,9 @@ All you need is an HTML document and to set some configuration options. Each con
         specStatus: "ED",
         editors: [{
           name: "Your Name",
-          url: "http://your-site.com",
+          url: "https://your-site.com",
         }],
-        github: "http://github.com/w3c/some-spec",
+        github: "https://github.com/w3c/some-spec",
         shortName: "dahut"
       };
     </script>
