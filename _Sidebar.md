@@ -59,6 +59,7 @@
 * [errata](errata)
 * [implementationReportURI](implementationReportURI)
 * [lcEnd](lcEnd)
+* [level](level)
 * [noRecTrack](noRecTrack)
 * [prevED](prevED)
 * [submissionCommentNumber](submissionCommentNumber)
