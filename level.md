@@ -1,20 +1,21 @@
 "Leveled" specs are generally specs that build on each other in a backwards compatible way. They generally include the text from previous level.  
 
-The `level` configuration options automatically appends the level to your spec’s title and [shortName](https://github.com/w3c/respec/wiki/shortName). For example, `{level: 3}` tells ReSpec that your spec is a level 3 spec.
-
-The level is an integer greater than or equal to 0.
+The `level` configuration options automatically appends the level to your spec’s title and [shortName](https://github.com/w3c/respec/wiki/shortName). The level is an integer value greater than or equal to 0.
 
 ## Examples of usage
 
-Your document has the title "Awesome Feature" and the config: 
-
 ```JS
 var respecConfig = {
-  level: 3,
-  shortName: "awesome-feature",
+  level: 2,
+  shortName: "payment-request",
 }
 ```
 
-* Respec will append ` Level 3` to your title. Your new title is `Awesome Feature Level 3`. 
-* Respec will append `-3` to your shortname. Your new shortname is `awesome-feature-3`
-* Links that use the shortName will automatically use the new `awesome-feature-3` shortname.
+Which results in: 
+
+* ` Level 3` is appended to the title, so `Payment Request Level 2`. 
+* The short-name becomes `payment-request-2`.
+
+Which would render as, for example: 
+
+<img width="693" alt="Screenshot 2020-02-21 18 54 02" src="https://user-images.githubusercontent.com/870154/75014932-91dd6c80-54db-11ea-8890-08ab2f6ac7c3.png">
