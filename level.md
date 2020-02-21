@@ -6,7 +6,7 @@ The level is an integer greater than or equal to 0.
 
 ## Examples of usage
 
-Your document has the title “Awesome Feature” and the config: 
+Your document has the title "Awesome Feature" and the config: 
 
 ```JS
 var respecConfig = {
