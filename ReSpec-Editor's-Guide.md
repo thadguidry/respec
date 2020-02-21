@@ -354,7 +354,7 @@ You can use additional `-F` flags with `curl` to specify particular ReSpec confi
 
 ```
 curl -F "file=@source.html" -F "shortName=dahut" -F specStatus="ED" \
-    -F "publishDate=2020-02-21" https://labs.w3.org/spec-generator/ > index.html
+     -F "publishDate=2020-02-21" https://labs.w3.org/spec-generator/ > index.html
 ```
 
 See also [respecDocWriter](https://github.com/w3c/respec/blob/develop/tools/respecDocWriter.js) tool.
