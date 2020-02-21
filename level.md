@@ -13,7 +13,7 @@ var respecConfig = {
 
 Which results in: 
 
-* ` Level 3` is appended to the title, so `Payment Request Level 2`. 
+* ` Level 2` is appended to the title, so `Payment Request Level 2`. 
 * The short-name becomes `payment-request-2`.
 
 Which would render as, for example: 
