@@ -1,4 +1,4 @@
-"Leveled" specs are generally specs that build on each other in a backwards compatible way. They generally include the text from previous level.  
+"Leveled" specs are generally specs that build on each other in a backwards compatible way. They generally include the text from each previous level.  
 
 The `level` configuration options automatically appends the level to your spec’s title and [shortName](https://github.com/w3c/respec/wiki/shortName). The level is an integer value greater than or equal to 0.
 
