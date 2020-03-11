@@ -13,5 +13,6 @@ It is currently supported on elements:
 
 The syntax for the value is:
 
- * spec-id[optional "/" path to document]#fragment. 
- * For example, data-cite="rfc2119#some-section" or data-cite="spec/some.html#fragment" 
+ * `spec-id[optional "/" path-to-document]#fragment`. 
+ * For example, `data-cite="rfc2119#some-section"` 
+ * or `data-cite="spec/some.html#fragment"` 
