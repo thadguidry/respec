@@ -79,8 +79,8 @@ Handled by ReSpec for you.
 
 ### Special `<section>` IDs
 * [conformance](conformance)
-* [idl-index](index)
-* [index](dfn-index)
+* [idl-index](idl-index)
+* [index](index)
 * [issue-summary](issue-summary)
 * [references](references)
 
