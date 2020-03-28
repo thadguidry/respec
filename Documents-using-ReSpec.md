@@ -105,7 +105,7 @@ https://w3c.github.io/string-meta/
 https://w3c.github.io/touch-events/
 https://w3c.github.io/user-timing/
 https://w3c.github.io/vibration/
-https://w3c.github.io/wake-lock/
+https://w3c.github.io/screen-wake-lock/
 https://w3c.github.io/webcomponents/spec/imports/
 https://w3c.github.io/webcomponents/spec/shadow/
 https://w3c.github.io/webdriver/
