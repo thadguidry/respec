@@ -1,11 +1,9 @@
-It is the URL of IP disclosure as per the IG's charter. 
-
-For IG-NOTEs, this must be specified. 
+This configuration option must be specified for Interest Group Notes, where it must point at the disclosure section of the group charter, per [publication rules](https://www.w3.org/pubrules/doc/rules/?profile=IG-NOTE#patPolReq). This option is ignored for all other documents.
 
 ### Example
 
 ```js
 var respecConfig = {
- charterDisclosureURI : "http://www.w3.org/2004/01/pp-impl/64149/status",
+ charterDisclosureURI : "https://www.w3.org/2019/06/me-ig-charter.html#patentpolicy",
 }
 ```
