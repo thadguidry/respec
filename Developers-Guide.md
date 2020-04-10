@@ -156,6 +156,17 @@ npm start -- --interactive
 
 This is useful for more advanced debugging sessions, and can be combined with `--grep` to test just what you want, when you want. 😎
 
+### Testing without opening browser window
+
+You can also run tests without opening a full browser window. Test results will be visible in your terminal.
+
+``` bash
+npm start -- --browsers FirefoxHeadless
+# or use ChromeHeadless
+```
+
+Look at the help dialog when you run `npm start` for more options.
+
 ## Custom profiles
 
 1. Make a copy of "[profiles/w3c.js](https://github.com/w3c/respec/blob/develop/profiles/w3c.js)", but rename it "YOUR-PROFILE-NAME.js".
