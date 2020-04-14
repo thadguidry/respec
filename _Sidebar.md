@@ -23,6 +23,7 @@
 * [logos](logos)
 * [maxTocLevel](maxTocLevel)
 * [mdn](mdn)
+* [modificationDate](modificationDate)
 * [noTOC](noTOC)
 * [otherLinks](otherLinks)
 * [pluralize](pluralize)
