@@ -51,7 +51,6 @@ var respecConfig = {
 ``` js
 var respecConfig = {
   xref: {
-    url: "https://respec.org/xref", // This is the default references API.
     specs: ["spec1", "spec2"],
     profile: "web-platform"
   }
