@@ -44,6 +44,7 @@
 * [testSuiteURI](testSuiteURI)
 * [tocIntroductory](tocIntroductory)
 * [wg](wg)
+* [wgId](wgId)
 * [wgPatentURI](wgPatentURI)
 * [wgPublicList](wgPublicList)
 * [wgURI](wgURI)
