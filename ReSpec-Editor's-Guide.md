@@ -40,7 +40,7 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
       <p>
         This is required for specifications that contain normative material.
       </p>
-    </section>    
+    </section>
     <section data-dfn-for="Foo">
       <h2>Start your spec!</h2>
       <pre class="idl">
