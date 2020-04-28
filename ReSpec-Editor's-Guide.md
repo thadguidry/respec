@@ -17,7 +17,7 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
         specStatus: "ED",
         editors: [{
           name: "Your Name",
-          url: "http://your-site.com",
+          url: "https://your-site.com",
         }],
         gitHub: "some-org/mySpec",
         shortName: "dahut",
@@ -98,7 +98,7 @@ As noted in the previous chapter, the `<title>` of the document is reused as the
 Optionally, you can also specify a [`subtitle`](subtitle) configuration option in the ReSpec config. The subtitle configuration option takes a simple string that will be used as a subtitle for the specification, right under the title.
 
 #### shortName
-Specifications typically require having a "short name", which is the name used (amongst other places) in the canonical "http://w3.org/TR/short-name/" URLs. This is specified using the [`shortName`](shortName) option, as seen in the example above.
+Specifications typically require having a "short name", which is the name used (amongst other places) in the canonical "https://w3.org/TR/short-name/" URLs. This is specified using the [`shortName`](shortName) option, as seen in the example above.
 
 ### Working Group Information
 Most (but not all) W3C documents are produced by groups of some sort: Working Groups (WG), Interest Groups (IG), Incubator Groups (XG, now defunct), Coordination Groups, the TAG, and Community or Business Groups (CG, BG). For simplicity, we will be referring to all of the above as "Working Groups", since one should not be required to understand the many subtleties of the W3C Process in order to write a good specification. Configuration options that are prefixed with wg work equally well for all group types.
