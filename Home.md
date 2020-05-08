@@ -51,7 +51,7 @@ All you need is an HTML document and to set some configuration options. Each con
         void doTheFoo();
       };
       </pre>
-     <p>The <a>Foo</a> interface is nice. Lets you do stuff.</p>
+     <p>The {{Foo}} interface is nice. Lets you do stuff.</p>
      <p>The <dfn>bar</dfn> attribute, returns 🍺.</p>
      <p>The <dfn>doTheFoo()</dfn> method, returns nothing.</p>
     </section>
