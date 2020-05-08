@@ -11,6 +11,7 @@ Each of these special character combinations, as well as what behavior they trig
 |[Concepts in specs](#concepts)|`[=normal link=]`|`[=queue a task=]`|
 |[Variable in an algorithm](#variables-in-algorithms)|`\|variable:Type\|`|Let `\|p:Promise\|` be a new `{{Promise}}`|
 |[HTML elements](#html-elements-and-content-attributes)|`[^element^]`|`[^iframe^]`|
+|[HTML attributes](#html-elements-and-content-attributes)|`[^element/attribute^]`|`[^iframe/allow^]`|
 |[References](#referencing-other-specifications)|`[[shortName]]`|`[[RFC2119]]`|
 |[Expansions](#referencing-other-specifications)|`[[[#some-id]]]`|`[[[#example-2]]]` expands and links to `"Example 2"`|
 
