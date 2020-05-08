@@ -23,8 +23,7 @@ All you need is an HTML document and to set some configuration options. Each con
           name: "Your Name",
           url: "https://your-site.com",
         }],
-        github: "https://github.com/w3c/some-spec",
-        shortName: "dahut"
+        github: "w3c/some-spec",
       };
     </script>
   </head>
