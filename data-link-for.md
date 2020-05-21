@@ -1,6 +1,6 @@
 ## `data-link-for` attribute
 
-The `data-link-for` attribute allows you to link to a definition with same `data-dfn-for` value.
+The `data-link-for` attribute allows you to link to a definition with same [`data-dfn-for`](data-dfn-for) value.
 
 ``` html
 <p>
