@@ -1,4 +1,32 @@
-The `data-link-for` attribute allows you to link to one or more aspects of an interface at once.
+## `data-link-for` attribute
+
+The `data-link-for` attribute allows you to link to a definition with same `data-dfn-for` value.
+
+``` html
+<p>
+  <dfn>bar</dfn> is a global definition.
+  <a>bar</a> links to bar. Prefer using [= bar =]
+</p>
+
+<p>
+  <dfn data-dfn-for="Foo">bar</dfn> is defined in scope of "Foo".
+  <a data-link-for="Foo" data-link-type="dfn">bar</a> links to `bar` in scope of `Foo`.
+  Following syntax is preferred: [= Foo/bar =]
+</p>
+```
+
+It works with IDL definitions also:
+
+``` html
+<p>
+  <dfn data-dfn-type="idl" data-dfn-for="Foo">bar</dfn> is defined in scope of "Foo".
+  <a data-link-for="Foo" data-link-type="idl">bar</a> links to `bar` in scope of `Foo`.
+  Following syntax is preferred: {{ Foo/bar }}
+</p>
+```
+
+
+The `data-link-for` attribute also allows you to link to one or more aspects of an interface at once.
 
 ### Example
 In this example, we link to `Request`'s definition of url, but not `Response`'s.
