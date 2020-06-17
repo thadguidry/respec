@@ -1,4 +1,4 @@
-## The `mdn` configuration option
+# `mdn`
 
 The `mdn` option allows a spec to be annotated with links to MDN developer documentation.
 

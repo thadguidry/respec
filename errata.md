@@ -1,6 +1,8 @@
+# `errata`
+
 An URL to a document capturing errata for the specification. Generally, this only applies to documents with a   "REC" and "PER" [`specStatus`](specStatus).
 
-### Example
+## Example
 
 ```JS
 var respecConfig = {

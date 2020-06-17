@@ -1,4 +1,4 @@
-## `data-link-for` attribute
+# `data-link-for`
 
 The `data-link-for` attribute allows you to link to a definition with same [`data-dfn-for`](data-dfn-for) value.
 
@@ -28,7 +28,8 @@ It works with IDL definitions also:
 
 The `data-link-for` attribute also allows you to link to one or more aspects of an interface at once.
 
-### Example
+## Example
+
 In this example, we link to `Request`'s definition of url, but not `Response`'s.
 
 ```HTML

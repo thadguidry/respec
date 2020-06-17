@@ -1,6 +1,9 @@
+# `practice`
+
 A `<div>` containing a best practice description. 
 
-### Example
+## Example
+
 ```HTML 
 <div class="practice">
   <p class="practicedesc">

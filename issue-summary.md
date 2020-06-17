@@ -1,6 +1,8 @@
+# `issue-summary`
+
 When present, the `issue-summary` id tells ReSpec to gather all issues found throughout your spec and display them. 
 
-### Example of usage
+## Example of usage
 
 ```HTML
 <div class="issue" data-number="123" title="This is issue!">

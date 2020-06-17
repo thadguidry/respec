@@ -1,3 +1,5 @@
+# `github`
+
 The `github` option allows you associate your specification with a repository on GitHub. 
 
 It takes either a string (URL to your repo or a string of format: `org/repo`) or an object with the following properties:
@@ -13,7 +15,8 @@ This automatically generates:
 
 It also adds an object to [otherLinks](otherLinks) for under "Participate", with the appropriate links to your github repository.
 
-### Examples of usage 
+## Examples of usage
+
 This is normally what you want:
 
 ```JS
@@ -34,5 +37,3 @@ const respecConfig = {
   },
 }
 ```
-
-

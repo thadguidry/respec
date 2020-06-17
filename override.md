@@ -1,3 +1,5 @@
+# `override`
+
 **⚠️ Warning: only use this as a last resort. It's not a recommended feature.**
 
 The `override` css class allow spec editors to completely override a section that would normally be dynamically filled with ReSpec generated content. 

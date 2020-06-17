@@ -1,4 +1,4 @@
-## `data-dfn-type` attribute
+# `data-dfn-type`
 
 You can add a `data-dfn-type` attribute on `<dfn>` elements to declare the type of definition. This is used in conjunction with [`data-link-type`](data-link-type) to allow linking to a definition of particular type.
 

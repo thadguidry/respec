@@ -1,6 +1,8 @@
+# `highlightVars`
+
 With long algorithms in a specification, it can be useful to allow readers to click on variables marked up with `<var>` (e.g., Let `<var>elem</var> be ...`). By setting the `respecConfig.highlightVars` configuration option, readers can now click on `vars` in an algorithm to see where they are used.  
 
-### Example of usage
+## Example of usage
 
 ```JS
 var respecConfig = {
@@ -8,7 +10,7 @@ var respecConfig = {
 }
 ```
 
-### Example Output
+## Example Output
 
 It renders as:
 

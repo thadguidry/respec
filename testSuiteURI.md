@@ -1,6 +1,9 @@
+# `testSuiteURI`
+
 The URL of your test suite, gets included in the specification's headers. 
 
-### Example
+## Example
+
 ```js
 var respecConfig = {
   testSuiteURI: "https://example.com/test/suite/",

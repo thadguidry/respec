@@ -1,3 +1,5 @@
+# `pluralize`
+
 Adds automatic pluralization support for `<dfn>`, so that you don't have to manually define `data-lt` attributes for plurals.
 
 This is enabled by default for W3C specs.

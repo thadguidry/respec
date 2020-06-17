@@ -1,3 +1,5 @@
+# `<rs-changelog>`
+
 The `<rs-changelog>` custom element to show a list of commits between two commits/tags. This list of commits is shown from newest to oldest. Each commit message is linked to the commit.
 
 ## Attributes

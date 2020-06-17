@@ -1,6 +1,9 @@
- A `<span>` containing the title of a best practice, inside a `<p class=practicedesc>`.
+# `practicelab`
 
-### Example 
+A `<span>` containing the title of a best practice, inside a `<p class=practicedesc>`.
+
+## Example
+
 ```HTML
 <div class="practice">
   <p class="practicedesc">

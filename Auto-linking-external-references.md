@@ -1,3 +1,5 @@
+# Auto linking external references
+
 You can enable automatic external reference linking (xref) in ReSpec as:
 
 ``` js

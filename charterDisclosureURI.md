@@ -1,6 +1,8 @@
+# `charterDisclosureURI`
+
 This configuration option must be specified for Interest Group Notes, where it must point at the disclosure section of the group charter, per [publication rules](https://www.w3.org/pubrules/doc/rules/?profile=IG-NOTE#patPolReq). This option is ignored for all other documents.
 
-### Example
+## Example
 
 ```js
 var respecConfig = {

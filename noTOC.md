@@ -1,6 +1,8 @@
+# `noTOC`
+
 When this configuration variable is set to `true`, no table of contents is generated in the document. 
 
-### Example
+## Example
 
 ```JS
 var respecConfig = {
@@ -10,7 +12,7 @@ var respecConfig = {
 
 There is a corresponding class of `notoc`.  When this class is specified on a section element, that section will be omitted from the Table of Contents.
 
-### Example
+## Example
 
 ```HTML
 <section class='notoc' id='mySection'>

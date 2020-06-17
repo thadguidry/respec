@@ -1,8 +1,11 @@
+# `authors`
+
 Similar to editors, an array of [person objects](person) describing the authors of the document. 
 
 Note: In most cases, [`editors`](editors) is preferred over `authors`. 
 
-### Example
+## Example
+
 ```JS
 var respecConfig = {
   authors: [{
@@ -28,4 +31,3 @@ var respecConfig = {
   }],
 }
 ```
-

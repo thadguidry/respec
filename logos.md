@@ -1,3 +1,5 @@
+# `logos`
+
 Overrides the standard W3C logo with one or more other logos.
 
 The `logos` property takes an array that contains a set of objects. Each of these objects contains:

@@ -1,4 +1,4 @@
-## data-local-lt
+# `data-local-lt`
 
 In general, you can provide alternative "linking text" ("`lt`"s) to a defined term by using the [`data-lt`](data-lt). 
 
@@ -29,4 +29,3 @@ While, the following terms are not exported, but can be linked to internally:
  <a>installing</a>
  [=installation=]
 ```
-

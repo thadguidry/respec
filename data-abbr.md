@@ -1,4 +1,4 @@
-## data-abbr (dfn only)
+# `data-abbr`
 
 The `data-abbr` can be used on `dfn` elements that are used as abbreviations throughout your spec.
 

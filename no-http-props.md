@@ -1,4 +1,4 @@
-## `no-http-props` lint rule
+# `no-http-props` lint rule
 
 Enable this [lint rule](lint) to get a warning if there exists some URL in `respecConfig` that starts with `http://`.
 

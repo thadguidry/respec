@@ -1,8 +1,9 @@
-## `data-dfn-for` attribute
+# `data-dfn-for`
 
 The `data-dfn-for` attribute links a WebIDL attribute or method to a definition.   
 
-### Example 
+## Example 
+
 The following example automatically links up the `bar` attribute and the `doTheFoo()` method to the `Foo` interface. 
 
 ```HTML

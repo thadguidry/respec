@@ -1,4 +1,4 @@
-## `data-cite` (Mostly deprecated)
+# `data-cite`
 
 **Note: this feature is mostly deprecated, and only supported for legacy specifications. Please use [`xref`](xref) instead.**
 

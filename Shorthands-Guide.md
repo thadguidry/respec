@@ -1,3 +1,5 @@
+# Shorthands
+
 ## What are shorthands?
 Similar to markdown, shorthands are custom ways of writing things that trigger special behavior in ReSpec. The most commonly used one you've likely seen is `[[Reference]]`. Shorthands save you time and work: you write _a lot less HTML_, and ReSpec does all the linking and error checking for you.
 
@@ -159,5 +161,3 @@ To reference another specification, just write `[[FOO]]` - where FOO is the shor
 | Escaped reference | `[[\anything]]` | This is not a reference. It is `[[\something else]]`.
 | Inner-document expansion | `[[[#fragment]]]` | `See [[[#installability-signals]]]`<br>is expanded and rendered as<br>`See § 2.6 Installability signals`. Similarly with examples.<br>TODO: clarify `similarly with examples` with Marcos |
 | Multipage reference | `[[SHORTNAME/page#fragment]]` | `[[SOMESPEC/foo.html#bar]]`<br>**Not recommended.** Only if you really need it! |
-
-

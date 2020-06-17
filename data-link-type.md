@@ -1,4 +1,4 @@
-## `data-link-type` attribute
+# `data-link-type`
 
 ---
 

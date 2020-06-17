@@ -1,3 +1,4 @@
+# `caniuse`
 
 Adds a [Can I Use](http://caniuse.com) support table in header (before the copyright message).
 

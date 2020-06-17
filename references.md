@@ -1,3 +1,5 @@
+# `references`
+
 You can add an explicit `<section id="reference">` in cases where you need to add custom content to the references section of a document.
 
 ## Example

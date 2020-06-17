@@ -1,4 +1,4 @@
-## `local-refs-exist` lint rule
+# `local-refs-exist`
 
 Enable this [lint rule](lint) to get a warning if there are some `href`'s that link to nonexistent `id`'s in a spec.
 

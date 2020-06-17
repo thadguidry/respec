@@ -1,3 +1,5 @@
+# `Referencing GitHub issues in your spec`
+
 To be able to reference GitHub issues in your spec, you need to add [`github`](github) to your ReSpec config:
 
 ```JS
@@ -13,6 +15,7 @@ Then, simply reference the issue you want to include:
 ReSpec will automatically download the issue and include it for you. 
 
 ## Issue summary
+
 You can also have ReSpec include a summary of all the issues in the spec by adding `section` element with id "issue-summary":
 
 ```HTML

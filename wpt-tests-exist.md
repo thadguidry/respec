@@ -1,4 +1,4 @@
-## `wpt-tests-exist` lint rule
+# `wpt-tests-exist` lint rule
 
 Enable this [lint rule](lint) to get a warning if any of the tests mentioned in [`data-tests`](data-tests) does not exist in the WPT repository.
 

@@ -1,3 +1,5 @@
+# `license`
+
 `license` can be one of the following:
 
 * "cc-by", which is experimentally available in some groups (but likely to be phased out). Note that this is a dual licensing regime.

@@ -1,3 +1,5 @@
+# `doRDFa`
+
 ## DEPRECATED FEATURE
 **This feature has been removed from ReSpec.**
 

@@ -1,3 +1,5 @@
+# `format`
+
 Tells ReSpec to treat the document as being in a format other than HTML. Supported formats:
 
 <dl>
@@ -5,14 +7,16 @@ Tells ReSpec to treat the document as being in a format other than HTML. Support
   <dd>Interpreted as <a href="https://guides.github.com/features/mastering-markdown/">GitHub flavored markdown</a>.
 </dl>
 
-### Example
+## Example
+
 ```JS
 var respecConfig = {
   format: "markdown",
 }
 ```
 
-### Markdown 
+## Markdown 
+
 When `format` is set to "markdown", you can use a mix of HTML and markdown: 
 
 ```HTML
@@ -38,6 +42,7 @@ Please remember that markdown requires double newlines between an HTML tag and m
 <section>
 
 ## Markdown inside HTML tags
+
 This is the correct way to insert markdown inside HTML.
 
 </section>

@@ -1,4 +1,4 @@
-## `no-unused-vars` lint rule
+# `no-unused-vars` lint rule
 
 Enable this [lint rule](lint) to get a warning if a variable is defined but not used. The first use of variable (`<var>`) is considered its definition. Only unused variables in sections that contain a `<ol class="algorithm"></ol>` are reported.
 

@@ -1,3 +1,5 @@
+# `conformance`
+
 When present, the `conformance` id tells ReSpec to add the standard boilerplate to the document:
 
 > As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative.
@@ -8,7 +10,7 @@ The author can add any additional conformance clause(s) which will follow this b
 
 This section is required for specifications that contain normative material.
 
-### Example of usage
+## Example of usage
 
 ```HTML
 <section id="conformance">

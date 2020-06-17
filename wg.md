@@ -1,6 +1,9 @@
+# `wg`
+
 The full public name of the group, including "Working/Interest/Incubator/etc. Group" as applicable. 
 
-### Example
+## Example
+
 ```js
 var respecConfig = {
   wg: "Device APIs Working Group",

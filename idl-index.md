@@ -1,9 +1,10 @@
-## The `idl-index` id
+# `idl-index`
+
 Giving a `<section id=idl-index>` instructs ReSpec to gather all the Web IDL in your specification into a single section. This is convenient in that it gives readers a nice view of the overall shape of your API.
 
 If you don't have any IDL in your spec, then it's probably best not to include this. ReSpec will still produce the section with a heading, but will inform the reader that you don't actually have any Web IDL in your spec. 
 
-### Example of usage
+## Example of usage
 
 ```HTML
 <section id="idl-index" class="appendix">

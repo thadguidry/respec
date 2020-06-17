@@ -1,3 +1,5 @@
+# `data-lt-noDefault`
+
 Allow you to ignore data-lt-noDefault definition of a defined term. This is sometimes useful if you need to disambiguate two terms. 
 
 ## Example   

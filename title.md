@@ -1,6 +1,8 @@
+# `<title>`
+
 ReSpec uses the `<title>` element to generate the title of your specification. The `<title>` element is left untouched, but its content is used to create a `<h1>` title for the specification. 
 
-### Example
+## Example
 
 ```HTML
 <!doctype html>

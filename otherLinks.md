@@ -1,8 +1,11 @@
+# `otherLinks`
+
 Adds additional links to the header of the document. This is useful if you want to link to other resources, like a news feed, a GitHub repository, or a relevant website.
 
 The `otherLinks` property takes an array that contains a set of objects. Each of these objects contains a `key` and a `data` property. The `key` is the text that will contain the links to the relevant resources. The `data` is another array of objects that contain the data describing the resource (with the properties `value` which is a string, and `href` which is the URL you want to link to). If a `href` is not provided, `value` is displayed as text.
 
-### Example
+## Example
+
 ```JS
 var respecConfig = {
   otherLinks: [{

@@ -1,6 +1,9 @@
+# `nohighlight`
+
 Indicates that a code block should not be syntax highlighted. 
 
-### Example
+## Example
+
 This block will not be syntax highlighted:
 ```HTML
 <pre class=nohighlight>
@@ -18,4 +21,3 @@ function foo(){
 }
 </pre> 
 ```
-

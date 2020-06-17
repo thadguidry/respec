@@ -1,3 +1,5 @@
+# `Person`
+
 A person object (used for [`editors`](editors)  [`authors`](authors)) contains the following fields (most of the fields are straightforward). Only the `name` field is required.
 
 <dl>
@@ -34,7 +36,8 @@ The “extras” are objects, each rendered as a separate `span` element, with t
 	<dd>if set, the content within the enclosing <code>span</code> is turned into an active link pointing to the value of <code>href</code></dd>
 </dl>
 
-### Examples
+## Examples
+
 A simple example:
 
 ```js
