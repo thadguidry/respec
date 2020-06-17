@@ -72,6 +72,7 @@
 * [`local-refs-exist`](local-refs-exist) 
 * [`no-headingless-sections`](no-headingless-sections)
 * [`no-http-props`](no-http-props)
+* [`no-unused-vars`](no-unused-vars)
 * [`privsec-section`](privsec-section)
 * [`wpt-tests-exist`](wpt-tests-exist)
 ### Internal properties
