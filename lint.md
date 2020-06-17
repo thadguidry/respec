@@ -17,6 +17,7 @@ The [following lint rules](https://github.com/w3c/respec/tree/develop/src/core/l
 - [`no-http-props`](no-http-props)
 - [`local-refs-exist`](local-refs-exist)
 - [`no-headingless-sections`](no-headingless-sections)
+- [`no-unused-vars`](no-unused-vars) (off by default)
 - [`check-punctuation`](check-punctuation) (off by default)
 - [`check-charset`](check-charset)
 - [`check-internal-slots`](check-internal-slots) (off by default)
