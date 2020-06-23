@@ -24,8 +24,9 @@ Note that when using the object configuration, if both `profile` and `specs` pro
 
 Profiles are pre-defined lists of specifications. Using a profile means adding all of its specification shortnames to the `data-cite` attribute of the document's `<body>`. 
 
-### List of available profiles
-1. `web-platform`. Specifications included: `HTML`, `INFRA`, `URL`, `WEBIDL`, `DOM`, `FETCH`.
+Following profiles are currently available:
+
+- `"web-platform"`. Specifications included: "HTML", "INFRA", "URL", "WEBIDL", "DOM", "FETCH".
 
 ## Examples
 
