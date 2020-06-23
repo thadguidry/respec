@@ -11,7 +11,7 @@ You will receive a warning that your `<p>` tag should end with punctuation mark.
 
 ## Example of usage
 
-```HTML
+```JS
 var respecConfig = {
   lint: {
     "check-punctuation": true,
