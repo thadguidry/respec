@@ -10,4 +10,4 @@ var respecConfig = {
 }
 ```
 
-There is a corresponding class of [`notoc`](notoc).
+There is a corresponding class of [`notoc`](notoc-class).
