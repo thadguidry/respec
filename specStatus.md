@@ -53,7 +53,7 @@ is on a publication track but can also take other values for other types of docu
       </td>
       <td>
         <ul>
-          <li><a href="eddrafturi">edDraftURI</a>.</li>
+          <li><a href="edDraftURI">edDraftURI</a>.</li>
         </ul>
       </td>
     </tr>
@@ -73,7 +73,7 @@ is on a publication track but can also take other values for other types of docu
       <td>
         <ul>
           <li><a href="previousPublishDate">previousPublishDate</a></li>
-          <li><a href="previousmaturity">previousMaturity</a>.</li>
+          <li><a href="previousMaturity">previousMaturity</a>.</li>
         </ul>
       </td>
     </tr>
@@ -84,8 +84,8 @@ is on a publication track but can also take other values for other types of docu
       </td>
       <td>
         <ul>
-          <li><a href="previouspublishdate">previousPublishDatede</a></li>
-          <li><a href="previousmaturity">previousMaturity</a></li>
+          <li><a href="previousPublishDatede">previousPublishDatede</a></li>
+          <li><a href="previousMaturity">previousMaturity</a></li>
           <li><a href="lcend">lcEnd</a></li>
         </ul>
       </td>
@@ -113,9 +113,9 @@ is on a publication track but can also take other values for other types of docu
       </td>
       <td>
         <ul>
-          <li><a href="previouspublishdate">previousPublishDate</a></li>
-          <li><a href="previousmaturity">previousMaturity</a></li>
-          <li><a href="crend">crEnd</a></li>
+          <li><a href="previousPublishDate">previousPublishDate</a></li>
+          <li><a href="previousMaturity">previousMaturity</a></li>
+          <li><a href="crEnd">crEnd</a></li>
           <li><a href="implementationReportURI">implementationReportURI</a></li>
         </ul>
       </td>
@@ -127,8 +127,8 @@ is on a publication track but can also take other values for other types of docu
       </td>
       <td>
         <ul>
-          <li><a href="previouspublishdate">previousPublishDate</a></li>
-          <li><a href="previousmaturity">previousMaturity</a></li>
+          <li><a href="previousPublishDate">previousPublishDate</a></li>
+          <li><a href="previousMaturity">previousMaturity</a></li>
         </ul>
     </tr>
     <tr>
@@ -138,8 +138,8 @@ is on a publication track but can also take other values for other types of docu
       </td>
       <td>
         <ul>
-          <li><a href="previouspublishdate">previousPublishDate</a></li>
-          <li><a href="previousmaturity">previousMaturity</a></li>
+          <li><a href="previousPublishDate">previousPublishDate</a></li>
+          <li><a href="previousMaturity">previousMaturity</a></li>
         </ul>
       </td>
     </tr>
@@ -150,8 +150,8 @@ is on a publication track but can also take other values for other types of docu
       </td>
       <td>
         <ul>
-          <li><a href="previouspublishdate">previousPublishDate</a></li>
-          <li><a href="previousmaturity">previousMaturity</a></li>
+          <li><a href="previousPublishDate">previousPublishDate</a></li>
+          <li><a href="previousMaturity">previousMaturity</a></li>
         </ul>
       </td>
     </tr>
@@ -162,8 +162,8 @@ is on a publication track but can also take other values for other types of docu
       </td>
       <td>
         <ul>
-          <li><a href="previouspublishdate">previousPublishDate</a></li>
-          <li><a href="previousmaturity">previousMaturity</a></li>
+          <li><a href="previousPublishDate">previousPublishDate</a></li>
+          <li><a href="previousMaturity">previousMaturity</a></li>
       </td>
     </tr>
     <tr>
@@ -201,7 +201,7 @@ is on a publication track but can also take other values for other types of docu
       </td>
       <td>
         <ul>
-          <li><a href="charterdisclosureuri">charterDisclosureURI</a></li>
+          <li><a href="charterDisclosureURI">charterDisclosureURI</a></li>
         </ul>
       </td>
     </tr>
