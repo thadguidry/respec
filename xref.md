@@ -23,32 +23,34 @@ Note that when using the object configuration, if both `profile` and `specs` pro
 ## Profiles
 
 Profiles are pre-defined lists of specifications. Using a profile means adding all of its specification shortnames to the `data-cite` attribute of the document's `<body>`. 
+
 ### List of available profiles
 1. `web-platform`. Specifications included: `HTML`, `INFRA`, `URL`, `WEBIDL`, `DOM`, `FETCH`.
 
 ## Examples
-1. Simply enable xref (Enabled by default for W3C profiles)
+
+Simply enable xref (Enabled by default for W3C profiles)
 ``` js
 var respecConfig = {
   xref: true,
 };
 ```
-2. Using the `web-platform` profile. 
 
+Using the `web-platform` profile. 
 ``` js
 var respecConfig = {
   xref: "web-platform",
 };
 ```
 
-3. Using the specs `spec1` and `spec2` for disambiguation.
+Using the specs `spec1` and `spec2` for disambiguation.
 ``` js
 var respecConfig = {
   xref: ["spec1", "spec2"],
 };
 ```
 
-4. Using the specs `spec1` and `spec2` along with specs in the `web-platform` profile for disambiguation, and looking for references in the specified references database only.
+Using the specs `spec1` and `spec2` along with specs in the `web-platform` profile for disambiguation, and looking for references in the specified references database only.
 
 ``` js
 var respecConfig = {
