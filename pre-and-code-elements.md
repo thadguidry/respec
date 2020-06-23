@@ -1,3 +1,5 @@
+# `<pre>`/`<code>`
+
 ReSpec provides code highlighting for blocks of code marked up with the `<pre>` or `<code>` elements. ReSpec will try to guess the code language, or it can be added as a class:
 
 ``` html
