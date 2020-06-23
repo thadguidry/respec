@@ -6,8 +6,6 @@ A boolean used to enable/disable ReSpec's [build-in linter](https://github.com/w
  * Missing Privacy and/or Security sections.
  * Possibly other useful things...
 
-## Example
-
 If you want to turn off the linter: 
 
 ```JS
