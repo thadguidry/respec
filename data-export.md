@@ -21,7 +21,7 @@ Then other specs can use "fancy thing" using [xref](xref), like so:
 ```JS
 var respecConfig = { 
   // other config options here...
-  xref: ["shortname-of-spec-has-fancy-thing"],
+  xref: ["spec-shortname"],
 }
 ```
 
