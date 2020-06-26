@@ -9,3 +9,5 @@ var respecConfig = {
   wgId: 107714,
 };
 ```
+
+Note: Consider using [`group`](group) instead.
