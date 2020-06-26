@@ -60,6 +60,7 @@
 * [crEnd](crEnd)
 * [doJsonLd](doJsonLd)
 * [errata](errata)
+* [group](group)
 * [implementationReportURI](implementationReportURI)
 * [lcEnd](lcEnd)
 * [level](level)
