@@ -10,4 +10,4 @@ var respecConfig = {
 }
 ``` 
 
-Note: Consider using [`group`](group) instead of this configuration option.
+Note: Consider using [`group`](group) instead.
