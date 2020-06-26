@@ -9,3 +9,5 @@ var respecConfig = {
   wgURI: "https://w3.org/2009/dap/",
 };
 ```
+
+Note: Consider using [`group`](group) instead.
