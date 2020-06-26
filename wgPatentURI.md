@@ -11,3 +11,5 @@ var respecConfig = {
   wgPatentURI: "https://www.w3.org/2004/01/pp-impl/GO_FIND_YOURS",
 };
 ```
+
+Note: Consider using [`group`](group) instead.
