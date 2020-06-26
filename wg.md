@@ -9,3 +9,5 @@ var respecConfig = {
   wg: "Device APIs Working Group",
 }
 ``` 
+
+Note: Consider using [`group`](group) instead of this configuration option.
