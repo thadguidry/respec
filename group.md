@@ -24,4 +24,4 @@ var respecConfig = {
 
 ## List of valid group names
 
-A list of valid group names and their corresponding group IDs can be found at: or https://respec.org/w3c/groups/
+A list of valid group names and their corresponding group IDs can be found at: https://respec.org/w3c/groups/
