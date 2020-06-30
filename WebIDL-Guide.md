@@ -1,6 +1,6 @@
 To specify an interface using [WebIDL](http://heycam.github.io/webidl/), you define a `<pre class="idl">` block. For example:
 
-```HTML
+```html
 <pre class="idl">
 interface Request {
   readonly attribute ByteString method;
@@ -10,9 +10,10 @@ interface Request {
 ```
 
 ## tl;dr - ideal linking setup
+
 The recommended way to code up your WebIDL is as follows:
 
-```HTML
+```html
 <section data-dfn-for="ExampleInterface">
   <h2><dfn>ExampleInterface</dfn> interface</h2>
   <pre class="idl">
@@ -23,11 +24,11 @@ The recommended way to code up your WebIDL is as follows:
   </pre>
   <section>
     <h2><dfn>exampleMethod()</dfn> method</h2>
-    <p>Define {{ExampleInterface/exampleMethod()}} here...<p>
+    <p>Define {{ExampleInterface/exampleMethod()}} here...</p>
   </section>
   <section>
     <h2><dfn>url</dfn> attribute</h2>
-    <p>Define {{ExampleInterface/url}} attribute here...<p>
+    <p>Define {{ExampleInterface/url}} attribute here...</p>
   </section>
 </section>
 <section>
@@ -40,7 +41,7 @@ The recommended way to code up your WebIDL is as follows:
 
 Given `interface Request {};`, you can define the interface inside a heading like so:
 
-```HTML
+```html
 <section>
   <h2><dfn>Request</dfn> interface</h2>
   <pre class="idl">
@@ -58,7 +59,7 @@ The `data-dfn-for` attribute allows you to describe one or more aspects of an in
 
 For example, the following defines both the `url` and the `clone` method.
 
-```HTML
+```html
 <section data-dfn-for="Request">
   <h2>`Request` interface</h2>
   <pre>
@@ -67,21 +68,18 @@ For example, the following defines both the `url` and the `clone` method.
     readonly attribute USVString url;
   };
   </pre>
+  <p>The <dfn>clone()</dfn> method. The <dfn>url</dfn> attribute.</p>
   <p>
-    The <dfn>clone()</dfn> method.
-    The <dfn>url</dfn> attribute.
+    Links to {{Request/clone()}} method. Links to the {{Request/url}} attribute.
   </p>
-  <p>
-    Links to {{Request/clone()}} method.
-    Links to the {{Request/url}} attribute.
-  </p>
+</section>
 ```
 
 ## Multiple interfaces with same attributes/methods
 
-If, for instance, you have two interfaces with methods or attributes that are the same: 
+If, for instance, you have two interfaces with methods or attributes that are the same:
 
-```HTML
+```html
 <pre class="idl">
 interface Request {
   readonly attribute USVString url;
@@ -92,14 +90,18 @@ interface Response {
 </pre>
 ```
 
-You explicitly distinguish between them like so: 
+You explicitly distinguish between them like so:
 
-```HTML
+```html
 <section data-dfn-for="Request">
-  <p>The <dfn>url</dfn> attribute of {{Request}} is used by {{Response/url}}.</p>
+  <p>
+    The <dfn>url</dfn> attribute of {{Request}} is used by {{Response/url}}.
+  </p>
 </section>
 
 <section data-dfn-for="Response">
-  <p>The <dfn>url</dfn> attribute of {{Response}} depends on {{Request/url}}.</p>
+  <p>
+    The <dfn>url</dfn> attribute of {{Response}} depends on {{Request/url}}.
+  </p>
 </section>
 ```

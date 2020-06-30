@@ -4,8 +4,8 @@ When this class is specified on a section element, that section will be omitted 
 
 ## Example
 
-```HTML
-<section class='notoc' id='mySection'>
+```html
+<section class="notoc" id="mySection">
   <h1>Some section I do not want in the ToC</h1>
   ...
 </section>

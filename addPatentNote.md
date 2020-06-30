@@ -6,6 +6,6 @@ Content that gets inserted at the end of the <abbr title="status of this documen
 
 ```js
 var respecConfig = {
-  addPatentNote: "Please be aware that Company X has excluded some patents."
-}
+  addPatentNote: "Please be aware that Company X has excluded some patents.",
+};
 ```

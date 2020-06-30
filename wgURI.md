@@ -1,6 +1,6 @@
 # `wgURI`
 
-The URL to the public page of the working group that is working on the spec. 
+The URL to the public page of the working group that is working on the spec.
 
 ## Example
 

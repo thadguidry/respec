@@ -4,24 +4,25 @@ The `<rs-changelog>` custom element to show a list of commits between two commit
 
 ## Attributes
 
- * `from`: a commit hash or git tag, from when (inclusive). 
- * `to`: optional, a commit hash or git tag until when (inclusive). If omitted, it just does to the latest commit. 
- * `filter`: the name of a JS function to call, which allows you to filter out commits. 
+- `from`: a commit hash or git tag, from when (inclusive).
+- `to`: optional, a commit hash or git tag until when (inclusive). If omitted, it just does to the latest commit.
+- `filter`: the name of a JS function to call, which allows you to filter out commits.
 
 ## Filtering
+
 The filter function takes one argument, which is a commit object. The object is composed of two properties:
 
- * `hash` - the abbreviated commit hash.
- * `message` - the headline of the commit message. 
+- `hash` - the abbreviated commit hash.
+- `message` - the headline of the commit message.
 
 ### Filtering example
 
-```JS
+```js
 function respecChangelogFilter(commit) {
   // commit.hash = commit hash
   // commit.message = commit message headline
   // Return `true` if commit is to be shown, false otherwise.
-  return !commit.message.startsWith('chore');
+  return !commit.message.startsWith("chore");
 }
 ```
 
@@ -35,8 +36,8 @@ function respecChangelogFilter(commit) {
 <rs-changelog from="CR" to="5b1a9da"></rs-changelog>
 
 <p>
-  Show commits since "CR", but filter the commits to be shown using a
-  function called `respecChangelogFilter` which is defined globally:
+  Show commits since "CR", but filter the commits to be shown using a function
+  called `respecChangelogFilter` which is defined globally:
 </p>
 <rs-changelog from="CR" filter="respecChangelogFilter"></rs-changelog>
 ```

@@ -1,10 +1,10 @@
 # `practice`
 
-A `<div>` containing a best practice description. 
+A `<div>` containing a best practice description.
 
 ## Example
 
-```HTML 
+```html
 <div class="practice">
   <p class="practicedesc">
     <span class="practicelab">Best practice</span>

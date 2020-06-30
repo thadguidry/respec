@@ -3,25 +3,26 @@
 Tells ReSpec to treat the document as being in a format other than HTML. Supported formats:
 
 <dl>
-  <dt>"markdown"</dt>
-  <dd>Interpreted as <a href="https://guides.github.com/features/mastering-markdown/">GitHub flavored markdown</a>.
+  <dt>markdown</dt>
+  <dd>Interpreted as <a href="https://guides.github.com/features/mastering-markdown/">GitHub flavored markdown (GFM)</a>.
 </dl>
 
 ## Example
 
-```JS
+```js
 var respecConfig = {
   format: "markdown",
-}
+};
 ```
 
-## Markdown 
+## Markdown
 
-When `format` is set to "markdown", you can use a mix of HTML and markdown: 
+When `format` is set to "markdown", you can use a mix of HTML and markdown:
 
-```HTML
+```markdown
 ## Using markdown
-This will be a paragraph. 
+
+This will be a paragraph.
 
 <pre class="example" title="A markdown example">
 function thisIsNice(){

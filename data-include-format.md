@@ -4,9 +4,9 @@ Data is normally included as HTML (injected into the DOM as such). There are tim
 
 ## Example
 
-```HTML
-<section 
+```html
+<section
   data-include="some.txt"
   data-include-format="text">
-</section> 
-``` 
+</section>
+```

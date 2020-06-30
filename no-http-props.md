@@ -4,11 +4,11 @@ Enable this [lint rule](lint) to get a warning if there exists some URL in `resp
 
 For example:
 
-``` html
+```html
 <script>
   var respecConfig = {
     implementationReportURI: "http://w3c.github.io/payment-request/reports/implementation.html",
-                              ^^^^^ 
+                              ^^^^^
   };
 </script>
 ```
@@ -17,12 +17,12 @@ You'll receive a warning pointing you to the violating properties in `respecConf
 
 ## Example of usage
 
-``` js
+```js
 var respecConfig = {
   lint: {
     "no-http-props": true,
   },
-}
+};
 ```
 
 ## Example Warning

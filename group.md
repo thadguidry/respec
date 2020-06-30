@@ -4,7 +4,7 @@
 
 ## Example of usage:
 
-``` js
+```js
 var respecConfig = {
   group: "webapps",
   // is equivalent to:
@@ -16,10 +16,11 @@ var respecConfig = {
 ```
 
 You can also specify multiple groups:
-``` js
+
+```js
 var respecConfig = {
   group: ["group1", "group2"],
-}
+};
 ```
 
 ## List of valid group names

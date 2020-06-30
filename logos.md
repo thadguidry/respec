@@ -20,28 +20,34 @@ The `logos` property takes an array that contains a set of objects. Each of thes
 </dl>
 
 ## Example
-```JS
+
+```js
 var respecConfig = {
-  logos: [{
-    src: 'https://example.com/logo.gif',
-    href: "https://example.com",
-    alt: "The Example company",
-    width: 100,
-    height: 42,
-    id: 'example-company-logo',
-  }]
-}
+  logos: [
+    {
+      src: "https://example.com/logo.gif",
+      href: "https://example.com",
+      alt: "The Example company",
+      width: 100,
+      height: 42,
+      id: "example-company-logo",
+    },
+  ],
+};
 ```
 
 Would output:
 
-```HTML 
+```html
 <p>
   <a href="https://example.com">
     <span id="example-company-logo">
-      <img src="https://example.com/logo.gif" 
-          width='100' height='42'
-          alt='The Example company'>
+      <img
+        src="https://example.com/logo.gif"
+        width="100"
+        height="42"
+        alt="The Example company"
+      />
     </span>
   </a>
 </p>

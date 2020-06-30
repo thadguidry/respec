@@ -1,10 +1,6 @@
 # `data-link-type`
 
----
-
-:warning: This is mostly internal. Prefer [Shorthands Syntax](Shorthands-Guide), as they automatically add this attribute to relevant elements.
-
----
+Note: This is mostly internal. Prefer [Shorthands Syntax](Shorthands-Guide), as they automatically add this attribute to relevant elements.
 
 The `data-link-type` attribute allows following values:
 

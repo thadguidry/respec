@@ -6,14 +6,16 @@ Note that the contents of the `title` attribute follow regular [attribute values
 
 ## Example
 
-```HTML
-<p class='note' title='About <code>=></code> in EcmaScript'>It rocks!</p>
-<p class='note' title='About the &amp;lt;code&amp;gt; tag in HTML'>It rocks too!</p>
+```html
+<p class="note" title="About <code>=></code> in EcmaScript">It rocks!</p>
+<p class="note" title="About the &amp;lt;code&amp;gt; tag in HTML">
+  It rocks too!
+</p>
 ```
 
 Would be exported as:
 
-```HTML
+```html
 <div class="note">
   <div class="note-title marker">
     <span>Note: About <code>=&gt;</code> in EcmaScript</span>

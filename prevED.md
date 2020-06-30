@@ -7,5 +7,5 @@ Sometimes it happens that a document is moved in the version control system, pas
 ```js
 var respecConfig = {
   prevED: "https://example.com/old/ed",
-}
+};
 ```

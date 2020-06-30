@@ -4,18 +4,21 @@ An array of [person objects](person) describing the past editors of the document
 
 ## Example
 
-```JS
+```js
 var respecConfig = {
-  formerEditors: [{
-    name: "Marcos Caceres",
-    company: "Mozilla Corporation",
-    companyURL: "https://mozilla.org/",
-    w3cid: 39125
-  }, {
-    name: "Kenneth Rohde Christiansen",
-    company: "Intel Corporation",
-    companyURL: "http://intel.com",
-    w3cid: 57705
-  }],
-}
+  formerEditors: [
+    {
+      name: "Marcos Caceres",
+      company: "Mozilla Corporation",
+      companyURL: "https://mozilla.org/",
+      w3cid: 39125,
+    },
+    {
+      name: "Kenneth Rohde Christiansen",
+      company: "Intel Corporation",
+      companyURL: "http://intel.com",
+      w3cid: 57705,
+    },
+  ],
+};
 ```

@@ -1,23 +1,25 @@
 # `nohighlight`
 
-Indicates that a code block should not be syntax highlighted. 
+Indicates that a code block should not be syntax highlighted.
 
 ## Example
 
 This block will not be syntax highlighted:
-```HTML
-<pre class=nohighlight>
+
+```html
+<pre class="nohighlight">
 function foo(){
   const a = "foo!";
 }
-</pre> 
+</pre>
 ```
 
 But this one will be syntax-highlighted by default:
-```HTML
+
+```html
 <pre>
 function foo(){
   const a = "foo!";
 }
-</pre> 
+</pre>
 ```

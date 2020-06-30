@@ -13,14 +13,17 @@ This option accepts an array of objects, each of which has two required fields:
 
 ## Example
 
-```JS
+```js
 var respecConfig = {
-  alternateFormats: [{
-    label: "PDF",
-    uri: "https://example.w3.org/TR/example.pdf",
-  }, {
-    label: "XML",
-    uri: "https://example.w3.org/TR/example.xml",
-  }],
-}
+  alternateFormats: [
+    {
+      label: "PDF",
+      uri: "https://example.w3.org/TR/example.pdf",
+    },
+    {
+      label: "XML",
+      uri: "https://example.w3.org/TR/example.xml",
+    },
+  ],
+};
 ```

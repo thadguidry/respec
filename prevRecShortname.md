@@ -4,7 +4,7 @@ If you are working on a new version of an existing Recommendation, use this to i
 
 ## Example
 
-```JS
+```js
 var respecConfig = {
   shortName: "fancy-feature-l2",
   prevRecShortname: "fancy-feature",

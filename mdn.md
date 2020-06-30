@@ -4,22 +4,25 @@ The `mdn` option allows a spec to be annotated with links to MDN developer docum
 
 ## Example of usage
 
-If a boolean is provided, it uses spec's `shortName` to match data over on MDN. 
-```JS
+If a boolean is provided, it uses spec's `shortName` to match data over on MDN.
+
+```js
 var respecConfig = {
- shortName: "payment-request",
- mdn: true,
-}
+  shortName: "payment-request",
+  mdn: true,
+};
 ```
 
 If the `shortName` doesn't match the MDN key, you can provide a key as:
-```JS
+
+```js
 var respecConfig = {
- mdn: "payment-request",
-}
+  mdn: "payment-request",
+};
 ```
 
 The key can be found at https://w3c.github.io/mdn-spec-links/SPECMAP.json. For example, the key is `"image-capture"` in the following entry:
-``` json
+
+```json
 "https://w3c.github.io/mediacapture-image/": "image-capture.json",
 ```

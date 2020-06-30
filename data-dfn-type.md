@@ -8,20 +8,22 @@ Currently, only two values: `"idl"` and `"dfn"` are supported. In future, more v
 
 ## Example of usage
 
-``` html
+```html
 <p>
-  The document has visibility state of <dfn id="dfn-hidden" data-dfn-type="dfn">hidden</dfn>.
+  The document has visibility state of
+  <dfn id="dfn-hidden" data-dfn-type="dfn">hidden</dfn>.
 </p>
 <p>
-  `visibilityState` attribute has value <dfn id="idl-hidden" data-dfn-type="idl">hidden</dfn>.
+  `visibilityState` attribute has value
+  <dfn id="idl-hidden" data-dfn-type="idl">hidden</dfn>.
 </p>
 
 <p>
-  {{ hidden }} links to dfn with id="idl-hidden".
-  This is same <a data-link-type="idl">hidden</a>, but above syntax is preferred.
+  {{ hidden }} links to dfn with id="idl-hidden". This is same
+  <a data-link-type="idl">hidden</a>, but above syntax is preferred.
 </p>
 <p>
-  [= hidden =] links to dfn with id="dfn-hidden".
-  This is same <a data-link-type="dfn">hidden</a>, but above syntax is preferred.
+  [= hidden =] links to dfn with id="dfn-hidden". This is same
+  <a data-link-type="dfn">hidden</a>, but above syntax is preferred.
 </p>
 ```

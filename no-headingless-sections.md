@@ -3,22 +3,24 @@
 Enable this [lint rule](lint) to get a warning if there is some `<section>` in the document that does not start with a heading element (`h1`-`h6`).
 
 For example:
-``` html
+
+```html
 <section id="foo">
   <!-- should've begun with a heading -->
   <p>content begins</p>
 </section>
 ```
+
 You'll receive a warning pointing you to the heading-less sections.
 
 ## Example of usage
 
-``` js
+```js
 var respecConfig = {
   lint: {
     "no-headingless-sections": true,
   },
-}
+};
 ```
 
 ## Example Warning

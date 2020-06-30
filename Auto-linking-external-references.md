@@ -2,11 +2,12 @@
 
 You can enable automatic external reference linking (xref) in ReSpec as:
 
-``` js
+```js
 var respecConfig = {
   xref: true,
 };
 ```
+
 Additional xref configuration options with usage examples can be seen [here](https://github.com/w3c/respec/wiki/xref).
 
 ## Linking regular definitions
@@ -14,12 +15,15 @@ Additional xref configuration options with usage examples can be seen [here](htt
 In most cases, you can just wrap a term in `<a>` (like `<a>TERM</a>`) and ReSpec will be able to link it correctly. Examples:
 
 ```html
-<a>event handler</a> <!-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers -->
-<a>URL parser</a> <!-- https://url.spec.whatwg.org/#concept-url-parser -->
+<a>event handler</a>
+<!-- https://html.spec.whatwg.org/multipage/webappapis.html#event-handlers -->
+<a>URL parser</a>
+<!-- https://url.spec.whatwg.org/#concept-url-parser -->
 <!-- The search terms here are case insensitive. -->
 
 <!-- There is also a shorthand/inline syntax for above -->
-[= event handler =] <!-- equivalent to <a>event handler</a> -->
+[= event handler =]
+<!-- equivalent to <a>event handler</a> -->
 ```
 
 If we want to link a term that is not defined the same way as what we want to display it to the user, we can make use of [`data-lt`](https://github.com/w3c/respec/wiki/data-lt) attribute for term aliasing, as:
@@ -76,7 +80,7 @@ Use [`data-cite`](data-cite) attributes to help ReSpec disambiguate results. `da
 It is recommended to add `data-cite` attribute on the `<body>`. For example, if our document refers to terms in WebIDL, Infra, DOM specs, we can add `data-cite` as:
 
 ```html
-<body data-cite="webidl infra dom">
+<body data-cite="webidl infra dom"></body>
 ```
 
 `data-cite` can be added on any element, for example, on a `<section>` or `<p>`. Only the closest `data-cite` is used for helping in linking. The more specific the content in `data-cite` is, lesser are the chances of getting an ambiguity error.

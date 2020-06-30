@@ -3,20 +3,24 @@
 Enable this [lint rule](lint) to get a warning if there are some `href`'s that link to nonexistent `id`'s in a spec.
 
 For example:
-``` html
+
+```html
 <section id="foo"><!-- content --></section>
-<a href="#bar">baz</a> <!-- #bar doesn't exist in document -->
+
+<a href="#bar">baz</a>
+<!-- #bar doesn't exist in document -->
 ```
+
 You'll receive a warning pointing you to the links that are broken.
 
 ## Example of usage
 
-``` js
+```js
 var respecConfig = {
   lint: {
     "local-refs-exist": true,
   },
-}
+};
 ```
 
 ## Example Warning

@@ -4,17 +4,18 @@ The `data-tests` attribute takes a list of comma-separated URLs, allowing you to
 
 The `data-test` works together with the [`testSuiteURI`](testSuiteURI) config option, so it must be present or ReSpec will yell at you.
 
-It's best used with `<p>` and `<li>` elements. 
+It's best used with `<p>` and `<li>` elements.
 
 ## Examples of usage
-```HTML
+
+```html
 <script>
-const respecConfig = {
- testSuiteURI: "https://wpt.fyi/payment-request/",
-};
+  var respecConfig = {
+    testSuiteURI: "https://wpt.fyi/payment-request/",
+  };
 </script>
 
 <p data-tests="test-1.html, test-2.html">
-  The user agent MUST do this stuff...  
+  The user agent MUST do this stuff...
 </p>
 ```

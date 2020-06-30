@@ -4,7 +4,7 @@ When present, a section with id `conformance` tells ReSpec to add the standard b
 
 > As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative.
 >
-> The key words MAY, MUST, MUST NOT, NOT RECOMMENDED, RECOMMENDED, SHOULD, and SHOULD NOT are to be interpreted as described in [RFC2119]. 
+> The key words MAY, MUST, MUST NOT, NOT RECOMMENDED, RECOMMENDED, SHOULD, and SHOULD NOT are to be interpreted as described in [RFC2119].
 
 The author can add any additional conformance clause(s) which will follow this boilerplate.
 
@@ -12,7 +12,7 @@ This section is required for specifications that contain normative material.
 
 ## Example of usage
 
-```HTML
+```html
 <section id="conformance">
   <!-- boilerplate will be added here -->
   <p>The specification specific conformance text…</p>

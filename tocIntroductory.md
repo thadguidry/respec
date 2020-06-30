@@ -7,5 +7,5 @@ A boolean, which when set to true, will cause the introductory sections to also 
 ```js
 var respecConfig = {
   tocIntroductory: true,
-}
+};
 ```

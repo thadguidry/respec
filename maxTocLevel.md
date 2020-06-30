@@ -4,8 +4,8 @@ A number indicating the maximum depth of the table of contents, in case you wish
 
 ## Example
 
-```JS
+```js
 var respecConfig = {
   maxTocLevel: 3,
-}
+};
 ```

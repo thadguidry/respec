@@ -7,7 +7,7 @@ Please note that some values of this option make no sense depending on the curre
 ## Example
 
 ```js
-var respecConfig = { 
+var respecConfig = {
   previousPublishDate: "2014-05-01",
   previousMaturity: "LC",
 };

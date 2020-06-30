@@ -6,6 +6,6 @@ This configuration option must be specified for Interest Group Notes (IG-NOTE), 
 
 ```js
 var respecConfig = {
- charterDisclosureURI : "https://www.w3.org/2019/06/me-ig-charter.html#patentpolicy",
-}
+  charterDisclosureURI: "https://www.w3.org/2019/06/me-ig-charter.html#patentpolicy",
+};
 ```

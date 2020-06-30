@@ -249,5 +249,5 @@ is on a publication track but can also take other values for other types of docu
 ```js
 var respecConfig = {
   specStatus: "unofficial",
-}
+};
 ```

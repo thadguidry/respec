@@ -1,6 +1,6 @@
 # `example`
 
-Marks a `pre`, or `aside` as being an example. This wraps the element in a header with an example number. Use the `title` attribute to add text alongside the example number.  Aside elements may contain nested `pre`s.
+Marks a `pre`, or `aside` as being an example. This wraps the element in a header with an example number. Use the `title` attribute to add text alongside the example number. Aside elements may contain nested `pre`s.
 
 For a contra-example, replace the `example` class with `illegal-example`.
 
@@ -8,9 +8,9 @@ Note that the content of the `title` attribute will be interpreted as HTML marku
 
 ## Example
 
-```HTML
-<aside class="example" title='Fat arrows (<code>=></code>)'>
-  <p>Here we see how to use a fat arrow in ES.
+```html
+<aside class="example" title="Fat arrows (<code>=></code>)">
+  <p>Here we see how to use a fat arrow in ES.</p>
   <pre>
   const sum = [...items]
     .map(item => item * 2)

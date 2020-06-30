@@ -1,6 +1,6 @@
 # `Person`
 
-A person object (used for [`editors`](editors)  [`authors`](authors)) contains the following fields (most of the fields are straightforward). Only the `name` field is required.
+A person object (used for [`editors`](editors) [`authors`](authors)) contains the following fields (most of the fields are straightforward). Only the `name` field is required.
 
 <dl>
 	<dt><code>name</code></dt>
@@ -41,7 +41,7 @@ The “extras” are objects, each rendered as a separate `span` element, with t
 A simple example:
 
 ```js
-{   
+{
 	name:       "Benjamin Young",
 	company:    "John Wiley &amp; Sons, Inc.",
 	companyURL: "http://www.wiley.com/",
@@ -53,7 +53,7 @@ A simple example:
 A more complex example, using the <code>extras</code> field to include a reference to the person’s ORCID id (with a logo):
 
 ```js
-{              
+{
   name: "Ben De Meester",
   mailto: "ben.demeester@ugent.be",
   company: "Ghent University - iMinds - Data Science Lab",

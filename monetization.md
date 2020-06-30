@@ -6,14 +6,14 @@ The meta-tag is added only to "live" documents, and is removed from generated st
 
 ## Example of usage
 
-``` js
+```js
 var respecConfig = {
   // add a monetization meta tag with a custom payment pointer
   monetization: "$wallet.example.com/my-wallet",
 };
 ```
 
-``` js
+```js
 var respecConfig = {
   // disable web monetization
   monetization: false,

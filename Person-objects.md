@@ -1,4 +1,4 @@
-A person object is a JavaScript object literal with the following properties: 
+A person object is a JavaScript object literal with the following properties:
 
 <dl>
   <dt><code>name</code> (required)</dt>
@@ -45,30 +45,36 @@ A person object is a JavaScript object literal with the following properties:
 </dl>
 
 ## Example
-This example shows a group of person objects being used to define the editors of a spec. 
 
-```JS
+This example shows a group of person objects being used to define the editors of a spec.
+
+```js
 var respecConfig = {
-  editors: [{
-    name: "Marcos Caceres",
-    company: "Mozilla Corporation",
-    companyURL: "https://mozilla.org/",
-    w3cid: 39125
-  }, {
-    name: "Kenneth Rohde Christiansen",
-    company: "Intel Corporation",
-    companyURL: "http://intel.com",
-    w3cid: 57705,
-  }, {
-    name: "Mounir Lamouri",
-    company: "Google Inc.",
-    companyURL: "https://google.com",
-    w3cid: 45389,
-  }, {
-    name: "Anssi Kostiainen",
-    company: "Intel Corporation",
-    companyURL: "http://intel.com",
-    w3cid: 41974,
-  }],
-}
+  editors: [
+    {
+      name: "Marcos Caceres",
+      company: "Mozilla Corporation",
+      companyURL: "https://mozilla.org/",
+      w3cid: 39125,
+    },
+    {
+      name: "Kenneth Rohde Christiansen",
+      company: "Intel Corporation",
+      companyURL: "http://intel.com",
+      w3cid: 57705,
+    },
+    {
+      name: "Mounir Lamouri",
+      company: "Google Inc.",
+      companyURL: "https://google.com",
+      w3cid: 45389,
+    },
+    {
+      name: "Anssi Kostiainen",
+      company: "Intel Corporation",
+      companyURL: "http://intel.com",
+      w3cid: 41974,
+    },
+  ],
+};
 ```

@@ -4,14 +4,14 @@ Adds a [Can I Use](http://caniuse.com) support table in the document header.
 
 ## Example of usage
 
-``` js
+```js
 // basic example
 var respecConfig = {
   caniuse: "payment-request",
 };
 ```
 
-``` js
+```js
 // example with configuration (see options below)
 var respecConfig = {
   caniuse: {
@@ -25,11 +25,11 @@ var respecConfig = {
 
 ### Example output
 
-It renders as: 
+It renders as:
 
-<img width="400" src="https://user-images.githubusercontent.com/8426945/39532698-f23688c6-4e4a-11e8-93a7-ab501fc1ecfe.png" alt="Can I Use preview for Payment Request API"> 
+<img width="400" src="https://user-images.githubusercontent.com/8426945/39532698-f23688c6-4e4a-11e8-93a7-ab501fc1ecfe.png" alt="Can I Use preview for Payment Request API">
 
-## Configuration Options: 
+## Configuration Options:
 
 <dl>
 
@@ -39,7 +39,7 @@ It renders as:
 <dt><code>browsers</code></dt>
 <dd>Array of browsers to show support for. <br>
 Default: <code>["chrome", "firefox", "safari", "edge"]</code><br>
-Supported Values: 
+Supported Values:
 <ul>
  <li><code>and_chr</code> - Chrome (Android)</li>
  <li><code>and_ff</code> - Firefox (Android)</li>

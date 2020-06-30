@@ -4,8 +4,8 @@ When using [markdown](format), nolinks disables automatic linking within code bl
 
 ## Example
 
-```HTML
-<pre code="nolink"> 
+```html
+<pre code="nolink">
 Prevents the following from becoming a hyperlink: http://example.com
 </pre>
-``` 
+```

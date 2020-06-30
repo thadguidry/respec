@@ -6,17 +6,22 @@ The `otherLinks` property takes an array that contains a set of objects. Each of
 
 ## Example
 
-```JS
+```js
 var respecConfig = {
-  otherLinks: [{
-    key: "Implementation status",
-    data: [{
-      value: "Gecko",
-      href: "https://bugzilla.mozilla.org/show_bug.cgi?id=xxxx"
-    }, {
-      value: "Blink",
-      href: "https://code.google.com/p/chromium/issues/detail?id=xxx"
-    }]
-  }],
-}
+  otherLinks: [
+    {
+      key: "Implementation status",
+      data: [
+        {
+          value: "Gecko",
+          href: "https://bugzilla.mozilla.org/show_bug.cgi?id=xxxx",
+        },
+        {
+          value: "Blink",
+          href: "https://code.google.com/p/chromium/issues/detail?id=xxx",
+        },
+      ],
+    },
+  ],
+};
 ```

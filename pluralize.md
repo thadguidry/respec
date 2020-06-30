@@ -6,7 +6,7 @@ This is enabled by default for W3C specs.
 
 ## Example of usage
 
-``` js
+```js
 // enable automatic pluralization
 var respecConfig = {
   pluralize: true,
@@ -16,7 +16,7 @@ var respecConfig = {
 You can define a term as `<dfn>fetch</dfn>` and reference it as either `<a>fetch</a>` or `<a>fetches</a>`.
 Below are some more examples:
 
-``` html
+```html
 <dfn>user agent</dfn> can be referenced as
      <a>user agents</a>
      <a>user agent</a>
@@ -37,6 +37,6 @@ Note: We tried to make the pluralization as smart as possible, so that it won't 
 
 If you want to selectively disable pluralization on certain `<dfn>`, you can make use of [`data-lt-no-plural`](data-lt-no-plural) attribute like:
 
-``` html
+```html
 <dfn data-lt-no-plural>html</dfn>
 ```

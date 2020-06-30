@@ -47,7 +47,7 @@ The first and most important plugin ("[core/base-runner](https://github.com/w3c/
 
 Before any plugins are run, however, it adds the following property to the `document` object:
 
-```JS
+```js
 // The following only resolves once all plugins have run
 // and ReSpec has finished doing whatever it needs to do.
 document.respecIsReady;
@@ -57,7 +57,7 @@ After that, the Base Runner starts looping over an array of given plugins: liter
 
 Once all the plugins have "run", ReSpec resolves the `respecIsReady` promise on the Document object.
 
-```JS
+```js
 document.respecIsReady.then(() => {
  console.log("ReSpec has finished processing this document");
 });
@@ -73,7 +73,7 @@ Plugins are simple ES6 modules that live in the "[src/](https://github.com/w3c/r
 
 A plugin looks like this:
 
-```JS
+```js
 // import other things you need
 import utils from "core/utils";
 
@@ -107,7 +107,7 @@ You can launch a built in HTTP server during development by simply typing: `npm 
 
 If you are creating a plugin that needs to show warnings to a user, you can use the "core/pubsubhub" utility. As the name suggests, this is a simple pub-sub-hub dispatcher. You should use this to dispatch "warn" or "error" messages to a user:
 
-```JS
+```js
 import { pub } from "core/pubsubhub";
 export async function run(conf) {
   if (!"something" in conf) {

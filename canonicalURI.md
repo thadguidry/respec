@@ -4,17 +4,18 @@ The `canonicalURI` lets you indicate either a URL or a keyword to use as the [ca
 
 Following keywords automatically generate a corresponding URL. However, you are free to include your own URL.
 
-| Keyword | Generated URL |
-| -- | :-- |
-| `"edDraft"` | Use the [`edDraftURI`](edDraftURI) as the canonical URL. |
-| `"TR"` | Use the "TR" location for this document, using the [`shortName`](shortName). |
+| Keyword     | Generated URL                                                                |
+| ----------- | :--------------------------------------------------------------------------- |
+| `"edDraft"` | Use the [`edDraftURI`](edDraftURI) as the canonical URL.                     |
+| `"TR"`      | Use the "TR" location for this document, using the [`shortName`](shortName). |
 
 ## Example of usage
+
 The following will result in a canonical URL of `https://www.w3.org/TR/fooAPI`.
 
-```JS
+```js
 const respecConfig = {
-  "shortName": "fooAPI",
-  "canonicalURI": "TR",
-}
+  shortName: "fooAPI",
+  canonicalURI: "TR",
+};
 ```
