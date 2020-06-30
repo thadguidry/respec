@@ -8,7 +8,7 @@ var respecConfig = {
 };
 ```
 
-Additional xref configuration options with usage examples can be seen [here](https://github.com/w3c/respec/wiki/xref).
+Additional xref configuration options with usage examples can be seen [here](xref).
 
 ## Linking regular definitions
 
@@ -26,7 +26,7 @@ In most cases, you can just wrap a term in `<a>` (like `<a>TERM</a>`) and ReSpec
 <!-- equivalent to <a>event handler</a> -->
 ```
 
-If we want to link a term that is not defined the same way as what we want to display it to the user, we can make use of [`data-lt`](https://github.com/w3c/respec/wiki/data-lt) attribute for term aliasing, as:
+If we want to link a term that is not defined the same way as what we want to display it to the user, we can make use of [`data-lt`](data-lt) attribute for term aliasing, as:
 
 ```html
 <a data-lt="url parser">parsing URLs</a>

@@ -13,7 +13,7 @@ var respecConfig = {
 and the following configurations are available:
 
 - Boolean value. Setting `xref: true` simply enables the xref feature.
-- Array of specification shortnames. This option enables xref, but also adds the specification shortnames in the array to the `data-cite` attribute of the document's `<body>`. ReSpec then uses these specifications for [disambiguation](https://github.com/w3c/respec/wiki/Auto-linking-external-references#handling-ambiguity).
+- Array of specification shortnames. This option enables xref, but also adds the specification shortnames in the array to the `data-cite` attribute of the document's `<body>`. ReSpec then uses these specifications for [disambiguation](Auto-linking-external-references#handling-ambiguity).
 - Profile name (string). Specification Profiles are described below.
 - Object with the optional properties `url`, `specs` and `profile`.
   1. `url` is used to link to a custom references API.

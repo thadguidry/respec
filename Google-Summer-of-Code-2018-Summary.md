@@ -5,7 +5,7 @@ This issue documents the work done by [@sidvishnoi](https://github.com/sidvishno
 - [[Commits](https://github.com/w3c/respec/search?o=desc&q=author%3Asidvishnoi+author-date%3A2018-04-24..2018-08-14&s=committer-date&type=Commits)]
 - Issues: [[Opened](https://github.com/w3c/respec/search?q=author%3Asidvishnoi+is%3Aissue+created%3A2018-04-24..2018-08-14&state=open&type=Issues)] [[Closed](https://github.com/w3c/respec/search?q=author%3Asidvishnoi+is%3Aissue+created%3A2018-04-24..2018-08-14&state=closed&type=Issues)] [[Involved](https://github.com/w3c/respec/search?q=involves%3Asidvishnoi+is%3Aissue+created%3A2018-04-24..2018-08-14&type=Issues)]
 - Pull Requests: [[Merged](https://github.com/w3c/respec/search?q=author%3Asidvishnoi+type%3Apr+is%3Amerged+created%3A2018-04-24..2018-08-14&unscoped_q=author%3Asidvishnoi+type%3Apr+is%3Amerged+created%3A2018-04-24..2018-08-14&type=Issues)] [[Closed](https://github.com/w3c/respec/search?q=author%3Asidvishnoi+type%3Apr+is%3Aunmerged+created%3A2018-04-24..2018-08-14&state=closed&type=Issues)] [[Pending](https://github.com/w3c/respec/search?q=author%3Asidvishnoi+type%3Apr+is%3Aunmerged+created%3A2018-04-24..2018-08-14&state=open&type=Issues)]
-- Wiki: [[caniuse](https://github.com/w3c/respec/wiki/caniuse)] [[lint](https://github.com/w3c/respec/wiki/lint)] [[pluralize](https://github.com/w3c/respec/wiki/pluralize)] [[Auto-linking external references](https://github.com/w3c/respec/wiki/Auto-linking-external-references)]
+- Wiki: [[caniuse](caniuse)] [[lint](lint)] [[pluralize](pluralize)] [[Auto-linking external references](Auto-linking-external-references)]
 - It was a great experience! I hope to contribute more in future.
 
 During my GSoC, apart from code refactor, documentation, participating in code reviews & issues, I worked on following features:
@@ -20,12 +20,12 @@ What remains is: integrating the Shepherd database (precisely the API) in ReSpec
 
 The WebIDL linking part shall be finished this week after doing some more testing (See https://github.com/w3c/respec/pull/1765).
 
-[[Documentation]](https://github.com/w3c/respec/wiki/Auto-linking-external-references)
+[[Documentation]](Auto-linking-external-references)
 
 
 ## Automatic pluralization
 
-Earlier in ReSpec, we were making use of `data-lt` attributes to define alternative pluralized terms for a `dfn`, so they can be linked. For example, `<dfn data-lt="user agents">user agent</dfn>`, we can link to it either as `<a>user agent</a>` or `<a>user agents</a>`. This caused editors to write additional markup which made the source document a bit uglier and slightly painful to write. Now, ReSpec can automatically (and smartly) add the plural terms by itself. [[Documentation](https://github.com/w3c/respec/wiki/pluralize)].
+Earlier in ReSpec, we were making use of `data-lt` attributes to define alternative pluralized terms for a `dfn`, so they can be linked. For example, `<dfn data-lt="user agents">user agent</dfn>`, we can link to it either as `<a>user agent</a>` or `<a>user agents</a>`. This caused editors to write additional markup which made the source document a bit uglier and slightly painful to write. Now, ReSpec can automatically (and smartly) add the plural terms by itself. [[Documentation](pluralize)].
 
 ## Normalize citations
 
@@ -33,4 +33,4 @@ If in a document, we cite a spec, say DOM, in multiple ways such as `[[DOM]]`, `
 
 ## Can I Use integration
 
-We started work on this feature before GSoC, but it was finished during first week of GSoC. This lets us have a dynamic browser support table for the feature that the specification is for. [[Documentation](https://github.com/w3c/respec/wiki/caniuse)]
+We started work on this feature before GSoC, but it was finished during first week of GSoC. This lets us have a dynamic browser support table for the feature that the specification is for. [[Documentation](caniuse)]

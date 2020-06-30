@@ -219,7 +219,7 @@ This chapter covers all the aspects of a ReSpec document's structure that were n
 
 ### Sections
 
-ReSpec-based specifications require you to wrap your content in `section` elements. We provide specific information and examples on [how to use `<section>` elements](https://github.com/w3c/respec/wiki/section).
+ReSpec-based specifications require you to wrap your content in `section` elements. We provide specific information and examples on [how to use `<section>` elements](section).
 
 Sections, subsections, appendices, and whatever other structural items are marked up in ReSpec using `<section>` elements.
 
@@ -319,7 +319,7 @@ On occasion that won't be enough since you may be using the term in plural or co
 
 which can be referenced by any of `<a>my terms</a>`, `<a>some term</a>`, `<a>my term<a>`.
 
-Definitions may be links to (anchors in) external specifications by adding a `data-cite="spec-name#some-anchor"` attribute. The anchor is optional but the spec-name must match an entry in the [specref database](https://github.com/tobie/specref/tree/master/refs) or a custom entry defined in your [`localBiblio`](https://github.com/w3c/respec/wiki/localBiblio).
+Definitions may be links to (anchors in) external specifications by adding a `data-cite="spec-name#some-anchor"` attribute. The anchor is optional but the spec-name must match an entry in the [specref database](https://github.com/tobie/specref/tree/master/refs) or a custom entry defined in your [`localBiblio`](localBiblio).
 
 Also note that the href-less a element is not limited to linking to definitions but also knows how to link to other items such as WebIDL interfaces.
 
@@ -342,7 +342,7 @@ The difference between `[[[FOO]]]` and `[[FOO]]` is that `[[[FOO]]]` links direc
 
 Then, using all the collected references from the document, ReSpec will generate a “References” section with subsections for normative and informative references (when they appear). Naturally, it will also fill in the references themselves, including the relevant bibliographical data, using the conventional markup. (Assuming they <s>exist</s> appear in our records.)
 
-References are loaded from a [shared database](https://github.com/tobie/specref/tree/master/refs) that is maintained by a group of volunteers. If you need a reference that is not in the database, then the right thing to do is to [submit it for inclusion](https://github.com/tobie/specref#manual-changes) so that others can benefit from it too. However, if that is not possible then you can make use of the [`localBiblio`](https://github.com/w3c/respec/wiki/localBiblio) configuration option.
+References are loaded from a [shared database](https://github.com/tobie/specref/tree/master/refs) that is maintained by a group of volunteers. If you need a reference that is not in the database, then the right thing to do is to [submit it for inclusion](https://github.com/tobie/specref#manual-changes) so that others can benefit from it too. However, if that is not possible then you can make use of the [`localBiblio`](localBiblio) configuration option.
 
 The only things you therefore need to know for references are the reference names of the specifications you wish to refer to (as well as to how to add your own to the database). The names are usually rather logical, and most of the time can be guessed. In other cases, you can go look for them in the central bibliographical database that is maintained at [SpecRef database](https://www.specref.org/).
 
@@ -404,4 +404,4 @@ ReSpec is also capable of producing a diff-marked version if you have a configur
 
 ### WebIDL Support
 
-[See WebIDL guide](https://github.com/w3c/respec/wiki/WebIDL-Guide).
+[See WebIDL guide](WebIDL-Guide).

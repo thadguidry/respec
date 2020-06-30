@@ -13,4 +13,4 @@
 [=fruits of the gods=]
 ```
 
-See also: Automatic pluralization with [`pluralize`](https://github.com/w3c/respec/wiki/pluralize).
+See also: Automatic pluralization with [`pluralize`](pluralize).
