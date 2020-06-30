@@ -1,6 +1,6 @@
 # `crEnd`
 
-A `YYYY-MM-DD` date. Documents that are in Candidate Recommendation ([`specStatus`](specStatus) is "CR") are required to indicate a date before which the group guarantees that it will not move to the next step on the track (PR or REC) so that implementers know how long they have. Use this to provide that date. 
+A `YYYY-MM-DD` date. Documents that are in Candidate Recommendation ([CR](specStatus#status-cr)) are required to indicate a date before which the group guarantees that it will not move to the next step on the track ([PR](specStatus#status-pr) or [RE](specStatus#status-rec)) so that implementers know how long they have. Use this to provide that date. 
 
 ## Example
 
