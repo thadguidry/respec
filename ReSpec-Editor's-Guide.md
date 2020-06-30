@@ -238,7 +238,7 @@ You can disable syntax highlighting on a pre element by adding a "nohighlight" c
 ### Inclusions & Transformations
 At times you need to include an external resource directly into your document. This may be because your specifications have additional boilerplate, or (like it's done in this very guide) because you want examples to be both inlined and accessed directly without having to make sure that they are always in sync.
 
-Inclusion of external content in ReSpec is done using the [`data-include`](data--include) attribute. It is expected to point to a resource, using its relative path from the including document. The content will get included as a child of the element on which the inclusion is performed (unless data-include-replace is used, in which case it replaces the element), replacing its existing content.
+Inclusion of external content in ReSpec is done using the [`data-include`](data-include) attribute. It is expected to point to a resource, using its relative path from the including document. The content will get included as a child of the element on which the inclusion is performed (unless data-include-replace is used, in which case it replaces the element), replacing its existing content.
 
 In the processing pipeline, inclusion happens right after everything to do with the document's headers, style, and transformations have happened, which means that all the processing to do with structure, inlines, WebIDL, and everything else is applied to the included content as if it had always been part of the source.
 
@@ -296,7 +296,7 @@ This is normative and MUST be followed. But, sometimes we need
 a non-normative example reference [[?FOO]].
 ```
 
-You can also link to a specification directly in text by using `[[[FOO]]]`, where FOO is the specification's id. When ReSpec finds the specification in the references database, this gets converted to a link to the specification in the text i.e. `<a href="link-to-FOO">FOO Spec Title</a>`. This is actually a shorthand for using the `data-cite` attribute and you can learn more ways of using `data-cite` [here](data--cite).
+You can also link to a specification directly in text by using `[[[FOO]]]`, where FOO is the specification's id. When ReSpec finds the specification in the references database, this gets converted to a link to the specification in the text i.e. `<a href="link-to-FOO">FOO Spec Title</a>`. This is actually a shorthand for using the `data-cite` attribute and you can learn more ways of using `data-cite` [here](data-cite).
 
 The difference between `[[[FOO]]]` and `[[FOO]]` is that `[[[FOO]]]` links directly to the referenced specification, while `[[FOO]]` links to the entry in the "References" section (see below). Normative and informative references work similarly for `[[[FOO]]]` as they work for `[[FOO]]`, and `[[[?FOO]]]` can be used to have a non-normative reference in a normative section. 
 

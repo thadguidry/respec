@@ -1,7 +1,7 @@
 ### Guides
 * [User's Guide](ReSpec-Editor's-Guide)
 * [WebIDL Guide](WebIDL-Guide)
-* [Configuring ReSpec](Configuration-(respecConfig))
+* [Configuring ReSpec](Configuring-ReSpec)
 * [Developers Guide](Developers-Guide)
 * [Shorthands](Shorthands-Guide)
 
@@ -104,24 +104,24 @@ Handled by ReSpec for you.
 * [WebIDL Guide](WebIDL-Guide)
 
 ### HTML attributes
-* [data-abbr](data-abbr-(dfn-element-only))
-* [data-cite](data--cite)
+* [data-abbr](data-abbr)
+* [data-cite](data-cite)
 * [data-dfn-for](data-dfn-for)
 * [data-dfn-type](data-dfn-type)
 * [data-export](data-export)
 * [data-format](data-format)
 * [data-include-format](data-include-format)
 * [data-include-replace](data-include-replace)
-* [data-include](data--include)
+* [data-include](data-include)
 * [data-link-for](data-link-for)
 * [data-link-type](data-link-type)
 * [data-local-lt](data-local-lt)
 * [data-lt-no-plural](data-lt-no-plural)
 * [data-lt-noDefault](data-lt-noDefault)
 * [data-lt](data-lt)
-* [data-number](data--number)
-* [data-oninclude](data--oninclude)
-* [data-sort](data--sort-attribute)
+* [data-number](data-number)
+* [data-oninclude](data-oninclude)
+* [data-sort](data-sort-attribute)
 * [data-tests](data-tests)
 * [data-transform](data-transform) (Deprecated)
 * [dir](dir)
@@ -142,7 +142,7 @@ Handled by ReSpec for you.
 * [practicedesc](practicedesc)
 * [practicelab](practicelab)
 * [remove](remove)
-* [no-link-warnings](no--link--warnings)
+* [no-link-warnings](no-link-warnings)
 
 ### Special properties
 * [`document.respecIsReady`](respecIsReady)
