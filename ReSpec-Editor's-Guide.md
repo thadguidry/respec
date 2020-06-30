@@ -375,7 +375,7 @@ If a `section` element with id `"bp-summary"` is present, then a summary list of
 
 Of course the downside of the approach taken by ReSpec is that the specification as it is expected to be, with all its bells and whistles, exists only in your browser's memory as a DOM. Publishing directly with the script would not work as the source would not pass PubRules.
 
-The solution that is used here is that you hit the Ctrl+Shift+Alt+S key combination. Unless you know what you are doing, pick "Save as HTML (Source)". This will produce a dump of the generated source, which you can paste into the document you want to be your specification snapshot. The process is a little bit tedious, but normally you should only need to do it very rarely. You can hit Esc to hide the menu.
+The solution that is used here is that you hit the <kbd>Ctrl+Shift+Alt+S</kbd> key combination. Unless you know what you are doing, pick "Save as HTML (Source)". This will produce a dump of the generated source, which you can paste into the document you want to be your specification snapshot. The process is a little bit tedious, but normally you should only need to do it very rarely. You can hit <kbd>Esc</kbd> to hide the menu.
 
 ### Creating a Static Snapshot from the Command Line
 
