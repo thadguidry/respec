@@ -22,15 +22,3 @@ var respecConfig = {
   "no-unused-vars": true, // enable a rule that disable by default
 };
 ```
-
-The [following lint rules](https://github.com/w3c/respec/tree/develop/src/core/linter-rules) are available:
-
-- [`no-http-props`](no-http-props)
-- [`local-refs-exist`](local-refs-exist)
-- [`no-headingless-sections`](no-headingless-sections)
-- [`no-unused-vars`](no-unused-vars) (off by default)
-- [`check-punctuation`](check-punctuation) (off by default)
-- [`check-charset`](check-charset)
-- [`check-internal-slots`](check-internal-slots) (off by default)
-- [`privsec-section`](privsec-section) (off by default, on for W3C documents)
-- [`wpt-tests-exist`](wpt-tests-exist) (off by default)
