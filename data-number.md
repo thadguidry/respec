@@ -9,7 +9,7 @@ A typical example for a file in the Github repository https:/github.com/w3c/dpub
 ```html
 <script>
   var respecConfig = {
-    github: "dpub-pwd",
+    github: "w3c/dpub-pwd",
   };
 </script>
 
