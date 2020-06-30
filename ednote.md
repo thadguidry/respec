@@ -11,8 +11,6 @@ Note that the content of the `title` attribute will be interpreted as HTML marku
   We are aware that the formatting of this section isn't great. We will fix it
   in the next revision!
 </p>
-
-<p></p>
 ```
 
 Would be emitted as:
