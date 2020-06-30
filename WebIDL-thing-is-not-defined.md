@@ -48,7 +48,7 @@ You want to add the following:
   </pre>
    
   <!-- 3. Actually write something meaningful about the interface -->
-  <p>The <a>SomeInterface</a> let's you do really neat things!</p>
+  <p>The <a>SomeInterface</a> lets you do really neat things!</p>
 
   <!-- 4. define the `thing` attribute -->
   <section>
