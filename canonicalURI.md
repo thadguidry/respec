@@ -1,6 +1,6 @@
 # `canonicalURI`
 
-The `canonicalURI` lets you indicate either a URL or a keyword to use as the "[canonical link](https://en.wikipedia.org/wiki/Canonical_link_element)" of the document. Search engines, like Google, can make use of this information to help determine which version of document is authoritative.
+The `canonicalURI` lets you indicate either a URL or a keyword to use as the [canonical link](https://en.wikipedia.org/wiki/Canonical_link_element) of the document. Search engines, like Google, can make use of this information to help determine which version of document is authoritative.
 
 Following keywords automatically generate a corresponding URL. However, you are free to include your own URL.
 
