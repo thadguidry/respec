@@ -1,10 +1,13 @@
 # `alternateFormats`
 
-An array of objects, each of which has two required fields:
+Show links to alternate formats (such as PDF, ePub) in the document header.
+
+This option accepts an array of objects, each of which has two required fields:
+
 <dl>
   <dt><code>uri</code></dt>
   <dd>for the link to the alternate document</dd>
-  <dt><code>label</code>,</dt>
+  <dt><code>label</code></dt>
   <dd>for a human readable string that matches it. This is used to link to alternate formats for the same content (e.g. PDF, ePub, PS).</dd>
 </dl>
 
