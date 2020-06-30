@@ -6,10 +6,7 @@ Using `data-cite`, allows you to cite a spec directly in text by using a spec's 
 
 Add "!" on the front of the spec ID makes it a "normative" citation. Excluding it, makes it informative.
 
-It is currently supported on elements: 
-
-  * `<a data-cite="">`
-  * `<dfn data-cite="">`
+It is currently supported on `<a>` and `<dfn>` elements: 
 
 The syntax for the value is:
 
