@@ -26,13 +26,25 @@ Sorting a definition list ("ascending" by default, so A-to-0Z locale dependent).
 <dl data-sort>
   <dt>Bananas</dt>
   <dd>Are the best!</dd>
+
   <dt>Zebra</dt>
   <dd>Are quite stripy.</dd>
-  <!--
-    The following three elements are first after sorting
-  -->
+
   <dt>Apples</dt>
   <dd>🍎s are delicious.</dd>
   <dd>🍏s are great in a pie!.</dd>
+</dl>
+
+<!-- becomes -->
+<dl>
+  <dt>Apples</dt>
+  <dd>🍎s are delicious.</dd>
+  <dd>🍏s are great in a pie!.</dd>
+
+  <dt>Bananas</dt>
+  <dd>Are the best!</dd>
+
+  <dt>Zebra</dt>
+  <dd>Are quite stripy.</dd>
 </dl>
 ```
