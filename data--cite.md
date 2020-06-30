@@ -8,11 +8,11 @@ Add "!" on the front of the spec ID makes it a "normative" citation. Excluding i
 
 It is currently supported on `<a>` and `<dfn>` elements: 
 
-The syntax for the value is:
+The syntax for data-cite value is:
 
- * `spec-id[optional "/" path-to-document]#fragment`. 
- * For example, `data-cite="rfc2119#some-section"` 
- * or `data-cite="spec/some.html#fragment"` 
+```
+spec-id[optional "/" path-to-document]#fragment 
+```
 
 ## Example
 
