@@ -1,6 +1,6 @@
 # `conformance`
 
-When present, the `conformance` id tells ReSpec to add the standard boilerplate to the document:
+When present, a section with id `conformance` tells ReSpec to add the standard boilerplate to the document:
 
 > As well as sections marked as non-normative, all authoring guidelines, diagrams, examples, and notes in this specification are non-normative. Everything else in this specification is normative.
 >
