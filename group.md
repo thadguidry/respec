@@ -23,8 +23,4 @@ var respecConfig = {
 };
 ```
 
-## List of valid group names
-
-A list of valid group names and their corresponding group IDs can be found at: https://respec.org/w3c/groups/
-
-List of group names are maintained at [respec.org repository](https://github.com/marcoscaceres/respec.org/blob/gh-pages/routes/w3c/groups.json)
+A list of valid group names can be found at: https://respec.org/w3c/groups/
