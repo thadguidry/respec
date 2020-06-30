@@ -14,7 +14,7 @@ Following keywords automatically generate a corresponding URL. However, you are 
 The following will result in a canonical URL of `https://www.w3.org/TR/fooAPI`.
 
 ```js
-const respecConfig = {
+var respecConfig = {
   shortName: "fooAPI",
   canonicalURI: "TR",
 };

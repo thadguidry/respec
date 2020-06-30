@@ -20,7 +20,7 @@ It also adds an object to [otherLinks](otherLinks) for under "Participate", with
 This is normally what you want:
 
 ```js
-const respecConfig = {
+var respecConfig = {
   github: "w3c/browser-payment-api",
   // OR
   github: "https://github.com/w3c/browser-payment-api",
@@ -30,7 +30,7 @@ const respecConfig = {
 This example shows a repository whose specs are being served from a "public-docs" branch.
 
 ```js
-const respecConfig = {
+var respecConfig = {
   github: {
     repoURL: "https://github.com/w3c/browser-payment-api",
     branch: "public-docs", // alternative branch
