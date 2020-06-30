@@ -1,4 +1,4 @@
-# `check-punctuation` lint rule
+# `check-punctuation`
 
 Enable this lint rule to check for punctuation. It checks for:
 

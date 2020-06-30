@@ -1,4 +1,4 @@
-# `no-headingless-sections` lint rule
+# `no-headingless-sections`
 
 Enable this [lint rule](lint) to get a warning if there is some `<section>` in the document that does not start with a heading element (`h1`-`h6`).
 
