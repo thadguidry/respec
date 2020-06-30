@@ -13,7 +13,7 @@ This automatically generates:
 - [issueBase](issueBase)
 - [edDraftURI](edDraftURI)
 
-It also adds an object to [otherLinks](otherLinks) for under "Participate", with the appropriate links to your github repository.
+It also adds an object to [otherLinks](otherLinks) for under "Participate", with the appropriate links to your GitHub repository.
 
 ## Examples of usage
 
