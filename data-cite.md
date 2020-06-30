@@ -1,6 +1,6 @@
 # `data-cite`
 
-**Note: this feature is mostly deprecated, and only supported for legacy specifications. Please use [`xref`](xref) instead.**
+Note: this feature is mostly **deprecated**, and only supported for legacy specifications. Please use [`xref`](xref) instead.
 
 Using `data-cite`, allows you to cite a spec directly in text by using a spec's id. You can look up an id either directly in ReSpec (using the ReSpec pill > "Search SpecRef DB") - or on [specref.org](http://www.specref.org/).   
 

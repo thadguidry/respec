@@ -1,7 +1,6 @@
 # `doRDFa`
 
-## DEPRECATED FEATURE
-**This feature has been removed from ReSpec.**
+Warning: This feature has been **removed** from ReSpec.
 
 Please use [`doJsonLd`](doJsonLd) instead. 
 

@@ -34,9 +34,9 @@
 * [previousPublishDate](previousPublishDate)
 * [prevRecShortname](prevRecShortname)
 * [prevRecURI](prevRecURI)
-* [processVersion](processVersion)
+* [~~processVersion~~](processVersion) (Deprecated)
 * [publishDate](publishDate)
-* [refNote](refNote)
+* [~~refNote~~](refNote) (Deprecated)
 * [shortName](shortName)
 * [specStatus](specStatus)
 * [subjectPrefix](subjectPrefix)
@@ -105,7 +105,7 @@ Handled by ReSpec for you.
 
 ### HTML attributes
 * [data-abbr](data-abbr)
-* [data-cite](data-cite)
+* [~~data-cite~~](data-cite) (Not recommended)
 * [data-dfn-for](data-dfn-for)
 * [data-dfn-type](data-dfn-type)
 * [data-export](data-export)
@@ -123,7 +123,7 @@ Handled by ReSpec for you.
 * [data-oninclude](data-oninclude)
 * [data-sort](data-sort-attribute)
 * [data-tests](data-tests)
-* [data-transform](data-transform) (Deprecated)
+* [~~data-transform~~](data-transform) (Deprecated)
 * [dir](dir)
 * [lang](lang)
 

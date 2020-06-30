@@ -1,6 +1,6 @@
 # `refNote`
 
-`refNote` has been deprecated.  
+Warning: `refNote` has been **deprecated**.  
 
 If you wish to add a note, or any additional content to the references section, you can now do:
 
