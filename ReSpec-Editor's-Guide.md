@@ -96,7 +96,7 @@ There's a nifty trick that you will likely want to keep in your toolbox: many of
 
 ### title
 
-As noted in the previous chapter, the `<title>` of the document is reused as the title of the specification in the resulting document's h1. That way, they are always in sync and you need not worry about specifying it twice. However, if you need to add additional markup to your title, you can still use a `<h1>`
+As noted in the previous chapter, the [`<title>`](title) of the document is reused as the title of the specification in the resulting document's h1. That way, they are always in sync and you need not worry about specifying it twice. However, if you need to add additional markup to your title, you can still use a [`<h1>`](h1)
 
 ```html
 <h1>The <code>Foo</code> API</h1>
@@ -184,7 +184,7 @@ You can use `retiredDate` to retire either an author or an editor.
 
 ### Editor's Drafts
 
-Most groups maintain some form of version control system which is exposed over the web so that people can keep track of what edits are being made to a specification in between official releases. It is often useful to point to such documents, including from released specifications, so that people wishing to report issues can make sure that they aren't already fixed, and in general get the very latest version. In fact, EDs are often considered to be the most useful reference to have to a group's work. Two options control this.
+Most groups maintain some form of version control system which is exposed over the web so that people can keep track of what edits are being made to a specification in between official releases. It is often useful to point to such documents, including from released specifications, so that people wishing to report issues can make sure that they aren't already fixed, and in general get the very latest version. In fact, [EDs](specStatus#status-ed) are often considered to be the most useful reference to have to a group's work. Two options control this.
 
 ### Related Documents
 
@@ -258,9 +258,9 @@ And finally, automatic linking to figures works just as it does for sections, wi
 
 ### Examples & Syntax Highlighting
 
-Any `pre` or `aside` element that has the example class on it will get the additional example header and style. Content inside pre elements is syntax highlighted. The syntax highlighter does not need to be instructed about which language it is highlighting and will try to do a decent job of guessing.
+Any `pre` or `aside` element that has the example class on it will get the additional example header and style. Content inside [pre elements](pre-and-code-elements) is syntax highlighted. The syntax highlighter does not need to be instructed about which language it is highlighting and will try to do a decent job of guessing.
 
-You can disable syntax highlighting on a pre element by adding a "nohighlight" class.
+You can disable syntax highlighting on a pre element by adding a "[nohighlight](nohighlight)" class.
 
 ### Inclusions & Transformations
 
@@ -270,13 +270,13 @@ Inclusion of external content in ReSpec is done using the [`data-include`](data-
 
 In the processing pipeline, inclusion happens right after everything to do with the document's headers, style, and transformations have happened, which means that all the processing to do with structure, inlines, WebIDL, and everything else is applied to the included content as if it had always been part of the source.
 
-At times however one does not wish included content to be processed as if it were intended to be ReSpec content. For instance, content containing HTML may be an example that should not be processed (the examples in this document are included that way). In such cases, you can specify `data-include-format='text'`. This will include the content as if it were text, and therefore only process it as much as text is expected to be. The only recognized value is text, nominally you can always set it to html but that's the default value.
+At times however one does not wish included content to be processed as if it were intended to be ReSpec content. For instance, content containing HTML may be an example that should not be processed (the examples in this document are included that way). In such cases, you can specify [`data-include-format='text'`](data-include-format). This will include the content as if it were text, and therefore only process it as much as text is expected to be. The only recognized value is text, nominally you can always set it to html but that's the default value.
 
 There is an important caveat to take into account with the `data-include` functionality. ReSpec is designed so as to make life easier on editors. Because of that, people who do not wish to run a local web server and simply want to edit and refresh the specification they're working on from their local drives, using a file: URI in the browser, are generally supported in doing so (this involves some trickery behind the scenes since it would normally make it impossible to load some of the content that ReSpec uses — but that's not something you should ever have to know). When using `data-include`, this is no longer possible. You either have to serve your ReSpec content from a web server or the included content will get blocked by the same-origin policy (which applies to all things `file:`). There is, unfortunately, no easy way to work around this. Be sure to note however that if you're not using `data-include`, you never have to worry about this.
 
 Finally, at times, you may wish to perform a quick and dirty transformation of some of your content. If the transformation is one that is commonly used and could be of general usefulness outside your own specification, then the proper way of handling it is to add the functionality to ReSpec itself. However, in a pinch, this approach will work as well. The way in which it is done is that you include a globally available Javascript function that takes the ReSpec utils object as its first parameter and a string of the content to be transformed as its second; then returns the processed value. Then where you wish the transformation to apply, you place a `data-transform` attribute — it will then process the entire content. The value of `data-transform` is a white space separated list of JavaScript function names. They are applied left to right, as if they were a pipeline. Again, I would like to stress that, in general, that is not the recommended approach.
 
-If you wish to transform content brought in with `data-include` irrespective of whether it is loaded, use `data-oninclude`. It behaves exactly like `data-transform` except that the function gets a third parameter indicating the relative URL from which the content was loaded.
+If you wish to transform content brought in with `data-include` irrespective of whether it is loaded, use [`data-oninclude`](data-oninclude). It behaves exactly like [`data-transform`](data-transform) except that the function gets a third parameter indicating the relative URL from which the content was loaded.
 
 ### Common Inline Processing
 
@@ -309,7 +309,7 @@ When you write "`<dfn>My term</dfn>`", ReSpec adds an id (and a class) to it
 
 All references like `<a>My term</a>` or `<a>my term</a>` link to `#dfn-my-term`.
 
-On occasion that won't be enough since you may be using the term in plural or conjugated, or in some other variant that does not exactly match the `dfn`. If so, then you can use the `data-lt` attribute on the a element in order to indicate the exact term that you wish to have a link to (the mnemonic here being "link term"). Alternately, and more interestingly, you can specify a `data-lt` attribute on the associated dfn element with variants of the spelling of the term separated by vertical bars. Thus `<dfn data-lt="my terms|some term">my term</dfn>` becomes
+On occasion that won't be enough since you may be using the term in plural or conjugated, or in some other variant that does not exactly match the `dfn`. If so, then you can use the [`data-lt`](data-lt) attribute on the a element in order to indicate the exact term that you wish to have a link to (the mnemonic here being "link term"). Alternately, and more interestingly, you can specify a `data-lt` attribute on the associated dfn element with variants of the spelling of the term separated by vertical bars. Thus `<dfn data-lt="my terms|some term">my term</dfn>` becomes
 
 ```html
 <dfn data-lt="my terms|some term|my term" data-dfn-type="dfn" id="dfn-my-terms"
@@ -321,7 +321,7 @@ which can be referenced by any of `<a>my terms</a>`, `<a>some term</a>`, `<a>my 
 
 Definitions may be links to (anchors in) external specifications by adding a `data-cite="spec-name#some-anchor"` attribute. The anchor is optional but the spec-name must match an entry in the [specref database](https://github.com/tobie/specref/tree/master/refs) or a custom entry defined in your [`localBiblio`](localBiblio).
 
-Also note that the href-less a element is not limited to linking to definitions but also knows how to link to other items such as WebIDL interfaces.
+Also note that the href-less a element is not limited to linking to definitions but also knows how to link to other items such as [WebIDL](WebIDL-Guide) interfaces.
 
 ### References
 
@@ -350,7 +350,7 @@ If you ever want to use `[[\TextInDoubleBrackets]]` that doesn't represent a ref
 
 ### Best Practice Documents
 
-Best practices may be shown, numbered, and formatted using a div with class practice containing a `p > span.practicelab` with the practice's title and a `p.practicedesc` with description of the practice.
+Best practices may be shown, numbered, and formatted using a div with class practice containing a [`p > span.practicelab`](practicelab) with the practice's title and a [`p.practicedesc`](practicedesc) with description of the practice.
 
 This feature is rarely used, and likely needs to be updated. If you wish to use it in anger, please contact me and we can improve support for it.
 
@@ -400,8 +400,4 @@ See also [respecDocWriter](https://github.com/w3c/respec/blob/develop/tools/resp
 
 ### Creating a Diff-Marked Version
 
-ReSpec is also capable of producing a diff-marked version if you have a configuration setting of `previousDiffURI` set to a document to compare to (which defaults to `previousURI`). When you press that button, you will obtained a diffmarked version instead of a regular specification. By default, the diff tool is set to http://www.aptest.com/standards/htmldiff/htmldiff.pl, but you can override this by setting `diffTool`.
-
-### WebIDL Support
-
-[See WebIDL guide](WebIDL-Guide).
+ReSpec is also capable of producing a diff-marked version if you have a configuration setting of [`previousDiffURI`](previousDiffURI) set to a document to compare to (which defaults to [`previousURI`](previousURI)). When you press that button, you will obtained a diffmarked version instead of a regular specification. By default, the diff tool is set to http://www.aptest.com/standards/htmldiff/htmldiff.pl, but you can override this by setting `diffTool`.
