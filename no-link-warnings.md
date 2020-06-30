@@ -9,7 +9,7 @@ Note: **We discourage the use of this feature**, because you could miss defining
 In the following example, the semantics of the attributes is the same in both the dictionary and the interface. As such, it might not make sense to provide formal definitions for the dictionary items.
 
 ```html
-<pre class="idl no-link-warn">
+<pre class="idl no-link-warnings">
 dictionary PointerEventInit: MouseEventInit {
   long pointerId = 0;
   double width = 1;
