@@ -12,7 +12,7 @@ var respecConfig = {
 };
 ```
 
-See also:
+You can preview this feature in live examples:
 
 - [Regular document](https://www.w3.org/respec/examples/boilerplate.html?additionalCopyrightHolders=Internet%20Engineering%20Task%20Force)
 - [Unofficial document](https://www.w3.org/respec/examples/boilerplate.html?additionalCopyrightHolders=Copyright%20%C2%A9%201977%20Robin%20Berjon;specStatus=unofficial)
