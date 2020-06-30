@@ -14,6 +14,15 @@ var respecConfig = {
 };
 ```
 
+You can also enable or disable certain rules:
+
+```js
+var respecConfig = {
+  "no-http-props": false, // disable a rule that enabled by default
+  "no-unused-vars": true, // enable a rule that disable by default
+};
+```
+
 The [following lint rules](https://github.com/w3c/respec/tree/develop/src/core/linter-rules) are available:
 
 - [`no-http-props`](no-http-props)
