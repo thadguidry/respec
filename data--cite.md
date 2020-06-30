@@ -13,3 +13,10 @@ The syntax for the value is:
  * `spec-id[optional "/" path-to-document]#fragment`. 
  * For example, `data-cite="rfc2119#some-section"` 
  * or `data-cite="spec/some.html#fragment"` 
+
+## Example
+
+``` html
+<a data-cite="rfc2119#some-section">some text</a>
+<dfn data-cite="spec/some.html#fragment">some text</a>
+```
