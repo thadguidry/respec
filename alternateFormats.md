@@ -1,6 +1,6 @@
 # `alternateFormats`
 
-Show links to alternate formats (such as PDF, ePub) in the document header.
+Shows links to alternate formats (such as PDF, ePub) in the document header.
 
 This option accepts an array of objects, each of which has two required fields:
 
