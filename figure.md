@@ -16,4 +16,4 @@ Specification figures are indicated using the `<figure>` element, with a nested 
 
 Figures can be automatically linked to using a link pointing to their ID with no content (e.g. `<a href='#foo-figures'></a>`).
 
-You can also generate a Table of Figures using the [`tof`](tof) ID.
+You can also automatically generate a [table of figures](tof).
