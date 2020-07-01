@@ -7,47 +7,47 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
 ```html
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Replace me with a real title</title>
-    <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
-    <script class="remove">
-      var respecConfig = {
-        specStatus: "ED",
-        editors: [
-          { name: "Your Name", url: "https://your-site.com" },
-        ],
-        github: "some-org/mySpec",
-        shortName: "dahut",
-        xref: "web-platform",
-      };
-    </script>
-  </head>
-  <body>
-    <section id="abstract">
-      <p>This is required.</p>
-    </section>
-    <section id="sotd">
-      <p>This is required.</p>
-    </section>
-    <section id="conformance">
-      <p>This is required for specifications that contain normative material.</p>
-    </section>
-    <section data-dfn-for="Foo">
-      <h2>Start your spec!</h2>
-      <pre class="idl">
-      interface Foo {
-        attribute Bar bar;
-        void doTheFoo();
-      };
-      </pre>
-      <p>The <dfn>Foo</dfn> interface represents a {{Foo}}.</p>
-      <p>
-        The <dfn>doTheFoo()</dfn> method does the foo. Call it by running
-        {{Foo/doTheFoo()}}.
-      </p>
-    </section>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Replace me with a real title</title>
+  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+  <script class="remove">
+    var respecConfig = {
+      specStatus: "ED",
+      editors: [
+        { name: "Your Name", url: "https://your-site.com" },
+      ],
+      github: "some-org/mySpec",
+      shortName: "dahut",
+      xref: "web-platform",
+    };
+  </script>
+</head>
+<body>
+  <section id="abstract">
+    <p>This is required.</p>
+  </section>
+  <section id="sotd">
+    <p>This is required.</p>
+  </section>
+  <section id="conformance">
+    <p>This is required for specifications that contain normative material.</p>
+  </section>
+  <section data-dfn-for="Foo">
+    <h2>Start your spec!</h2>
+    <pre class="idl">
+    interface Foo {
+      attribute Bar bar;
+      void doTheFoo();
+    };
+    </pre>
+    <p>The <dfn>Foo</dfn> interface represents a {{Foo}}.</p>
+    <p>
+      The <dfn>doTheFoo()</dfn> method does the foo. Call it by running
+      {{Foo/doTheFoo()}}.
+    </p>
+  </section>
+</body>
 </html>
 ```
 
