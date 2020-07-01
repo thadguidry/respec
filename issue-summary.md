@@ -1,6 +1,6 @@
 # `issue-summary`
 
-When present, the `issue-summary` id tells ReSpec to gather all issues found throughout your spec and display them.
+When present, the `issue-summary` id tells ReSpec to gather all [`issues`](issue) found throughout your spec and display them.
 
 ## Example of usage
 
