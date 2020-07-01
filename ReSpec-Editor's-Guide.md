@@ -15,10 +15,7 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
       var respecConfig = {
         specStatus: "ED",
         editors: [
-          {
-            name: "Your Name",
-            url: "https://your-site.com",
-          },
+          { name: "Your Name", url: "https://your-site.com" },
         ],
         github: "some-org/mySpec",
         shortName: "dahut",
