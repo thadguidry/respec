@@ -184,7 +184,7 @@ You can use `retiredDate` to retire either an author or an editor.
 
 ### Editor's Drafts
 
-Most groups maintain some form of version control system which is exposed over the web so that people can keep track of what edits are being made to a specification in between official releases. It is often useful to point to such documents, including from released specifications, so that people wishing to report issues can make sure that they aren't already fixed, and in general get the very latest version. In fact, [EDs](specStatus#status-ed) are often considered to be the most useful reference to have to a group's work. Two options control this.
+Most groups maintain some form of version control system which is exposed over the web so that people can keep track of what edits are being made to a specification in between official releases. It is often useful to point to such documents, including from released specifications, so that people wishing to report issues can make sure that they aren't already fixed, and in general get the very latest version. In fact, [EDs](specStatus#specStatus-ed) are often considered to be the most useful reference to have to a group's work. Two options control this.
 
 ### Related Documents
 

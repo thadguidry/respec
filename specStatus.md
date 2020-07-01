@@ -13,7 +13,7 @@ is on a publication track but can also take other values for other types of docu
     </tr>
   </thead>
   <tbody>
-    <tr id="status-base">
+    <tr id="specStatus-base">
       <td>base</td>
       <td>
         Just the basic template, not a specification. Use this for public documentation produced
@@ -22,7 +22,7 @@ is on a publication track but can also take other values for other types of docu
       <td>None.
       </td>
     </tr>
-    <tr id="status-mo">
+    <tr id="specStatus-mo">
       <td>MO</td>
       <td>
         Member-Only Document. Similar to base, but for documents that need to be clearly
@@ -32,7 +32,7 @@ is on a publication track but can also take other values for other types of docu
       <td>None.
       </td>
     </tr>
-    <tr id="status-unofficial">
+    <tr id="specStatus-unofficial">
       <td>unofficial</td>
       <td>
         An unofficial draft. Use this if you're producing a document outside of W3C but want
@@ -46,7 +46,7 @@ is on a publication track but can also take other values for other types of docu
         </ul>
       </td>
     </tr>
-    <tr id="status-ed">
+    <tr id="specStatus-ed">
       <td>ED</td>
       <td>
         Editor's Draft. Use this for documents that are maintained in the group's own repository.
@@ -57,7 +57,7 @@ is on a publication track but can also take other values for other types of docu
         </ul>
       </td>
     </tr>
-    <tr id="status-fpwd">
+    <tr id="specStatus-fpwd">
       <td>FPWD</td>
       <td>
         First Public Working Draft.
@@ -65,7 +65,7 @@ is on a publication track but can also take other values for other types of docu
       <td>None.
       </td>
     </tr>
-    <tr id="status-wd">
+    <tr id="specStatus-wd">
       <td>WD</td>
       <td>
         Working Draft.
@@ -77,7 +77,7 @@ is on a publication track but can also take other values for other types of docu
         </ul>
       </td>
     </tr>
-    <tr id="status-lc">
+    <tr id="specStatus-lc">
       <td>LC</td>
       <td>
         Last Call Working Draft.
@@ -90,7 +90,7 @@ is on a publication track but can also take other values for other types of docu
         </ul>
       </td>
     </tr>
-    <tr id="status-ld">
+    <tr id="specStatus-ld">
       <td>LD</td>
       <td>
         Living Document.
@@ -98,7 +98,7 @@ is on a publication track but can also take other values for other types of docu
       <td>
       </td>
     </tr>
-    <tr id="status-ls">
+    <tr id="specStatus-ls">
       <td>LS</td>
       <td>
         Living Standard.
@@ -106,7 +106,7 @@ is on a publication track but can also take other values for other types of docu
       <td>
       </td>
     </tr>
-    <tr id="status-cr">
+    <tr id="specStatus-cr">
       <td>CR</td>
       <td>
         Candidate Recommendation.
@@ -120,7 +120,7 @@ is on a publication track but can also take other values for other types of docu
         </ul>
       </td>
     </tr>
-    <tr id="status-pr">
+    <tr id="specStatus-pr">
       <td>PR</td>
       <td>
         Proposed Recommendation.
@@ -131,7 +131,7 @@ is on a publication track but can also take other values for other types of docu
           <li><a href="previousMaturity">previousMaturity</a></li>
         </ul>
     </tr>
-    <tr id="status-per">
+    <tr id="specStatus-per">
       <td>PER</td>
       <td>
         Proposed Edited Recommendation.
@@ -143,7 +143,7 @@ is on a publication track but can also take other values for other types of docu
         </ul>
       </td>
     </tr>
-    <tr id="status-rec">
+    <tr id="specStatus-rec">
       <td>REC</td>
       <td>
         Recommendation.
@@ -155,7 +155,7 @@ is on a publication track but can also take other values for other types of docu
         </ul>
       </td>
     </tr>
-    <tr id="status-rscnd">
+    <tr id="specStatus-rscnd">
       <td>RSCND</td>
       <td>
         Rescinded Recommendation.
@@ -166,7 +166,7 @@ is on a publication track but can also take other values for other types of docu
           <li><a href="previousMaturity">previousMaturity</a></li>
       </td>
     </tr>
-    <tr id="status-fpwd-note">
+    <tr id="specStatus-fpwd-note">
       <td>FPWD-NOTE</td>
       <td>
         First Public Working Draft of a Note.
@@ -174,27 +174,27 @@ is on a publication track but can also take other values for other types of docu
       <td>None.
       </td>
     </tr>
-    <tr id="status-wg-note">
+    <tr id="specStatus-wg-note">
       <td>WG-NOTE</td>
       <td>Working Group Note.</td>
       <td>None.
       </td>
     </tr>
-    <tr id="status-bg-draft">
-      <td id="status-bg-final">BG-DRAFT, BG-FINAL</td>
+    <tr id="specStatus-bg-draft">
+      <td id="specStatus-bg-final">BG-DRAFT, BG-FINAL</td>
       <td>Business Group Draft or Final Report.
       </td>
       <td>None.
       </td>
     </tr>
-    <tr id="status-cg-draft">
-      <td id="status-cg-final">CG-DRAFT, CG-FINAL</td>
+    <tr id="specStatus-cg-draft">
+      <td id="specStatus-cg-final">CG-DRAFT, CG-FINAL</td>
       <td>Community Group Draft or Final Report.
       </td>
       <td>None.
       </td>
     </tr>
-    <tr id="status-ig-note">
+    <tr id="specStatus-ig-note">
       <td>IG-NOTE</td>
       <td>
         Interest Group Note.
@@ -205,7 +205,7 @@ is on a publication track but can also take other values for other types of docu
         </ul>
       </td>
     </tr>
-    <tr id="status-member-subm">
+    <tr id="specStatus-member-subm">
       <td>Member-SUBM</td>
       <td>
         Member Submission. Note that ReSpec uses the default W3C copyright for this, but
@@ -218,7 +218,7 @@ is on a publication track but can also take other values for other types of docu
        </ul>
       </td>
     </tr>
-    <tr id="status-draft-finding">
+    <tr id="specStatus-draft-finding">
       <td>draft-finding</td>
       <td>
         Draft TAG Finding. If you are one of the Nine and working on a Finding, this is for
@@ -233,7 +233,7 @@ is on a publication track but can also take other values for other types of docu
       </td>
       <td>None.</td>
     </tr>
-    <tr id="status-finding">
+    <tr id="specStatus-finding">
       <td>finding</td>
       <td>
         TAG Finding. Same as above, but final.
