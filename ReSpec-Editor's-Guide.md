@@ -77,15 +77,14 @@ One thing to remember though is this: that is how configuration is specified in 
 
 Also note that this is just a simple JavaScript variable: there is nothing magical about the way in which it is declared (it just needs to be fully defined when the load event triggers).
 
-## Essential W3C Boilerplate
+Note: There's a nifty trick that you will likely want to keep in your toolbox: many of ReSpec's configuration options can be specified in the query string, and they override the options specified in the source. We will use it a lot in this documentation so as to avoid having to generate examples for each small change that is possible (there are quite a few). So if we want to test the subtitle option without generating a copy of the same example with just that option changed, instead of accessing `examples/basic.built.html` we can simply go to `examples/basic.built.html?subtitle=This is a subtitle`.
 
-W3C boilerplate is extremely repetitive, but beneath the tedium is a wealth of options and subtle variations that are precisely what makes crafting the boilerplate by hand so hard to get right. This covers options for specification maturity, publication dates, alternatives (editor's drafts, other versions, other formats...), legalese variants, the various W3C specification URLs, the people writing it, information about the working group, and core sections such as Abstract, Status of this Document (SotD), and Conformance.
+## Structure
 
-We will start by using an example of a basic specification very similar to the one used in the previous section.
+This chapter covers all the aspects of a ReSpec document's structure that were not covered as part of the very basics. As usual, let's start with an [**example**](https://github.com/w3c/respec/blob/develop/examples/basic.html). It is fairly long as it needs a decent amount of content in order to exemplify some features, but it should nevertheless be easy to understand. Go on, open the [**example**](https://github.com/w3c/respec/blob/develop/examples/basic.html) in new tab (omitted here for brevity).
 
-There's a nifty trick that you will likely want to keep in your toolbox: many of ReSpec's configuration options can be specified in the query string, and they override the options specified in the source. We will use it a lot in this documentation so as to avoid having to generate examples for each small change that is possible (there are quite a few). So if I want to test the subtitle option without generating a copy of the same example with just that option changed, instead of accessing `examples/basic.built.html` I can simply go to `examples/basic.built.html?subtitle=This is a subtitle`.
 
-### title
+### Title and Subtitle
 
 As noted in the previous chapter, the [`<title>`](title) of the document is reused as the title of the specification in the resulting document's h1. That way, they are always in sync and you need not worry about specifying it twice. However, if you need to add additional markup to your title, you can still use a [`<h1>`](h1-element) with `id="title"`.
 
@@ -93,54 +92,18 @@ As noted in the previous chapter, the [`<title>`](title) of the document is reus
 <h1 id="title">The <code>Foo</code> API</h1>
 ```
 
-### subtitle
+Optionally, you can also specify a [`subtitle`](subtitle) configuration option in the ReSpec config. The subtitle configuration option takes a simple string that will be used as a subtitle for the specification, right under the title. As with the title, you can also specify a subtitle as:
 
-Optionally, you can also specify a [`subtitle`](subtitle) configuration option in the ReSpec config. The subtitle configuration option takes a simple string that will be used as a subtitle for the specification, right under the title. As with the title, you can also specify a subtitle with `<h2 id="subtitle">Subtitle here</h2>`.
+``` html
+<h2 id="subtitle">Subtitle here</h2>
+```
 
-### shortName
 
-Specifications typically require having a "short name", which is the name used (amongst other places) in the canonical "https://w3.org/TR/short-name/" URLs. This is specified using the [`shortName`](shortName) option, as seen in the example above.
+### Editors & Authors
 
-### Working Group Information
+Every specification must have some editors (at least one) and may have some authors (and maybe some former editors/authors also).
 
-Most (but not all) W3C documents are produced by groups of some sort: Working Groups (WG), Interest Groups (IG), Incubator Groups (XG, now defunct), Coordination Groups, the TAG, and Community or Business Groups (CG, BG). For simplicity, we will be referring to all of the above as "Working Groups", since one should not be required to understand the many subtleties of the W3C Process in order to write a good specification. Configuration options that are prefixed with wg work equally well for all group types.
-
-- [`wg`](wg)
-- [`wgPatentURI`](wgPatentURI)
-- [`wgPublicList`](wgPublicList)
-- [`wgURI`](wgURI)
-
-When these groups release a document, they must include some information that is relevant and specific to them — all of this information is required. Documents produced in other situations (e.g., Submissions, unofficial drafts, etc.) don't require these options.
-
-The result of changing these configuration options can be seen in the "Status of this Document" section.
-
-### Specification Status
-
-At any given time a specification must be in a given status. The [`specStatus`](specStatus) option indicates which status that is. Typically, a status has implications in terms of what other options may be required. For instance, a document that is intended to become a Recommendation eventually and that is not the First Public Working Draft (FPWD) of that specification will require [`previousPublishDate`](previousPublishDate) and [`previousMaturity`](previousMaturity) to be specified.
-
-The [`specStatus`](specStatus) section list all the possible status values.
-
-### Extra links at top of the document
-
-There are times when you might need extra links or other important information to appear together with other links at the top of the document.
-
-ReSpec supports adding additional links by specifying an `otherLinks` property in the configuration. The values for this configuration option are rich and complex, so are detailed in the reference section for [`otherLinks`](otherLinks).
-
-### Extra Styling
-
-If you wish to add your own additional styles to your document, just use the regular `<link>` and `<style>` elements. Be warned however that the W3C styles will always be added after yours, so if you wish to override them you will need to use more specific selectors.
-
-### Dates
-
-The process of publishing specifications typically involves releasing multiple versions in a row that have specific dates (so that people can see the evolution, and also for IP reasons). Additionally, some specification statuses involve delimited review periods. These are all specified using date-related options.
-
-The format used for all dates is YYYY-MM-DD.
-
-### Editors & Authors (and former editors/authors)
-
-Every specification must have some editors (at least one) and may have some authors.
-
-Editors are the people in charge of the document. Authors are people who produced substantial contributions, but did not manage the document per se. Most of the time authors are not specified, but that practice varies between groups (it was more common in [XGs](https://www.w3.org/2005/Incubator/about.html) for instance, or sometimes the whole group is mentioned to get academic credit). Here is an example of specifying two editors and one author (with the surrounding document clipped for readability):
+Editors are the people in charge of the document. Authors are people who produced substantial contributions, but did not manage the document per se. Most of the time authors are not specified, but that practice varies between groups (it was more common in [W3C XGs](https://www.w3.org/2005/Incubator/about.html) for instance, or sometimes the whole group is mentioned to get academic credit). Here is an example of specifying two editors and one author (with the surrounding document clipped for readability):
 
 ```js
 var respecConfig = {
@@ -172,42 +135,6 @@ var respecConfig = {
 ```
 
 Editors and authors are specified as [Person objects](person).
-
-### Editor's Drafts
-
-Most groups maintain some form of version control system which is exposed over the web so that people can keep track of what edits are being made to a specification in between official releases. It is often useful to point to such documents, including from released specifications, so that people wishing to report issues can make sure that they aren't already fixed, and in general get the very latest version. In fact, [Editor Drafts (ED)](specStatus#specStatus-ed) are often considered to be the most useful reference to have to a group's work.
-
-### Related Documents
-
-A specification does not always travel alone. In some cases, there can be an accompanying [`errata`](errata) document, which you can specify by providing a URL for it.
-
-Likewise, some groups occasionally find it desirable to produce alternative formats in which people may read the specification. For instance, to access it on an ebook reader you may produce an ePub alternative, or if your specification is intended to be read by printing devices you might use PDF. The [`alternateFormats`](alternateFormats) option can be used to specify these alternate representations.
-
-If your specification has a test suite (it does, right?), then you can point to it using [`testSuiteURI`](testSuiteURI). And when your tests have successfully passed in enough implementations, you will want to document that in an implementation report which you can link to using [`implementationReportURI`](implementationReportURI).
-
-### Copyrights & Patents
-
-All the best fun in standards brought to you neatly packaged in a single section!
-
-By default, W3C specifications all get the regular W3C copyright notice and archaic document license, except for unofficial documents which are under CC-BY. In some cases however, you will want to [modify](license) that.
-
-For all document types other than "unofficial", you can use [`additionalCopyrightHolders`](additionalCopyrightHolders) to indicate that the copyright is shared not just amongst the W3C's hosts but also with other organizations (typically this is used for documents developed jointly with another <abbr title="Standards Developing Organization">SDO</abbr> such as the IETF). For unofficial documents, this simply replaces the default CC-BY license.
-
-If you wish the copyright date to span several years rather than just the year matching [`publishDate`](publishDate) (e.g., 2009-2013) then you can use [`copyrightStart`](copyrightStart).
-
-At times, the patent situation of a specification may warrant being documented beyond the usual boilerplate. In such cases, use [`addPatentNote`](addPatentNote). Its content will get injected at the end of the SotD section (right after the patent policy paragraph).
-
-### Note & Recommendation Tracks
-
-If you are working on a new version of an existing Recommendation, then it is required that your document point to that previous version. This is done using the [`prevRecShortname`](prevRecShortname) and [`prevRecURI`](prevRecURI) options, which respectively provide the [`shortName`](shortName) for the existing Recommendation (e.g., "SVG", as opposed to "SVG2") and its URL. If [`prevRecURI`](prevRecURI) is not specified but [`prevRecShortname`](prevRecShortname) is, the latter will be used to generate the former by prefixing "http://www.w3.org/TR/" to it. Note however that while in the overwhelming majority of cases this works, it is not recommended to use this approach since if the Recommendation is later [Rescinded](specStatus#specStatus-rscnd), the link will be stale. Instead, use the dated link to the Recommendation.
-
-The process for the publication of Notes has been a source of confusion. When producing multiple drafts of a Note in succession, some groups have traditionally simply published them all as Notes one after the other, indicating in the abstract or SotD if they intend to work further on this document or if it is final. Since Notes are not normative and entail no IP concerns, they don't need an elaborate process and this process was perhaps not entirely bad. However, that's not how Notes are commonly handled nowadays.
-
-The currently recommended process for Notes is closer to that which is used for Recommendation Track documents, typically: FPWD -> WD (n times) -> LC -> Note. Given that any group may decide at any time to release a Rec-Track document as a Note instead (often because it has been abandoned), this is Process-correct but it does involve jumping through hoops (notably for IP) that likely should not be needed. It has been explained to me several times why this switch took place, but I can never recall the justification. At any rate, if you are confused with the Note track process but wish to stick to it, you can do so by setting [`noRecTrack`](noRecTrack) to true.
-
-## Structure
-
-This chapter covers all the aspects of a ReSpec document's structure that were not covered as part of the very basics. As usual, let's start with an [**example**](https://github.com/w3c/respec/blob/develop/examples/basic.html). It is fairly long as it needs a decent amount of content in order to exemplify some features, but it should nevertheless be easy to understand. Go on, open the [**example**](https://github.com/w3c/respec/blob/develop/examples/basic.html) in new tab (omitted here for brevity).
 
 ### Sections
 
@@ -330,6 +257,79 @@ References are loaded from a [shared database](https://github.com/tobie/specref/
 The only things you therefore need to know for references are the reference names of the specifications you wish to refer to (as well as to how to add your own to the database). The names are usually rather logical, and most of the time can be guessed. In other cases, you can go look for them in the central bibliographical database that is maintained at [SpecRef database](https://www.specref.org/).
 
 If you ever want to use `[[\TextInDoubleBrackets]]` that doesn't represent a reference, for example to represent an ECMAScript internal slot, write it as `[[\InternalSlot]]`.
+
+### Extra links at top of the document
+
+There are times when you might need extra links or other important information to appear together with other links at the top of the document.
+
+ReSpec supports adding additional links by specifying an `otherLinks` property in the configuration. The values for this configuration option are rich and complex, so are detailed in the reference section for [`otherLinks`](otherLinks).
+
+### Custom Styling
+
+If you wish to add your own additional styles to your document, just use the regular `<link>` and `<style>` elements. Be warned however that the W3C styles will always be added after yours, so if you wish to override them you will need to use more specific selectors.
+
+## Essential W3C Boilerplate
+
+W3C boilerplate is extremely repetitive, but beneath the tedium is a wealth of options and subtle variations that are precisely what makes crafting the boilerplate by hand so hard to get right. This covers options for specification maturity, publication dates, alternatives (editor's drafts, other versions, other formats...), legalese variants, the various W3C specification URLs, the people writing it, information about the working group, and core sections such as Abstract, Status of this Document (SotD), and Conformance.
+
+We will start by using an example of a basic specification very similar to the one used in the previous section.
+
+### shortName
+
+Specifications typically require having a "short name", which is the name used (amongst other places) in the canonical "https://w3.org/TR/short-name/" URLs. This is specified using the [`shortName`](shortName) option, as seen in the example above.
+
+### Working Group Information
+
+Most (but not all) W3C documents are produced by groups of some sort: Working Groups (WG), Interest Groups (IG), Incubator Groups (XG, now defunct), Coordination Groups, the TAG, and Community or Business Groups (CG, BG). For simplicity, we will be referring to all of the above as "Working Groups", since one should not be required to understand the many subtleties of the W3C Process in order to write a good specification. Configuration options that are prefixed with wg work equally well for all group types.
+
+- [`wg`](wg)
+- [`wgPatentURI`](wgPatentURI)
+- [`wgPublicList`](wgPublicList)
+- [`wgURI`](wgURI)
+
+When these groups release a document, they must include some information that is relevant and specific to them — all of this information is required. Documents produced in other situations (e.g., Submissions, unofficial drafts, etc.) don't require these options.
+
+The result of changing these configuration options can be seen in the "Status of this Document" section.
+
+### Specification Status
+
+At any given time a specification must be in a given status. The [`specStatus`](specStatus) option indicates which status that is. Typically, a status has implications in terms of what other options may be required. For instance, a document that is intended to become a Recommendation eventually and that is not the First Public Working Draft (FPWD) of that specification will require [`previousPublishDate`](previousPublishDate) and [`previousMaturity`](previousMaturity) to be specified.
+
+Note: The process of publishing specifications typically involves releasing multiple versions in a row that have specific dates (so that people can see the evolution, and also for IP reasons). Additionally, some specification statuses involve delimited review periods. These are all specified using date-related options. The format used for all dates is `YYYY-MM-DD`, except when only year is required, in which case it is a 4-digit number.
+
+The [`specStatus`](specStatus) section list all the possible status values.
+
+### Editor's Drafts
+
+Most groups maintain some form of version control system which is exposed over the web so that people can keep track of what edits are being made to a specification in between official releases. It is often useful to point to such documents, including from released specifications, so that people wishing to report issues can make sure that they aren't already fixed, and in general get the very latest version. In fact, [Editor Drafts (ED)](specStatus#specStatus-ed) are often considered to be the most useful reference to have to a group's work.
+
+### Related Documents
+
+A specification does not always travel alone. In some cases, there can be an accompanying [`errata`](errata) document, which you can specify by providing a URL for it.
+
+Likewise, some groups occasionally find it desirable to produce alternative formats in which people may read the specification. For instance, to access it on an ebook reader you may produce an ePub alternative, or if your specification is intended to be read by printing devices you might use PDF. The [`alternateFormats`](alternateFormats) option can be used to specify these alternate representations.
+
+If your specification has a test suite (it does, right?), then you can point to it using [`testSuiteURI`](testSuiteURI). And when your tests have successfully passed in enough implementations, you will want to document that in an implementation report which you can link to using [`implementationReportURI`](implementationReportURI).
+
+### Copyrights & Patents
+
+All the best fun in standards brought to you neatly packaged in a single section!
+
+By default, W3C specifications all get the regular W3C copyright notice and archaic document license, except for unofficial documents which are under CC-BY. In some cases however, you will want to [modify](license) that.
+
+For all document types other than "unofficial", you can use [`additionalCopyrightHolders`](additionalCopyrightHolders) to indicate that the copyright is shared not just amongst the W3C's hosts but also with other organizations (typically this is used for documents developed jointly with another <abbr title="Standards Developing Organization">SDO</abbr> such as the IETF). For unofficial documents, this simply replaces the default CC-BY license.
+
+If you wish the copyright date to span several years rather than just the year matching [`publishDate`](publishDate) (e.g., 2009-2013) then you can use [`copyrightStart`](copyrightStart).
+
+At times, the patent situation of a specification may warrant being documented beyond the usual boilerplate. In such cases, use [`addPatentNote`](addPatentNote). Its content will get injected at the end of the SotD section (right after the patent policy paragraph).
+
+### Note & Recommendation Tracks
+
+If you are working on a new version of an existing Recommendation, then it is required that your document point to that previous version. This is done using the [`prevRecShortname`](prevRecShortname) and [`prevRecURI`](prevRecURI) options, which respectively provide the [`shortName`](shortName) for the existing Recommendation (e.g., "SVG", as opposed to "SVG2") and its URL. If [`prevRecURI`](prevRecURI) is not specified but [`prevRecShortname`](prevRecShortname) is, the latter will be used to generate the former by prefixing "http://www.w3.org/TR/" to it. Note however that while in the overwhelming majority of cases this works, it is not recommended to use this approach since if the Recommendation is later [Rescinded](specStatus#specStatus-rscnd), the link will be stale. Instead, use the dated link to the Recommendation.
+
+The process for the publication of Notes has been a source of confusion. When producing multiple drafts of a Note in succession, some groups have traditionally simply published them all as Notes one after the other, indicating in the abstract or SotD if they intend to work further on this document or if it is final. Since Notes are not normative and entail no IP concerns, they don't need an elaborate process and this process was perhaps not entirely bad. However, that's not how Notes are commonly handled nowadays.
+
+The currently recommended process for Notes is closer to that which is used for Recommendation Track documents, typically: FPWD -> WD (n times) -> LC -> Note. Given that any group may decide at any time to release a Rec-Track document as a Note instead (often because it has been abandoned), this is Process-correct but it does involve jumping through hoops (notably for IP) that likely should not be needed. It has been explained to me several times why this switch took place, but I can never recall the justification. At any rate, if you are confused with the Note track process but wish to stick to it, you can do so by setting [`noRecTrack`](noRecTrack) to true.
 
 ### Best Practice Documents
 
