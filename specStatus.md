@@ -54,6 +54,7 @@ is on a publication track but can also take other values for other types of docu
       <td>
         <ul>
           <li><a href="edDraftURI">edDraftURI</a>.</li>
+          <li>You can skip the "Latest Published Version" link by using <code>latestVersion: null</code> (See <a href="https://github.com/w3c/respec/pull/2968">#2968</a> for details).</li>
         </ul>
       </td>
     </tr>
