@@ -8,7 +8,7 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>Replace me with a real title</title>
     <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
     <script class="remove">
@@ -25,19 +25,13 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
   </head>
   <body>
     <section id="abstract">
-      <p>
-        This is required.
-      </p>
+      <p>This is required.</p>
     </section>
     <section id="sotd">
-      <p>
-        This is required.
-      </p>
+      <p>This is required.</p>
     </section>
     <section id="conformance">
-      <p>
-        This is required for specifications that contain normative material.
-      </p>
+      <p>This is required for specifications that contain normative material.</p>
     </section>
     <section data-dfn-for="Foo">
       <h2>Start your spec!</h2>
@@ -226,7 +220,7 @@ Sections will be automatically numbered. If you wish a section to have a specifi
 
 ReSpec sections understand some specific classes. First is the `introductory` class. It is used (rarely) for preliminary content that sits at the beginning of the document and which is not expected to be linked to from the table of contents. The abstract, SotD, and ToC sections automatically fall into this category (you need not worry about flagging them as such); the example above adds an “Overview” section exemplifying the behavior. If you do wish all the introductory sections to be present in the ToC, see [`tocIntroductory`](tocIntroductory).
 
-Then is the [`"informative"`](informative) CSS class. It is used for regular sections or appendices that are not meant to contain normative material. It will automatically preface its content with the well-know “This section is non-normative” paragraph.
+Then is the [`informative`](informative) CSS class. It is used for regular sections or appendices that are not meant to contain normative material. It will automatically preface its content with the well-know “This section is non-normative” paragraph.
 
 ```html
 <section class="informative">
@@ -235,11 +229,11 @@ Then is the [`"informative"`](informative) CSS class. It is used for regular sec
 </section>
 ```
 
-And finally is the [`"appendix"`](appendix) CSS class. It marks a section as being an appendix, as can be seen appearing at the end of the example. One important thing to know about appendix sections is that all the sections that follow an appendix will also be marked as appendices.
+And finally is the [`appendix`](appendix) CSS class. It marks a section as being an appendix, as can be seen appearing at the end of the example. One important thing to know about appendix sections is that all the sections that follow an appendix will also be marked as appendices.
 
 If you wish to link to a section and have its number and title automatically appear as part of the link, then you can use an empty anchor pointing to that ID, as in `<a href='#foo'></a>`. The “Overview” section contains an example of that.
 
-A table of contents is generated automatically and placed right after the SotD. If you have a deeply nested document structure and find that the ToC is either too long or too deep, you can use the [maxTocLevel](maxTocLevel) option to limit how deep it goes. In the example used above, there is no limit and indeed one section is numbered 4.1.1.1.1.1 — rather deep. Setting [`maxTocLevel`](maxTocLevel) to other values will yield different results (other example with `maxTocLevel: 2`). If you only have some sections that you would like excluded from the ToC, you can add the class [`"notoc"`](notoc) to associated section element and it will be omitted.
+A table of contents is generated automatically and placed right after the SotD. If you have a deeply nested document structure and find that the ToC is either too long or too deep, you can use the [maxTocLevel](maxTocLevel) option to limit how deep it goes. In the example used above, there is no limit and indeed one section is numbered 4.1.1.1.1.1 — rather deep. Setting [`maxTocLevel`](maxTocLevel) to other values will yield different results (other example with `maxTocLevel: 2`). If you only have some sections that you would like excluded from the ToC, you can add the class [`notoc`](notoc) to associated section element and it will be omitted.
 
 The more observant readers will have noted that ReSpec also inserts some strange-looking comments in the generated source, that look like `<!-- OddPage -->`. These are present so that html2ps knows how to paginate correctly. Perhaps not useful to most but helpful to those who rely on it for printing, and harmless.
 
@@ -291,7 +285,7 @@ HTML supports functionality to mark abbreviations and acronyms (using `<abbr>`),
 
 HTML also supports the notion that you can give a term's definition using the `<dfn>` element. While that is nice, it is even better to link back to the definition whenever a term is used, which in turn is tedious. While ReSpec could go through the entire text and link every occurrence of a defined term back to its definition, that would be a problematic approach since it would risk linking the same term used with a different meaning. What it does instead is that it allows you to use an href-less a element around a term when you use it, and it will manage the link on its own (e.g., `<a>term</a>`).
 
-When you write "`<dfn>My term</dfn>`", ReSpec adds an id (and a class) to it
+When you write `<dfn>My term</dfn>`, ReSpec adds an id (and a class) to it
 
 ```html
 <dfn data-dfn-type="dfn" id="dfn-my-term">My term</dfn>
@@ -362,7 +356,7 @@ This feature is rarely used, and likely needs to be updated. If you wish to use 
 </div>
 ```
 
-If a `section` element with id `"bp-summary"` is present, then a summary list of best practices will be placed in it, linked to the best practices that have an id on the span element.
+If a `section` element with id `bp-summary` is present, then a summary list of best practices will be placed in it, linked to the best practices that have an id on the span element.
 
 ```html
 <section id="bp-summary"></section>
