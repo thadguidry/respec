@@ -19,18 +19,6 @@ var respecConfig = {
       companyURL: "http://intel.com",
       w3cid: 57705,
     },
-    {
-      name: "Mounir Lamouri",
-      company: "Google Inc.",
-      companyURL: "https://google.com",
-      w3cid: 45389,
-    },
-    {
-      name: "Anssi Kostiainen",
-      company: "Intel Corporation",
-      companyURL: "http://intel.com",
-      w3cid: 41974,
-    },
   ],
 };
 ```
