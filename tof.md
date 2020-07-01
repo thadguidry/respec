@@ -1,6 +1,6 @@
 # `tof`
 
-Add a `<section>` element with ID `"tof"` to generate a Table of Figures.
+Automatically generate a Table of Figures by adding a `<section id="tof">`.
 
 ## Example
 
