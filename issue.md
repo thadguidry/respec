@@ -8,4 +8,4 @@ Provided you've added the [`github`](github) configuration option, you can easil
 
 ReSpec will automatically download the issue details and include them for you.
 
-See also: [Issue Summary](issue-summary)
+Additionally, you can gather all referenced issues in a list with [`issue-summary`](issue-summary).
