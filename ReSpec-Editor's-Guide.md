@@ -1,6 +1,6 @@
 This User's Guide is organized in such a way that a complete newcomer may read it linearly and understand everything. That being said, read it in whatever order you like.
 
-### Basic Layout
+## Basic Layout
 
 A ReSpec document is a straightforward HTML document that brings in the ReSpec script, defines a few configuration variables, and follows a few conventions.
 
@@ -53,7 +53,7 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
 
 That is essentially the smallest W3C specification you can write using ReSpec (in practice, you could eliminate a few things but then you would have a truly useless document). Some of the configuration may seem cryptic, but it is there because all W3C documents must have some specific information available — all will be explained soon.
 
-### The Very Basics
+## The Very Basics
 
 The document that is rendered in your browser is quite different from the one which is authored. Yet they are the same document, with a sprinkle of ReSpec on top. Using your browser's developer tools, you may wish to take a look at the real DOM that is being produced and compare it with the source.
 
