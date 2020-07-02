@@ -380,7 +380,3 @@ curl -F "file=@source.html" -F "shortName=dahut" -F specStatus="ED" \
 ```
 
 See also [respecDocWriter](https://github.com/w3c/respec/blob/develop/tools/respecDocWriter.js) tool.
-
-### Creating a Diff-Marked Version
-
-ReSpec is also capable of producing a diff-marked version if you have a configuration setting of [`previousDiffURI`](previousDiffURI) set to a document to compare to (which defaults to [`previousURI`](previousURI)). When you press that button, you will obtained a diffmarked version instead of a regular specification. By default, the diff tool is set to http://www.aptest.com/standards/htmldiff/htmldiff.pl, but you can override this by setting `diffTool`.
