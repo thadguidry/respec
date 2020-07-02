@@ -15,7 +15,7 @@ The `logos` property takes an array that contains a set of objects. Each of thes
   <dd>The width of the image.</dd>
   <dt>id</dt>
   <dd>The id of the image element.</dd>
-  <dt>href</dt>
+  <dt>url</dt>
   <dd>Where to navigate to when the logo is pressed.</dd>
 </dl>
 
@@ -26,7 +26,7 @@ var respecConfig = {
   logos: [
     {
       src: "https://example.com/logo.gif",
-      href: "https://example.com",
+      url: "https://example.com",
       alt: "The Example company",
       width: 100,
       height: 42,
