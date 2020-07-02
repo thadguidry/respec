@@ -1,6 +1,8 @@
 # Creating Static Snapshots
 
-Of course the downside of the approach taken by ReSpec is that the specification as it is expected to be, with all its bells and whistles, exists only in your browser's memory as a DOM. Publishing directly with the script would not work as the source would not pass PubRules. Also, as ReSpec process the document each time a page is visited, it might not feel efficient or quick enough (though ReSpec does a great job caching things for repeating visits). The good news is that ReSpec allows you to export a "static snapshot" on processed document. There is no bad news here.
+Of course the downside of the approach taken by ReSpec is that the specification as it is expected to be, with all its bells and whistles, exists only in your browser's memory as a DOM. Publishing directly with the script would not work as the source would not pass PubRules. Also, as ReSpec process the document each time a page is visited, it might not feel efficient or quick enough (although ReSpec does a great job caching things for repeated visits).
+
+The good news is that ReSpec allows you to export a "static snapshot" of the processed document. There is no bad news here.
 
 ## Using Browser
 
