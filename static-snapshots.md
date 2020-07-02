@@ -65,3 +65,5 @@ export PUPPETEER_EXECUTABLE_PATH="/usr/bin/google-chrome"
 # On MacOS, it's generally:
 # "/Applications/Google Chrome.app/Contents/MacOS/Google chrome"
 ```
+
+For more options, run `respec --help`.
