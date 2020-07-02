@@ -15,8 +15,8 @@ dictionary PointerEventInit: MouseEventInit {
   double width = 1;
 };
 
-[Constructor(DOMString type, optional PointerEventInit eventInitDict)]
 interface PointerEvent: MouseEvent {
+  constructor(DOMString type, optional PointerEventInit eventInitDict);
   readonly attribute long pointerId;
   readonly attribute double width;
 };
