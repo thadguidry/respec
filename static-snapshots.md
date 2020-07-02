@@ -27,6 +27,41 @@ curl -F "file=@source.html" -F "shortName=dahut" -F specStatus="ED" \
      -F "publishDate=2020-02-21" https://labs.w3.org/spec-generator/ > index.html
 ```
 
-## Using `respec2html` tool
+One limitation of the service above is that it only supports single source file, i.e., we can't use [`data-include`](data-include) or split `respecConfig` in a separate file. Fret not, we got a CLI you can run locally!
 
-TODO
+## Using CLI
+
+If you want to generate your spec locally, we got a CLI tool for that! The tool, which is the official CLI for ReSpec — called `respec2html` — requires Node.js and npm installed on your computer.
+
+To install the CLI, run:
+
+```bash
+npm install --global respec
+```
+
+Then use the CLI to generate a snapshot as:
+
+```bash
+respec2html --src source.html --out index.html
+
+# "respec2html" is an alias for "respec". You can also run:
+respec --src source.html --out index.html
+```
+
+If you wish to run above as a one-off script, you can run:
+
+```bash
+npx respec --src source.html --out index.html
+```
+
+One benefit of using `npx` (apart from being shorter) is that you will always get the latest version of respec2html.
+
+**Pro tip:** If you already have Chrome installed on your computer, you can speed up the process by not installing a new copy of Chrome on each install. To do so, add following two environment variables before installing or running above steps:
+
+```bash
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
+export PUPPETEER_EXECUTABLE_PATH="/usr/bin/google-chrome"
+# replace "/usr/bin/google-chrome" with path to Chrome executable on your system.
+# On MacOS, it's generally:
+# "/Applications/Google Chrome.app/Contents/MacOS/Google chrome"
+```
