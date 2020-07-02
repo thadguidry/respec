@@ -48,7 +48,7 @@ respec2html --src source.html --out index.html
 respec --src source.html --out index.html
 ```
 
-If you wish to run above as a one-off script, you can run:
+If you wish to run above as a one-off script:
 
 ```bash
 npx respec --src source.html --out index.html
@@ -56,7 +56,9 @@ npx respec --src source.html --out index.html
 
 One benefit of using `npx` (apart from being shorter) is that you will always get the latest version of respec2html.
 
-**Pro tip:** If you already have Chrome installed on your computer, you can speed up the process by not installing a new copy of Chrome on each install. To do so, add following two environment variables before installing or running above steps:
+<div class="note">
+
+If you already have Chrome installed on your computer, you can speed up the process by not installing a new copy of Chrome on each install. To do so, add following two environment variables before installing or running above steps:
 
 ```bash
 export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
@@ -65,5 +67,7 @@ export PUPPETEER_EXECUTABLE_PATH="/usr/bin/google-chrome"
 # On MacOS, it's generally:
 # "/Applications/Google Chrome.app/Contents/MacOS/Google chrome"
 ```
+
+</div>
 
 For more options, run `respec --help`.
