@@ -9,6 +9,6 @@ It is important to know that every section following an appendix will also be ma
 ```html
 <section class="appendix">
   <h2>Acknowledgements<h2>
-  <p>This spec would not be possible without...
+  <p>This spec would not be possible without...</p>
 </section>
 ```
