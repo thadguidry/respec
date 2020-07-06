@@ -5,7 +5,8 @@ Enable this [lint rule](lint) to get a warning if any of the tests mentioned in 
 For example:
 
 ```html
-<p id="a" data-tests="test.html,404.html"></p> <!-- 404.html does not exist)
+<p id="a" data-tests="test.html,404.html"></p>
+<!-- 404.html does not exist -->
 ```
 
 You'll receive a warning listing all the missing tests.
