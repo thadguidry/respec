@@ -25,3 +25,7 @@ var respecConfig = {
   ],
 };
 ```
+
+Above is rendered as:
+
+<img src="https://user-images.githubusercontent.com/8426945/86644589-47c4d580-bffb-11ea-84a7-e46bfd2dcb8a.png" alt="otherLinks rendered in page's header" width="239" height="272" loading="lazy">

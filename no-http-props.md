@@ -27,4 +27,4 @@ var respecConfig = {
 
 ## Example Warning
 
-<a href="https://user-images.githubusercontent.com/8426945/42473140-6e16b38c-83e1-11e8-81e3-c82bddeb4483.png"><img alt="example warning for no-http-props" src="https://user-images.githubusercontent.com/8426945/42473140-6e16b38c-83e1-11e8-81e3-c82bddeb4483.png" width="400"></a>
+<img alt="example warning for no-http-props" src="https://user-images.githubusercontent.com/8426945/42473140-6e16b38c-83e1-11e8-81e3-c82bddeb4483.png" width="725" height="117" loading="lazy">

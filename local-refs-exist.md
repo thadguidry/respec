@@ -25,4 +25,4 @@ var respecConfig = {
 
 ## Example Warning
 
-<a href="https://user-images.githubusercontent.com/8426945/40004984-92f30f1a-57b4-11e8-8b8e-1f2eae4c6d54.png"><img alt="example warning for local-refs-exist" src="https://user-images.githubusercontent.com/8426945/40004984-92f30f1a-57b4-11e8-8b8e-1f2eae4c6d54.png" width="400"></a>
+<img alt="example warning for local-refs-exist" src="https://user-images.githubusercontent.com/8426945/40004984-92f30f1a-57b4-11e8-8b8e-1f2eae4c6d54.png" width="855" height="498" loading="lazy">
