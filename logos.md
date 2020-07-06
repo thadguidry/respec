@@ -39,16 +39,14 @@ var respecConfig = {
 Would output:
 
 ```html
-<p>
-  <a href="https://example.com">
-    <span id="example-company-logo">
-      <img
-        src="https://example.com/logo.gif"
-        width="100"
-        height="42"
-        alt="The Example company"
-      />
-    </span>
-  </a>
-</p>
+<a class="logo" href="https://example.com">
+  <span id="example-company-logo">
+    <img
+      src="https://example.com/logo.gif"
+      width="100"
+      height="42"
+      alt="The Example company"
+    >
+  </span>
+</a>
 ```
