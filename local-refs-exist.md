@@ -15,7 +15,7 @@ You'll receive a warning pointing you to the links that are broken.
 
 ## Example of usage
 
-```js
+```js "example": "Enable local-refs-exist linter rule."
 var respecConfig = {
   lint: {
     "local-refs-exist": true,

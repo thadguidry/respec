@@ -6,7 +6,7 @@ The `mdn` option allows a spec to be annotated with links to MDN developer docum
 
 If a boolean is provided, it uses spec's `shortName` to match data over on MDN.
 
-```js
+```js "example": "Add MDN tables with shortName as MDN key."
 var respecConfig = {
   shortName: "payment-request",
   mdn: true,
@@ -15,7 +15,7 @@ var respecConfig = {
 
 If the `shortName` doesn't match the MDN key, you can provide a key as:
 
-```js
+```js "example": "Add MDN tables with specific MDN key."
 var respecConfig = {
   mdn: "payment-request",
 };

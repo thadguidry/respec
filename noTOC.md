@@ -4,7 +4,7 @@ When this configuration variable is set to `true`, no table of contents is gener
 
 ## Example
 
-```js
+```js "example": "Do not generate a Table of Contents."
 var respecConfig = {
   noTOC: true,
 };

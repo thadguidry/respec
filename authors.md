@@ -6,7 +6,7 @@ Note: In most cases, [`editors`](editors) is preferred over `authors`.
 
 ## Example
 
-```js
+```js "example": "List of authors"
 var respecConfig = {
   authors: [
     {

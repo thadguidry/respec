@@ -17,7 +17,7 @@ You'll receive a warning pointing you to the violating properties in `respecConf
 
 ## Example of usage
 
-```js
+```js "example": "Enable no-http-props linter rule."
 var respecConfig = {
   lint: {
     "no-http-props": true,

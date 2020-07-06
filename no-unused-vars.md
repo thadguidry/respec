@@ -19,7 +19,7 @@ You'll receive a warning pointing you to the unused `<var>`s.
 
 ## Example of usage
 
-```js
+```js "example": "Enable no-unused-vars linter rule."
 var respecConfig = {
   lint: {
     "no-unused-vars": true,
@@ -31,7 +31,7 @@ var respecConfig = {
 
 To ignore warning on per-variable basis, add a `data-ignore-unused` attribute to `<var>` as:
 
-```html
+```html "example": "Use data-ignore-unused  attribute to ignore the warning."
 <var data-ignore-unused>someUnusedVar</var> is unused, but warning is ignored.
 ```
 

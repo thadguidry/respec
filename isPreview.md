@@ -6,7 +6,7 @@ The `isPreview` adds an annoying red box to your document, warning unsuspecting 
 
 This adds a big red ugly box to your document.
 
-```js
+```js "example": "Add a 'preview' warning"
 var respecConfig = {
   isPreview: true,
 };

@@ -6,7 +6,7 @@ The `otherLinks` property takes an array that contains a set of objects. Each of
 
 ## Example
 
-```js
+```js "example": "Use otherLinks to add links to implementation status."
 var respecConfig = {
   otherLinks: [
     {

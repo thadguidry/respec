@@ -4,7 +4,7 @@ An array of [person objects](person) describing the editors of the document. Edi
 
 ## Example
 
-```js
+```js "example": "List of editors"
 var respecConfig = {
   editors: [
     {

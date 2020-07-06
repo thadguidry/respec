@@ -4,7 +4,7 @@ A `YYYY-MM-DD` date. The in-place edit date of an already published document. Us
 
 ## Example
 
-```js
+```js "example": "Add a modification date for an already published document."
 var respecConfig = {
   publishDate: "2020-03-30",
   modificationDate: "2020-04-13",

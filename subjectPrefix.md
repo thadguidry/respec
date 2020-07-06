@@ -4,7 +4,7 @@ If you wish feedback to your mailing list about this specific document to have a
 
 ## Example
 
-```js
+```js "example": "Add a prefix for mailing list subjects."
 var respecConfig = {
   subjectPrefix: "[Foopy-Spec-Feedback]",
 };

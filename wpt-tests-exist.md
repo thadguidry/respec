@@ -12,12 +12,12 @@ You'll receive a warning listing all the missing tests.
 
 ## Example of usage
 
-```js
+```js "example": "Ensure all data-tests WPT exist for WebRTC."
 var respecConfig = {
-  testSuiteURI:
-    "https://github.com/web-platform-tests/wpt/tree/master/payment-request/",
+  testSuiteURI: "https://github.com/web-platform-tests/wpt/tree/HEAD/webrtc/",
   // alternatively:
-  // testSuiteURI: "https://wpt.fyi/payment-request/",
+  // testSuiteURI: "https://wpt.fyi/webrtc/",
+
   lint: {
     "wpt-tests-exist": true,
   },

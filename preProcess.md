@@ -6,7 +6,7 @@ Expects an array of JavaScript functions. ReSpec invokes these functions in orde
 
 ## Examples
 
-```js
+```js "example": "Run two functions in order before processing."
 function doThing(config, document){...}
 function doOtherThing(config, document){...}
 

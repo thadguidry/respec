@@ -4,7 +4,7 @@ The specification's "short name", which is the name used in W3C URLs such as "ht
 
 ## Example
 
-```js
+```js "example": "Set 'awesome-api' as specification's short name."
 var respecConfig = {
   shortName: "awesome-api",
 };

@@ -4,15 +4,13 @@ Adds a [Can I Use](http://caniuse.com) support table in the document header.
 
 ## Example of usage
 
-```js
-// basic example
+```js "example": "Caniuse table for payment-request"
 var respecConfig = {
   caniuse: "payment-request",
 };
 ```
 
-```js
-// example with configuration (see options below)
+```js "example": "Caniuse with specific browsers"
 var respecConfig = {
   caniuse: {
     feature: "payment-request",

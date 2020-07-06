@@ -8,7 +8,7 @@ A boolean used to enable/disable ReSpec's built-in linter for W3C documents. The
 
 If you want to turn off the linter:
 
-```js
+```js "example": "Disable linter."
 var respecConfig = {
   lint: false,
 };
@@ -16,7 +16,7 @@ var respecConfig = {
 
 You can also enable or disable certain rules:
 
-```js
+```js "example": "Enable or disable certain linter rules."
 var respecConfig = {
   "no-http-props": false, // disable a rule that enabled by default
   "no-unused-vars": true, // enable a rule that disable by default

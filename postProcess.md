@@ -8,7 +8,7 @@ Takes an array of JavaScript functions. The functions are invoked in the order a
 
 The following examples shows two functions run in order after processing.
 
-```js
+```js "example": "Run two functions in order after processing."
 function doThing(config, document){...}
 function doOtherThing(config, document){...}
 

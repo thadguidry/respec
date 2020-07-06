@@ -6,7 +6,7 @@ The option is simply some text giving the additional copyright holders. For unof
 
 ## Example
 
-```js
+```js "example": "Add an additional copyright holder."
 var respecConfig = {
   additionalCopyrightHolders: "Internet Engineering Task Force",
 };

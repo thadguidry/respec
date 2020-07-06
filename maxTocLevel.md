@@ -4,8 +4,8 @@ A number indicating the maximum depth of the table of contents, in case you wish
 
 ## Example
 
-```js
+```js "example": "Set maxiumum ToC depth to 2 (i.e., skip §1.1.1)."
 var respecConfig = {
-  maxTocLevel: 3,
+  maxTocLevel: 2,
 };
 ```

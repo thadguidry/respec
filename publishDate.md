@@ -6,8 +6,8 @@ Note that the last modified date provided by the browser can at times be wrong. 
 
 ## Example
 
-```js
+```js "example": "Set January 2, 2021 as publish date."
 var respecConfig = {
-  publishDate: "2021-01-01",
+  publishDate: "2021-01-02",
 };
 ```

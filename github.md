@@ -19,17 +19,21 @@ It also adds an object to [otherLinks](otherLinks) for under "Participate", with
 
 This is normally what you want:
 
-```js
+```js "example": "Set GitHub repository"
 var respecConfig = {
   github: "w3c/browser-payment-api",
-  // OR
+};
+```
+
+```js "example": "Set GitHub repository as a URL"
+var respecConfig = {
   github: "https://github.com/w3c/browser-payment-api",
 };
 ```
 
 This example shows a repository whose specs are being served from a "public-docs" branch.
 
-```js
+```js "example": "Set GitHub repository with a different default branch"
 var respecConfig = {
   github: {
     repoURL: "https://github.com/w3c/browser-payment-api",

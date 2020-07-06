@@ -247,7 +247,7 @@ is on a publication track but can also take other values for other types of docu
 
 ## Example
 
-```js
+```js "example": "Set specification's status to 'unofficial'."
 var respecConfig = {
   specStatus: "unofficial",
 };

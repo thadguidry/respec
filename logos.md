@@ -21,7 +21,7 @@ The `logos` property takes an array that contains a set of objects. Each of thes
 
 ## Example
 
-```js
+```js "example": "Add a custom logo at top of page."
 var respecConfig = {
   logos: [
     {

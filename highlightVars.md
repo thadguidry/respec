@@ -4,7 +4,7 @@ With long algorithms in a specification, it can be useful to allow readers to cl
 
 ## Example of usage
 
-```js
+```js "example": "Enable variable highlighting"
 var respecConfig = {
   highlightVars: true,
 };

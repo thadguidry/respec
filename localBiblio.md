@@ -8,7 +8,7 @@ You can find the format for these entries in the [SpecRef repository](https://gi
 
 ## Example
 
-```js
+```js "example": "A sample localBiblio entry."
 var respecConfig = {
   localBiblio: {
     WEREWOLF: {

@@ -4,7 +4,7 @@ An array of [person objects](person) describing the past editors of the document
 
 ## Example
 
-```js
+```js "example": "List of former editors"
 var respecConfig = {
   formerEditors: [
     {

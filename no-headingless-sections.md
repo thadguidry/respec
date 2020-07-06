@@ -15,7 +15,7 @@ You'll receive a warning pointing you to the heading-less sections.
 
 ## Example of usage
 
-```js
+```js "example": "Enable no-headingless-sections linter rule."
 var respecConfig = {
   lint: {
     "no-headingless-sections": true,

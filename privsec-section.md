@@ -4,10 +4,9 @@ For certain types of documents, this [lint rule](lint) warns if the documents is
 
 ## Example of usage
 
-```js
+```js "example": "Disable privsec-section linter rule."
 var respecConfig = {
   lint: {
-    // turn the rule off
     "privsec-section": false,
   },
 };

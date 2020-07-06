@@ -4,7 +4,7 @@ Automatically generate a Table of Figures by adding a `<section id="tof">`.
 
 ## Example
 
-```html
+```html "example": "Table of Figures"
 <section>
   ...
   <figure id="flowchart">

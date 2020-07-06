@@ -4,7 +4,7 @@ A boolean, which when set to true, will cause the introductory sections to also 
 
 ## Example
 
-```js
+```js "example": "Show introductory sections in Table of Contents."
 var respecConfig = {
   tocIntroductory: true,
 };
