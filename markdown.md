@@ -1,6 +1,6 @@
 # Using Markdown with ReSpec
 
-You can use markdown to write ReSpec based documents. There are two ways you can enable markdown in ReSpec. You can globally enable by setting [`respecConfig.format`](format) to "markdown", or you can enable markdown on individual [`data-include`](data-include) using [`data-include-format`](data-include-format) attribute.
+You can use markdown to write ReSpec based documents. To enable markdown globally, set [`respecConfig.format`](format) to "markdown".
 
 The markdown is interpreted as [GFM](https://guides.github.com/features/mastering-markdown/) and you can mix HTML and markdown.
 
