@@ -15,21 +15,19 @@ var respecConfig = {
 You can define a term as `<dfn>fetch</dfn>` and reference it as either `<a>fetch</a>` or `<a>fetches</a>`.
 Below are some more examples:
 
-```html
-<dfn>user agent</dfn> can be referenced as
-     <a>user agents</a>
-     <a>user agent</a>
-     <a data-lt="user agent">browser</a>.
-</dfn>
+```html "example": "Automatic pluralization in action."
+<dfn>user agent</dfn> can be referenced as:
+  • <a>user agents</a>
+  • <a>user agent</a>
+  • <a data-lt="user agent">browser</a>.
 
-<dfn data-lt="pub">bar</a> can be referenced as
-     <a>pub</a>
-     <a>bar</a>
-     <a>bars</a>
-     <a data-lt="pub">drinking establishment</a>
-     <a data-lt="bar">drinking establishment</a>
-     <a data-lt="bars">drinking establishment</a>
-</dfn>
+<dfn data-lt="pub">bar</dfn> can be referenced as:
+  • <a>pub</a>
+  • <a>bar</a>
+  • <a>bars</a>
+  • <a data-lt="pub">drinking establishment</a>
+  • <a data-lt="bar">drinking establishment</a>
+  • <a data-lt="bars">drinking establishment</a>
 ```
 
 Note: We tried to make the pluralization as smart as possible, so that it won't break existing specs easily. It adds plurals only for those terms which are referenced. So in the above example if you don't reference `<a>fetches</a>` or `<a data-lt="fetches">fetch request</a>`, we won't add a pluralization of `fetch`.
