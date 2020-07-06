@@ -9,3 +9,5 @@ var respecConfig = {
   testSuiteURI: "https://example.com/test/suite/",
 };
 ```
+
+Also see: [`wpt-tests-exist` lint rule](wpt-tests-exist).
