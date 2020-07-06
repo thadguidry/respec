@@ -9,44 +9,10 @@ Tells ReSpec to treat the document as being in a format other than HTML. Support
 
 ## Example
 
-```js
+```js "example": "Interpret content as Markdown"
 var respecConfig = {
   format: "markdown",
 };
 ```
 
-## Markdown
-
-When `format` is set to "markdown", you can use a mix of HTML and markdown:
-
-```markdown
-## Using markdown
-
-This will be a paragraph.
-
-<pre class="example" title="A markdown example">
-function thisIsNice(){
-  becauseWeCanUseMarkdown();
-}
-
-// And using markdown is pretty sweet!
-const foo = "FOO";
-while(foo){
-  Promise.all([...lotsOfPromises])
-}
-</pre>
-```
-
-Please remember that markdown requires double newlines between an HTML tag and markdown text.
-
-```markdown
-<section>
-
-## Markdown inside HTML tags
-
-This is the correct way to insert markdown inside HTML.
-
-</section>
-```
-
-See also: [`nolink`](nolink) class to disable automatic linking in code blocks, if needed.
+See: [Using Markdown with ReSpec Guide](markdown)

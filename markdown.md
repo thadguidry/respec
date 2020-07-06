@@ -80,3 +80,17 @@ above is equivalent to writing:
 console.log(navigator.myAPI.rocks()); // of course
 </pre>
 ````
+
+## HTML and Markdown
+
+Please remember that markdown requires double newlines between an HTML tag and markdown text.
+
+```markdown
+<aside class="note">
+
+## Markdown inside HTML tags
+
+This is the correct way to insert markdown inside HTML.
+
+</aside>
+```
