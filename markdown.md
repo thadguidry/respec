@@ -8,9 +8,9 @@ Now, we describe some of the ReSpec specific markdown behaviors and extensions.
 
 ## Headings
 
-When using markdown, you don't need to add [`<section>` elements](section) manually. Each heading automatically creates a structure of nested section elements around it. For example,
+When using markdown, you don't need to add [`<section>` elements](section) manually. Each heading automatically creates a structure of nested section elements around it. For example:
 
-```markdown
+```markdown "example": "Markdown headings and automatic section structure generation."
 ## Heading
 
 Here's some text.
@@ -41,7 +41,7 @@ will be transformed into:
 
 By default, ReSpec uses heading's text content to generate IDs for you. The IDs are mostly stable, i.e., we make sure updates to ReSpec do not change the IDs). Sometimes, you might want to add a different (perphaps shorter) ID. You can provide a custom heading ID as:
 
-```markdown
+```markdown "example": "Specifying a custom ID for a heading."
 ## I'm a heading {#custom-heading-id}
 ```
 
@@ -89,7 +89,7 @@ console.log(navigator.myAPI.rocks()); // of course
 
 Please remember that markdown requires double newlines between an HTML tag and markdown text.
 
-```markdown
+```markdown "example": "Mixing HTML and markdown."
 <aside class="note">
 
 ## Markdown inside HTML tags
