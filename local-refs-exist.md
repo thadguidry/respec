@@ -4,7 +4,7 @@ Enable this [lint rule](lint) to get a warning if there are some `href`'s that l
 
 For example:
 
-```html
+```html "illegalExample": "Broken local reference."
 <section id="foo"><!-- content --></section>
 
 <a href="#bar">baz</a>

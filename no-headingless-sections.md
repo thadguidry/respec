@@ -4,7 +4,7 @@ Enable this [lint rule](lint) to get a warning if there is some `<section>` in t
 
 For example:
 
-```html
+```html "illegalExample": "A section that doesn't start with a heading."
 <section id="foo">
   <!-- should've begun with a heading -->
   <p>content begins</p>

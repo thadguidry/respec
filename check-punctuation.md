@@ -6,7 +6,7 @@ Enable this lint rule to check for punctuation. It checks for:
 
 For example:
 
-```html
+```html "illegalExample": "A paragraph with bad punctuation."
 <p>This has no punctuation at the end</p>
 ```
 

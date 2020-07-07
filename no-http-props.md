@@ -4,7 +4,7 @@ Enable this [lint rule](lint) to get a warning if there exists some URL in `resp
 
 For example:
 
-```html
+```html "illegalExample": "A failing URL in respecConfig."
 <script>
   var respecConfig = {
     implementationReportURI: "http://w3c.github.io/payment-request/reports/implementation.html",

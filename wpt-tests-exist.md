@@ -4,7 +4,7 @@ Enable this [lint rule](lint) to get a warning if any of the tests mentioned in 
 
 For example:
 
-```html
+```html "illegalExample": "data-tests with a missing test."
 <p id="a" data-tests="test.html,404.html"></p>
 <!-- 404.html does not exist -->
 ```
