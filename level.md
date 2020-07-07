@@ -22,4 +22,4 @@ Which results in:
 
 Which would render as, for example:
 
-<img width="693" alt="Screenshot 2020-02-21 18 54 02" src="https://user-images.githubusercontent.com/870154/75014932-91dd6c80-54db-11ea-8890-08ab2f6ac7c3.png">
+<img width="1386" height="460" loading="lazy" alt="Screenshot 2020-02-21 18 54 02" src="https://user-images.githubusercontent.com/870154/75014932-91dd6c80-54db-11ea-8890-08ab2f6ac7c3.png">
