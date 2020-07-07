@@ -6,7 +6,7 @@ Note that the content of the `title` attribute will be interpreted as HTML marku
 
 ## Example
 
-```html
+```html "example": "An Editor's note."
 <p class="ednote" title="This section will be reformatted">
   We are aware that the formatting of this section isn't great. We will fix it
   in the next revision!

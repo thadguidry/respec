@@ -6,7 +6,7 @@ Indicates that a code block should not be syntax highlighted.
 
 This block will not be syntax highlighted:
 
-```html
+```html "example": "Disable syntax highlighting."
 <pre class="nohighlight">
 function foo(){
   const a = "foo!";
@@ -16,7 +16,7 @@ function foo(){
 
 But this one will be syntax-highlighted by default:
 
-```html
+```html "example": "All pre elements are syntax highlighted by default."
 <pre>
 function foo(){
   const a = "foo!";

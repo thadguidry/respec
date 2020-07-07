@@ -6,7 +6,7 @@ It is important to know that every section following an appendix will also be ma
 
 ## Example
 
-```html
+```html "example": "Mark a section as being an appendix."
 <section class="appendix">
   <h2>Acknowledgements<h2>
   <p>This spec would not be possible without...</p>

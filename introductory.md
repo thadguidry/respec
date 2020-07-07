@@ -6,7 +6,7 @@ If you do wish all the introductory sections to be present in the ToC, see [tocI
 
 ## Example
 
-```html
+```html "example": "Mark a section as introductory material."
 <section class="introductory">
   <p>This document can be folded into a paper airplane.</p>
 </section>

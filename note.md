@@ -6,7 +6,7 @@ Note that the content of the `title` attribute will be interpreted as HTML marku
 
 ## Example
 
-```html
+```html "example": "Treat given paragraph as a note."
 <p class="note" title="Always rely upon native semantics">
   Remember - if you are using the <code>role</code> attribute to say that a
   paragraph is a button, you are probably doing it wrong!

@@ -4,7 +4,7 @@ When this class is specified on a section element, that section will be omitted 
 
 ## Example
 
-```html
+```html "example": "Skip a section from Table of Contents."
 <section class="notoc" id="mySection">
   <h1>Some section I do not want in the ToC</h1>
   ...

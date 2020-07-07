@@ -11,7 +11,7 @@ Sections you can override include:
 
 ## Examples
 
-```html
+```html "example": "Completely override the content of 'Status of this Document' section."
 <section id="sotd" class="override">
   <h2>Status of this document</h2>
   <p>Exploring new ideas...</p>

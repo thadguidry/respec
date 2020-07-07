@@ -4,7 +4,7 @@ If you want to include content that is used during the generation of the specifi
 
 ## Example
 
-```html
+```html "example": "Remove some content once ReSpec has finished processing."
 <div class="remove">
   <p>This will be removed at build time.</p>
 </div>

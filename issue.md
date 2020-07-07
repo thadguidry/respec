@@ -2,7 +2,7 @@
 
 Provided you've added the [`github`](github) configuration option, you can easily reference GitHub issues in your spec as:
 
-```html
+```html "example": "Reference GitHub issue #363 in-place."
 <div class="issue" data-number="363"></div>
 ```
 

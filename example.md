@@ -8,7 +8,7 @@ Note that the content of the `title` attribute will be interpreted as HTML marku
 
 ## Example
 
-```html
+```html "example": "Mark an aside as example."
 <aside class="example" title="Fat arrows (<code>=></code>)">
   <p>Here we see how to use a fat arrow in ES.</p>
   <pre>
