@@ -22,6 +22,8 @@ More text.
 
 will be transformed into:
 
+<samp>
+
 ```html
 <section>
   <h2>Heading</h2>
@@ -32,6 +34,8 @@ will be transformed into:
   </section>
 </section>
 ```
+
+</samp>
 
 ### Custom Heading IDs
 

@@ -13,8 +13,12 @@ var respecConfig = {
 
 Which shows up as:
 
+<samp>
+
 ```html
 <a href="https://www.w3.org/Submission/2018/03/Comment/">
   W3C Team Comment
 </a>
 ```
+
+</samp>

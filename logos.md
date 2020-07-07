@@ -38,6 +38,8 @@ var respecConfig = {
 
 Would output:
 
+<samp>
+
 ```html
 <a class="logo" href="https://example.com">
   <span id="example-company-logo">
@@ -50,3 +52,5 @@ Would output:
   </span>
 </a>
 ```
+
+</samp>

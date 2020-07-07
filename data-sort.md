@@ -34,8 +34,13 @@ Sorting a definition list ("ascending" by default, so A-to-0Z locale dependent).
   <dd>🍎s are delicious.</dd>
   <dd>🍏s are great in a pie!.</dd>
 </dl>
+```
 
-<!-- becomes -->
+becomes:
+
+<samp>
+
+```html
 <dl>
   <dt>Apples</dt>
   <dd>🍎s are delicious.</dd>
@@ -48,3 +53,5 @@ Sorting a definition list ("ascending" by default, so A-to-0Z locale dependent).
   <dd>Are quite stripy.</dd>
 </dl>
 ```
+
+</samp>

@@ -18,6 +18,8 @@ In addition, you will also need to provide a `canonicalUri` and a `license` in y
 
 When configured, a script element similar to the following will be added:
 
+<samp>
+
 ```html
 <script type="application/ld+json">
   {
@@ -64,3 +66,5 @@ When configured, a script element similar to the following will be added:
   }
 </script>
 ```
+
+</samp>

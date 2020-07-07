@@ -4,7 +4,7 @@ Enable this [lint rule](lint) to get a warning if a variable is defined but not 
 
 For example:
 
-```html
+```html "example": "Used and unused variables."
 <section id="foo">
   <p>|varA| is defined here.</p>
   <ol class="algorithm">

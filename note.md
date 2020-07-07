@@ -15,6 +15,8 @@ Note that the content of the `title` attribute will be interpreted as HTML marku
 
 Would be exported as:
 
+<samp>
+
 ```html
 <div class="note">
   <div class="note-title">
@@ -26,3 +28,5 @@ Would be exported as:
   </p>
 </div>
 ```
+
+</samp>
