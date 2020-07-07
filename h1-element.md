@@ -6,7 +6,7 @@ ReSpec warns if the `<title>` and the `<h1>` text content do not match.
 
 ## Example
 
-```html
+```html "example": "Using h1 as specification title."
 <body>
   <h1 id="title">The <code>Whatever</code> Interface</h1>
   <section id="abstract">

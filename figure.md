@@ -4,7 +4,7 @@ Specification figures are indicated using the `<figure>` element, with a nested 
 
 ## Examples
 
-```html
+```html "example": "A figure."
 <section id="buckets">
   <figure id="flowchart">
     <img src="flowchart.svg" alt="" />

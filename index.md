@@ -4,7 +4,7 @@ Adding a `<section id="index">` in your document instructs ReSpec to gather all 
 
 ## Example of usage
 
-```html
+```html "example": "Index of locally defined and externally referenced terms."
 <section id="index" class="appendix">
   <!-- All the terms will magically appear here -->
 </section>
@@ -12,7 +12,7 @@ Adding a `<section id="index">` in your document instructs ReSpec to gather all 
 
 You can also add a custom header and content to your `index`:
 
-```html
+```html "example": "Terms index with custom header and content."
 <section id="idl-index" class="appendix">
   <h2>List All The Terms!</h2>
   <p>Wow, that's a lot of terms!</p>

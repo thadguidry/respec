@@ -4,7 +4,7 @@ ReSpec uses the `<title>` element to generate the title of your specification. T
 
 ## Example
 
-```html
+```html "example": "Specify a title for current document."
 <!DOCTYPE html>
 <html>
   <title>The Super Duper Spec</title>

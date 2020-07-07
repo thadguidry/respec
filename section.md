@@ -10,7 +10,7 @@ Section can be automatically linked to using a link pointing to their ID with no
 
 ## Example
 
-```html
+```html "example": "A section."
 <section>
   <h2>The <code>foo</code> Element</h2>
   <p>The <code>foo</code> Element allows you too...</p>

@@ -2,7 +2,7 @@
 
 ReSpec provides code highlighting for blocks of code marked up with the `<pre>` or `<code>` elements. ReSpec will try to guess the code language, or it can be added as a class:
 
-```html
+```html "example": "A code block with HTML syntax highlighting."
 <pre> <!-- or <pre class="html"> -->
 <script>
 function magic() {
@@ -12,8 +12,6 @@ function magic() {
 </script>
 </pre>
 ```
-
-(Markdown `\`` are currently not supported)
 
 Respec supports the following languages by default:
 
@@ -27,7 +25,7 @@ Respec supports the following languages by default:
 
 To highight code in other languages you need to define a function that loads a highlighter.js package for the language you want, and to request the language be loaded as a respec `preProcess` option:
 
-```js
+```js "example": "Load custom syntax highlighting language."
 async function loadSolidity() {
   //this is the function you call in 'preProcess', to load the highlighter
   const worker = await new Promise(resolve => {

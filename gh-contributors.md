@@ -6,7 +6,7 @@ The list is sorted by names (or GitHub username).
 
 ## Example
 
-```html
+```html "example": "Show list of contributors and add links to their GitHub profiles."
 <section>
   <h2>Contributors</h2>
   <ul id="gh-contributors">
@@ -16,7 +16,7 @@ The list is sorted by names (or GitHub username).
 </section>
 ```
 
-```html
+```html "example": "Show names of contributors separated by commas."
 <p id="gh-contributors">
   <!-- names of contributors will appear here as comma-separated values -->
 </p>

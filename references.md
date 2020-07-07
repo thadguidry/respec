@@ -4,7 +4,7 @@ You can add an explicit `<section id="reference">` in cases where you need to ad
 
 ## Example
 
-```html
+```html "example": "List of normative and non-normated citations."
 <section id="references">
   <p>Citations are great!</p>
   <!-- normative and informative references will appear below -->

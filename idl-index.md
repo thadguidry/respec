@@ -6,7 +6,7 @@ If you don't have any IDL in your spec, then it's probably best not to include t
 
 ## Example of usage
 
-```html
+```html "example": "IDL index."
 <section id="idl-index" class="appendix">
   <!-- All the Web IDL will magically appear here -->
 </section>
@@ -14,7 +14,7 @@ If you don't have any IDL in your spec, then it's probably best not to include t
 
 You can also add a custom header and content to your idl-index:
 
-```html
+```html "example": "IDL index with custom header and content."
 <section id="idl-index" class="appendix">
   <h2>The Whole API!</h2>
   <p>This is what the whole thing looks like!</p>
