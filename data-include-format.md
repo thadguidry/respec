@@ -6,7 +6,7 @@ If you want to include as markdown, use `"markdown"` as attribute value. The def
 
 ## Example
 
-```html
+```html "example": "Treat the content of some.txt as plain text."
 <section
   data-include="some.txt"
   data-include-format="text">

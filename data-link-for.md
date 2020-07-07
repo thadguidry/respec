@@ -2,7 +2,7 @@
 
 The `data-link-for` attribute allows you to link to a definition with same [`data-dfn-for`](data-dfn-for) value.
 
-```html
+```html "example": "A comparison of linking global and scoped definitions"
 <p>
   <dfn>bar</dfn> is a global definition.
   <a>bar</a> links to bar.
@@ -18,7 +18,7 @@ The `data-link-for` attribute allows you to link to a definition with same [`dat
 
 It works with IDL definitions also:
 
-```html
+```html "example": "Linking scoped IDL definitions."
 <p>
   <dfn data-dfn-type="idl" data-dfn-for="Foo">bar</dfn> is defined in scope of "Foo".
   <a data-link-for="Foo" data-link-type="idl">bar</a> links to `bar` in scope of `Foo`.
@@ -32,7 +32,7 @@ The `data-link-for` attribute also allows you to link to one or more aspects of 
 
 In this example, we link to `Request`'s definition of url, but not `Response`'s.
 
-```html
+```html "example": "Using data-link-for to link under given scope."
 <pre class="idl">
   interface Request {
     readonly attribute USVString url;

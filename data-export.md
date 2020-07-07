@@ -10,21 +10,18 @@ Note: WebIDL things are automatically exported for you.
 
 ## Example
 
-```html
+```html "example": "Explicitly export a definition."
 <p>The <dfn data-export="">fancy thing</dfn> can be used by other specs.</p>
 ```
 
 Then other specs can use "fancy thing" using [xref](xref), like so:
 
-```js
-var respecConfig = {
-  // other config options here...
-  xref: ["spec-shortname"],
-};
-```
+```html "example": "Using definitions exported from other specs using xref."
+<script>
+  var respecConfig = {
+    xref: ["spec-shortname"],
+  };
+</script>
 
-And:
-
-```html
 <p>We can now link to <a>fancy thing</a> in another spec.</p>
 ```

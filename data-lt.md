@@ -4,7 +4,7 @@
 
 ## Example
 
-```html
+```html "example": "Providing alternate linking terms for a definition."
 <dfn data-lt="best fruit|fruits of the gods">Apple</dfn>...
 
 <!-- can be referenced by any of: -->
@@ -13,4 +13,4 @@
 [=fruits of the gods=]
 ```
 
-See also: Automatic pluralization with [`pluralize`](pluralize).
+See also: Automatic pluralization with [`pluralize`](pluralize) and [`data-local-lt`](data-local-lt).

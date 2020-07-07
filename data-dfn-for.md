@@ -6,7 +6,7 @@ The `data-dfn-for` attribute links a WebIDL attribute or method to a definition.
 
 The following example automatically links up the `bar` attribute and the `doTheFoo()` method to the `Foo` interface.
 
-```html
+```html "example": "Using data-dfn-for for defining 'scope'."
 <section data-dfn-for="Foo" data-link-for="Foo">
   <h2><code>Foo</code> interface</h2>
   <pre class="idl">

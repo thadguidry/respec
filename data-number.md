@@ -6,7 +6,7 @@ Can be used in conjunction with the configuration option [`github`](github) and 
 
 A typical example for a file in the Github repository https:/github.com/w3c/dpub-pwd would include, for example:
 
-```html
+```html "example": "Embed content of a GitHub issue in-place."
 <script>
   var respecConfig = {
     github: "w3c/dpub-pwd",

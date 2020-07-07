@@ -8,7 +8,7 @@ It's best used with `<p>` and `<li>` elements.
 
 ## Examples of usage
 
-```html
+```html "example": "Link tests to the prose."
 <script>
   var respecConfig = {
     testSuiteURI: "https://wpt.fyi/payment-request/",

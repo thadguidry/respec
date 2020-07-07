@@ -10,6 +10,6 @@ In the processing pipeline, inclusion happens right after everything to do with 
 
 ## Example
 
-```html
+```html "example": "Include content from another file."
 <section data-include="section/theFooElement.html"></section>
 ```

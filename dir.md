@@ -4,6 +4,6 @@ ReSpec defaults the `dir` attribute of the HTML element to `ltr`. If you are wri
 
 ## Example
 
-```html
+```html "example": "Set directionality to right-to-left."
 <html dir="rtl"></html>
 ```

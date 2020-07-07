@@ -8,7 +8,7 @@ Currently, only two values: `"idl"` and `"dfn"` are supported. In future, more v
 
 ## Example of usage
 
-```html
+```html "example": "Specifying data-dfn-type."
 <p>
   The document has visibility state of
   <dfn id="dfn-hidden" data-dfn-type="dfn">hidden</dfn>.

@@ -16,7 +16,7 @@ While, the following terms are not exported, but can be linked to internally:
 - installing
 - installation
 
-```html
+```html "example": "Providing alternate linking text with data-local-lt and data-lt."
 <dfn
   data-export=""
   data-local-lt="installation|installing"

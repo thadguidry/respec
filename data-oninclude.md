@@ -12,7 +12,7 @@ Each function must return the transformed content.
 
 ## Example
 
-```html
+```html "example": "Transforming content included via data-include before further processing."
 <script>
   // Adds rainbows where appropriate.
   function toRainbows(utils, content, url) {
