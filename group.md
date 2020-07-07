@@ -23,4 +23,4 @@ var respecConfig = {
 };
 ```
 
-A list of valid group names can be found at: https://respec.org/w3c/groups/
+A list of valid group names can be found at: https://respec.org/w3c/groups/.

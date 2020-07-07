@@ -2,7 +2,7 @@
 
 You can add a `data-dfn-type` attribute on `<dfn>` elements to declare the type of definition. This is used in conjunction with [`data-link-type`](data-link-type) to allow linking to a definition of particular type.
 
-In many cases, you do not need to provide this value. If a `<dfn>` has a [`data-dfn-for`](data-dfn-for) context, `data-dfn-type` is treated as `"idl"`. Otherwise, it is to be `"dfn"`
+In many cases, you do not need to provide this value. If a `<dfn>` has a [`data-dfn-for`](data-dfn-for) context, `data-dfn-type` is treated as `"idl"`. Otherwise, it is to be `"dfn"`.
 
 Currently, only two values: `"idl"` and `"dfn"` are supported. In future, more values might be supported.
 

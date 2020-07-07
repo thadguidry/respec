@@ -15,4 +15,4 @@ var respecConfig = {
 };
 ```
 
-See: [Using Markdown with ReSpec Guide](markdown)
+See: [Using Markdown with ReSpec Guide](markdown).
