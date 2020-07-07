@@ -6,7 +6,7 @@ Please note that some values of this option make no sense depending on the curre
 
 ## Example
 
-```js
+```js "example": "Set Last Call (LC) as document's previous maturity level."
 var respecConfig = {
   previousPublishDate: "2014-05-01",
   previousMaturity: "LC",

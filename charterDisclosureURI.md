@@ -4,7 +4,7 @@ This configuration option must be specified for Interest Group Notes ([IG-NOTE](
 
 ## Example
 
-```js
+```js "example": "Add charter disclosure URL for IG-NOTE."
 var respecConfig = {
   charterDisclosureURI: "https://www.w3.org/2019/06/me-ig-charter.html#patentpolicy",
 };

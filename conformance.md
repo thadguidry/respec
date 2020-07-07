@@ -16,7 +16,7 @@ This section is required for specifications that contain normative material.
 
 ## Example of usage
 
-```html
+```html "example": "Add the RFC2119 conformance boilerplate, along with custom content."
 <section id="conformance">
   <!-- boilerplate will be added here -->
   <p>The specification specific conformance text…</p>

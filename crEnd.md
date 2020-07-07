@@ -6,7 +6,7 @@ Use this option to provide that date, in `YYYY-MM-DD` format.
 
 ## Example
 
-```js
+```js "example": "Set January 4, 2014 as CR end date."
 var respecConfig = {
   specStatus: "CR",
   crEnd: "2014-01-04",

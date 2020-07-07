@@ -6,7 +6,7 @@ Note: it is extremely easy to cut and paste this value from somewhere else and t
 
 ## Example
 
-```js
+```js "example": "Specify patent URL for the W3C group."
 var respecConfig = {
   wgPatentURI: "https://www.w3.org/2004/01/pp-impl/GO_FIND_YOURS",
 };

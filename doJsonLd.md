@@ -6,7 +6,7 @@ Adds a JSON-LD `script` element containing schema.org information, which can be 
 
 The following entry in `respecConfig` can be used to configure JSON-LD support, which currently defaults to `false`.
 
-```javascript
+```javascript "example": "Enable JSON-LD data generation."
 var respecConfig = {
   doJsonLd: true,
 };

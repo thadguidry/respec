@@ -4,7 +4,7 @@ A boolean indicating that a document is not intended to become a W3C Recommendat
 
 ## Example
 
-```js
+```js "example": "Mark current spec not intentded for Recommendation track."
 var respecConfig = {
   noRecTrack: true,
 };

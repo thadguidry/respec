@@ -4,9 +4,9 @@
 
 ## Example of usage:
 
-```js
+```js "example": "Use Web Payments Working Group."
 var respecConfig = {
-  group: "webapps",
+  group: "payment",
   // is equivalent to:
   // wg: "Web Payments Working Group",
   // wgId: 83744,
@@ -17,7 +17,7 @@ var respecConfig = {
 
 You can also specify multiple groups:
 
-```js
+```js "example": "Specify multiple groups."
 var respecConfig = {
   group: ["group1", "group2"],
 };

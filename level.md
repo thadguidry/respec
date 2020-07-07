@@ -8,7 +8,7 @@ The `level` configuration options automatically appends the level to your specâ€
 
 ## Examples of usage
 
-```js
+```js "example": "Set the current specification to level 2."
 var respecConfig = {
   level: 2,
   shortName: "payment-request",

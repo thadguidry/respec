@@ -4,7 +4,7 @@ The numeric W3C Working Group identifier. This is used when publishing NOTEs to 
 
 ## Example
 
-```js
+```js "example": "Specify W3C group ID."
 var respecConfig = {
   wgId: 107714,
 };

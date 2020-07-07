@@ -13,7 +13,7 @@ This option accepts an array of objects, each of which has two required fields:
 
 ## Example
 
-```js
+```js "example": "Show links to PDF and XML versions of current document."
 var respecConfig = {
   alternateFormats: [
     {

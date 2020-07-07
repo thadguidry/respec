@@ -4,7 +4,7 @@ Sometimes it happens that a document is moved in the version control system, pas
 
 ## Example
 
-```js
+```js "example": "Specify URL to previous editor's draft."
 var respecConfig = {
   prevED: "https://example.com/old/ed",
 };

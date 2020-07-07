@@ -4,7 +4,7 @@ Allows W3C staff to link to a comment number.
 
 ## Example
 
-```js
+```js "example": "Link to submission comment number 03."
 var respecConfig = {
   specStatus: "Member-SUBM",
   submissionCommentNumber: "03",

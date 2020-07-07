@@ -28,37 +28,34 @@ Profiles are pre-defined lists of specifications. Using a profile means adding a
 
 Following profiles are currently available:
 
-- `"web-platform"`. Specifications included: "HTML", "INFRA", "URL", "WEBIDL", "DOM", "FETCH".
+<dl>
+<dt>web-platform</dt>
+<dd>Specifications included: "HTML", "INFRA", "URL", "WEBIDL", "DOM", "FETCH"</dd>
+</dl>
 
 ## Examples
 
-Simply enable xref (Enabled by default for W3C profiles)
-
-```js
+```js "example": "Enable xref."
 var respecConfig = {
   xref: true,
 };
 ```
 
-Using the `web-platform` profile.
-
-```js
+```js "example": "Search term in specs under 'web-platform' profile."
 var respecConfig = {
   xref: "web-platform",
 };
 ```
 
-Using the specs `spec1` and `spec2` for disambiguation.
-
-```js
+```js "example": "Search for terms in 'spec1' and 'spec2' specifications."
 var respecConfig = {
   xref: ["spec1", "spec2"],
 };
 ```
 
-Using the specs `spec1` and `spec2` along with specs in the `web-platform` profile for disambiguation, and looking for references in the specified references database only.
+Using the specs `spec1` and `spec2` along with specs in the `web-platform` profile to look for references.
 
-```js
+```js "example": "Specify profile and use additional specs. for searching"
 var respecConfig = {
   xref: {
     specs: ["spec1", "spec2"],

@@ -4,7 +4,7 @@ When producing a diffmarked version, ReSpec uses the previousURI as the old vers
 
 ## Example
 
-```js
+```js "example": "Specify the previous URL for diff generation."
 var respecConfig = {
   previousURI: "https://www.w3.org/TR/2014/WD-FOO-20140327/",
   // Diff against the first version instead

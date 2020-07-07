@@ -6,7 +6,7 @@ If a `prevRecURI` is not specified but [`prevRecShortname`](prevRecShortname) is
 
 ## Example
 
-```js
+```js "example": "Set URL of previous version of Recommendation."
 var respecConfig = {
   prevRecURI: "https://www.w3.org/TR/2014/example-20140327/",
 };

@@ -4,7 +4,7 @@ The full public name of the group, including "Working/Interest/Incubator/etc. Gr
 
 ## Example
 
-```js
+```js "example": "Specify 'Device APIs Working Group' as working group."
 var respecConfig = {
   wg: "Device APIs Working Group",
 };

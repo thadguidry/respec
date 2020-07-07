@@ -11,9 +11,7 @@ Following keywords automatically generate a corresponding URL. However, you are 
 
 ## Example of usage
 
-The following will result in a canonical URL of `https://www.w3.org/TR/fooAPI`.
-
-```js
+```js "example": "The following will result in a canonical URL of https://www.w3.org/TR/fooAPI."
 var respecConfig = {
   shortName: "fooAPI",
   canonicalURI: "TR",

@@ -8,7 +8,7 @@ Note that this can always be safely specified since if `copyrightStart` is the s
 
 The following appears as "Copyright © 1977-2016".
 
-```js
+```js "example": "Set the copyright start year to 1977."
 var respecConfig = {
   copyrightStart: 1977,
   publishDate: "01-01-2016",
