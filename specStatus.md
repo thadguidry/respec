@@ -245,7 +245,6 @@ is on a publication track but can also take other values for other types of docu
   </tbody>
 </table>
 
-## Example
 
 ```js "example": "Set specification's status to 'unofficial'."
 var respecConfig = {

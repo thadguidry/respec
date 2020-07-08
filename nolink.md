@@ -2,7 +2,6 @@
 
 When using [markdown](format), nolinks disables automatic linking within code blocks.
 
-## Example
 
 ```html "example": "Disable automatic linkining within code blocks."
 <pre code="nolink">

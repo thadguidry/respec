@@ -19,7 +19,6 @@ The `logos` property takes an array that contains a set of objects. Each of thes
   <dd>Where to navigate to when the logo is pressed.</dd>
 </dl>
 
-## Example
 
 ```js "example": "Add a custom logo at top of page."
 var respecConfig = {

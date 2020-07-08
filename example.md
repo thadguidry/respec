@@ -6,7 +6,6 @@ For a contra-example, replace the `example` class with `illegal-example`.
 
 Note that the content of the `title` attribute will be interpreted as HTML markup. See [`title` attributes](title-attributes) for details.
 
-## Example
 
 ```html "example": "Mark an aside as example."
 <aside class="example" title="Fat arrows (<code>=></code>)">

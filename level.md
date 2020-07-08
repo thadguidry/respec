@@ -6,8 +6,6 @@ Note: Refrain using a level unless you've considered all the implications of doi
 
 The `level` configuration options automatically appends the level to your spec’s title and [shortName](shortName). The level is an integer value greater than or equal to 0.
 
-## Examples of usage
-
 ```js "example": "Set the current specification to level 2."
 var respecConfig = {
   level: 2,

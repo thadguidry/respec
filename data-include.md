@@ -8,8 +8,6 @@ By default the inclusion is asynchronous, which means that the included content 
 
 In the processing pipeline, inclusion happens right after everything to do with the document's headers, style, and transformations have happened, which means that all the processing to do with structure, inlines, WebIDL, and everything else is applied to the included content as if it had always been part of the source.
 
-## Example
-
 ```html "example": "Include content from another file."
 <section data-include="section/theFooElement.html"></section>
 ```

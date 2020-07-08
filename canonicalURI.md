@@ -9,8 +9,6 @@ Following keywords automatically generate a corresponding URL. However, you are 
 | `"edDraft"` | Use the [`edDraftURI`](edDraftURI) as the canonical URL.                     |
 | `"TR"`      | Use the "TR" location for this document, using the [`shortName`](shortName). |
 
-## Example of usage
-
 ```js "example": "The following will result in a canonical URL of https://www.w3.org/TR/fooAPI."
 var respecConfig = {
   shortName: "fooAPI",

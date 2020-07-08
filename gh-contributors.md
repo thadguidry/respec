@@ -4,7 +4,6 @@ Add an element with `id="gh-contributors"` to show a list of people who have con
 
 The list is sorted by names (or GitHub username).
 
-## Example
 
 ```html "example": "Show list of contributors and add links to their GitHub profiles."
 <section>

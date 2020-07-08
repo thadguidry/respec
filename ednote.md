@@ -4,8 +4,6 @@ Marks the contents of an element as an "Editor's Note". If the element is a 'blo
 
 Note that the content of the `title` attribute will be interpreted as HTML markup. See [`title` attributes](title-attributes) for details.
 
-## Example
-
 ```html "example": "An Editor's note."
 <p class="ednote" title="This section will be reformatted">
   We are aware that the formatting of this section isn't great. We will fix it

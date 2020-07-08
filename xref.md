@@ -33,8 +33,6 @@ Following profiles are currently available:
 <dd>Specifications included: "HTML", "INFRA", "URL", "WEBIDL", "DOM", "FETCH"</dd>
 </dl>
 
-## Examples
-
 ```js "example": "Enable xref."
 var respecConfig = {
   xref: true,

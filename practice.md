@@ -2,7 +2,6 @@
 
 A `<div>` containing a best practice description.
 
-## Example
 
 ```html
 <div class="practice">

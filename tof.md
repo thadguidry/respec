@@ -2,7 +2,6 @@
 
 Automatically generate a Table of Figures by adding a `<section id="tof">`.
 
-## Example
 
 ```html "example": "Table of Figures"
 <section>

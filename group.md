@@ -2,8 +2,6 @@
 
 `group` is a shorthand configuration option for specifying [`wg`](wg), [`wgId`](wgId), [`wgURI`](wgURI), and [`wgPatentURI`](wgPatentURI) options. It fetches working group details using the W3C API.
 
-## Example of usage:
-
 ```js "example": "Use Web Payments Working Group."
 var respecConfig = {
   group: "payment",

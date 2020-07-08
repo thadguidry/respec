@@ -6,8 +6,6 @@ The `data-test` works together with the [`testSuiteURI`](testSuiteURI) config op
 
 It's best used with `<p>` and `<li>` elements.
 
-## Examples of usage
-
 ```html "example": "Link tests to the prose."
 <script>
   var respecConfig = {

@@ -2,8 +2,6 @@
 
 Adds a JSON-LD `script` element containing schema.org information, which can be useful for search engines.
 
-## Example
-
 The following entry in `respecConfig` can be used to configure JSON-LD support, which currently defaults to `false`.
 
 ```javascript "example": "Enable JSON-LD data generation."
@@ -13,8 +11,6 @@ var respecConfig = {
 ```
 
 In addition, you will also need to provide a `canonicalUri` and a `license` in your `respecConfig` for the JSON-LD data to be generated.
-
-## Example Output
 
 When configured, a script element similar to the following will be added:
 

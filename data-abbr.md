@@ -4,8 +4,6 @@ The `data-abbr` can be used on `dfn` elements that are used as abbreviations thr
 
 You can either set the abbreviation explicitly, or ReSpec can figure it out for you.
 
-## Example
-
 <aside class="example" title="Generate abbreviation automatically.">
 
 ```html

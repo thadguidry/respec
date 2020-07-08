@@ -2,7 +2,6 @@
 
 When this configuration variable is set to `true`, no table of contents is generated in the document.
 
-## Example
 
 ```js "example": "Do not generate a Table of Contents."
 var respecConfig = {

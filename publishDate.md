@@ -4,7 +4,6 @@ A `YYYY-MM-DD` date. The publication date of the present document. For documents
 
 Note that the last modified date provided by the browser can at times be wrong. This often happens when the server is itself providing a broken value, or at times when differences in time-zones (that are not always well accounted-for by servers or browsers) cause the day to shift by one.
 
-## Example
 
 ```js "example": "Set January 2, 2021 as publish date."
 var respecConfig = {

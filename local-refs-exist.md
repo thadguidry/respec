@@ -13,8 +13,6 @@ For example:
 
 You'll receive a warning pointing you to the links that are broken.
 
-## Example of usage
-
 ```js "example": "Enable local-refs-exist linter rule."
 var respecConfig = {
   lint: {
@@ -22,7 +20,5 @@ var respecConfig = {
   },
 };
 ```
-
-## Example Warning
 
 <img alt="example warning for local-refs-exist" src="https://user-images.githubusercontent.com/8426945/40004984-92f30f1a-57b4-11e8-8b8e-1f2eae4c6d54.png" width="855" height="498" loading="lazy">

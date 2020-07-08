@@ -14,8 +14,6 @@ The syntax for data-cite value is:
 spec-id[optional "/" path-to-document]#fragment
 ```
 
-## Example
-
 ```html
 <a data-cite="rfc2119#some-section">some text</a>
 <dfn data-cite="spec/some.html#fragment">some text</a>

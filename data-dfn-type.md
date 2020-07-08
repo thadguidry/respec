@@ -6,8 +6,6 @@ In many cases, you do not need to provide this value. If a `<dfn>` has a [`data-
 
 Currently, only two values: `"idl"` and `"dfn"` are supported. In future, more values might be supported.
 
-## Example of usage
-
 ```html "example": "Specifying data-dfn-type."
 <p>
   The document has visibility state of

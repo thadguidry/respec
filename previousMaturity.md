@@ -4,7 +4,6 @@ A `YYYY-MM-DD` date. When a [`previousPublishDate`](previousPublishDate) is spec
 
 Please note that some values of this option make no sense depending on the current document [`specStatus`](specStatus) but that the rules for validating consistency are convoluted enough that ReSpec does not try to check them. If you pick the wrong value (typically by forgetting to change it), the Link Checker will most likely catch the error before publication (the same goes for [`previousPublishDate`](previousPublishDate)).
 
-## Example
 
 ```js "example": "Set Last Call (LC) as document's previous maturity level."
 var respecConfig = {

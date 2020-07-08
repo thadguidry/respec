@@ -8,7 +8,6 @@ If you nest deeper than the h6 level, apart from having a hard-to-navigate docum
 
 Section can be automatically linked to using a link pointing to their ID with no content (e.g. `<a href='#foo-section'></a>`).
 
-## Example
 
 ```html "example": "A section."
 <section>

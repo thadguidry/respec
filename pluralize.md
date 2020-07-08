@@ -4,8 +4,6 @@ Adds automatic pluralization support for `<dfn>`, so that you don't have to manu
 
 This is enabled by default for W3C specs.
 
-## Example of usage
-
 ```js "example": "Enable automatic pluralization."
 var respecConfig = {
   pluralize: true,

@@ -4,8 +4,6 @@ In general, you can provide alternative "linking text" ("`lt`"s) to a defined te
 
 However, in the rare situation where you need to export via [`data-export`](data-export) a definition, you might want some shorthands to not be exported. In such a case, you can use `data-local-lt`.
 
-## Examples of usage
-
 In the following example, the following terms are exported for use with the xref linking system:
 
 - installed web application

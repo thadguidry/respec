@@ -4,8 +4,6 @@ Expects an array of JavaScript functions. ReSpec invokes these functions in orde
 
 **Note:** We strongly discourage the use of jQuery. We are trying to eliminate it from ReSpec and encourage people to stop using it entirely. In modern browsers, jQuery is no longer a nessesary for cross-browser interoperability. Additionally, modern DOM APIs are now good enough that jQuery should not be needed for manipulating or traversing DOM Nodes.
 
-## Examples
-
 ```js "example": "Run two functions in order before processing."
 function doThing(config, document){...}
 function doOtherThing(config, document){...}

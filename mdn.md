@@ -2,8 +2,6 @@
 
 The `mdn` option allows a spec to be annotated with links to MDN developer documentation.
 
-## Example of usage
-
 If a boolean is provided, it uses spec's `shortName` to match data over on MDN.
 
 ```js "example": "Add MDN tables with shortName as MDN key."

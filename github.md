@@ -15,8 +15,6 @@ This automatically generates:
 
 It also adds an object to [otherLinks](otherLinks) for under "Participate", with the appropriate links to your GitHub repository.
 
-## Examples of usage
-
 This is normally what you want:
 
 ```js "example": "Set GitHub repository"

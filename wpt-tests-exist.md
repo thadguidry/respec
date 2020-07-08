@@ -11,8 +11,6 @@ For example:
 
 You'll receive a warning listing all the missing tests.
 
-## Example of usage
-
 ```js "example": "Ensure all data-tests WPT exist for WebRTC."
 var respecConfig = {
   testSuiteURI: "https://github.com/web-platform-tests/wpt/tree/HEAD/webrtc/",

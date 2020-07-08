@@ -13,8 +13,6 @@ For example:
 
 You'll receive a warning pointing you to the heading-less sections.
 
-## Example of usage
-
 ```js "example": "Enable no-headingless-sections linter rule."
 var respecConfig = {
   lint: {
@@ -22,8 +20,6 @@ var respecConfig = {
   },
 };
 ```
-
-## Example Warning
 
 <img alt="example warning for no-headingless-sections" src="https://user-images.githubusercontent.com/8426945/42472700-e526c8b0-83df-11e8-9a7c-afb38c2f2e45.png" width="733" height="119" loading="lazy">
 

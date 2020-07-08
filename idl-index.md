@@ -4,8 +4,6 @@ Giving a `<section id=idl-index>` instructs ReSpec to gather all the Web IDL in 
 
 If you don't have any IDL in your spec, then it's probably best not to include this. ReSpec will still produce the section with a heading, but will inform the reader that you don't actually have any Web IDL in your spec.
 
-## Example of usage
-
 ```html "example": "IDL index."
 <section id="idl-index" class="appendix">
   <!-- All the Web IDL will magically appear here -->

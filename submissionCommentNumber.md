@@ -2,7 +2,6 @@
 
 Allows W3C staff to link to a comment number.
 
-## Example
 
 ```js "example": "Link to submission comment number 03."
 var respecConfig = {

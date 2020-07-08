@@ -11,8 +11,6 @@ This option accepts an array of objects, each of which has two required fields:
   <dd>for a human readable string that matches it. This is used to link to alternate formats for the same content (e.g. PDF, ePub, PS).</dd>
 </dl>
 
-## Example
-
 ```js "example": "Show links to PDF and XML versions of current document."
 var respecConfig = {
   alternateFormats: [

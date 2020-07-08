@@ -9,8 +9,6 @@ Sections you can override include:
 - `<section id="sotd">`
 - `<section id="conformance">`
 
-## Examples
-
 ```html "example": "Completely override the content of 'Status of this Document' section."
 <section id="sotd" class="override">
   <h2>Status of this document</h2>

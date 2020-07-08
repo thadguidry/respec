@@ -4,8 +4,6 @@ Marks a section as being an appendix (which will be numbered with letters). Note
 
 It is important to know that every section following an appendix will also be made to be an appendix.
 
-## Example
-
 ```html "example": "Mark a section as being an appendix."
 <section class="appendix">
   <h2>Acknowledgements<h2>

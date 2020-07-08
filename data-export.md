@@ -8,8 +8,6 @@ If you'd like to have your specification indexed in Shepherd, please email marco
 
 Note: WebIDL things are automatically exported for you.
 
-## Example
-
 ```html "example": "Explicitly export a definition."
 <p>The <dfn data-export="">fancy thing</dfn> can be used by other specs.</p>
 ```

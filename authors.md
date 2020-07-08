@@ -4,8 +4,6 @@ Similar to editors, an array of [person objects](person) describing the authors 
 
 Note: In most cases, [`editors`](editors) is preferred over `authors`.
 
-## Example
-
 ```js "example": "List of authors"
 var respecConfig = {
   authors: [

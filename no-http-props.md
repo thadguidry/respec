@@ -15,8 +15,6 @@ For example:
 
 You'll receive a warning pointing you to the violating properties in `respecConfig`.
 
-## Example of usage
-
 ```js "example": "Enable no-http-props linter rule."
 var respecConfig = {
   lint: {
@@ -24,7 +22,5 @@ var respecConfig = {
   },
 };
 ```
-
-## Example Warning
 
 <img alt="example warning for no-http-props" src="https://user-images.githubusercontent.com/8426945/42473140-6e16b38c-83e1-11e8-81e3-c82bddeb4483.png" width="725" height="117" loading="lazy">

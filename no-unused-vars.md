@@ -17,8 +17,6 @@ For example:
 
 You'll receive a warning pointing you to the unused `<var>`s.
 
-## Example of usage
-
 ```js "example": "Enable no-unused-vars linter rule."
 var respecConfig = {
   lint: {

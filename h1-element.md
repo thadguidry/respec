@@ -4,7 +4,6 @@ The recommended way to set the title of a specification is via a [`<title>`](tit
 
 ReSpec warns if the `<title>` and the `<h1>` text content do not match.
 
-## Example
 
 ```html "example": "Using h1 as specification title."
 <body>

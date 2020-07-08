@@ -2,8 +2,6 @@
 
 Adding a `<section id="index">` in your document instructs ReSpec to gather all the terms defined in your specification, as well as all the terms referenced by your specification into a single section. The index lets you conveniently search for all defined/referenced terms, as well as find their usage in the document.
 
-## Example of usage
-
 ```html "example": "Index of locally defined and externally referenced terms."
 <section id="index" class="appendix">
   <!-- All the terms will magically appear here -->

@@ -6,7 +6,6 @@ You can find the format for these entries in the [SpecRef repository](https://gi
 
 **Note:** use of localBiblio is strongly discouraged. Please contribute references back to the [SpecRef database](https://www.specref.org/) instead.
 
-## Example
 
 ```js "example": "A sample localBiblio entry."
 var respecConfig = {

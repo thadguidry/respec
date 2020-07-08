@@ -4,8 +4,6 @@ Configuring ReSpec is straight forward. Simply place a `<script class=remove>` a
 
 The `respecConfig` object literal provides ReSpec with the metadata needed to process your document. ReSpec looks for this object on the `window` object.
 
-## Example
-
 ```html
 <script class="remove">
   var respecConfig = {

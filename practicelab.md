@@ -2,7 +2,6 @@
 
 A `<span>` containing the title of a best practice, inside a `<p class=practicedesc>`.
 
-## Example
 
 ```html
 <div class="practice">

@@ -28,8 +28,6 @@ It works with IDL definitions also:
 
 The `data-link-for` attribute also allows you to link to one or more aspects of an interface at once.
 
-## Example
-
 In this example, we link to `Request`'s definition of url, but not `Response`'s.
 
 ```html "example": "Using data-link-for to link under given scope."

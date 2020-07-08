@@ -2,8 +2,6 @@
 
 Adds a [Can I Use](http://caniuse.com) support table in the document header.
 
-## Example of usage
-
 ```js "example": "Caniuse table for payment-request"
 var respecConfig = {
   caniuse: "payment-request",
@@ -20,8 +18,6 @@ var respecConfig = {
 ```
 
 **Note:** This feature is only available in "live" Editor's Drafts. Because this feature relies on JavaScript, it's not exported out when a document is saved as HTML. In exported document, the table is replaced a link to caniuse.com.
-
-### Example output
 
 It renders as:
 

@@ -4,7 +4,6 @@ Marks the contents of an element as a "Note". If the element is a 'block' elemen
 
 Note that the content of the `title` attribute will be interpreted as HTML markup. See [`title` attributes](title-attributes) for details.
 
-## Example
 
 ```html "example": "Treat given paragraph as a note."
 <p class="note" title="Always rely upon native semantics">

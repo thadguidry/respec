@@ -2,7 +2,6 @@
 
 When this class is specified on a section element, that section will be omitted from the Table of Contents.
 
-## Example
 
 ```html "example": "Skip a section from Table of Contents."
 <section class="notoc" id="mySection">

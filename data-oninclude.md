@@ -10,8 +10,6 @@ Each function gets called with three arguments:
 
 Each function must return the transformed content.
 
-## Example
-
 ```html "example": "Transforming content included via data-include before further processing."
 <script>
   // Adds rainbows where appropriate.

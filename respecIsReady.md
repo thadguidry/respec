@@ -4,7 +4,6 @@ When ReSpec is loaded, it immediately adds a `respecIsReady` property to the `do
 
 The promise resolves with a reference to ReSpec's final configuration object. You can use this object if you need to do further processing, but try to avoid changing it (clone it with, `Object.assign()` if need be).
 
-## Example
 
 The following example shows how to use `document.respecIsReady`.
 

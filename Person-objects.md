@@ -44,7 +44,6 @@ A person object is a JavaScript object literal with the following properties:
     account, ORCID ID, etc., of the person.</dd>
 </dl>
 
-## Example
 
 This example shows a group of person objects being used to define the editors of a spec.
 

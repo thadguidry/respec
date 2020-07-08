@@ -14,8 +14,6 @@ The author can add any additional conformance clause(s) which will follow this b
 
 This section is required for specifications that contain normative material.
 
-## Example of usage
-
 ```html "example": "Add the RFC2119 conformance boilerplate, along with custom content."
 <section id="conformance">
   <!-- boilerplate will be added here -->

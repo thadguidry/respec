@@ -4,9 +4,7 @@ By using `data-sort="ascending"` or `"descending"`, ReSpec can shallow sort list
 
 You can also just write `data-sort` and exclude the attribute value, and it will default to "ascending" (i.e., from A-to-Z).
 
-## Examples of usage
-
-### Regular list
+## Regular list
 
 ```html "example": "Sorting an unordered list in descending order."
 <ul data-sort="descending">
@@ -30,7 +28,7 @@ becomes:
 
 </samp>
 
-### Definition list
+## Definition list
 
 Sorting a definition list ("ascending" by default, so A-to-0Z locale dependent). The corresponding `dd`s for any `dt` are also moved, but not sorted.
 

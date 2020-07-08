@@ -4,7 +4,6 @@ Some CSS classes ([`ednote`](ednote), [`example`](example), [`note`](note)) use 
 
 Note that the contents of the `title` attribute follow regular [attribute values](https://w3c.github.io/html/syntax.html#attribute-values) escaping rules, and the unescaped result gets interpreted as markup. In other words, `<` and `&lt;` will be interpreted as the beginning of a start tag, and the double-escaped `&amp;lt;` is needed to produce the `<` character.
 
-## Example
 
 ```html
 <p class="note" title="About <code>=></code> in EcmaScript">It rocks!</p>

@@ -2,8 +2,6 @@
 
 An array of [person objects](person) describing the editors of the document. Editors have the same responsibility as [`authors`](authors), and are preferred in specifications.
 
-## Example
-
 ```js "example": "List of editors"
 var respecConfig = {
   editors: [

@@ -2,8 +2,6 @@
 
 Specification figures are indicated using the `<figure>` element, with a nested `<figcaption>`. They can occur anywhere.
 
-## Examples
-
 ```html "example": "A figure."
 <section id="buckets">
   <figure id="flowchart">
