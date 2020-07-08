@@ -124,10 +124,10 @@ This helps readers know where variables were declared and where they are used. I
 
 ### Examples
 
-| **Type**                  | **Syntax**            | **Examples**        |
-| ------------------------- | --------------------- | ------------------- |
-| Variable                  | `|variable|`          | `|value|`           |
-| Variable with a data type | `|variable:dataType|` | `|value:DOMString|` |
+| **Type**                  | **Syntax**              | **Examples**          |
+| ------------------------- | ----------------------- | --------------------- |
+| Variable                  | `\|variable\|`          | `\|value\|`           |
+| Variable with a data type | `\|variable:dataType\|` | `\|value:DOMString\|` |
 
 ## HTML Elements and attributes {#element-shorthands}
 
