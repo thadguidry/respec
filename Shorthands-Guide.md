@@ -6,7 +6,7 @@ Similar to markdown, shorthands are custom ways of writing things that trigger s
 
 Each of these special character combinations, as well as what behavior they trigger, are detailed below.
 
-<small>Note that only WebIDL identifiers are case sensitive.</small>
+Note: Only WebIDL identifiers are case sensitive.
 
 | **Type**                                         | **Syntax**              | **Examples**                                          |
 | ------------------------------------------------ | ----------------------- | ----------------------------------------------------- |
@@ -36,7 +36,7 @@ You can link attributes, methods, or members by using the interface name, `/`, a
 | ----------------------------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------- |
 | [Interface], [Dictionary], [Enum] or [IDL type] | `{{Identifier}}`                                                        | `{{PaymentRequest}}` <br> `{{unrestricted double}}` <br> `{{long long}}`   |
 | [Attribute]                                     | `{{Identifier/attributeName}}`                                          | `{{PaymentRequest/id}}`                                                    |
-| [Operation or Method]                           | `{{Identifier/methodName()}}` <br> `{{Identifier/methodName(someArg)}}` | {`{PaymentRequest/show()}}` <br> `{{PaymentRequest/show(detailsPromise)}}` |
+| [Operation or Method]                           | `{{Identifier/methodName()}}` <br> `{{Identifier/methodName(someArg)}}` | `{{PaymentRequest/show()}}` <br> `{{PaymentRequest/show(detailsPromise)}}` |
 | [Static Attribute]                              | `{{Identifier.attribute}}`                                              | `{{SomeInterface.someAttribute}}`                                          |
 | [Static Operation or Static Method]             | `{{Identifier.methodName()}}` <br> `{{Identifier.methodName(arg)}}`     | `{{URL.createObjectURL()}}` <br> `{{URL.createObjectURL(obj)}}`            |
 | [Enum Value]                                    | `{{Identifier/"value"}}`                                                | `{{PaymentComplete/"success"}}`                                            |
@@ -54,7 +54,7 @@ The syntax is `[=concept you want to link to=]`. For example, `[=queue a task=]`
 
 To link to a concept in another spec, you need to use the [xref](xref) configuration option, and simply cite the spec you want to link to:
 
-```html
+```html "example": "Linking to concepts with xref and shorthands."
 <p data-cite="HTML DOM">
   You can [=queue a task=] to [=fire an event=] named `"respec-is-amazing"`.
 </p>
@@ -68,7 +68,7 @@ ReSpec supports automatically linking to plural forms. Thus, `[=fruits=]` links 
 
 ### Aliasing concepts
 
-**Please note that aliasing is not recommended.**
+Warning: Aliasing is not recommended.
 
 Always try to adapt your text to a defined concept, and only use an alias if absolutely needed! This keeps specs consistent and keeps things easier to find across specs.
 
@@ -80,12 +80,12 @@ Another reason is that the definition’s default name does not grammatically fi
 
 ### Examples
 
-| **Type**        | **Syntax**                                                       | **Examples**                     |
-| --------------- | ---------------------------------------------------------------- | -------------------------------- |
-| Concept         | `[=concept=]`                                                    | `[=queue a task=]`               |
-| Aliased concept | `[=concept|some alias=]`<br>`[=convoluted thing|simpler thing=]` | `[=queue a task|task queuing=]` |
+| **Type**        | **Syntax**                                                         | **Examples**                    |
+| --------------- | ------------------------------------------------------------------ | ------------------------------- |
+| Concept         | `[=concept=]`                                                      | `[=queue a task=]`              |
+| Aliased concept | `[=concept|some alias=]` <br> `[=convoluted thing|simpler thing=]` | `[=queue a task|task queuing=]` |
 
-## Concepts belonging to other concepts/things
+### Scoped concepts
 
 Just as WebIDL interfaces can have methods and attributes, concepts have a very specific relationship to each other.
 
@@ -93,21 +93,18 @@ For example, the definition of a `forEach()` method for a `list` behaves differe
 
 To associate a concept with another concept, use `data-dfn-for` to indicate who or what owns the concept. This tells Respec who or what the concept is "for". See the example below:
 
-```html
+```html "example": "Concepts scoped to other concepts."
 A <dfn>car</dfn> has a <dfn data-for="car">engine</dfn>, which burns petroleum.
 A <dfn>browser</dfn> has a <dfn data-for="browser">engine</dfn>, which burns
 democracy.
 ```
 
-**Please note that ReSpec does not currently support associating concepts using `data-for`** We are working on adding support. You can [track our implementation progress](https://github.com/w3c/respec/pull/2508).
-
 ### Examples
 
-| **Type**          | **Syntax**                | **Examples**                                                        |
-| ----------------- | ------------------------- | ------------------------------------------------------------------- |
-| Concept for thing | `[=concept/sub concept=]` | `[=list/for each=]`<br>`[=map/for-each=]`<br>`[=Document/visible=]` |
+| **Type**          | **Syntax**                | **Examples**                                                            |
+| ----------------- | ------------------------- | ----------------------------------------------------------------------- |
+| Concept for thing | `[=concept/sub concept=]` | `[=list/for each=]` <br> `[=map/for each=]` <br> `[=Document/visible=]` |
 
----
 
 ## Variables in algorithms {#variable-shorthands}
 
