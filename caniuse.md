@@ -17,7 +17,7 @@ var respecConfig = {
 };
 ```
 
-**Note:** This feature is only available in "live" Editor's Drafts. Because this feature relies on JavaScript, it's not exported out when a document is saved as HTML. In exported document, the table is replaced a link to caniuse.com.
+**Note:** This feature is only available in "live" Editor's Drafts. Because this feature relies on JavaScript, it's not exported out when a document is saved as HTML. In exported document, the table is replaced a link to [caniuse.com](https://caniuse.com).
 
 It renders as:
 

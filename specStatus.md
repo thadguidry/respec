@@ -87,7 +87,7 @@ is on a publication track but can also take other values for other types of docu
         <ul>
           <li><a href="previousPublishDate">previousPublishDate</a></li>
           <li><a href="previousMaturity">previousMaturity</a></li>
-          <li><a href="lcend">lcEnd</a></li>
+          <li><a href="lcEnd">lcEnd</a></li>
         </ul>
       </td>
     </tr>

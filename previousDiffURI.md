@@ -1,6 +1,6 @@
 # `previousDiffURI`
 
-When producing a diffmarked version, ReSpec uses the previousURI as the old version by default. Use this configuration option if you wish to override this to a specific URL.
+When producing a diff-marked version, ReSpec uses the previousURI as the old version by default. Use this configuration option if you wish to override this to a specific URL.
 
 
 ```js "example": "Specify the previous URL for diff generation."

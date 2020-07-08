@@ -39,7 +39,7 @@ will be transformed into:
 
 ### Custom Heading IDs
 
-By default, ReSpec uses heading's text content to generate IDs for you. The IDs are mostly stable, i.e., we make sure updates to ReSpec do not change the IDs). Sometimes, you might want to add a different (perphaps shorter) ID. You can provide a custom heading ID as:
+By default, ReSpec uses heading's text content to generate IDs for you. The IDs are mostly stable, i.e., we make sure updates to ReSpec do not change the IDs). Sometimes, you might want to add a different (perhaps shorter) ID. You can provide a custom heading ID as:
 
 ```markdown "example": "Specifying a custom ID for a heading."
 ## I'm a heading {#custom-heading-id}

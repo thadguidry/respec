@@ -23,7 +23,7 @@ Respec supports the following languages by default:
 - JSON
 - XML
 
-To highight code in other languages you need to define a function that loads a highlighter.js package for the language you want, and to request the language be loaded as a respec `preProcess` option:
+To highlight code in other languages you need to define a function that loads a highlighter.js package for the language you want, and to request the language be loaded as a respec `preProcess` option:
 
 ```js "example": "Load custom syntax highlighting language."
 async function loadSolidity() {

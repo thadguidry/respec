@@ -13,18 +13,18 @@ var respecConfig = {
 and the following configurations are available:
 
 - Boolean value. Setting `xref: true` simply enables the xref feature.
-- Array of specification shortnames. This option enables xref, but also adds the specification shortnames in the array to the `data-cite` attribute of the document's `<body>`. ReSpec then uses these specifications for [disambiguation](Auto-linking-external-references#handling-ambiguity).
+- Array of specification short-names. This option enables xref, but also adds the specification short-names in the array to the `data-cite` attribute of the document's `<body>`. ReSpec then uses these specifications for [disambiguation](Auto-linking-external-references#handling-ambiguity).
 - Profile name (string). Specification Profiles are described below.
 - Object with the optional properties `url`, `specs` and `profile`.
   1. `url` is used to link to a custom references API.
-  2. `specs` is used to specify an array of specification shortnames. This array is added to the `data-cite` attribute of the document's `<body>` and used for disambiguation.
+  2. `specs` is used to specify an array of specification short-names. This array is added to the `data-cite` attribute of the document's `<body>` and used for disambiguation.
   3. `profile` is used to specify profile.
 
-Note that when using the object configuration, if both `profile` and `specs` properties are specified, then the specification shortnames in `specs` combined with the ones in the profile used, are used for disambiguation.
+Note that when using the object configuration, if both `profile` and `specs` properties are specified, then the specification short-names in `specs` combined with the ones in the profile used, are used for disambiguation.
 
 ## Profiles
 
-Profiles are pre-defined lists of specifications. Using a profile means adding all of its specification shortnames to the `data-cite` attribute of the document's `<body>`.
+Profiles are pre-defined lists of specifications. Using a profile means adding all of its specification short-names to the `data-cite` attribute of the document's `<body>`.
 
 Following profiles are currently available:
 
