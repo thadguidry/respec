@@ -78,10 +78,10 @@ Another reason is that the definition’s default name does not grammatically fi
 
 ### Examples
 
-| **Type**        | **Syntax**                                                         | **Examples**                    |
-| --------------- | ------------------------------------------------------------------ | ------------------------------- |
-| Concept         | `[=concept=]`                                                      | `[=queue a task=]`              |
-| Aliased concept | `[=concept|some alias=]` <br> `[=convoluted thing|simpler thing=]` | `[=queue a task|task queuing=]` |
+| **Type**        | **Syntax**                                                           | **Examples**                     |
+| --------------- | -------------------------------------------------------------------- | -------------------------------- |
+| Concept         | `[=concept=]`                                                        | `[=queue a task=]`               |
+| Aliased concept | `[=concept\|some alias=]` <br> `[=convoluted thing\|simpler thing=]` | `[=queue a task\|task queuing=]` |
 
 ### Scoped concepts
 
