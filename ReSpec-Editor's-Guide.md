@@ -237,26 +237,26 @@ Also note that the href-less a element is not limited to linking to definitions 
 
 Specifications typically need to have references to other specifications on which they build to define their own technology. Managing references is a pain, as is linking to them every time that they are mentioned.
 
-ReSpec takes the pain out of this with multiple features that are used together. First, when you need to refer to a given specification in the body of the text, simply do so using `[[FOO]]`. ReSpec uses the context of the reference to work out if the reference is normative or informative. That is, if the reference is in a section marked "informative", or an example, note, or figure, then ReSpec automatically makes the reference non-normative. Otherwise, the reference is treated as normative. ReSpec will replace those with the link the reference and the appropriate markup around it.
+ReSpec takes the pain out of this with multiple features that are used together. First, when you need to refer to a given specification in the body of the text, simply do so using `[[FOO]]`, where FOO is the referenced specification's ID. ReSpec uses the context of the reference to work out if the reference is normative or informative. That is, if the reference is in a section marked "informative", or an example, note, or figure, then ReSpec automatically makes the reference non-normative. Otherwise, the reference is treated as normative. ReSpec will replace those with the link the reference and the appropriate markup around it.
 
 If you need a non-normative reference in a normative section, you can use a `?` like so:
 
-```html
+```html "example": "Non-normative reference in a normative section"
 This is normative and MUST be followed. But, sometimes we need a non-normative
 example reference [[?FOO]].
 ```
 
-You can also link to a specification directly in text by using `[[[FOO]]]`, where FOO is the specification's id. When ReSpec finds the specification in the references database, this gets converted to a link to the specification in the text i.e. `<a href="link-to-FOO">FOO Spec Title</a>`. This is actually a shorthand for using the `data-cite` attribute and you can learn more ways of using `data-cite` [here](data-cite).
+You can also link to a specification directly in text by using `[[[FOO]]]`, where FOO is the specification's id. When ReSpec finds the specification in the [references database](https://www.specref.org/), this gets converted to a link to the specification in the text i.e. `<a href="link-to-FOO">FOO Spec Title</a>`.
 
-The difference between `[[[FOO]]]` and `[[FOO]]` is that `[[[FOO]]]` links directly to the referenced specification, while `[[FOO]]` links to the entry in the "References" section (see below). Normative and informative references work similarly for `[[[FOO]]]` as they work for `[[FOO]]`, and `[[[?FOO]]]` can be used to have a non-normative reference in a normative section.
+The difference between triple and double brackets syntax is that `[[[FOO]]]` links directly to the referenced specification, whereas `[[FOO]]` links to the entry in the "References" section (see below). Normative and informative references work similarly for `[[[FOO]]]` as they work for `[[FOO]]`, and `[[[?FOO]]]` can be used to have a non-normative reference in a normative section.
 
-Then, using all the collected references from the document, ReSpec will generate a “References” section with subsections for normative and informative references (when they appear). Naturally, it will also fill in the references themselves, including the relevant bibliographical data, using the conventional markup. (Assuming they <s>exist</s> appear in our records.)
+If you ever want to use some text in double brackets that doesn't represent a reference, for example to represent an ECMAScript internal slot, write it as `[[\InternalSlot]]` (note the leading backslash).
+
+Then, using all the collected references from the document, ReSpec will generate a “References” section with subsections for normative and informative references (when they appear). Naturally, it will also fill in the references themselves, including the relevant bibliographical data, using the conventional markup. (Assuming they appear in our records.).
 
 References are loaded from a [shared database](https://github.com/tobie/specref/tree/master/refs) that is maintained by a group of volunteers. If you need a reference that is not in the database, then the right thing to do is to [submit it for inclusion](https://github.com/tobie/specref#manual-changes) so that others can benefit from it too. However, if that is not possible then you can make use of the [`localBiblio`](localBiblio) configuration option.
 
-The only things you therefore need to know for references are the reference names of the specifications you wish to refer to (as well as to how to add your own to the database). The names are usually rather logical, and most of the time can be guessed. In other cases, you can go look for them in the central bibliographical database that is maintained at [SpecRef database](https://www.specref.org/).
-
-If you ever want to use `[[\TextInDoubleBrackets]]` that doesn't represent a reference, for example to represent an ECMAScript internal slot, write it as `[[\InternalSlot]]`.
+The only things you therefore need to know for references are the reference names of the specifications you wish to refer to (as well as to how to add your own to the database). The names are usually rather logical, and most of the time can be guessed. In other cases, you can go look for them in the central bibliographical database that is maintained at [specref.org](https://www.specref.org/).
 
 ### Extra links at top of the document
 
