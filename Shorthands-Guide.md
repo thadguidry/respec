@@ -8,21 +8,19 @@ Each of these special character combinations, as well as what behavior they trig
 
 <small>Note that only WebIDL identifiers are case sensitive.</small>
 
-| **Type**                                                 | **Syntax**              | **Examples**                                          |
-| -------------------------------------------------------- | ----------------------- | ----------------------------------------------------- |
-| [WebIDL](#webidl)                                        | `{{WebIDLThing}}`       | `{{PaymentRequest}}`<br>`{{PaymentRequest/show()}}`   |
-| [Concepts in specs](#concepts)                           | `[=normal link=]`       | `[=queue a task=]`                                    |
-| [Variable in an algorithm](#variables-in-algorithms)     | `\|variable:Type\|`     | Let `\|p:Promise\|` be a new `{{Promise}}`            |
-| [HTML elements](#html-elements-and-content-attributes)   | `[^element^]`           | `[^iframe^]`                                          |
-| [HTML attributes](#html-elements-and-content-attributes) | `[^element/attribute^]` | `[^iframe/allow^]`                                    |
-| [References](#referencing-other-specifications)          | `[[shortName]]`         | `[[RFC2119]]`                                         |
-| [Expansions](#referencing-other-specifications)          | `[[[#some-id]]]`        | `[[[#example-2]]]` expands and links to `"Example 2"` |
+| **Type**                                         | **Syntax**              | **Examples**                                          |
+| ------------------------------------------------ | ----------------------- | ----------------------------------------------------- |
+| [WebIDL](#webidl-shorthands)                     | `{{WebIDLThing}}`       | `{{PaymentRequest}}`<br>`{{PaymentRequest/show()}}`   |
+| [Concepts in specs](#concept-shorthands)         | `[=normal link=]`       | `[=queue a task=]`                                    |
+| [Variable in an algorithm](#variable-shorthands) | `\|variable:Type\|`     | Let `\|p:Promise\|` be a new `{{Promise}}`            |
+| [HTML elements](#element-shorthands)             | `[^element^]`           | `[^iframe^]`                                          |
+| [HTML attributes](#element-shorthands)           | `[^element/attribute^]` | `[^iframe/allow^]`                                    |
+| [References](#reference-shorthands)              | `[[shortName]]`         | `[[RFC2119]]`                                         |
+| [Expansions](#reference-shorthands)              | `[[[#some-id]]]`        | `[[[#example-2]]]` expands and links to `"Example 2"` |
 
 By design, we also share a lot of syntax with the [BikeShed](https://github.com/tabatkins/bikeshed/) document processor. This makes it easier for everyone to edit both ReSpec and BikeShed specifications at the same time.
 
----
-
-## WebIDL
+## WebIDL {#webidl-shorthands}
 
 On the Web, and in Web Standards, WebIDL is a meta language that we use to define Javascript APIs. Please see our [WebIDL Guide](WebIDL-Guide). Please see the [WebIDL spec](https://heycam.github.io/webidl) for more info.
 
@@ -44,7 +42,7 @@ You can link attributes, methods, or members by using the interface name, `/`, a
 | [Enum Value]                                    | `{{Identifier/"value"}}`                                                | `{{PaymentComplete/"success"}}`                                            |
 | [DOM Exception]                                 | `{{"Identifier"}}`                                                      | `{{"NotAllowedError"}}`                                                    |
 
-## Defining Concepts
+## Defining Concepts {#concept-shorthands}
 
 Concepts include: ideas, named algorithms, useful terms, and/or non-webIDL things that are defined in a spec.
 
@@ -111,7 +109,7 @@ democracy.
 
 ---
 
-## Variables in algorithms
+## Variables in algorithms {#variable-shorthands}
 
 The syntax is `|name|`, where `name` is the name of the variable.
 
@@ -141,7 +139,7 @@ This helps readers know where variables were declared and where they are used. I
 
 ---
 
-## HTML Elements and content attributes
+## HTML Elements and content attributes {#element-shorthands}
 
 To reference HTML elements, use the following syntax: `[^tagname^]`. \* Here, the `tagname` is a valid HTML tag that is defined in the HTML spec or some other spec that defines the tag.
 
@@ -160,7 +158,7 @@ Note: To link to an IDL attribute on a HTML element's interface, you would do, f
 
 ---
 
-## Referencing other specifications
+## Referencing other specifications {#reference-shorthands}
 
 To reference another specification, just write `[[FOO]]` - where FOO is the short name or id of a specification. If you are don't know the the short name or id, please search for the spec at [SpecRef](http://specref.org).
 
