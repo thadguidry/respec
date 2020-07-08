@@ -10,7 +10,7 @@ Each of these special character combinations, as well as what behavior they trig
 
 | **Type**                                         | **Syntax**              | **Examples**                                          |
 | ------------------------------------------------ | ----------------------- | ----------------------------------------------------- |
-| [WebIDL](#webidl-shorthands)                     | `{{WebIDLThing}}`       | `{{PaymentRequest}}`<br>`{{PaymentRequest/show()}}`   |
+| [WebIDL](#webidl-shorthands)                     | `{{WebIDLThing}}`       | `{{PaymentRequest}}` <br> `{{PaymentRequest/show()}}` |
 | [Concepts in specs](#concept-shorthands)         | `[=normal link=]`       | `[=queue a task=]`                                    |
 | [Variable in an algorithm](#variable-shorthands) | `\|variable:Type\|`     | Let `\|p:Promise\|` be a new `{{Promise}}`            |
 | [HTML elements](#element-shorthands)             | `[^element^]`           | `[^iframe^]`                                          |
