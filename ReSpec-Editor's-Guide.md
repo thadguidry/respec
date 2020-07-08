@@ -248,6 +248,51 @@ which can be referenced by any of `<a>my terms</a>`, `<a>some term</a>`, `<a>my 
 
 Also note that the href-less a element is not limited to linking to definitions but also knows how to link to other items such as [WebIDL](WebIDL-Guide) interfaces. One important thing to keep in mind is that, linking WebIDL items require the terms to match case-sensitively.
 
+#### Referencing terms from other specifications
+
+Often, you need to link to terms defined in other specifications. ReSpec makes it quite simple with its cross referencing ([`xref`](xref)) feature. In short, you specify a list of specifications ReSpec may search a term from, and simply reference the term. For example, to reference "default toJSON steps" from the [WebIDL standard](https://heycam.github.io/webidl/#default-tojson-steps):
+
+```html "example": "Referencing definitions from other specifications."
+<script>
+  var respecConfig = {
+    xref: ["WebIDL"],
+  };
+</script>
+<a>default toJSON steps</a>
+```
+
+#### Shorthands
+
+Frequently, you might also need to specify the type and context of the definition. Specifying all such metadata becomes clumsy quickly (something like `<a data-link-type="some-type" data-link-for="some-context">term</a>`). This is where ReSpec's shorthands come in picture. There are two important shorthands when it comes to linking to definitions: `[= term =]` for linking regular concepts, and `{{ term }}` for linking IDL stuff.
+
+You don't need to remember when to use standard HTML `<a>` or the shorthands. Shorthand syntax works for referencing external terms as well as locally defined terms. A good compromise is to use shorthands all the time. Lets go through an example where we try to link to link to a few locally defined terms and some external definitions.
+
+```html "example": "Linking using shorthands."
+<script>
+  var respecConfig = {
+    xref: ["webidl", "payment-request"],
+  };
+</script>
+<section>
+  <!--
+    Here, we reference "default toJSON steps" concept defined in [[WebIDL]] standard,
+      and PaymentRequest WebIDL interface defined in [[payment-request]] standard.
+  -->
+  <p>[=default toJSON steps=] for the {{PaymentRequest}} interface are ...</p>
+
+  <!-- We also define a concept "feline", and an interface "Cat". -->
+  <p>A <dfn>feline</dfn> has 4 legs and makes sound.</p>
+  <pre class="idl">
+  interface Cat {}
+  </pre>
+
+  <!-- and we reference them as: -->
+  <p>A {{Cat}} is a [=feline=] if it meows.</p>
+</section>
+```
+
+Read more about linking and other shorthands in the [Shorthands Guide](Shorthands-Guide).
+
 ### References
 
 Specifications typically need to have references to other specifications on which they build to define their own technology. Managing references is a pain, as is linking to them every time that they are mentioned.
