@@ -200,6 +200,10 @@ A very common construct in specifications is to use keywords defined in RFC 2119
 
 HTML supports functionality to mark abbreviations and acronyms (using `<abbr>`), using the title attribute to provide the expanded version. This is something that's nice to do once, but tedious to repeat every time that a given term is used. What ReSpec does is that it allows you to do it just once, and it will detect all other uses of the same in the text and will automatically mark them up in the same way.
 
+#### Inline Code
+
+To mark some text as code, we need to wrap it in `<code>` elements. ReSpec lets you wrap text in backticks (`) to mark it as code, which is usually more comfortable.
+
 ### Definitions and Linking
 
 HTML also supports the notion that you can give a term's definition using the `<dfn>` element. While that is nice, it is even better to link back to the definition whenever a term is used, which in turn is tedious. While ReSpec could go through the entire text and link every occurrence of a defined term back to its definition, that would be a problematic approach since it would risk linking the same term used with a different meaning. What it does instead is that it allows you to use an href-less a element around a term when you use it, and it will manage the link on its own (e.g., `<a>term</a>`).
