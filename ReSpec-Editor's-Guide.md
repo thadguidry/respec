@@ -4,7 +4,7 @@ This User's Guide is organized in such a way that a complete newcomer may read i
 
 A ReSpec document is a straightforward HTML document that brings in the ReSpec script, defines a few configuration variables, and follows a few conventions.
 
-```html
+```html "example": "A basic ReSpec document."
 <!DOCTYPE html>
 <html>
 <head>
@@ -88,13 +88,13 @@ This chapter covers all the aspects of a ReSpec document's structure that were n
 
 As noted in the previous chapter, the [`<title>`](title) of the document is reused as the title of the specification in the resulting document's h1. That way, they are always in sync and you need not worry about specifying it twice. However, if you need to add additional markup to your title, you can still use a [`<h1>`](h1-element) with `id="title"`.
 
-```html
+```html "example": "Specification title with custom markup."
 <h1 id="title">The <code>Foo</code> API</h1>
 ```
 
 Optionally, you can also specify a [`subtitle`](subtitle) configuration option in the ReSpec config. The subtitle configuration option takes a simple string that will be used as a subtitle for the specification, right under the title. As with the title, you can also specify a subtitle as:
 
-``` html
+```html "example": "Specification subtitle with custom markup."
 <h2 id="subtitle">Subtitle here</h2>
 ```
 
@@ -105,7 +105,7 @@ Every specification must have some editors (at least one) and may have some auth
 
 Editors are the people in charge of the document. Authors are people who produced substantial contributions, but did not manage the document per se. Most of the time authors are not specified, but that practice varies between groups (it was more common in [W3C XGs](https://www.w3.org/2005/Incubator/about.html) for instance, or sometimes the whole group is mentioned to get academic credit). Here is an example of specifying two editors and one author (with the surrounding document clipped for readability):
 
-```js
+```js "example": "Specifying editors and authors."
 var respecConfig = {
   // ...
   editors: [
