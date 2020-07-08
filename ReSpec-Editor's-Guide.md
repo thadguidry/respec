@@ -275,8 +275,8 @@ You don't need to remember when to use standard HTML `<a>` or the shorthands. Sh
 </script>
 <section>
   <!--
-    Here, we reference "default toJSON steps" concept defined in [[WebIDL]] standard,
-      and PaymentRequest WebIDL interface defined in [[payment-request]] standard.
+    Here, we reference the "default toJSON steps" concept defined in [[WebIDL]] standard,
+      and the PaymentRequest interface (WebIDL) defined in [[payment-request]] standard.
   -->
   <p>[=default toJSON steps=] for the {{PaymentRequest}} interface are ...</p>
 
@@ -286,7 +286,7 @@ You don't need to remember when to use standard HTML `<a>` or the shorthands. Sh
   interface Cat {}
   </pre>
 
-  <!-- and we reference them as: -->
+  <!-- ...and we can reference them as: -->
   <p>A {{Cat}} is a [=feline=] if it meows.</p>
 </section>
 ```
