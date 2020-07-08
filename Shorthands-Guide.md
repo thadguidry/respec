@@ -1,6 +1,4 @@
-# Shorthands
-
-## What are shorthands?
+# Shorthands Cheat Sheet
 
 Similar to markdown, shorthands are custom ways of writing things that trigger special behavior in ReSpec. The most commonly used one you've likely seen is `[[Reference]]`. Shorthands save you time and work: you write _a lot less HTML_, and ReSpec does all the linking and error checking for you.
 
@@ -42,7 +40,7 @@ You can link attributes, methods, or members by using the interface name, `/`, a
 | [Enum Value]                                    | `{{Identifier/"value"}}`                                                | `{{PaymentComplete/"success"}}`                                            |
 | [DOM Exception]                                 | `{{"Identifier"}}`                                                      | `{{"NotAllowedError"}}`                                                    |
 
-## Defining Concepts {#concept-shorthands}
+## Concepts {#concept-shorthands}
 
 Concepts include: ideas, named algorithms, useful terms, and/or non-webIDL things that are defined in a spec.
 
@@ -105,14 +103,11 @@ democracy.
 | ----------------- | ------------------------- | ----------------------------------------------------------------------- |
 | Concept for thing | `[=concept/sub concept=]` | `[=list/for each=]` <br> `[=map/for each=]` <br> `[=Document/visible=]` |
 
-
 ## Variables in algorithms {#variable-shorthands}
 
 The syntax is `|name|`, where `name` is the name of the variable.
 
-In the example below, `value` is a declared variable
-
-```html
+```html "example": "Shorthand syntax for declaring a variable 'value'."
 Let |value| be the {{DOMString}} "hello". ... If |value| is not "hello", then
 do…
 ```
@@ -129,18 +124,16 @@ This helps readers know where variables were declared and where they are used. I
 
 ### Examples
 
-| **Type**                  | **Syntax**              | **Examples**          |
-| ------------------------- | ----------------------- | --------------------- |
+| **Type**                  | **Syntax**            | **Examples**        |
+| ------------------------- | --------------------- | ------------------- |
 | Variable                  | `|variable|`          | `|value|`           |
 | Variable with a data type | `|variable:dataType|` | `|value:DOMString|` |
 
----
-
-## HTML Elements and content attributes {#element-shorthands}
+## HTML Elements and attributes {#element-shorthands}
 
 To reference HTML elements, use the following syntax: `[^tagname^]`. \* Here, the `tagname` is a valid HTML tag that is defined in the HTML spec or some other spec that defines the tag.
 
-You can also link to particular content attributes of html elements by using a `/` after then tag name, followed by the name of the attribute you'd like to link to.
+You can also link to particular content attributes of HTML elements by using a `/` after then tag name, followed by the name of the attribute you'd like to link to.
 
 For example, `[^iframe/allow^]` links to the `allow` attribute for an iframe in the HTML spec.
 
@@ -151,9 +144,7 @@ For example, `[^iframe/allow^]` links to the `allow` attribute for an iframe in 
 | Element                        | `[^element^]`                  | `[^iframe^]`       |
 | Element with Content Attribute | `[^element/contentAttribute^]` | `[^iframe/allow^]` |
 
-Note: To link to an IDL attribute on a HTML element's interface, you would do, for example `{{HTMLIframeElement/allow}}`
-
----
+Note: To link to an IDL attribute on a HTML element's interface, which is different from an element attribute, you would do, for example `{{HTMLIframeElement/allow}}`.
 
 ## Referencing other specifications {#reference-shorthands}
 
@@ -161,14 +152,14 @@ To reference another specification, just write `[[FOO]]` - where FOO is the shor
 
 ### Examples
 
-| **Type**                 | **Syntax**                    | **Examples**                                                                                                                                                                              |
-| ------------------------ | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Normal Reference         | `[[SHORTNAME]]`               | `[[HTML]]`                                                                                                                                                                                |
-| Expanded Reference       | `[[[SHORTNAME]]]`             | `[[[FULLSCREEN]]]`<br>`[[[fullscreen API]]]`<br>is expanded and rendered as<br>`Fullscreen Api`                                                                                           |
-| Informative spec         | `[[?SHORTNAME]]`              | Payments can be useful `[[?PAYMENT-REQUEST]]`.                                                                                                                                            |
-| Escaped reference        | `[[\anything]]`               | This is not a reference. It is `[[\something else]]`.                                                                                                                                     |
-| Inner-document expansion | `[[[#fragment]]]`             | `See [[[#installability-signals]]]`<br>is expanded and rendered as<br>`See § 2.6 Installability signals`. Similarly with examples.<br>TODO: clarify `similarly with examples` with Marcos |
-| Multipage reference      | `[[SHORTNAME/page#fragment]]` | `[[SOMESPEC/foo.html#bar]]`<br>**Not recommended.** Only if you really need it!                                                                                                           |
+| **Type**                 | **Syntax**                    | **Examples**                                                                                                  |
+| ------------------------ | ----------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Normal Reference         | `[[SHORTNAME]]`               | `[[HTML]]`                                                                                                    |
+| Expanded Reference       | `[[[SHORTNAME]]]`             | `[[[FULLSCREEN]]]`, `[[[fullscreen API]]]` <br> are expanded and rendered as <br> `Full Screen API`           |
+| Informative spec         | `[[?SHORTNAME]]`              | Payments can be useful `[[?PAYMENT-REQUEST]]`.                                                                |
+| Escaped reference        | `[[\anything]]`               | This is not a reference. It is `[[\something else]]`.                                                         |
+| Inner-document expansion | `[[[#fragment]]]`             | `See [[[#installability-signals]]]` <br> is expanded and rendered as <br> `See § 2.6 Installability signals`. |
+| Multi-page reference     | `[[SHORTNAME/page#fragment]]` | `[[SOMESPEC/foo.html#bar]]` <br> (**Not recommended**, use only if you really need it!)                       |
 
 [interface]: https://heycam.github.io/webidl/#idl-interfaces
 [dictionary]: https://heycam.github.io/webidl/#dfn-dictionary
