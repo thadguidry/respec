@@ -34,15 +34,15 @@ You can link attributes, methods, or members by using the interface name, `/`, a
 
 ### Examples
 
-| **Type**                                                                                                                                                                                                                                  | **Syntax**                                                              | **Examples**                                                               |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| [Interface](https://heycam.github.io/webidl/#idl-interfaces), [Dictionary](https://heycam.github.io/webidl/#dfn-dictionary), [enum](https://heycam.github.io/webidl/#idl-enums) or [IDL type](https://heycam.github.io/webidl/#idl-types) | `{{Identifier}}`                                                        | `{{PaymentRequest}}` <br> `{{unrestricted double}}` <br> `{{long long}}`   |
-| [Attribute](https://heycam.github.io/webidl/#idl-attributes)                                                                                                                                                                              | `{{Identifier/attributeName}}`                                          | `{{PaymentRequest/id}}`                                                    |
-| [Operation or Method](https://heycam.github.io/webidl/#idl-operations)                                                                                                                                                                    | `{{Identifier/methodName()}}` <br> `{{Identifier/methodName(someArg)}}` | {`{PaymentRequest/show()}}` <br> `{{PaymentRequest/show(detailsPromise)}}` |
-| [Static Attribute](https://heycam.github.io/webidl/#dfn-static-attribute)                                                                                                                                                                 | `{{Identifier.attribute}}`                                              | `{{SomeInterface.someAttribute}}`                                          |
-| [Static Operation or Static Method](https://heycam.github.io/webidl/#dfn-static-operation)                                                                                                                                                | `{{Identifier.methodName()}}` <br> `{{Identifier.methodName(arg)}}`     | `{{URL.createObjectURL()}}` <br> `{{URL.createObjectURL(obj)}}`            |
-| [Enum Value](https://heycam.github.io/webidl/#dfn-enumeration-value)                                                                                                                                                                      | `{{Identifier/"value"}}`                                                | `{{PaymentComplete/"success"}}`                                            |
-| [DOM Exception](https://heycam.github.io/webidl/#idl-DOMException)                                                                                                                                                                        | `{{"Identifier"}}`                                                      | `{{"NotAllowedError"}}`                                                    |
+| **Type**                                        | **Syntax**                                                              | **Examples**                                                               |
+| ----------------------------------------------- | ----------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| [Interface], [Dictionary], [Enum] or [IDL type] | `{{Identifier}}`                                                        | `{{PaymentRequest}}` <br> `{{unrestricted double}}` <br> `{{long long}}`   |
+| [Attribute]                                     | `{{Identifier/attributeName}}`                                          | `{{PaymentRequest/id}}`                                                    |
+| [Operation or Method]                           | `{{Identifier/methodName()}}` <br> `{{Identifier/methodName(someArg)}}` | {`{PaymentRequest/show()}}` <br> `{{PaymentRequest/show(detailsPromise)}}` |
+| [Static Attribute]                              | `{{Identifier.attribute}}`                                              | `{{SomeInterface.someAttribute}}`                                          |
+| [Static Operation or Static Method]             | `{{Identifier.methodName()}}` <br> `{{Identifier.methodName(arg)}}`     | `{{URL.createObjectURL()}}` <br> `{{URL.createObjectURL(obj)}}`            |
+| [Enum Value]                                    | `{{Identifier/"value"}}`                                                | `{{PaymentComplete/"success"}}`                                            |
+| [DOM Exception]                                 | `{{"Identifier"}}`                                                      | `{{"NotAllowedError"}}`                                                    |
 
 ## Defining Concepts
 
@@ -174,3 +174,14 @@ To reference another specification, just write `[[FOO]]` - where FOO is the shor
 | Escaped reference        | `[[\anything]]`               | This is not a reference. It is `[[\something else]]`.                                                                                                                                     |
 | Inner-document expansion | `[[[#fragment]]]`             | `See [[[#installability-signals]]]`<br>is expanded and rendered as<br>`See § 2.6 Installability signals`. Similarly with examples.<br>TODO: clarify `similarly with examples` with Marcos |
 | Multipage reference      | `[[SHORTNAME/page#fragment]]` | `[[SOMESPEC/foo.html#bar]]`<br>**Not recommended.** Only if you really need it!                                                                                                           |
+
+[interface]: https://heycam.github.io/webidl/#idl-interfaces
+[dictionary]: https://heycam.github.io/webidl/#dfn-dictionary
+[enum]: https://heycam.github.io/webidl/#idl-enums
+[idl type]: https://heycam.github.io/webidl/#idl-types
+[attribute]: https://heycam.github.io/webidl/#idl-attributes
+[operation or method]: https://heycam.github.io/webidl/#idl-operations
+[static attribute]: https://heycam.github.io/webidl/#dfn-static-attribute
+[static operation or static method]: https://heycam.github.io/webidl/#dfn-static-operation
+[enum value]: https://heycam.github.io/webidl/#dfn-enumeration-value
+[dom exception]: https://heycam.github.io/webidl/#idl-DOMException
