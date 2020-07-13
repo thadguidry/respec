@@ -1,6 +1,8 @@
+# WebIDL Guide
+
 To specify an interface using [WebIDL](http://heycam.github.io/webidl/), you define a `<pre class="idl">` block. For example:
 
-```html
+```html "example": "Declaring a WebIDL block."
 <pre class="idl">
 interface Request {
   readonly attribute ByteString method;
@@ -13,7 +15,7 @@ interface Request {
 
 The recommended way to code up your WebIDL is as follows:
 
-```html
+```html "example": "WebIDL definitions and linking."
 <section data-dfn-for="ExampleInterface">
   <h2><dfn>ExampleInterface</dfn> interface</h2>
   <pre class="idl">
@@ -41,7 +43,7 @@ The recommended way to code up your WebIDL is as follows:
 
 Given `interface Request {};`, you can define the interface inside a heading like so:
 
-```html
+```html "example": "Defining WebIDL interfaces."
 <section>
   <h2><dfn>Request</dfn> interface</h2>
   <pre class="idl">
@@ -53,13 +55,13 @@ Given `interface Request {};`, you can define the interface inside a heading lik
 
 The above provides convenient linking to the section where the interface is defined.
 
-#### Using `data-dfn-for`
+## Using `data-dfn-for`
 
 The `data-dfn-for` attribute allows you to describe one or more aspects of an interface at once within a section of your document.
 
 For example, the following defines both the `url` and the `clone` method.
 
-```html
+```html "example": "Using data-dfn-for."
 <section data-dfn-for="Request">
   <h2>`Request` interface</h2>
   <pre>
@@ -79,7 +81,7 @@ For example, the following defines both the `url` and the `clone` method.
 
 If, for instance, you have two interfaces with methods or attributes that are the same:
 
-```html
+```html "example": "Multiple interfaces with same attributes/methods."
 <pre class="idl">
 interface Request {
   readonly attribute USVString url;
@@ -92,7 +94,7 @@ interface Response {
 
 You explicitly distinguish between them like so:
 
-```html
+```html "example": "Distinguishing between multiple interfaces with same attributes/nodes."
 <section data-dfn-for="Request">
   <p>
     The <dfn>url</dfn> attribute of {{Request}} is used by {{Response/url}}.
