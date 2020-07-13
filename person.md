@@ -1,6 +1,6 @@
 # `Person`
 
-A person object (used for [`editors`](editors) [`authors`](authors)) contains the following fields (most of the fields are straightforward). Only the `name` field is required.
+A person object (used for [`editors`](editors), [`authors`](authors)) contains the following fields (most of the fields are straightforward). Only the `name` field is required.
 
 <dl>
 	<dt><code>name</code></dt>
@@ -15,10 +15,10 @@ A person object (used for [`editors`](editors) [`authors`](authors)) contains th
 	<dd>url of the company</dd>
 	<dt><code>w3cid</code></dt>
 	<dd>identifier of the persons’ W3C account, if applicable. (This id can be found through the <a href="https://www.w3.org/users/myprofile">“my profile”</a> URL that will be redirected to the user’s page; the id appears in the address bar).</dd>
-        <dt><code>orcid</code></dt>
-        <dd>identifier or full URL of the persons' <a href="https://orcid.org/">ORCID</a> account.</dd>
-        <dt><code>retiredDate</code></dt>
-        <dd>indicates the date in which an editor has retired from editing a specification. The format is yyyy-mm-dd. Additionally, if a person object is under <code>editors</code> and contains <code>retiredDate</code>, it will be automatically moved to <code>formerEditors</code>.</dd>
+	<dt><code>orcid</code></dt>
+	<dd>identifier or full URL of the persons' <a href="https://orcid.org/">ORCID</a> account.</dd>
+	<dt><code>retiredDate</code></dt>
+	<dd>indicates the date in which an editor has retired from editing a specification. The format is yyyy-mm-dd. Additionally, if a person object is under <code>editors</code> and contains <code>retiredDate</code>, it will be automatically moved to <code>formerEditors</code>.</dd>
 	<dt><code>note</code></dt>
 	<dd>any text in this field will appear at the end of the person’s identification in parenthesis</dd>
 	<dt><code>extras</code></dt>
@@ -38,7 +38,7 @@ The “extras” are objects, each rendered as a separate `span` element, with t
 
 A simple example:
 
-```js
+```js "example": "A simple person object."
 {
 	name:       "Benjamin Young",
 	company:    "John Wiley &amp; Sons, Inc.",
@@ -50,7 +50,7 @@ A simple example:
 
 A more complex example, using the <code>extras</code> field to include a reference to the person’s ORCID id (with a logo):
 
-```js
+```js "example": "A more complex person object."
 {
   name: "Ben De Meester",
   mailto: "ben.demeester@ugent.be",
