@@ -21,9 +21,9 @@ Usually "basic.html" is a good place to start hacking from.
 
 ## ReSpec's architecture
 
-ReSpec is a very simple application that runs mostly synchronous bits of JS after a `Document` loads. These javascript fragments are referred to as "plugins". When a bunch of plugins are combined together, they create a "profile".
+ReSpec is a very simple application that runs mostly synchronous bits of JS after a `Document` loads. These JavaScript fragments are referred to as "plugins". When a bunch of plugins are combined together, they create a "profile".
 
-So, for instance, the W3C's profile, located at "[profiles/w3c.js](https://github.com/w3c/respec/blob/develop/profiles/w3c.js)", loads the following plugins (not the full list, just for illustrative purposes):
+So, for instance, the W3C's profile, located at [`profiles/w3c.js`](https://github.com/w3c/respec/blob/develop/profiles/w3c.js), loads the following plugins (not the full list, just for illustrative purposes):
 
 - core/base-runner
 - core/include-config,
@@ -33,17 +33,17 @@ So, for instance, the W3C's profile, located at "[profiles/w3c.js](https://githu
 - w3c/headers,
 - ...
 
-What each plugin above does doesn't matter, though you can deduce what each does by the name. What matters is that ordering is important - and we mix together W3C plugins and "core" plugins. And that it's these plugins coming together that form a profile, in this case the "W3C profile". Each of the plugins are run only once - and the thing that runs them is the "[core/base-runner](https://github.com/w3c/respec/blob/develop/src/core/base-runner.js)" plugin.
+What each plugin above does doesn't matter, though you can deduce what each does by the name. What matters is that ordering is important - and we mix together W3C plugins and "core" plugins. And that it's these plugins coming together that form a profile, in this case the "W3C profile". Each of the plugins are run only once - and the thing that runs them is the [`core/base-runner`](https://github.com/w3c/respec/blob/develop/src/core/base-runner.js) plugin.
 
-See "[profile/w3c.js](https://github.com/w3c/respec/blob/develop/profiles/w3c.js)" for the actual details of how the profile is set up. But it's essentially:
+See [`profile/w3c.js`](https://github.com/w3c/respec/blob/develop/profiles/w3c.js) for the actual details of how the profile is set up. But it's essentially:
 
 1. Load the profile + all the plugins (but don't "run" them yet!).
 1. Wait for the document's "DOMContentLoaded" event to fire.
 1. Once DOM is ready, run each plugin in order, waiting for each plugin to finish.
 
-## Core Base runner ("core/base-runner.js")
+## Core Base runner (`core/base-runner.js`)
 
-The first and most important plugin ("[core/base-runner](https://github.com/w3c/respec/blob/develop/src/core/base-runner.js)"), is actually the "brains" of ReSpec: it is the thing that "runs" all other plugins in order.
+The first and most important plugin ([`core/base-runner`](https://github.com/w3c/respec/blob/develop/src/core/base-runner.js)), is actually the "brains" of ReSpec: it is the thing that "runs" all other plugins in order.
 
 Before any plugins are run, however, it adds the following property to the `document` object:
 
@@ -53,7 +53,7 @@ Before any plugins are run, however, it adds the following property to the `docu
 document.respecIsReady;
 ```
 
-After that, the Base Runner starts looping over an array of given plugins: literally just a call to a `.runAll(arrayOfPlugins)` method. For each plugin, it waits until a plugin has finished doing its work before continuing to the next plugin. It does this by passing in a callback to a plugin, and waiting for that callback to be called.
+After that, the Base Runner starts looping over an array of given plugins: literally just a call to a `.runAll(arrayOfPlugins)` method. For each plugin, it waits until a plugin has finished doing its work before continuing to the next plugin. It does this by calling the `run()` function exported from a plugin, and `await`ing for that function to finish. Some plugins may export a `Plugin` class with a `run()` method instead.
 
 Once all the plugins have "run", ReSpec resolves the `respecIsReady` promise on the Document object.
 
@@ -97,18 +97,14 @@ async function someAsyncTask() {
 
 The exported run method SHOULD have arguments (conf):
 
-- conf: is the ReSpec configuration object (`window.respecConfig`) - which the user defined. Be careful not to modify this object.
-
-### Built-in HTTP server
-
-You can launch a built in HTTP server during development by simply typing: `npm start`.
+- `conf`: is the ReSpec configuration object (`window.respecConfig`) - which the user defined. Be careful not to modify this object.
 
 ### Warning users of errors
 
 If you are creating a plugin that needs to show warnings to a user, you can use the "core/pubsubhub" utility. As the name suggests, this is a simple pub-sub-hub dispatcher. You should use this to dispatch "warn" or "error" messages to a user:
 
 ```js
-import { pub } from "core/pubsubhub";
+import { pub } from "./core/pubsubhub.js";
 export async function run(conf) {
   if (!"something" in conf) {
     pub("warn", "Markdown that represents a warning");
@@ -120,18 +116,27 @@ These "warn" and "error" messages will be picked up by ReSpec's UI (the "pill"),
 
 IMPORTANT: Don't show JavaScript errors to the user - as they won't be able to fix these, and the minified JS output will make these messages really unhelpful!
 
-## Testing
+## `npm start`
+
+The `start` script in [package.json](https://github.com/w3c/respec/blob/develop/package.json) contains the commands useful during development. It runs a static HTTP server, watches files for change and re-build the profile, and run unit tests.
+
+### Built-in HTTP server
+
+You can launch a built in HTTP server during development by simply typing: `npm start`.
+If you wish not to run tests and other parts of start script, you can alternatively run `npm run server`.
+
+### Testing
 
 ReSpec's unit tests are written using [Jasmine](https://jasmine.github.io) and run on [Karma](https://karma-runner.github.io/latest/index.html). To start the testing server:
 
 ```bash
-npm start
+npm start -- --browsers Firefox
 ```
 
-or, for a "single run" across multiple browsers:
+You can run test in different browsers by setting `browsers` value above to any of: Firefox, FirefoxHeadless, Chrome, ChromeHeadless, Safari. Same can be set using the `BROWSERS` environment variable:
 
 ```bash
-npm run karma
+BROWSERS="ChromeHeadless Firefox" npm start
 ```
 
 For debugging purposes, you can click on the Debug button when the tests start in the browser - this will allow you to see the tests summary in browser itself as well as allow you to re-run any particular test.
