@@ -16,7 +16,8 @@ The list is sorted by names (or GitHub username).
 ```
 
 ```html "example": "Show names of contributors separated by commas."
-<p id="gh-contributors">
-  <!-- names of contributors will appear here as comma-separated values -->
+<p>
+  We'd also like to thank the following contributors: <span id=
+  "gh-contributors"><!-- filled by ReSpec --></span>.
 </p>
 ```
