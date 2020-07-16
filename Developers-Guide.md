@@ -2,14 +2,14 @@
 
 Clone the repo and install the needed dependencies:
 
-```Bash
+```bash
 git clone git@github.com:w3c/respec.git
 npm install
 ```
 
 Now you can start the local development servers:
 
-```Bash
+```bash
 npm start
 ```
 
@@ -59,7 +59,7 @@ Once all the plugins have "run", ReSpec resolves the `respecIsReady` promise on 
 
 ```js
 document.respecIsReady.then(() => {
- console.log("ReSpec has finished processing this document");
+  console.log("ReSpec has finished processing this document");
 });
 ```
 
@@ -84,13 +84,13 @@ import utils from "core/utils";
 
 // Optionally, export "run" function
 // See below for description of arguments.
-export async function run(conf){
+export async function run(conf) {
   if ("something" in conf || document.querySelector("#important-element")) {
     await someAsyncTask();
   }
 }
 
-async function someAsyncTask(){
+async function someAsyncTask() {
   // Your code here
 }
 ```
@@ -124,13 +124,13 @@ IMPORTANT: Don't show JavaScript errors to the user - as they won't be able to f
 
 ReSpec's unit tests are written using [Jasmine](https://jasmine.github.io) and run on [Karma](https://karma-runner.github.io/latest/index.html). To start the testing server:
 
-```Bash
+```bash
 npm start
 ```
 
 or, for a "single run" across multiple browsers:
 
-```Bash
+```bash
 npm run karma
 ```
 
@@ -140,7 +140,7 @@ Please refer to [Jasmine documentation](https://jasmine.github.io) regarding [fo
 
 You can also select individual tests by filtering those which match a particular pattern:
 
-```Bash
+```bash
 npm start -- --grep="SEO"
 ```
 
@@ -150,7 +150,7 @@ If you want to run all tests whose description includes "SEO".
 
 You can also `run start` in "interactive" mode. This gives you more control over when tests are run and, by default, turns off automatic file watching.
 
-```Bash
+```bash
 npm start -- --interactive
 ```
 
@@ -160,7 +160,7 @@ This is useful for more advanced debugging sessions, and can be combined with `-
 
 You can also run tests without opening a full browser window. Test results will be visible in your terminal.
 
-``` bash
+```bash
 npm start -- --browsers FirefoxHeadless
 # or use ChromeHeadless
 ```
@@ -179,7 +179,7 @@ If the profile is popular, then please send a pull request to the main repositor
 
 In `examples/`, make a copy of "basic.html" and point the `<script>` tag at your new profile. Now run:
 
-```Bash
+```bash
 npm start
 ```
 
