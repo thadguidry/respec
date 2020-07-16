@@ -1,6 +1,6 @@
-## Couldn't match TERM to anything in the document or in any other document cited in this specification
+## Couldn't match TERM to anything in the document or in any other document cited in this specification {#term-not-found}
 
-### Is the term defined in some other document/specification?
+### Is the term defined in some other document/specification? {#external-term-not-found}
 
 - Search for the term at [XRef Search UI](https://respec.org/xref/). If the term is found:
   - If the error message above does not contain the specification where term is defined, add the specification shortname to [`xref`](xref)'s specs. Alternatively, add the shortname as `data-cite="SHORTNAME"` to a parent of the `<a>` element with linking error.
@@ -12,7 +12,7 @@
   - If the term is exported but not found through XRef Search UI, then the specification might not be in our database. Please file an issue at ReSpec repository or contact ReSpec maintainers by other means.
     - Terms from ECMA/IETF specifications are not presently available in the terms database. Use the [`data-cite`](data-cite) attribute to reference those terms.
 
-### Is the term defined in same document?
+### Is the term defined in same document? {#local-term-not-found}
 
 - If it's a WebIDL term:
   - Remember that WebIDL terms are case-sensitive, so make sure the linking text is same as definition text.
