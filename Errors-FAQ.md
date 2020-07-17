@@ -8,7 +8,7 @@ To fix this issue, follow these steps:
 
 ### Is the term defined in some other document/specification?
 
-1. Search for the term at [XRef Search UI](https://respec.org/xref/). If the term is found:
+1. Search for the term using [XRef Search UI](https://respec.org/xref/). If the term is found:
    1. If the error message above does not contain the specification where term is defined, add the specification shortname to [`xref`](xref)'s specs.
    1. Otherwise, the error is due to an invalid for-context (i.e., term is defined in-context of some other term) or type-context (like referencing an exception using syntax meant for referencing concepts). Copy-paste the "How to Cite" of the relevant match from [XRef Search UI](https://respec.org/xref/).
 1. If the term is not found:
