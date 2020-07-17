@@ -4,6 +4,8 @@
 
 ### Is the term defined in some other document/specification? {#external-term-not-found}
 
+To fix this issue, follow these steps: 
+
 - Search for the term at [XRef Search UI](https://respec.org/xref/). If the term is found:
   - If the error message above does not contain the specification where term is defined, add the specification shortname to [`xref`](xref)'s specs. Alternatively, add the shortname as `data-cite="SHORTNAME"` to a parent of the `<a>` element with linking error.
   - Otherwise, that means the error is due to an invalid/missing for-context (term is defined in-context of some other term) or type-context (like linking a WebIDL term using syntax for linking concepts). Copy-paste the "How to Cite" of the relevant match from [XRef Search UI](https://respec.org/xref/).
