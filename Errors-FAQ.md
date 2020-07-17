@@ -1,5 +1,7 @@
 ## Couldn't match TERM to anything in the document or in any other document cited in this specification {#term-not-found}
 
+<img src="https://user-images.githubusercontent.com/8426945/87762934-80518400-c831-11ea-93c5-fda43cd747f3.png" alt="Screenshot of ReSpec definition  linking error" width="1177" height="64" loading="lazy">
+
 ### Is the term defined in some other document/specification? {#external-term-not-found}
 
 - Search for the term at [XRef Search UI](https://respec.org/xref/). If the term is found:
