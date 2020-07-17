@@ -22,8 +22,8 @@ To fix this issue, follow these steps:
 
 1. If it's a WebIDL term:
    1. Remember that WebIDL terms are case-sensitive.
-   1. Use the [WebIDL linking syntax](Shorthands-Guide#user-content-webidl-shorthands).
+   1. Use the [WebIDL linking syntax](Shorthands-Guide#webidl-shorthands).
    1. Provide a proper for-context using either WebIDL linking syntax or [`data-link-for`](data-link-for).
 1. If it's not a WebIDL term (i.e., it's a "concept"):
-   1. Use the [Concepts linking syntax](Shorthands-Guide#user-content-concept-shorthands)
+   1. Use the [Concepts linking syntax](Shorthands-Guide#concept-shorthands)
    1. Provide proper for-context.
