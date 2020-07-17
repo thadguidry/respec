@@ -1,6 +1,8 @@
 <h2 id="error-term-not-found">Couldn't match TERM to anything in the document or in any other document cited in this specification</h2>
 
-<img src="https://user-images.githubusercontent.com/8426945/87762934-80518400-c831-11ea-93c5-fda43cd747f3.png" alt="Screenshot of ReSpec definition  linking error" width="1177" height="64" loading="lazy">
+![Screenshot of a ReSpec definition linking error](https://user-images.githubusercontent.com/8426945/87762934-80518400-c831-11ea-93c5-fda43cd747f3.png)
+
+To fix this issue, follow these steps:
 
 ### Is the term defined in some other document/specification?
 
