@@ -1,4 +1,7 @@
-This issue documents the work done by [@sidvishnoi](https://github.com/sidvishnoi) (Sudhanshu Vishnoi) during his GSoC internship and serves as the final official submission.
+This page documents the work done by [@sidvishnoi](https://github.com/sidvishnoi) (Sudhanshu Vishnoi) during his GSoC internship and serves as the final official submission.
+
+- [Proposal](Google-Summer-of-Code-2018-%3A-Proposal)
+- [Project on GSoC Website](https://summerofcode.withgoogle.com/archive/2018/projects/5453918721015808/)
 
 ## tl;dr
 
