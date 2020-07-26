@@ -47,7 +47,7 @@
 - [tocIntroductory](tocIntroductory)
 - [~~wg~~](wg) (Deprecated)
 - [~~wgId~~](wgId) (Deprecated)
-- [~~wgPatentURI~~](wgPatentURI)
+- [~~wgPatentURI~~](wgPatentURI) (Deprecated)
 - [wgPublicList](wgPublicList)
 - [~~wgURI~~](wgURI) (Deprecated)
 - [xref](xref)
