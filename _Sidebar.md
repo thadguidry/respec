@@ -45,11 +45,11 @@
 - [subtitle](subtitle)
 - [testSuiteURI](testSuiteURI)
 - [tocIntroductory](tocIntroductory)
-- [wg](wg)
-- [wgId](wgId)
-- [wgPatentURI](wgPatentURI)
+- [~~wg~~](wg) (Deprecated)
+- [~~wgId~~](wgId) (Deprecated)
+- [~~wgPatentURI~~](wgPatentURI)
 - [wgPublicList](wgPublicList)
-- [wgURI](wgURI)
+- [~~wgURI~~](wgURI) (Deprecated)
 - [xref](xref)
 
 ### W3C Configuration options
