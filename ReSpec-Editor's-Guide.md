@@ -340,12 +340,7 @@ Specifications typically require having a "short name", which is the name used (
 
 ### Working Group Information
 
-Most (but not all) W3C documents are produced by groups of some sort: Working Groups (WG), Interest Groups (IG), Incubator Groups (XG, now defunct), Coordination Groups, the TAG, and Community or Business Groups (CG, BG). For simplicity, we will be referring to all of the above as "Working Groups", since one should not be required to understand the many subtleties of the W3C Process in order to write a good specification. Configuration options that are prefixed with wg work equally well for all group types.
-
-- [`wg`](wg)
-- [`wgPatentURI`](wgPatentURI)
-- [`wgPublicList`](wgPublicList)
-- [`wgURI`](wgURI)
+W3C documents are produced by groups of some sort: Working Groups (WG), Interest Groups (IG), the TAG, and Community or Business Groups (CG, BG). For simplicity, we will be referring to all of the above as "Working Groups", since one should not be required to understand the many subtleties of the W3C Process in order to write a good specification. Which group a spec belongs to is denoted by the [`group`](group) configuration option. A list of valid group names can be found at: https://respec.org/w3c/groups/.
 
 When these groups release a document, they must include some information that is relevant and specific to them — all of this information is required. Documents produced in other situations (e.g., Submissions, unofficial drafts, etc.) don't require these options.
 
