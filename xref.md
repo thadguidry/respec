@@ -6,11 +6,28 @@ The `xref` option allows you to configure automatic external reference linking (
 
 ```js
 var respecConfig = {
-  xref: /* a valid configuration */,
+  // See all config options below!
+  xref: "web-platform", 
 };
 ```
 
-and the following configurations are available:
+And then simply write the terms you want to link to:
+
+```HTML
+<p>
+  [=Queue a task=] to [=fire an event=] named "yay"
+  at the {{Window}} object.
+<p>
+```
+
+And ReSpec will know what to do. If ReSpec can't find a term, it will show an error. 
+If you are unsure if a term is exported, head over to http://respec.org/xref/ to see if it's exported.
+
+If a term is not exported, ask the Editors of that spec to export the term by using `data-export=""`.  
+
+## xref configuration options
+
+The following configurations are available:
 
 - Boolean value. Setting `xref: true` simply enables the xref feature.
 - Array of specification short-names. This option enables xref, but also adds the specification short-names in the array to the `data-cite` attribute of the document's `<body>`. ReSpec then uses these specifications for [disambiguation](Auto-linking-external-references#handling-ambiguity).
@@ -22,7 +39,7 @@ and the following configurations are available:
 
 Note that when using the object configuration, if both `profile` and `specs` properties are specified, then the specification short-names in `specs` combined with the ones in the profile used, are used for disambiguation.
 
-## Profiles
+## xref profiles
 
 Profiles are pre-defined lists of specifications. Using a profile means adding all of its specification short-names to the `data-cite` attribute of the document's `<body>`.
 
