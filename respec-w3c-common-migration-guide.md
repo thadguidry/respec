@@ -14,7 +14,7 @@ with:
 <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
 ```
 
-
+If you face issues with above, please file an issue or get in touch using the spec-prod mailing list.
 
 ## Additional info
 
