@@ -66,7 +66,7 @@ Note that the title of the document is reused as the title of the specification 
 
 You can see that the example above includes a script sourced at:
 
-- https://www.w3.org/Tools/respec/respec-w3c
+- `https://www.w3.org/Tools/respec/respec-w3c`
 
 You may also be tempted to save the script to your local directory and use it from there. That may on occasion be useful (e.g., if you're on a flight and your cache is busted), but it is recommend that you link to the canonical URL provided above. The code is regularly updated and this will allow you to benefit from bug fixes and enhancements without even having to think about it.
 
