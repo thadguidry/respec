@@ -14,7 +14,7 @@ with:
 <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
 ```
 
-If you face issues with above, please file an issue or get in touch via the spec-prod mailing list.
+If you face issues with above, please file an issue or get in touch via the [spec-prod mailing list](https://lists.w3.org/Archives/Public/spec-prod/).
 
 If you wish to not update, please download a desired version of `respec-w3c-common` from npm or GitHub repository and self-host it.
 
