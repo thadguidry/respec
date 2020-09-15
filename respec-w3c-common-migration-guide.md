@@ -16,7 +16,11 @@ with:
 
 If you face issues with above, please file an issue or get in touch the W3C Slack's [#respec](https://w3ccommunity.slack.com/) channel, or via the [spec-prod mailing list](https://lists.w3.org/Archives/Public/spec-prod/).
 
-If you wish to not update, please download a desired version of `respec-w3c-common` from npm or GitHub repository and self-host it.
+## But I don't wanna to upgrade!
+
+The `respec-w3c` profile contains security, performance, and new features plus support for the W3C's 2020 Process and future W3C Process/template updates. As such, it's highly recommended that you do upgrade. 
+
+If you still don't wish to upgrade, please download a desired version of `respec-w3c-common` from npm or GitHub repository and self-host it.
 
 ## Additional info
 
