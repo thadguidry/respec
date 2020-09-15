@@ -70,6 +70,7 @@
 - [noRecTrack](noRecTrack)
 - [prevED](prevED)
 - [submissionCommentNumber](submissionCommentNumber)
+- [wgPatentPolicy](wgPatentPolicy)
 
 ### Linter rules
 
