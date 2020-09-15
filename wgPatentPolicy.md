@@ -1,6 +1,6 @@
 # `wgPatentPolicy`
 
-Note: If you're using the [group](group) configuration option, this is set automatically for you.
+**Note:** If you're using the [group](group) configuration option, this is set automatically for you.
 
 The `wgPatentPolicy` is a string indicates patent policy the group operates under. 
 
