@@ -1,6 +1,6 @@
 # `group`
 
-`group` is a shorthand configuration option for specifying [`wg`](wg), [`wgId`](wgId), [`wgURI`](wgURI), and [`wgPatentURI`](wgPatentURI) options. It fetches working group details using the W3C API.
+`group` is a shorthand configuration option for specifying [`wg`](wg), [`wgId`](wgId), [`wgURI`](wgURI), [`wgPatentURI`](wgPatentURI), and [`wgPatentPolicy`](wgPatentPolicy) options. It fetches working group details using the W3C API.
 
 ```js "example": "Use Web Payments Working Group."
 var respecConfig = {
