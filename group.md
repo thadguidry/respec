@@ -10,6 +10,7 @@ var respecConfig = {
   // wgId: 83744,
   // wgPatentURI: "https://www.w3.org/2004/01/pp-impl/83744/status",
   // wgURI: "https://www.w3.org/Payments/WG/",
+  // wgPatentPolicy: "PP2020", (or whatever the WG is using!)
 };
 ```
 
