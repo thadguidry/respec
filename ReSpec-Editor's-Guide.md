@@ -33,9 +33,10 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
   <section data-dfn-for="Foo">
     <h2>Start your spec!</h2>
     <pre class="idl">
+    [Exposed=Window]
     interface Foo {
-      attribute Bar bar;
-      void doTheFoo();
+      attribute DOMString bar;
+      undefined doTheFoo();
     };
     </pre>
     <p>The <dfn>Foo</dfn> interface represents a {{Foo}}.</p>
