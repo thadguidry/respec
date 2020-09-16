@@ -20,6 +20,7 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
       github: "some-org/mySpec",
       shortName: "dahut",
       xref: "web-platform",
+      group: "my-working-group",
     };
   </script>
 </head>
