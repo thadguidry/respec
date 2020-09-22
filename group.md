@@ -22,7 +22,7 @@ var respecConfig = {
 };
 ```
 
-If a Community Group (CG) and a Working Group (WG) use the same shortname, e.g. "wot", you can specify the group type as:
+If a Community Group (CG) and a Working Group (WG) are using the same shortname, e.g. "wot", you can specify the group type as:
 
 ```js "example": "Specify group type."
 var respecConfig = {
