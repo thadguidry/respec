@@ -208,48 +208,44 @@ HTML supports functionality to mark abbreviations and acronyms (using `<abbr>`),
 To mark some text as code, we need to wrap it in `<code>` elements. ReSpec lets you wrap text in backticks (`) to mark it as code, which is usually more comfortable.
 
 ### Definitions and Linking
+To define a term, simple wrap it in a `<dfn>` element. 
 
-HTML also supports the notion that you can give a term's definition using the `<dfn>` element. While that is nice, it is even better to link back to the definition whenever a term is used, which in turn is tedious. While ReSpec could go through the entire text and link every occurrence of a defined term back to its definition, that would be a problematic approach since it would risk linking the same term used with a different meaning. What it does instead is that it allows you to use an href-less a element around a term when you use it, and it will manage the link on its own (e.g., `<a>term</a>`).
-
-When you write `<dfn>My term</dfn>`, ReSpec adds an id (and some other metadata) to it:
-
-<samp>
-
-```html
-<dfn data-dfn-type="dfn" id="dfn-my-term">My term</dfn>
+```HTML
+<dfn>some concept</dfn>
 ```
 
-</samp>
+Then, to link to it, just do:
 
-(where the `id="dfn-my-term"` is a down-cased copy of the element text, and you can override it if you want). You typically reference this like:
-`<a>my term</a>`, which becomes:
+```HTML
+<a>some concept</a>
 
-<samp>
+or 
 
-```html
-<a class="internalDFN" href="#dfn-my-term" data-link-type="dfn">my term</a>
+[=some concept=]
 ```
 
-</samp>
+For common nouns, ReSpec can handle pluralization automatically:
 
-All references like `<a>My term</a>` or `<a>my term</a>` link to `#dfn-my-term`.
+```
+<dfn>banana</dfn>
+<!- these are the same -->
+These [=bananas=] are better than those <a>bananas</a>
+``` 
 
-On occasion that won't be enough since you may be using the term in plural or conjugated, or in some other variant that does not exactly match the `dfn`. If so, then you can use the [`data-lt`](data-lt) attribute on the `<a>` element in order to indicate the exact term that you wish to have a link to (the mnemonic here being "link term"). Alternately, and more interestingly, you can specify a `data-lt` attribute on the associated `<dfn>` element with variants of the spelling of the term separated by vertical bars. Thus `<dfn data-lt="my terms|some term">my term</dfn>` becomes:
-
-<samp>
+Sometimes, a defined terms needs additional related terms or synonyms. In those cases, you can use the [`data-lt`](data-lt) attribute on the `dfn` element:
 
 ```html
 <dfn
-  data-lt="my terms|some term|my term"
-  data-dfn-type="dfn"
-  id="dfn-my-terms">my term</dfn>
+  data-lt="the best fruit|yellow delicious">
+  banana
+</dfn>
 ```
 
-</samp>
+The following all link back to "banana":
 
-which can be referenced by any of `<a>my terms</a>`, `<a>some term</a>`, `<a>my term<a>`.
-
-Also note that the href-less a element is not limited to linking to definitions but also knows how to link to other items such as [WebIDL](WebIDL-Guide) interfaces. One important thing to keep in mind is that, linking WebIDL items require the terms to match case-sensitively.
+```HTML
+<p>[=the best fruit=] or the [=yellow delicious=].</p>
+```
 
 #### Referencing terms from other specifications
 
