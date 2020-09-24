@@ -45,11 +45,6 @@
 - [subtitle](subtitle)
 - [testSuiteURI](testSuiteURI)
 - [tocIntroductory](tocIntroductory)
-- [~~wg~~](wg) (Deprecated)
-- [~~wgId~~](wgId) (Deprecated)
-- [~~wgPatentURI~~](wgPatentURI) (Deprecated)
-- [wgPublicList](wgPublicList)
-- [~~wgURI~~](wgURI) (Deprecated)
 - [xref](xref)
 
 ### W3C Configuration options
@@ -70,7 +65,13 @@
 - [noRecTrack](noRecTrack)
 - [prevED](prevED)
 - [submissionCommentNumber](submissionCommentNumber)
-- [wgPatentPolicy](wgPatentPolicy)
+- [~~wg~~](wg) (Deprecated)
+- [~~wgId~~](wgId) (Deprecated)
+- [~~wgPatentPolicy~~](wgPatentPolicy) (Deprecated)
+- [~~wgPatentURI~~](wgPatentURI) (Deprecated)
+- [wgPublicList](wgPublicList)
+- [~~wgURI~~](wgURI) (Deprecated)
+
 
 ### Linter rules
 
