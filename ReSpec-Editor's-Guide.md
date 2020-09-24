@@ -226,7 +226,7 @@ or
 
 For common nouns, ReSpec can handle pluralization automatically:
 
-```
+```html
 <dfn>banana</dfn>
 <!- these are the same -->
 These [=bananas=] are better than those <a>bananas</a>
