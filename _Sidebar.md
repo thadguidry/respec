@@ -1,4 +1,4 @@
-[MALIKS VLOGS](https://www.youtube.com/channel/UCvEZqw1EvIGewyUMNIeWlWQ)### Guides
+### Guides
 
 - [User's Guide](ReSpec-Editor's-Guide)
 - [WebIDL Guide](WebIDL-Guide)
