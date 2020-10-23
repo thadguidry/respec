@@ -148,7 +148,7 @@ Note: To link to an IDL attribute on a HTML element's interface, which is differ
 
 ## Referencing other specifications {#reference-shorthands}
 
-To reference another specification, just write `[[FOO]]` - where FOO is the short name or id of a specification. If you are don't know the the short name or id, please search for the spec at [SpecRef](http://specref.org).
+To reference another specification, just write `[[FOO]]` - where FOO is the short name or id of a specification. If you are don't know the the short name or id, please search for the spec at [SpecRef](https://specref.org).
 
 ### Examples
 
