@@ -42,7 +42,7 @@ A simple example:
 {
 	name:       "Benjamin Young",
 	company:    "John Wiley &amp; Sons, Inc.",
-	companyURL: "http://www.wiley.com/",
+	companyURL: "https://www.wiley.com/",
 	mailto:     "byoung@bigbluehat.com",
 	w3cid:      65468
 }
@@ -55,8 +55,8 @@ A more complex example, using the <code>extras</code> field to include a referen
   name: "Ben De Meester",
   mailto: "ben.demeester@ugent.be",
   company: "Ghent University - iMinds - Data Science Lab",
-  companyURL: "http://www.iminds.be/",
-  url: "http://users.ugent.be/~bjdmeest/",
+  companyURL: "https://www.iminds.be/",
+  url: "https://users.ugent.be/~bjdmeest/",
   retiredDate: "2020-03-26",
   orcid: "0000-0003-0248-0987",
   w3cid: "73403"
