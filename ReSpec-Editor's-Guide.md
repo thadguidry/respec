@@ -335,7 +335,7 @@ We will start by using an example of a basic specification very similar to the o
 
 ### shortName
 
-Specifications typically require having a "short name", which is the name used (amongst other places) in the canonical "https://w3.org/TR/short-name/" URLs. This is specified using the [`shortName`](shortName) option, as seen in the example above.
+Specifications typically require having a "short name", which is the name used (amongst other places) in the canonical "<https://w3.org/TR/short-name/>" URLs. This is specified using the [`shortName`](shortName) option, as seen in the example above.
 
 ### Working Group Information
 
@@ -379,7 +379,7 @@ At times, the patent situation of a specification may warrant being documented b
 
 ### Note & Recommendation Tracks
 
-If you are working on a new version of an existing Recommendation, then it is required that your document point to that previous version. This is done using the [`prevRecShortname`](prevRecShortname) and [`prevRecURI`](prevRecURI) options, which respectively provide the [`shortName`](shortName) for the existing Recommendation (e.g., "SVG", as opposed to "SVG2") and its URL. If [`prevRecURI`](prevRecURI) is not specified but [`prevRecShortname`](prevRecShortname) is, the latter will be used to generate the former by prefixing "https://www.w3.org/TR/" to it. Note however that while in the overwhelming majority of cases this works, it is not recommended to use this approach since if the Recommendation is later [Rescinded](specStatus#specStatus-rscnd), the link will be stale. Instead, use the dated link to the Recommendation.
+If you are working on a new version of an existing Recommendation, then it is required that your document point to that previous version. This is done using the [`prevRecShortname`](prevRecShortname) and [`prevRecURI`](prevRecURI) options, which respectively provide the [`shortName`](shortName) for the existing Recommendation (e.g., "SVG", as opposed to "SVG2") and its URL. If [`prevRecURI`](prevRecURI) is not specified but [`prevRecShortname`](prevRecShortname) is, the latter will be used to generate the former by prefixing "<https://www.w3.org/TR/>" to it. Note however that while in the overwhelming majority of cases this works, it is not recommended to use this approach since if the Recommendation is later [Rescinded](specStatus#specStatus-rscnd), the link will be stale. Instead, use the dated link to the Recommendation.
 
 The process for the publication of Notes has been a source of confusion. When producing multiple drafts of a Note in succession, some groups have traditionally simply published them all as Notes one after the other, indicating in the abstract or SotD if they intend to work further on this document or if it is final. Since Notes are not normative and entail no IP concerns, they don't need an elaborate process and this process was perhaps not entirely bad. However, that's not how Notes are commonly handled nowadays.
 
