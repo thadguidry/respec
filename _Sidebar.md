@@ -102,7 +102,7 @@ Handled by ReSpec for you.
 
 - [`<figure>`](figure)
 - [`<section>`](section)
-- [`<title>`](title)
+- [`<title>`](title-element)
 - [`<h1>`](h1-element)
 - [`<pre>`/`<code>`](pre-code-elements)
 

@@ -89,7 +89,7 @@ This chapter covers all the aspects of a ReSpec document's structure that were n
 
 ### Title and Subtitle
 
-As noted in the previous chapter, the [`<title>`](title) of the document is reused as the title of the specification in the resulting document's h1. That way, they are always in sync and you need not worry about specifying it twice. However, if you need to add additional markup to your title, you can still use a [`<h1>`](h1-element) with `id="title"`.
+As noted in the previous chapter, the [`<title>`](title-element) of the document is reused as the title of the specification in the resulting document's h1. That way, they are always in sync and you need not worry about specifying it twice. However, if you need to add additional markup to your title, you can still use a [`<h1>`](h1-element) with `id="title"`.
 
 ```html "example": "Specification title with custom markup."
 <h1 id="title">The <code>Foo</code> API</h1>
