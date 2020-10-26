@@ -14,7 +14,7 @@ var respecConfig = {
     {
       name: "Kenneth Rohde Christiansen",
       company: "Intel Corporation",
-      companyURL: "http://intel.com",
+      companyURL: "https://intel.com",
       w3cid: 57705,
     },
   ],
