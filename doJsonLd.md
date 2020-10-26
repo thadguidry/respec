@@ -20,11 +20,11 @@ When configured, a script element similar to the following will be added:
 <script type="application/ld+json">
   {
     "@context": [
-      "http://schema.org",
+      "https://schema.org",
       {
-        "@vocab": "http://schema.org/",
+        "@vocab": "https://schema.org/",
         "@language": "en",
-        "w3p": "http://www.w3.org/2001/02pd/rec54#",
+        "w3p": "https://www.w3.org/2001/02pd/rec54#",
         "foaf": "http://xmlns.com/foaf/0.1/",
         "datePublished": { "@type": "xsd:date" },
         "inLanguage": { "@language": null },
@@ -53,10 +53,10 @@ When configured, a script element similar to the following will be added:
     ],
     "citation": [
       {
-        "id": "http://berjon.com/",
+        "id": "https://berjon.com/",
         "type": "TechArticle",
         "name": "The Dahut Specification Example From the Higher Circle",
-        "url": "http://berjon.com/"
+        "url": "https://berjon.com/"
       }
     ]
   }
