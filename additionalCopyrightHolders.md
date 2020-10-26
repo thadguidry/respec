@@ -1,6 +1,6 @@
 # `additionalCopyrightHolders`
 
-For regular documents, this is used to specify that additional parties hold a copyright jointly with W3C on this document. This is typically used when publishing documents that were developed in cooperation with other friendly standard consortia such as the [IETF](http://www.ietf.org/).
+For regular documents, this is used to specify that additional parties hold a copyright jointly with W3C on this document. This is typically used when publishing documents that were developed in cooperation with other friendly standard consortia such as the [IETF](https://www.ietf.org/).
 
 The option is simply some text giving the additional copyright holders. For unofficial documents, this string is used to replace the default CC license.
 
