@@ -12,7 +12,7 @@ var respecConfig = {
   localBiblio: {
     WEREWOLF: {
       title: "Tremble Puny Villagers",
-      href: "http://w3.org/werewolf",
+      href: "https://w3.org/werewolf",
       status: "RSCND",
       publisher: "W3C",
     },
