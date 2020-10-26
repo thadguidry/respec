@@ -228,8 +228,8 @@ is on a publication track but can also take other values for other types of docu
         a valid Finding SotD) so you'll have to specify your own. If there are rules
         that could be used, please report a bug. ReSpec further assumes some conventions
         for finding URLs that are not consistent throughout all of the TAG's repository,
-        specifically that all findings live in "http://www.w3.org/2001/tag/doc/",
-        that the latest version is at "http://www.w3.org/2001/tag/doc/shortName",
+        specifically that all findings live in "https://www.w3.org/2001/tag/doc/",
+        that the latest version is at "https://www.w3.org/2001/tag/doc/shortName",
         and that the dated versions are at "shortName-YYYYMMDD".
       </td>
       <td>None.</td>
