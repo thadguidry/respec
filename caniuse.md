@@ -1,6 +1,6 @@
 # `caniuse`
 
-Adds a [Can I Use](http://caniuse.com) support table in the document header.
+Adds a [Can I Use](https://caniuse.com) support table in the document header.
 
 ```js "example": "Caniuse table for payment-request"
 var respecConfig = {
