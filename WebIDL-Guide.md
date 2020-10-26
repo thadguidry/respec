@@ -1,6 +1,6 @@
 # WebIDL Guide
 
-To specify an interface using [WebIDL](http://heycam.github.io/webidl/), you define a `<pre class="idl">` block. For example:
+To specify an interface using [WebIDL](https://heycam.github.io/webidl/), you define a `<pre class="idl">` block. For example:
 
 ```html "example": "Declaring a WebIDL block."
 <pre class="idl">
