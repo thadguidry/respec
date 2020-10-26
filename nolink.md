@@ -5,6 +5,6 @@ When using [markdown](format), nolinks disables automatic linking within code bl
 
 ```html "example": "Disable automatic linking within code blocks."
 <pre code="nolink">
-Prevents the following from becoming a hyperlink: http://example.com
+Prevents the following from becoming a hyperlink: https://example.com
 </pre>
 ```
