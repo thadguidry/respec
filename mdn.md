@@ -27,4 +27,4 @@ The key can be found at https://w3c.github.io/mdn-spec-links/SPECMAP.json. For e
 
 It renders as panels near relevant definitions in the right-side of the document:
 
-![MDN panel demo in ReSpec](https://user-images.githubusercontent.com/8426945/98248400-e1e15e00-1f9a-11eb-88c5-adea20f16c99.png)
+![MDN panel demo in ReSpec](https://user-images.githubusercontent.com/8426945/98251452-b9f3f980-1f9e-11eb-965f-83a351bff2bf.png)
