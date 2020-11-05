@@ -25,6 +25,6 @@ The key can be found at https://w3c.github.io/mdn-spec-links/SPECMAP.json. For e
 "https://w3c.github.io/mediacapture-image/": "image-capture.json",
 ```
 
-It renders as:
+It renders as panels near relevant definitions in the right-side of the document:
 
 ![MDN panel demo in ReSpec](https://user-images.githubusercontent.com/8426945/98248400-e1e15e00-1f9a-11eb-88c5-adea20f16c99.png)
