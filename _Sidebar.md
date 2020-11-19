@@ -162,3 +162,4 @@ Handled by ReSpec for you.
 ### Special properties
 
 - [`document.respecIsReady`](respecIsReady)
+- [`window.respecVersion`](respecVersion)
