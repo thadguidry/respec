@@ -2,8 +2,6 @@ ReSpec is a tool that makes writing specifications easier. ReSpec handles things
 
 ## User's Guide
 
-A [detailed user's guide](ReSpec-Editor's-Guide) is available.
-
 A single-page documentation with user's guide and all available configuration options can be read at https://respec.org/docs/. The documentation is generated using the wiki itself.
 
 ## Developer's Guide
