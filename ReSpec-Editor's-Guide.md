@@ -1,8 +1,4 @@
-This User's Guide is organized in such a way that a complete newcomer may read it linearly and understand everything. That being said, read it in whatever order you like.
-
-## Basic Layout
-
-A ReSpec document is a straightforward HTML document that brings in the ReSpec script, defines a few configuration variables, and follows a few conventions.
+A ReSpec document is a HTML document that brings in the ReSpec script, defines a few configuration variables, and follows a few conventions. A very small example document would be:
 
 ```html "example": "A basic ReSpec document."
 <!DOCTYPE html>
@@ -54,33 +50,38 @@ A ReSpec document is a straightforward HTML document that brings in the ReSpec s
 </html>
 ```
 
-That is essentially the smallest W3C specification you can write using ReSpec (in practice, you could eliminate a few things but then you would have a truly useless document). Some of the configuration may seem cryptic, but it is there because all W3C documents must have some specific information available — all will be explained soon.
-
-## The Very Basics
-
-The document that is rendered in your browser is quite different from the one which is authored. Yet they are the same document, with a sprinkle of ReSpec on top. Using your browser's developer tools, you may wish to take a look at the real DOM that is being produced and compare it with the source.
-
-Some basic things can be seen above. First, as you can see from the DOCTYPE and the section elements, ReSpec documents are built on HTML. This does not imply that you need to know the ins and outs of HTML — just a few simple bits will suffice. It also does not imply that the resulting document that you will produce at the end will be HTML (you can output a limited set of other formats).
-
-Note that the title of the document is reused as the title of the specification in the resulting document's h1. It's a small win, but that's always something less to repeat.
-
 ### Including ReSpec
 
-You can see that the example above includes a script sourced at:
+The following code is used to include a ReSpec document:
 
-- `https://www.w3.org/Tools/respec/respec-w3c`
+```JS
+  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+  <script class="remove">
+   var respecConfig = {
+     // configuration options
+   }
+  </script>
+```
 
-You may also be tempted to save the script to your local directory and use it from there. That may on occasion be useful (e.g., if you're on a flight and your cache is busted), but it is recommend that you link to the canonical URL provided above. The code is regularly updated and this will allow you to benefit from bug fixes and enhancements without even having to think about it.
+ReSpec is regularly updated and this will allow you to automatically benefit from bug and security fixes and enhancements.
 
-### Specifying Configuration
+### Specifying Configuration via JS
 
-In the example you can see a script element defining a `respecConfig` variable. This is the ReSpec configuration. There are many things that can be done there, but we won't get into the details right now, but rather explore it piece by piece as needed. No doubt you can guess what some of those fields do.
+ReSpec is configured using a JSON-like object, which is assigned to a `respecConfig` JavaScript variable:
 
-One thing to remember though is this: that is how configuration is specified in ReSpec. Whenever you will see an indication that you can set a configuration option to a given value, it will be by modifying this object, simply adding, removing, or changing one of its fields.
+```JS
+  <script class="remove">
+   var respecConfig = {
+     // configuration options
+   }
+  </script>
+```
 
-Also note that this is just a simple JavaScript variable: there is nothing magical about the way in which it is declared (it just needs to be fully defined when the load event triggers).
+### Specifying Configuration via URL
 
-Note: There's a nifty trick that you will likely want to keep in your toolbox: many of ReSpec's configuration options can be specified in the query string, and they override the options specified in the source. We will use it a lot in this documentation so as to avoid having to generate examples for each small change that is possible (there are quite a few). So if we want to test the subtitle option without generating a copy of the same example with just that option changed, instead of accessing `examples/basic.built.html` we can simply go to `examples/basic.built.html?subtitle=This is a subtitle`.
+Some of ReSpec's configuration options can be specified in the query string, and they override the options specified in the source. For example, you can override the `subtitle` by, for example, doing the following: `index.html?subtitle=This is a subtitle`.
+
+This is useful for quickly overriding configuration options without needing to directly edit the document itself (e.g., for the purpose of exporting a document draft with a different `specStatus`). 
 
 ## Structure
 
@@ -106,7 +107,7 @@ Optionally, you can also specify a [`subtitle`](subtitle) configuration option i
 
 Every specification must have some editors (at least one) and may have some authors (and maybe some former editors/authors also).
 
-Editors are the people in charge of the document. Authors are people who produced substantial contributions, but did not manage the document per se. Most of the time authors are not specified, but that practice varies between groups (it was more common in [W3C XGs](https://www.w3.org/2005/Incubator/about.html) for instance, or sometimes the whole group is mentioned to get academic credit). Here is an example of specifying two editors and one author (with the surrounding document clipped for readability):
+Editors are the people in charge of the document. Authors are people who produced substantial contributions, but did not manage the document per se. Most of the time authors are not specified, but that practice varies between groups:
 
 ```js "example": "Specifying editors and authors."
 var respecConfig = {
