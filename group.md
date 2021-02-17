@@ -1,16 +1,12 @@
 # `group`
 
-`group` is a shorthand configuration option for specifying [`wg`](wg), [`wgId`](wgId), [`wgURI`](wgURI), [`wgPatentURI`](wgPatentURI), and [`wgPatentPolicy`](wgPatentPolicy) options. It fetches working group details using the W3C API.
+For W3C, it allows you to associate a specification with a particular working group. Supported group ids can be found at: https://respec.org/w3c/groups/.
+
+Specifying the group will also figure out all the patent policy related things for your particular specification. 
 
 ```js "example": "Use Web Payments Working Group."
 var respecConfig = {
   group: "payment",
-  // is equivalent to:
-  // wg: "Web Payments Working Group",
-  // wgId: 83744,
-  // wgPatentURI: "https://www.w3.org/2004/01/pp-impl/83744/status",
-  // wgURI: "https://www.w3.org/Payments/WG/",
-  // wgPatentPolicy: "PP2020", (or whatever the WG is using!)
 };
 ```
 
@@ -29,5 +25,3 @@ var respecConfig = {
   group: "wg/wot",
 };
 ```
-
-A list of valid group names can be found at: https://respec.org/w3c/groups/.
