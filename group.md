@@ -6,7 +6,7 @@ Specifying the group will also figure out all the patent policy related things f
 
 ```js "example": "Use Web Payments Working Group."
 var respecConfig = {
-  group: "payment",
+  group: "payments",
 };
 ```
 
