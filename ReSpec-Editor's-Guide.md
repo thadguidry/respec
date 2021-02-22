@@ -28,6 +28,15 @@ A ReSpec document is a HTML document that brings in the ReSpec script, defines a
   <section id="sotd">
     <p>This is required.</p>
   </section>
+  <section class="informative">
+    <h2>Introduction</h2>
+    <p>
+      Some informative introductory text. 
+    </p>
+    <aside class="note" title="A useful note">
+      <p>I'm a note!</p>
+    </aside>
+  </section>
   <section data-dfn-for="Foo">
     <h2>Start your spec!</h2>
     <pre class="idl">
