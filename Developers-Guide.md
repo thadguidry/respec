@@ -10,8 +10,10 @@ npm install
 Now you can start the local development servers:
 
 ```bash
-npm start
+npm start -- --browsers Chrome
 ```
+
+Note: You can use Firefox and ChromeCanary in the above.    
 
 That will start up "[Karma](https://karma-runner.github.io/latest/index.html)" and a local http server for you.
 
