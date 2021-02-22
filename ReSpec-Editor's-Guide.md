@@ -143,7 +143,7 @@ Which is rendered as:
 
 ### Editors & Authors
 
-Every specification must have some editors (at least one) and may have some authors (and maybe some former editors/authors also).
+Every specification must have some editors (at least one) and may have some authors (and maybe some former editors/authors also). Editors and authors are specified as [Person objects](person).
 
 Editors are the people in charge of the document. Authors are people who produced substantial contributions, but did not manage the document per se. Most of the time authors are not specified, but that practice varies between groups:
 
@@ -180,30 +180,37 @@ Is rendered as:
 
 <img width="451" alt="Screenshot of Editors and Authors" src="https://user-images.githubusercontent.com/870154/108663393-8ffe1d00-7524-11eb-84b2-3baa74e8822d.png">
 
-
-Editors and authors are specified as [Person objects](person).
-
 ### Sections
 
 ReSpec-based specifications require you to wrap your content in `<section>` elements. We provide specific information and examples on [how to use `<section>` elements](section).
 
 Sections, subsections, appendices, and whatever other structural items are marked up in ReSpec using `<section>` elements.
 
-The first child element of a section is expected to be one of the h1-h6 elements. Any odd one will do, since whichever one you pick will be renamed to use the level that matches the depth at which your section is nested [✨](https://media.tenor.com/images/9f005edb649e847cc9250fbce91d4b23/tenor.gif "magic!"). As you can see, the example uses only h2 elements, but that is not what appears in the output. Using h2 everywhere is sort of a tacit convention, but if you prefer h5 that'll work just the same.
+```html "example": "Sections and sub-sections."
+<section>
+  <h2>A section</h2>
+  <p>Some text.</p>
+  <section class="informative">
+    <h3>I'm a sub-section</h3>
+    <p>Subsetion text.</p>
+  </section>
+</section>
+```
 
-Sections will be automatically numbered. If you wish a section to have a specific ID, then simply use an id attribute on it. If you don't, ReSpec will generate one for you based on the section title, and will ensure that it is unique.
+Which is rendered as: 
 
-ReSpec sections understand some specific classes. First is the [`introductory`](introductory) CSS class. It is used (rarely) for preliminary content that sits at the beginning of the document and which is not expected to be linked to from the table of contents. The abstract, SotD, and <abbr title="Table of Contents">ToC</abbr> sections automatically fall into this category (you need not worry about flagging them as such); the example above adds an “Overview” section exemplifying the behavior. If you do wish all the introductory sections to be present in the ToC, see [`tocIntroductory`](tocIntroductory).
+<img width="904" alt="Screenshot of a  section and a sub-section=" src="https://user-images.githubusercontent.com/870154/108663975-e61f9000-7525-11eb-946d-a8b9b5518eb3.png">
 
-Then is the [`informative`](informative) CSS class, as seen on “Introduction” section in the example. It is used for regular sections or appendices that are not meant to contain normative material. It will automatically preface its content with the well-known “This section is non-normative” paragraph.
+As shown, sections are automatically numbered. If you wish a section to have a specific ID, then simply use an `id` attribute on it. If you don't, ReSpec will generate one for you based on the section title, and will ensure that it is unique.
 
-And finally is the [`appendix`](appendix) CSS class. It marks a section as being an appendix, as can be seen appearing at the end of the example. One important thing to know about appendix sections is that all the sections that follow an appendix will also be marked as appendices.
+ReSpec sections understand some specific CSS classes: [`introductory`](introductory), [`informative`](informative), and [`appendix`](appendix).
 
-If you wish to link to a section and have its number and title automatically appear as part of the link, then you can use an empty anchor pointing to that ID, as in `<a href='#foo'></a>`. The “Overview” section contains an example of that.
+If you wish to link to a section and have its number and title automatically appear as part of the link, then you can use the special syntax`[[[!#some-id]]]`.
 
-A table of contents is generated automatically and placed right after the SotD. If you have a deeply nested document structure and find that the ToC is either too long or too deep, you can use the [maxTocLevel](maxTocLevel) option to limit how deep it goes. In the example used above, there is no limit and indeed one section is numbered 4.1.1.1.1.1 — rather deep. Setting [`maxTocLevel`](maxTocLevel) to other values will yield different results (other example with `maxTocLevel: 2`). If you only have some sections that you would like excluded from the ToC, you can add the class [`notoc`](notoc) to associated section element and it will be omitted.
 
-The more observant readers will have noted that ReSpec also inserts some strange-looking comments in the generated source, that look like `<!-- OddPage -->`. These are present so that [html2ps](https://linux.die.net/man/1/html2ps) knows how to paginate correctly. Perhaps not useful to most but helpful to those who rely on it for printing, and harmless.
+### Table of Contents
+
+A table of contents is generated automatically and placed right after the SotD. If you have a deeply nested document structure and find that the ToC is either too long or too deep, you can use the [maxTocLevel](maxTocLevel) option to limit how deep it goes. 
 
 If for whatever reason you wish to have no table of contents, simply set the configuration option [`noTOC`](noTOC) to `true`.
 
@@ -211,13 +218,32 @@ If for whatever reason you wish to have no table of contents, simply set the con
 
 Figures are also supported natively, using the `<figure>` and `<figcaption>` elements, and exhibit some features similar to sections. They are automatically granted an ID, and the caption is remembered for use elsewhere, as described below.
 
-The `Table of Figures` is not generated by default, but making it happen is straightforward: all you need to do is add a section with ID `"tof"` anywhere in the document. ReSpec will do its best to guess if it should be an appendix, introductory, or just a regular section. Because the list has no depth, there is no equivalent to [`maxTocLevel`](maxTocLevel).
+```html "example": "Figure and list of figures."
+<figure id="figure">
+  <img src="figure.svg" alt="W3C Logo" />
+  <figcaption>The W3C logo</figcaption>
+</figure>
+```
 
-And finally, automatic linking to figures works just as it does for sections, with `<a href='#foo-figures'></a>`. 
+Which renders as:
+
+<img width="276" alt="Screenshot of a figure and figure caption" src="https://user-images.githubusercontent.com/870154/108666252-d0609980-752a-11eb-8f9b-3f5c759f41bc.png">
+
+Automatic linking to figures works just as it does for sections, with `[[[!#some-figure]]]`.
+
+The "List of Figures" is not generated by default: to add one, include `<section id="tof">` anywhere in the document. ReSpec will do its best to guess if it should be an appendix, introductory, or just a regular section.
+
+```html "example": "Generating a list of figures" 
+<section id="tof"></section>
+```
+
+Renders as:
+
+<img width="247" alt="Screenshot showing a list of figures" src="https://user-images.githubusercontent.com/870154/108666350-01d96500-752b-11eb-96c0-ae00412c2dfc.png">
 
 ### Examples & Syntax Highlighting
 
-Any `pre` or `aside` element that has the example class on it will get the additional example header and style. Content inside [pre elements](pre-and-code-elements) is syntax highlighted. The syntax highlighter does not need to be instructed about which language it is highlighting and will try to do a decent job of guessing.
+Any `pre` or `aside` element that has the `example` CSS class will get the additional example header and style. Content inside [pre elements](pre-and-code-elements) is syntax highlighted. The syntax highlighter does not need to be instructed about which language it is highlighting and will try to do a decent job of guessing.
 
 You can disable syntax highlighting on a pre element by adding a "[nohighlight](nohighlight)" class.
 
@@ -239,13 +265,33 @@ Finally, at times, you may wish to perform a quick and dirty transformation of s
 
 Many repetitive tasks happen at the level of inline text, and ReSpec helps with those as well. This chapter covers references, along with the SpecRef database, the handling of abbreviations and acronyms, automatic RFC 2119 keyword detection, dfn definitions, and easier in-document linking.
 
-#### RFC 2119
+#### RFC2119 Keywords
 
-A very common construct in specifications is to use keywords defined in RFC 2119 which indicate precisely, using commonly agreed conventions, what requirements are placed on an implementation with what degree of strength (e.g., MUST, SHOULD NOT). All you need to do as an author is to include an all-caps MUST in your source and it will automatically get marked up as such (with the accompanying style applied to it afterwards).
+ReSpec specifications are RFC2119 keyword aware (i.e., it knows about "MUST", "SHOULD NOT", etc.). 
+
+Adding a `<section id="conformance">` tells ReSpec that the specification is dealing with "normative" statements. ReSpec can then warn if RFC2119 keywords are accidentally used in informative/non-normative contexts.
+
+```HTML "example": "Using RFC2119 keywords"
+<section>
+  <h2>Requirements</h2>
+  <p>A user agent MUST do something.</p>
+</section>
+<section id="conformance"></section>
+```
+
+Renders as:
+
+<img width="827" alt="Screenshot of RFC2119 usage" src="https://user-images.githubusercontent.com/870154/108667340-19195200-752d-11eb-802f-a421afdeaa6d.png">
+
 
 #### Abbreviations & Acronyms
 
 HTML supports functionality to mark abbreviations and acronyms (using `<abbr>`), using the title attribute to provide the expanded version. This is something that's nice to do once, but tedious to repeat every time that a given term is used. What ReSpec does is that it allows you to do it just once, and it will detect all other uses of the same in the text and will automatically mark them up in the same way.
+
+```HTML 
+<p>The <abbr title="world wide web">WWW</abbr>.</p>
+<p>The WWW.</p>
+```
 
 #### Inline Code
 
