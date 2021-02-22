@@ -1,6 +1,6 @@
 ### Guides
 
-- [User's Guide](ReSpec-Editor's-Guide)
+- [Spec Editor's Guide](ReSpec-Editor's-Guide)
 - [WebIDL Guide](WebIDL-Guide)
 - [Configuring ReSpec](Configuring-ReSpec)
 - [Developers Guide](Developers-Guide)
