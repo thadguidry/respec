@@ -112,12 +112,6 @@ ReSpec is configured using a JSON-like object, which is assigned to a `respecCon
   </script>
 ```
 
-### Specifying Configuration via URL
-
-Some of ReSpec's configuration options can be specified in the query string, and they override the options specified in the source. For example, you can override the `subtitle` by, for example, doing the following: `index.html?subtitle=This is a subtitle`.
-
-This is useful for quickly overriding configuration options without needing to directly edit the document itself (e.g., for the purpose of exporting a document draft with a different `specStatus`). 
-
 ## Structure
 
 This chapter covers all the aspects of a ReSpec document's structure that were not covered as part of the very basics. As usual, let's start with an [**example**](https://github.com/w3c/respec/blob/develop/examples/basic.html). It is fairly long as it needs a decent amount of content in order to exemplify some features, but it should nevertheless be easy to understand. Go on, open the [**example**](https://github.com/w3c/respec/blob/develop/examples/basic.html) in new tab (omitted here for brevity).
@@ -206,7 +200,6 @@ As shown, sections are automatically numbered. If you wish a section to have a s
 ReSpec sections understand some specific CSS classes: [`introductory`](introductory), [`informative`](informative), and [`appendix`](appendix).
 
 If you wish to link to a section and have its number and title automatically appear as part of the link, then you can use the special syntax`[[[!#some-id]]]`.
-
 
 ### Table of Contents
 
@@ -497,3 +490,10 @@ If a `section` element with id `bp-summary` is present, then a summary list of b
 ```html
 <section id="bp-summary"></section>
 ```
+
+### Advanced: Specifying Configuration via URL
+
+Some of ReSpec's configuration options can be specified in the query string, and they override the options specified in the source. For example, you can override the `subtitle` by, for example, doing the following: `index.html?subtitle=This is a subtitle`.
+
+This is useful for quickly overriding configuration options without needing to directly edit the document itself (e.g., for the purpose of exporting a document draft with a different `specStatus`). 
+
