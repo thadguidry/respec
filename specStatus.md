@@ -1,8 +1,8 @@
 # `specStatus`
 
 The specification's type, which can be a maturity level (e.g. Working Draft) if it
-is on a publication track but can also take other values for other types of documents
-(e.g. "unofficial" for, well, unofficial documents).
+is on a publication track, but can also take other values for other types of documents
+(e.g. `"unofficial"` for unofficial documents).
 
 <table>
   <thead>
