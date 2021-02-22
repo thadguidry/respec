@@ -137,6 +137,9 @@ Optionally, you can also specify a [`subtitle`](subtitle) configuration option i
 <h2 id="subtitle">Subtitle here</h2>
 ```
 
+Which is rendered as:
+
+![Screenshot of subtitle](https://user-images.githubusercontent.com/870154/108663267-444b7380-7524-11eb-95b4-e94911c907c0.png)
 
 ### Editors & Authors
 
@@ -172,6 +175,11 @@ var respecConfig = {
   // ...
 };
 ```
+
+Is rendered as:
+
+<img width="451" alt="Screenshot of Editors and Authors" src="https://user-images.githubusercontent.com/870154/108663393-8ffe1d00-7524-11eb-84b2-3baa74e8822d.png">
+
 
 Editors and authors are specified as [Person objects](person).
 
