@@ -1,6 +1,6 @@
 # `group`
 
-For W3C, it allows you to associate a specification with a particular working group. Supported group ids can be found at: https://respec.org/w3c/groups/.
+For W3C, it allows you to associate a specification with a particular working group. Supported group short-names can be found at: https://respec.org/w3c/groups/.
 
 Specifying the group will also figure out all the patent policy related things for your particular specification. 
 
