@@ -128,7 +128,7 @@ See the example at the start of this document for typical usage. Some HTML eleme
 
 ### Title and Subtitle
 
-As noted in the previous chapter, the [`<title>`](title-element) of the document is reused as the title of the specification in the resulting document's h1. That way, they are always in sync and you need not worry about specifying it twice. However, if you need to add additional markup to your title, you can still use a [`<h1>`](h1-element) with `id="title"`.
+The [`<title>`](title-element) of the document is reused as the title of the specification in the resulting document's h1. That way, they are always in sync and you need not worry about specifying it twice. However, if you need to add additional markup to your title, you can still use a [`<h1>`](h1-element) with `id="title"`.
 
 ```html "example": "Specification title with custom markup."
 <h1 id="title">The <code>Foo</code> API</h1>
