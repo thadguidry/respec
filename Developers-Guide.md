@@ -182,7 +182,7 @@ To create a custom profile:
 
 1. Make a copy of "[profiles/w3c.js](https://github.com/w3c/respec/blob/develop/profiles/w3c.js)", but rename it "YOUR-PROFILE-NAME.js".
 1. Open "YOUR-PROFILE-NAME.js", and remove, add, etc. any plugins you want.
-1. run: `node ./tools/builder.js --profile=YOUR-PROFILE-NAME`. That will generate a bundle in the build directory.
+1. run: `node ./tools/builder.js YOUR-PROFILE-NAME`. That will generate a bundle in the build directory.
 
 If the profile is popular, then please send a pull request to the main repository and we can host as part of the main project.
 
@@ -199,7 +199,7 @@ That will start a web server, so you can now load up `http://localhost:5000/exam
 When you are ready to deploy it:
 
 ```
-node ./tools/builder.js --profile=YOUR-PROFILE-NAME
+node ./tools/builder.js YOUR-PROFILE-NAME
 ```
 
 ### Testing your profile
