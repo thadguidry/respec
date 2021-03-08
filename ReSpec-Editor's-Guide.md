@@ -114,8 +114,17 @@ ReSpec is configured using a JSON-like object, which is assigned to a `respecCon
 
 ## Structure
 
-This chapter covers all the aspects of a ReSpec document's structure that were not covered as part of the very basics. As usual, let's start with an [**example**](https://github.com/w3c/respec/blob/develop/examples/basic.html). It is fairly long as it needs a decent amount of content in order to exemplify some features, but it should nevertheless be easy to understand. Go on, open the [**example**](https://github.com/w3c/respec/blob/develop/examples/basic.html) in new tab (omitted here for brevity).
+ReSpec documents follow of a standard HTML document - as such, all HTML elements are supported. In particular, ReSpec documents will typically make use of the following HTML elements, each serving their expected roles in a document:
+  
+ * `<title>` or `<h1 id="title">` - The title of your document. 
+ * `<section>` - a section of document, which must include a `<h2>-<h6>`.
+ * `<h2>-<h6>`
+ * `<aside>` - used for notes, issues, etc.
+ * `<figure>` and `<figcaption>`
+ * `<table>`
+ * `<ul>` and `<ol>`
 
+See the example at the start of this document for typical usage. Some HTML elements get special treatment by ReSpec, as described in the following sections.  
 
 ### Title and Subtitle
 
