@@ -23,9 +23,9 @@ Usually "basic.html" is a good place to start hacking from.
 
 ## ReSpec's architecture
 
-ReSpec is a very simple application that runs mostly synchronous bits of JS after a `Document` loads. These JavaScript fragments are referred to as "plugins". When a bunch of plugins are combined together, they create a "profile".
+ReSpec is an application that runs mostly synchronous bits of JS after a `Document` loads. These JavaScript fragments are referred to as "plugins". When a bunch of plugins are combined together, they create a "profile".
 
-So, for instance, the W3C's profile, located at [`profiles/w3c.js`](https://github.com/w3c/respec/blob/develop/profiles/w3c.js), loads the following plugins (not the full list, just for illustrative purposes):
+Generally, a "profile" is only created for a real-world organization or company. So, for instance, the W3C's profile, located at [`profiles/w3c.js`](https://github.com/w3c/respec/blob/develop/profiles/w3c.js), loads the following plugins (not the full list, just for illustrative purposes):
 
 - core/base-runner
 - core/include-config,
@@ -175,6 +175,10 @@ npm start -- --browsers FirefoxHeadless
 Look at the help dialog when you run `npm start` for more options.
 
 ## Custom profiles
+
+If you are a company, standards consortium, or government entity, you might want to consider maintaining your own ReSpec profile. That allows you have your own content templates, load whatever plugins you need, and generally keep control over how ReSpec runs.
+
+To create a custom profile:   
 
 1. Make a copy of "[profiles/w3c.js](https://github.com/w3c/respec/blob/develop/profiles/w3c.js)", but rename it "YOUR-PROFILE-NAME.js".
 1. Open "YOUR-PROFILE-NAME.js", and remove, add, etc. any plugins you want.
