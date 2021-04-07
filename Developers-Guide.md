@@ -10,7 +10,7 @@ npm install
 Now you can start the local development servers:
 
 ```bash
-npm start -- --browsers Chrome
+npm start -- --browser Chrome
 ```
 
 Note: You can use Firefox and ChromeCanary in the above.    
@@ -132,7 +132,7 @@ If you wish not to run tests and other parts of start script, you can alternativ
 ReSpec's unit tests are written using [Jasmine](https://jasmine.github.io) and run on [Karma](https://karma-runner.github.io/latest/index.html). To start the testing server:
 
 ```bash
-npm start -- --browsers Firefox
+npm start -- --browser Firefox
 ```
 
 You can run test in different browsers by setting `browsers` value above to any of: Firefox, FirefoxHeadless, Chrome, ChromeHeadless, Safari. Same can be set using the `BROWSERS` environment variable:
@@ -168,7 +168,7 @@ This is useful for more advanced debugging sessions, and can be combined with `-
 You can also run tests without opening a full browser window. Test results will be visible in your terminal.
 
 ```bash
-npm start -- --browsers FirefoxHeadless
+npm start -- --browser FirefoxHeadless
 # or use ChromeHeadless
 ```
 
