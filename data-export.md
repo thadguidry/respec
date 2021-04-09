@@ -1,10 +1,10 @@
 # `data-export`
 
-Use the `data-export` to export a `<dfn>` definition to W3C's [Shepherd database](https://api.csswg.org/shepherd/).
+Use the `data-export` to export a `<dfn>` definition to W3C's [Webref](http://github.com/w3c/webref/) database.
 
-Note: Only export things that other specifications might use (e.g., specific algorithms).
+Note: Your spec needs to be part of the [browser specs](https://github.com/w3c/browser-specs/) to be indexed by [Webref](http://github.com/w3c/webref/). 
 
-If you'd like to have your specification indexed in Shepherd, please email marcos@marcosc.com.
+Note: Only export things that other specifications need! (e.g., special objects, specific algorithms).
 
 Note: WebIDL things are automatically exported for you.
 
