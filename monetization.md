@@ -2,8 +2,6 @@
 
 Adds a "monetization" meta-tag to enable [Web Monetization](https://webmonetization.org/).
 
-The meta-tag is added only to "live" documents, and is removed from generated static documents.
-
 ```js
 var respecConfig = {
   // add a monetization meta tag with a custom payment pointer
