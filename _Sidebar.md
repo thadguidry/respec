@@ -75,6 +75,7 @@
 
 ### Linter rules
 
+- [`a11y`](a11y)
 - [`check-punctuation`](check-punctuation)
 - [`local-refs-exist`](local-refs-exist)
 - [`no-headingless-sections`](no-headingless-sections)
