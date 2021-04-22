@@ -4,16 +4,14 @@ Adds a "monetization" meta-tag to enable [Web Monetization](https://webmonetizat
 
 The meta-tag is added only to "live" documents, and is removed from generated static documents.
 
-```js
+```js "example": "Add a monetization meta tag with a custom payment pointer."
 var respecConfig = {
-  // add a monetization meta tag with a custom payment pointer
   monetization: "$wallet.example.com/my-wallet",
 };
 ```
 
-```js
+```js "example": "Disable web monetization."
 var respecConfig = {
-  // disable web monetization
   monetization: false,
 };
 ```
