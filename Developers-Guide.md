@@ -191,21 +191,17 @@ If the profile is popular, then please send a pull request to the main repositor
 In `examples/`, make a copy of "basic.html" and point the `<script>` tag at your new profile. Now run:
 
 ```bash
-npm start
+npm start -- --profile YOUR_PROFILE_NAME --browser Chrome
 ```
 
 That will start a web server, so you can now load up `http://localhost:5000/examples` and have play with your custom profile.
-
-When you are ready to deploy it:
-
-```
-node ./tools/builder.js YOUR-PROFILE-NAME
-```
 
 ### Testing your profile
 
 If you are writing custom [Jasmine](https://jasmine.github.io/) tests, simply place them into `tests/spec/YOUR-PROFILE-NAME/`. And then run:
 
 ```bash
-npm start -- --interactive --profile=YOUR-PROFILE-NAME
+npm start -- --interactive --profile=YOUR-PROFILE-NAME --browser Chrome
 ```
+
+If you prefer to use a different browser, that's ok too. 
