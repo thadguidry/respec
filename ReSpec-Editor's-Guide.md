@@ -245,7 +245,31 @@ Renders as:
 
 ### Examples & Syntax Highlighting
 
-Any `pre` or `aside` element that has the `example` CSS class will get the additional example header and style. Content inside [pre elements](pre-and-code-elements) is syntax highlighted. The syntax highlighter does not need to be instructed about which language it is highlighting and will try to do a decent job of guessing.
+Any `pre` or `aside` element that has the `example` CSS class will get the additional example header and style. Content inside [pre elements](pre-and-code-elements) is syntax highlighted. You can specify the language in the class attribute, for example `<pre class="js">`. 
+
+The languages ReSpec can highlight:
+
+* abnf
+* css
+* http
+* js or javascript 
+* json 
+* xml
+
+A more complete example:
+
+```html "example": "Creating an example"
+<aside class="example" title="How to use it">
+  <p>
+    This is how to use it.
+  <p>
+  <pre class="js">
+    function myCoolFunction() {
+      // stuff goes here...
+    }
+  </pre>
+</aside>
+```
 
 You can disable syntax highlighting on a pre element by adding a "[nohighlight](nohighlight)" class.
 
