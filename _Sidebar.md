@@ -8,7 +8,6 @@
 
 ### Configuration options
 
-- [a11y](a11y)
 - [addSectionLinks](addSectionLinks)
 - [authors](authors)
 - [caniuse](caniuse)
