@@ -85,12 +85,13 @@ A ReSpec document is a HTML document that brings in the ReSpec script, defines a
 </html>
 ```
 
-### Including ReSpec
+### Including ReSpec in HTML documents
 
-The following code is used to include a ReSpec document:
+The following code is used to include a ReSpec document, usually in the `<head>`:
 
-```JS
-  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+```html "example": "Including ReSpec into a HTML document."
+  <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer>
+  </script>
   <script class="remove">
    var respecConfig = {
      // configuration options
@@ -100,11 +101,11 @@ The following code is used to include a ReSpec document:
 
 ReSpec is regularly updated and this will allow you to automatically benefit from bug and security fixes and enhancements.
 
-### Specifying Configuration via JS
+### Configuring ReSpec
 
 ReSpec is configured using a JSON-like object, which is assigned to a `respecConfig` JavaScript variable:
 
-```JS
+```HTML "example": "The respecConfig global configuration object."
   <script class="remove">
    var respecConfig = {
      // configuration options
@@ -112,13 +113,15 @@ ReSpec is configured using a JSON-like object, which is assigned to a `respecCon
   </script>
 ```
 
+All the configurations options are listed in this document. 
+
 ## Structure
 
 ReSpec documents follow of a standard HTML document - as such, all HTML elements are supported. In particular, ReSpec documents will typically make use of the following HTML elements, each serving their expected roles in a document:
   
  * `<title>` or `<h1 id="title">` - The title of your document. 
  * `<section>` - a section of document, which must include a `<h2>-<h6>`.
- * `<h2>-<h6>`
+ * `<h2>-<h6>` - headings, which automatically get an `id`. 
  * `<aside>` - used for notes, issues, etc.
  * `<figure>` and `<figcaption>`
  * `<table>`
@@ -126,15 +129,24 @@ ReSpec documents follow of a standard HTML document - as such, all HTML elements
 
 See the example at the start of this document for typical usage. Some HTML elements get special treatment by ReSpec, as described in the following sections.  
 
-### Title and Subtitle
+### Title
 
-The [`<title>`](title-element) of the document is reused as the title of the specification in the resulting document's h1. That way, they are always in sync and you need not worry about specifying it twice. However, if you need to add additional markup to your title, you can still use a [`<h1>`](h1-element) with `id="title"`.
+The [`<title>`](title-element) of the document is reused as the title of the specification in the resulting document's `h1`. That way, they are always in sync and you need not worry about specifying it twice.
+
+```html "example": "Setting a title"
+<head>
+<title>The Best Specification</title>
+</head>
+```
+
+If you need to add additional markup to your title, you can still use a [`<h1>`](h1-element) with `id="title"`.
 
 ```html "example": "Specification title with custom markup."
 <h1 id="title">The <code>Foo</code> API</h1>
 ```
 
-Optionally, you can also specify a [`subtitle`](subtitle) configuration option in the ReSpec config. The subtitle configuration option takes a simple string that will be used as a subtitle for the specification, right under the title. As with the title, you can also specify a subtitle as:
+### Subtitle
+As with the title, you can also specify a subtitle as:
 
 ```html "example": "Specification subtitle with custom markup."
 <h2 id="subtitle">Subtitle here</h2>
@@ -144,11 +156,13 @@ Which is rendered as:
 
 ![Screenshot of subtitle](https://user-images.githubusercontent.com/870154/108663267-444b7380-7524-11eb-95b4-e94911c907c0.png)
 
+You can also specify a [`subtitle`](subtitle) configuration option in the ReSpec config, but using the markup above is preferred. 
+
 ### Editors & Authors
 
-Every specification must have some editors (at least one) and may have some authors (and maybe some former editors/authors also). Editors and authors are specified as [Person objects](person).
+Every specification will likely have editors (at least one) and/or authors. Editors and authors are specified as [Person objects](person).
 
-Editors are the people in charge of the document. Authors are people who produced substantial contributions, but did not manage the document per se. Most of the time authors are not specified, but that practice varies between groups:
+It is left to users or standards organizations to differentiate between editors and authors (e.g., from W3C, <cite>[what does an editor do?](https://lists.w3.org/Archives/Member/chairs/1999JanMar/0056)</cite>).   
 
 ```js "example": "Specifying editors and authors."
 var respecConfig = {
