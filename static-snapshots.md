@@ -40,7 +40,7 @@ export PUPPETEER_EXECUTABLE_PATH="/usr/bin/google-chrome"
 
 For more options, run `respec --help`.
 
-```Bash
+```
   Description
     Converts a ReSpec source file to HTML and writes to destination.
 
