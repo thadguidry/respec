@@ -24,20 +24,6 @@ npm i respec -g
 respec --src source.html --out index.html
 ```
 
-<div class="note">
-
-If you already have Chrome installed on your computer, you can speed up the process by not installing a new copy of Chrome on each install. To do so, add following two environment variables before installing or running above steps:
-
-```bash
-export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
-export PUPPETEER_EXECUTABLE_PATH="/usr/bin/google-chrome"
-# replace "/usr/bin/google-chrome" with path to Chrome executable on your system.
-# On MacOS, it's generally:
-# "/Applications/Google Chrome.app/Contents/MacOS/Google chrome"
-```
-
-</div>
-
 For more options, run `respec --help`.
 
 ```
@@ -62,3 +48,15 @@ For more options, run `respec --help`.
     -v, --version        Displays current version
     -h, --help           Displays this message
 ```
+
+<aside class="note">
+If you already have Chrome installed on your computer, you can speed up the process by not installing a new copy of Chrome on each install. To do so, add following two environment variables before installing or running above steps:
+
+```bash
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=1
+export PUPPETEER_EXECUTABLE_PATH="/usr/bin/google-chrome"
+# replace "/usr/bin/google-chrome" with path to Chrome executable on your system.
+# On MacOS, it's generally:
+# "/Applications/Google Chrome.app/Contents/MacOS/Google chrome"
+```
+</aside>
