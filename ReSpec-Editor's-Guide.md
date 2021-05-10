@@ -76,11 +76,6 @@ A ReSpec document is a HTML document that brings in the ReSpec script, defines a
         This is required for specifications that contain normative material.
       </p>
     </section>
-    <section class="appendix">
-      <h2>Change log</h2>
-      <p>Recent changes to this specification from GitHub:</p>
-      <rs-changelog from="some-git-tag"> </rs-changelog>
-    </section>
   </body>
 </html>
 ```
