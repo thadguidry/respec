@@ -398,8 +398,8 @@ To search for terms + specs your can link to, you can use the XREF UI at http://
 
 There are two important shorthands for linking to definitions:
 
- * `[= term =]` for linking regular concepts, 
- * `{{ IdlThing }}` for linking WebIDL.
+ * `[=term=]` for linking regular concepts, 
+ * `{{IdlThing}}` for linking WebIDL.
 
 Shorthand syntax works for referencing external terms as well as locally defined terms. It's best practice is to use shorthands all the time.
 
