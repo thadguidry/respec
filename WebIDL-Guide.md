@@ -1,6 +1,6 @@
 # WebIDL Guide
 
-To specify an interface using [WebIDL](https://heycam.github.io/webidl/), you define a `<pre class="idl">` block. For example:
+To specify an interface using [WebIDL](https://heycam.github.io/webidl/), you define a `<pre class="idl">` block.
 
 ```html "example": "Declaring a WebIDL block."
 <pre class="idl">
@@ -11,7 +11,7 @@ interface Request {
 </pre>
 ```
 
-## tl;dr - ideal linking setup
+## Ideal linking setup
 
 The recommended way to code up your WebIDL is as follows:
 
@@ -26,16 +26,23 @@ The recommended way to code up your WebIDL is as follows:
   </pre>
   <section>
     <h2><dfn>exampleMethod()</dfn> method</h2>
-    <p>Define {{ExampleInterface/exampleMethod()}} here...</p>
+    <p>The {{ExampleInterface/exampleMethod()}} method steps are:</p>
+    <ol class="algorithm">
+      <li>Let |x| be ...</li>
+    </ol>
   </section>
   <section>
     <h2><dfn>url</dfn> attribute</h2>
-    <p>Define {{ExampleInterface/url}} attribute here...</p>
+    <p>The {{ExampleInterface/url}} attribute...</p>
   </section>
 </section>
 <section>
-  <h2>Here is how you link!</h2>
-  <p>The {{ExampleInterface}} or the {{ExampleInterface/exampleMethod()}}.</p>
+ <h2>Here is how you link!</h2>
+ <p>
+  The {{ExampleInterface}} 
+  or the {{ExampleInterface/exampleMethod()}} method
+  or the {{ExampleInterface/url}} attribute.
+ </p>
 </section>
 ```
 
