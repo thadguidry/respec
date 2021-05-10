@@ -1,7 +1,5 @@
 # Creating Static Snapshots
 
-## From browser
-
 Open the ReSpec UI and select "Export..." 
 
 <img width="249" alt="Screen shot of ReSpec UI" src="https://user-images.githubusercontent.com/870154/117614998-7926a880-b1ac-11eb-9d4e-654a21165aa8.png">
