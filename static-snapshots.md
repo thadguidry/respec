@@ -27,7 +27,7 @@ then:
 
 ```bash
 npm install --global respec
-``
+```
 
 For more options, run `respec --help`.
 
