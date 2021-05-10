@@ -467,7 +467,7 @@ example reference [[?FOO]].
 
 ### Escaping references
 
-To escape a reference, use a backslash "`[[\`". For example, "[[\InternalSlot]]".
+To escape a reference, use a backslash "`[[\`". For example, "`[[\InternalSlot]]`".
 
 ### Adding missing references 
 If a reference is missing, please [submit it to Specref](https://github.com/tobie/specref#manual-changes). This helps the whole community. 
