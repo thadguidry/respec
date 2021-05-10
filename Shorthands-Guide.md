@@ -1,6 +1,6 @@
 # Shorthands Cheat Sheet
 
-Similar to markdown, shorthands are custom ways of writing things that trigger special behavior in ReSpec. The most commonly used one you've likely seen is `[[Reference]]`. Shorthands save you time and work: you write _a lot less HTML_, and ReSpec does all the linking and error checking for you.
+Similar to markdown, shorthands trigger special behavior in ReSpec. The most commonly used one you've likely seen is `[[Reference]]`. Shorthands save you time and work: you write _a lot less HTML_, and ReSpec does all the linking and error checking for you.
 
 Each of these special character combinations, as well as what behavior they trigger, are detailed below.
 
@@ -16,11 +16,11 @@ Note: Only WebIDL identifiers are case sensitive.
 | [References](#reference-shorthands)              | `[[shortName]]`         | `[[RFC2119]]`                                         |
 | [Expansions](#reference-shorthands)              | `[[[#some-id]]]`        | `[[[#example-2]]]` expands and links to `"Example 2"` |
 
-By design, we also share a lot of syntax with the [BikeShed](https://github.com/tabatkins/bikeshed/) document processor. This makes it easier for everyone to edit both ReSpec and BikeShed specifications at the same time.
+By design, we also share a lot of syntax with the [BikeShed](https://github.com/tabatkins/bikeshed/) document processor. This makes it easier for everyone in the standards community to edit ReSpec and BikeShed specifications.
 
 ## WebIDL {#webidl-shorthands}
 
-On the Web, and in Web Standards, WebIDL is a meta language that we use to define Javascript APIs. Please see our [WebIDL Guide](WebIDL-Guide). Please see the [WebIDL spec](https://heycam.github.io/webidl) for more info.
+WebIDL is a meta language that used to define Javascript APIs for Web browsers. Please see our [WebIDL Guide](WebIDL-Guide) or the [WebIDL spec](https://heycam.github.io/webidl) for more info.
 
 To link to something in WebIDL, you need to know its `identifier`. An `identifier` is the name of the interface, dictionary, or enum.
 
@@ -58,11 +58,13 @@ To link to a concept in another spec, you need to use the [xref](xref) configura
 </p>
 ```
 
+In the above, "queue a task" is defined in the HTML specification while "fire and event" is defined in the DOM specification.  
+
 See [xref](xref) for more information.
 
 ### Plural Forms
 
-ReSpec supports automatically linking to plural forms. Thus, `[=fruits=]` links to the singular concept of `fruit`, even across specs.
+ReSpec supports automatically linking to plural forms for simple nouns. Thus, `[=fruits=]` links to the singular concept of `fruit`, even across specs.
 
 ### Aliasing concepts
 
@@ -70,9 +72,9 @@ Warning: Aliasing is not recommended.
 
 Always try to adapt your text to a defined concept, and only use an alias if absolutely needed! This keeps specs consistent and keeps things easier to find across specs.
 
-Having said that, sometimes `[=convoluted thing =]` might be confusing or not make sense in the context of your spec. In such cases, use a pipe `|` to "alias" a given concept into something that better fits the flow of your spec.
+Having said that, sometimes `[=convoluted thing=]` might be confusing or not make sense in the context of your spec. In such cases, use a pipe `|` to "alias" a given concept into something that better fits the flow of your spec.
 
-For example, with `[=convoluted thing | simpler thing=]`, `simpler thing` will be the text on your spec. It will link to `convoluted thing`.
+For example, with `[=convoluted thing|simpler thing=]`, `simpler thing` will be the text on your spec. It will link to `convoluted thing`.
 
 Another reason is that the definition’s default name does not grammatically fit into your sentence. For example, your definition is `[=queue a task=]` but you are giving an example of "task queuing". Alias the concept with `[=queue a task|task queuing=]` (again, don't do this! fix your spec instead or talk to the other editors of the other spec to export a more sane definition 🙇‍♂️).
 
