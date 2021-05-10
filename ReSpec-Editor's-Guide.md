@@ -483,7 +483,7 @@ Some of ReSpec's configuration options can be specified in the query string, and
 
 This is useful for quickly overriding configuration options without needing to directly edit the document itself (e.g., for the purpose of exporting a document draft with a different `specStatus`). 
 
-## W3C Boilerplate
+## W3C Documents
 
 ReSpec provides useful options to handle the creation of the W3C boilerplate that goes into the "status of this document" and other key sections. 
 
@@ -497,6 +497,10 @@ The [`group`](group) configuration option lets you state to which working/busine
 
 Setting the `group` option sets the IPR Policy for your document, which is reflected in the "Status of this Document" section.
 
+### Non-Recommendation track docs 
+
+If your document is not intended to be on the W3C Recommendation Track, set [`noRecTrack`](noRecTrack) to true.
+
 ### Specification Status
 
 The [`specStatus`](specStatus) option denotes the status of your document, per the [W3C Recommendation track](https://www.w3.org/2020/Process-20200915/#rec-track). Typically, a status has implications in terms of what other options required. For instance, a document that is intended to become a Recommendation will require [`previousPublishDate`](previousPublishDate) and [`previousMaturity`](previousMaturity). 
@@ -507,34 +511,7 @@ The [`specStatus`](specStatus) section list all the possible status values.
 
 By default, W3C specifications all get the regular W3C copyright notice. In some cases however, you will want to [modify](license) that.
 
-For all document types other than "unofficial", you can use [`additionalCopyrightHolders`](additionalCopyrightHolders) to indicate that the copyright is shared not just amongst the W3C's hosts but also with other organizations (typically this is used for documents developed jointly with another <abbr title="Standards Developing Organization">SDO</abbr> such as the IETF). For unofficial documents, this simply replaces the default CC-BY license.
+For all document types, you can add your own copyright by using `<p class="copyright">`.  
 
-If you wish the copyright date to span several years rather than just the year matching [`publishDate`](publishDate) (e.g., 2009-2013) then you can use [`copyrightStart`](copyrightStart).
-
-At times, the patent situation of a specification may warrant being documented beyond the usual boilerplate. In such cases, use [`addPatentNote`](addPatentNote). Its content will get injected at the end of the SotD section (right after the patent policy paragraph).
-
-### Non-Rec Track docs
-
-If your document is not intended to be on the W3C Recommendation Track, set [`noRecTrack`](noRecTrack) to true.
-
-### Best Practice Documents
-
-Best practices may be shown, numbered, and formatted using a div with class practice containing a [`p > span.practicelab`](practicelab) with the practice's title and a [`p.practicedesc`](practicedesc) with description of the practice.
-
-```html
-<div class="practice">
-  <p>
-    <span id="some-practice" class="practicelab">Title of the practice</span>
-  </p>
-  <p class="practicedesc">
-    More detailed description of the practice.
-  </p>
-</div>
-```
-
-If a `section` element with id `bp-summary` is present, then a summary list of best practices will be placed in it, linked to the best practices that have an id on the span element.
-
-```html
-<section id="bp-summary"></section>
-```
+At times, the patent situation of a specification may warrant being documented beyond the usual boilerplate. In such cases, simply add your own `<p>` to the Status of this Document section.
 
