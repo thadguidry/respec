@@ -124,9 +124,7 @@ ReSpec documents are just HTML document and rely on HTML structural elements, in
 The [`<title>`](title-element) of the document is reused as the title of the specification in the resulting document's `h1`. That way, they are always in sync and you need not worry about specifying it twice.
 
 ```html "example": "Setting a title"
-<head>
-  <title>The Best Specification</title>
-</head>
+<title>The Best Specification</title>
 ```
 
 If you need to add additional markup to your title, you can still use a [`<h1>`](h1-element) with `id="title"`.
@@ -139,6 +137,7 @@ If you need to add additional markup to your title, you can still use a [`<h1>`]
 As with the title, you can also specify a subtitle as:
 
 ```html "example": "Specification subtitle with custom markup."
+<h1 id="title">The <code>Foo</code> API</h1>
 <h2 id="subtitle">Subtitle here</h2>
 ```
 
@@ -222,7 +221,7 @@ See also the [maxTocLevel](maxTocLevel) option to limit how deep the ToC is.
 
 Set the configuration option [`noTOC`](noTOC) to `true` to remove the table of content.
 
-### Figures
+### Figures & table of figure
 
 To include a figure, use the `<figure>` and `<figcaption>` elements. They automatically get an `id` and figure number.
 
@@ -294,7 +293,6 @@ You can specify [`data-include-format='text'`](data-include-format) to include c
 **Note:** `data-include` relies on the browser's ability to retrieve the resource and is governed by CORS (and the browser's security model in general). Browsers will generally block cross origin request, which means `file://` URLs will likely fail. For more information, please see ["Cross-Origin Resource Sharing (CORS)"](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS). You can usually get around this by starting a local web server (e.g., by running `python -m http.server 8000` from the command line). 
 
 Use [`data-oninclude`](data-oninclude) to perform transformation on content included with `data-include`.
-
 
 ### Conformance section
 
@@ -371,7 +369,7 @@ Sometimes a defined terms needs additional related terms or synonyms. In those c
 </dfn>
 ```
 
-Note: "lt" stands for "linked term"
+Note: "lt" stands for "linked term".
 
 The following all link back to "banana":
 
@@ -381,7 +379,7 @@ The following all link back to "banana":
 
 #### Referencing terms from other specifications
 
-To cross reference terms in other specifications, use the powerful ([`xref`](xref)) feature. It lets you list of specifications ReSpec may search a term from, and simply reference the term. For example, to reference "default toJSON steps" from the [WebIDL standard](https://heycam.github.io/webidl/#default-tojson-steps):
+The powerful ([`xref`](xref)) feature let's you reference terms and concepts in other specifications. For example, to reference "default toJSON steps" from the [WebIDL standard](https://heycam.github.io/webidl/#default-tojson-steps):
 
 ```html "example": "Referencing definitions from other specifications."
 <script>
@@ -391,6 +389,10 @@ To cross reference terms in other specifications, use the powerful ([`xref`](xre
 </script>
 <a>default toJSON steps</a>
 ```
+
+To search for terms + specs your can link to, you can use the XREF UI at http://respec.org/xref/. Below is a screenshot of what the UI looks like:
+
+<img width="584" alt="Screenshot of the XREF search interface" src="https://user-images.githubusercontent.com/870154/117607513-796c7700-b19f-11eb-8694-c9beb10a4870.png">
 
 #### Linking shorthands
 
@@ -429,9 +431,32 @@ Read more about linking and other shorthands in the [Shorthands Guide](Shorthand
 
 ### References
 
-Specifications typically need to have references to other specifications on which they build to define their own technology. Managing references is a pain, as is linking to them every time that they are mentioned.
+To reference another specification use the `[[SPEC-ID]]` syntax, where SPEC-ID is the referenced specification's in the [Specref ecosystem](http://specref.org/) - which includes most W3C, WHATWG, ECMA, and IETF documents. 
 
-ReSpec takes the pain out of this with multiple features that are used together. First, when you need to refer to a given specification in the body of the text, simply do so using `[[FOO]]`, where FOO is the referenced specification's ID. ReSpec uses the context of the reference to work out if the reference is normative or informative. That is, if the reference is in a section marked "informative", or an example, note, or figure, then ReSpec automatically makes the reference non-normative. Otherwise, the reference is treated as normative. ReSpec will replace those with the link the reference and the appropriate markup around it.
+When you reference a specification, your document automatically gets a bibliography section. 
+
+```html "example": "Reference to HTML spec"
+The [^link^] element is defined in the [[HTML]] spec. 
+```
+
+Which renders as: 
+
+<img width="595" alt="Screenshot to text above and automatically generated References section" src="https://user-images.githubusercontent.com/870154/117608243-06fc9680-b1a1-11eb-8835-f2c99521eaa9.png">
+
+If you would like the reference a specification by its full name, you can use the three square brackets to "expand it":
+
+```HTML
+<p>
+  The [^link^] element is defined in the [[[HTML]]].
+</p>
+``` 
+
+Renders as:
+
+<img width="401" alt="The link element is defined in the HTML Standard." src="https://user-images.githubusercontent.com/870154/117608503-8d18dd00-b1a1-11eb-94bb-53a0c61f20b3.png">
+
+#### Normative VS informative references
+ReSpec uses the context of the reference to work out if the reference is normative or informative: if the reference is in a section marked "informative", or an example, note, or figure, then ReSpec automatically makes the reference non-normative. Otherwise, the reference is treated as normative. 
 
 If you need a non-normative reference in a normative section, you can use a `?` like so:
 
@@ -440,71 +465,52 @@ This is normative and MUST be followed. But, sometimes we need a non-normative
 example reference [[?FOO]].
 ```
 
-You can also link to a specification directly in text by using `[[[FOO]]]`, where FOO is the specification's id. When ReSpec finds the specification in the [references database](https://www.specref.org/), this gets converted to a link to the specification in the text i.e. `<a href="link-to-FOO">FOO Spec Title</a>`.
+### Escaping references
 
-The difference between triple and double brackets syntax is that `[[[FOO]]]` links directly to the referenced specification, whereas `[[FOO]]` links to the entry in the "References" section (see below). Normative and informative references work similarly for `[[[FOO]]]` as they work for `[[FOO]]`, and `[[[?FOO]]]` can be used to have a non-normative reference in a normative section.
+to escape a reference, use a backslash "[[\". For example, "[[\InternalSlot]]".
 
-If you ever want to use some text in double brackets that doesn't represent a reference, for example to represent an ECMAScript internal slot, write it as `[[\InternalSlot]]` (note the leading backslash).
+### Adding missing references 
+If a reference is missing, please [submit it to Specref](https://github.com/tobie/specref#manual-changes). This helps the whole community. 
 
-Then, using all the collected references from the document, ReSpec will generate a “References” section with subsections for normative and informative references (when they appear). Naturally, it will also fill in the references themselves, including the relevant bibliographical data, using the conventional markup. (Assuming they appear in our records.).
-
-References are loaded from a [shared database](https://github.com/tobie/specref/tree/master/refs) that is maintained by a group of volunteers. If you need a reference that is not in the database, then the right thing to do is to [submit it for inclusion](https://github.com/tobie/specref#manual-changes) so that others can benefit from it too. However, if that is not possible then you can make use of the [`localBiblio`](localBiblio) configuration option.
-
-The only things you therefore need to know for references are the reference names of the specifications you wish to refer to (as well as to how to add your own to the database). The names are usually rather logical, and most of the time can be guessed. In other cases, you can go look for them in the central bibliographical database that is maintained at [specref.org](https://www.specref.org/).
+If that is not possible, you can use of the [`localBiblio`](localBiblio) configuration option to define your own references.
 
 ### Extra links at top of the document
 
-There are times when you might need extra links or other important information to appear together with other links at the top of the document.
-
 ReSpec supports adding additional links by specifying an `otherLinks` property in the configuration. The values for this configuration option are rich and complex, so are detailed in the reference section for [`otherLinks`](otherLinks).
 
-### Custom Styling
+### Custom Styles
 
-If you wish to add your own additional styles to your document, just use the regular `<link>` and `<style>` elements. Be warned however that the W3C styles will always be added after yours, so if you wish to override them you will need to use more specific selectors.
+If you wish to add your own additional styles to your document, just use the regular `<link>` and `<style>` elements.
 
-## Essential W3C Boilerplate
+### Advanced: Specifying Configuration via URL
 
-W3C boilerplate is extremely repetitive, but beneath the tedium is a wealth of options and subtle variations that are precisely what makes crafting the boilerplate by hand so hard to get right. This covers options for specification maturity, publication dates, alternatives (editor's drafts, other versions, other formats...), legalese variants, the various W3C specification URLs, the people writing it, information about the working group, and core sections such as Abstract, Status of this Document (SotD), and Conformance.
+Some of ReSpec's configuration options can be specified in the query string, and they override the options specified in the source. For example, you can override the `subtitle` by, for example, doing the following: `index.html?subtitle=This is a subtitle`.
 
-We will start by using an example of a basic specification very similar to the one used in the previous section.
+This is useful for quickly overriding configuration options without needing to directly edit the document itself (e.g., for the purpose of exporting a document draft with a different `specStatus`). 
 
-### shortName
+## W3C Boilerplate
+
+ReSpec provides useful options to handle the creation of the W3C boilerplate that goes into the "status of this document" and other key sections. 
+
+### Short name
 
 Specifications typically require having a "short name", which is the name used (amongst other places) in the canonical "<https://w3.org/TR/short-name/>" URLs. This is specified using the [`shortName`](shortName) option, as seen in the example above.
 
 ### Working Group Information
 
-W3C documents are produced by groups of some sort: Working Groups (WG), Interest Groups (IG), the TAG, and Community or Business Groups (CG, BG). For simplicity, we will be referring to all of the above as "Working Groups", since one should not be required to understand the many subtleties of the W3C Process in order to write a good specification. Which group a spec belongs to is denoted by the [`group`](group) configuration option. A list of valid group names can be found at: https://respec.org/w3c/groups/.
+The [`group`](group) configuration option lets you state to which working/business/community group your specification belongs to. The list of group identifiers can be found at: https://respec.org/w3c/groups/.
 
-When these groups release a document, they must include some information that is relevant and specific to them — all of this information is required. Documents produced in other situations (e.g., Submissions, unofficial drafts, etc.) don't require these options.
-
-The result of changing these configuration options can be seen in the "Status of this Document" section.
+Setting the `group` option sets the IPR Policy for your document, which is reflected in the "Status of this Document" section.
 
 ### Specification Status
 
-At any given time a specification must be in a given status. The [`specStatus`](specStatus) option indicates which status that is. Typically, a status has implications in terms of what other options may be required. For instance, a document that is intended to become a Recommendation eventually and that is not the First Public Working Draft (FPWD) of that specification will require [`previousPublishDate`](previousPublishDate) and [`previousMaturity`](previousMaturity) to be specified.
-
-Note: The process of publishing specifications typically involves releasing multiple versions in a row that have specific dates (so that people can see the evolution, and also for IP reasons). Additionally, some specification statuses involve delimited review periods. These are all specified using date-related options. The format used for all dates is `YYYY-MM-DD`, except when only year is required, in which case it is a 4-digit number.
+The [`specStatus`](specStatus) option denotes the status of your document, per the [W3C Recommendation track](https://www.w3.org/2020/Process-20200915/#rec-track). Typically, a status has implications in terms of what other options required. For instance, a document that is intended to become a Recommendation will require [`previousPublishDate`](previousPublishDate) and [`previousMaturity`](previousMaturity). 
 
 The [`specStatus`](specStatus) section list all the possible status values.
 
-### Editor's Drafts
-
-Most groups maintain some form of version control system which is exposed over the web so that people can keep track of what edits are being made to a specification in between official releases. It is often useful to point to such documents, including from released specifications, so that people wishing to report issues can make sure that they aren't already fixed, and in general get the very latest version. In fact, [Editor Drafts (ED)](specStatus#specStatus-ed) are often considered to be the most useful reference to have to a group's work.
-
-### Related Documents
-
-A specification does not always travel alone. In some cases, there can be an accompanying [`errata`](errata) document, which you can specify by providing a URL for it.
-
-Likewise, some groups occasionally find it desirable to produce alternative formats in which people may read the specification. For instance, to access it on an ebook reader you may produce an ePub alternative, or if your specification is intended to be read by printing devices you might use PDF. The [`alternateFormats`](alternateFormats) option can be used to specify these alternate representations.
-
-If your specification has a test suite (it does, right?), then you can point to it using [`testSuiteURI`](testSuiteURI). And when your tests have successfully passed in enough implementations, you will want to document that in an implementation report which you can link to using [`implementationReportURI`](implementationReportURI).
-
 ### Copyrights & Patents
 
-All the best fun in standards brought to you neatly packaged in a single section!
-
-By default, W3C specifications all get the regular W3C copyright notice and archaic document license, except for unofficial documents which are under CC-BY. In some cases however, you will want to [modify](license) that.
+By default, W3C specifications all get the regular W3C copyright notice. In some cases however, you will want to [modify](license) that.
 
 For all document types other than "unofficial", you can use [`additionalCopyrightHolders`](additionalCopyrightHolders) to indicate that the copyright is shared not just amongst the W3C's hosts but also with other organizations (typically this is used for documents developed jointly with another <abbr title="Standards Developing Organization">SDO</abbr> such as the IETF). For unofficial documents, this simply replaces the default CC-BY license.
 
@@ -512,19 +518,13 @@ If you wish the copyright date to span several years rather than just the year m
 
 At times, the patent situation of a specification may warrant being documented beyond the usual boilerplate. In such cases, use [`addPatentNote`](addPatentNote). Its content will get injected at the end of the SotD section (right after the patent policy paragraph).
 
-### Note & Recommendation Tracks
+### Non-Rec Track docs
 
-If you are working on a new version of an existing Recommendation, then it is required that your document point to that previous version. This is done using the [`prevRecShortname`](prevRecShortname) and [`prevRecURI`](prevRecURI) options, which respectively provide the [`shortName`](shortName) for the existing Recommendation (e.g., "SVG", as opposed to "SVG2") and its URL. If [`prevRecURI`](prevRecURI) is not specified but [`prevRecShortname`](prevRecShortname) is, the latter will be used to generate the former by prefixing "<https://www.w3.org/TR/>" to it. Note however that while in the overwhelming majority of cases this works, it is not recommended to use this approach since if the Recommendation is later [Rescinded](specStatus#specStatus-rscnd), the link will be stale. Instead, use the dated link to the Recommendation.
-
-The process for the publication of Notes has been a source of confusion. When producing multiple drafts of a Note in succession, some groups have traditionally simply published them all as Notes one after the other, indicating in the abstract or SotD if they intend to work further on this document or if it is final. Since Notes are not normative and entail no IP concerns, they don't need an elaborate process and this process was perhaps not entirely bad. However, that's not how Notes are commonly handled nowadays.
-
-The currently recommended process for Notes is closer to that which is used for Recommendation Track documents, typically: FPWD -> WD (n times) -> LC -> Note. Given that any group may decide at any time to release a Rec-Track document as a Note instead (often because it has been abandoned), this is Process-correct but it does involve jumping through hoops (notably for IP) that likely should not be needed. It has been explained to me several times why this switch took place, but I can never recall the justification. At any rate, if you are confused with the Note track process but wish to stick to it, you can do so by setting [`noRecTrack`](noRecTrack) to true.
+If your document is not intended to be on the W3C Recommendation Track, set [`noRecTrack`](noRecTrack) to true.
 
 ### Best Practice Documents
 
 Best practices may be shown, numbered, and formatted using a div with class practice containing a [`p > span.practicelab`](practicelab) with the practice's title and a [`p.practicedesc`](practicedesc) with description of the practice.
-
-This feature is rarely used, and likely needs to be updated. If you wish to use it in anger, please contact me and we can improve support for it.
 
 ```html
 <div class="practice">
@@ -542,10 +542,4 @@ If a `section` element with id `bp-summary` is present, then a summary list of b
 ```html
 <section id="bp-summary"></section>
 ```
-
-### Advanced: Specifying Configuration via URL
-
-Some of ReSpec's configuration options can be specified in the query string, and they override the options specified in the source. For example, you can override the `subtitle` by, for example, doing the following: `index.html?subtitle=This is a subtitle`.
-
-This is useful for quickly overriding configuration options without needing to directly edit the document itself (e.g., for the purpose of exporting a document draft with a different `specStatus`). 
 
