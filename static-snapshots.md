@@ -12,7 +12,7 @@ Select the format to export as.
 <figure>
 <img width="811" alt="" src="https://user-images.githubusercontent.com/870154/117615001-7af06c00-b1ac-11eb-8540-97c474244045.png">
 <figcaption>Screen Shot of export options</figcaption>
-<figure>
+</figure>
 
 ## Using command line
 
