@@ -1,6 +1,6 @@
 # `conformance`
 
-When present, a section with id `conformance` tells ReSpec to add the standard boilerplate to the document:
+When present, a section with id `conformance` tells ReSpec to add the standard boilerplate to the document.
 
 The author can add any additional conformance clause(s) which will follow this boilerplate.
 
