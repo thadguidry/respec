@@ -1,12 +1,18 @@
 # Creating Static Snapshots
 
-Open the ReSpec UI and select "Export..." 
+Open the ReSpec UI and select "Export...".
 
-<img width="249" alt="Screen shot of ReSpec UI" src="https://user-images.githubusercontent.com/870154/117614998-7926a880-b1ac-11eb-9d4e-654a21165aa8.png">
+<figure>
+<img width="249" alt="" src="https://user-images.githubusercontent.com/870154/117614998-7926a880-b1ac-11eb-9d4e-654a21165aa8.png">
+<figcaption>Screen shot of ReSpec UI</figcaption>
+</figure>
 
 Select the format to export as.
 
-<img width="811" alt="Screen Shot of export options" src="https://user-images.githubusercontent.com/870154/117615001-7af06c00-b1ac-11eb-8540-97c474244045.png">
+<figure>
+<img width="811" alt="" src="https://user-images.githubusercontent.com/870154/117615001-7af06c00-b1ac-11eb-8540-97c474244045.png">
+<figcaption>Screen Shot of export options</figcaption>
+<figure>
 
 ## Using command line
 
