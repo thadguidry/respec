@@ -291,7 +291,7 @@ Use [`data-oninclude`](data-oninclude) to perform transformation on content incl
 
 ### Conformance section
 
-ReSpec specifications are RFC2119/RFC8174 keyword aware (i.e., it knows about "MUST", "SHOULD NOT", etc.). 
+ReSpec specifications are RFC2119/RFC8174 keyword aware.
 
 Adding a `<section id="conformance">` tells ReSpec that the specification is dealing with "normative" statements. ReSpec can then warn if RFC2119 keywords are accidentally used in informative/non-normative contexts.
 
