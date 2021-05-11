@@ -11,21 +11,3 @@ Note that the content of the `title` attribute will be interpreted as HTML marku
   paragraph is a button, you are probably doing it wrong!
 </p>
 ```
-
-Would be exported as:
-
-<samp>
-
-```html
-<div class="note">
-  <div class="note-title">
-    <span>Note: Always rely upon native semantics</span>
-  </div>
-  <p>
-    Remember - if you are using the <code>role</code> attribute to say that a
-    paragraph is a button, you are probably doing it wrong!
-  </p>
-</div>
-```
-
-</samp>
