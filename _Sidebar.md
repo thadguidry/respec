@@ -146,6 +146,7 @@ Handled by ReSpec for you.
 - [appendix](appendix)
 - [ednote](ednote)
 - [example](example)
+- [exclude](exclude)
 - [informative](informative)
 - [introductory](introductory)
 - [nohighlight](nohighlight)
