@@ -14,8 +14,7 @@ Some examples of usage:
   <abbr class="exclude" title="Ay-Bee-See">ABC</abbr>, but this won't be wrapped ABC.
 </p>
 
-<aside class="example">
-  <p>An hypothetical API</p>
+<aside class="example" title="A hypothetical API">
   <pre class="idl exclude">
   interface ItsTwentyTwenty {
      undefined cantSeeNobody();
