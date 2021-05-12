@@ -9,7 +9,7 @@ It is only supported on the following elements:
 
 Some examples of usage:
 
-```html "example": "excluding things"
+```html "example": "Excluding things"
 <p>
  <abbr class="exclude" title="Ay-Bee-See">ABC</abbr>,
  but this won't be wrapped ABC.
