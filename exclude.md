@@ -11,14 +11,15 @@ Some examples of usage:
 
 ```html "example": "excluding things"
 <p>
-  <abbr class="exclude" title="Ay-Bee-See">ABC</abbr>, but this won't be wrapped ABC.
+ <abbr class="exclude" title="Ay-Bee-See">ABC</abbr>,
+ but this won't be wrapped ABC.
 </p>
 
 <aside class="example" title="A hypothetical API">
   <pre class="idl exclude">
-  interface ItsTwentyTwenty {
-     undefined cantSeeNobody();
-  };
+    interface ItsTwentyTwenty {
+      undefined cantSeeNobody();
+    };
   </pre>
 </aside>
 ```
