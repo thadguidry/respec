@@ -1,4 +1,4 @@
-## The `exclude` CSS class
+## `exclude`
 
 The `exclude` CSS class allows HTML tags to opt-out of being processed by ReSpec. 
 
