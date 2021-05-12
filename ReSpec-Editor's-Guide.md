@@ -279,7 +279,7 @@ You can disable syntax highlighting on a pre element by adding a "[nohighlight](
 
 Including external content into ReSpec is done using the [`data-include`](data-include) attribute, which points to a URL. 
 
-```HTML html "example": "Including external content"
+```html "example": "Including external content"
 <section data-include="some.html"></section>
 ```
 
