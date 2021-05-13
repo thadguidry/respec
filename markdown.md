@@ -1,8 +1,27 @@
 # Using Markdown with ReSpec
 
-You can use markdown to write ReSpec based documents. To enable markdown globally, set [`respecConfig.format`](format) to "markdown". Markdown can also be enabled section by section using [`data-format="markdown"`](data-format).
+You can use markdown to write ReSpec based documents. But you **must follow markdown's rules** carefully.
+ 
+To enable markdown globally, set [`format`](format) to "markdown" (see below). And, in the `<body>`, make sure you keep all text flushed to the left. This is required because whitespace is significant in Markdown. 
 
-The markdown is interpreted as [GFM](https://guides.github.com/features/mastering-markdown/) and you can mix HTML and markdown.
+```html
+<scrip>
+var respecConfig = {
+  format: "markdown"
+}
+</script>
+<body>
+
+## This is a heading
+
+I'm a paragraph.
+
+ * list item
+ * another list item
+
+```
+
+The markdown is interpreted as [Github Flavored Markdown (GFM)](https://guides.github.com/features/mastering-markdown/) and you can mix HTML and markdown.
 
 Now, we describe some of the ReSpec specific markdown behaviors and extensions.
 
