@@ -23,14 +23,15 @@ npx respec --src source.html --out index.html
 ```
 
 Or, to install ReSpec for repeated use:
-```bash
-respec --src source.html --out index.html
-```
-
-then:
 
 ```bash
 npm install --global respec
+```
+
+And then:
+
+```bash
+respec --src source.html --out index.html
 ```
 
 For more options, run `respec --help`.
