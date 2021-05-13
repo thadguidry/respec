@@ -37,7 +37,7 @@ The markdown is interpreted as [Github Flavored Markdown (GFM)](https://guides.g
 
 Now, we describe some of the ReSpec specific markdown behaviors and extensions.
 
-## Headings
+## Automatic sectioning
 
 When using markdown, you don't need to add [`<section>` elements](section) manually. Each heading automatically creates a structure of nested section elements around it. For example:
 
