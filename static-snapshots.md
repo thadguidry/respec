@@ -11,12 +11,12 @@ Select the format to export as.
 
 <figure>
 <img width="811" alt="" src="https://user-images.githubusercontent.com/870154/117615001-7af06c00-b1ac-11eb-8540-97c474244045.png">
-<figcaption>Screen Shot of export options</figcaption>
+<figcaption>ReSpec's supports various export formats</figcaption>
 </figure>
 
 ## Using command line
 
-One off... 
+One off (downloads about 100mb)... 
 
 ```bash
 npx respec --src source.html --out index.html
