@@ -5,6 +5,8 @@ You can use markdown to write ReSpec based documents. But you **must follow mark
 To enable markdown globally, set [`format`](format) to "markdown" (see below). And, in the `<body>`, make sure you keep all text flushed to the left. This is required because whitespace is significant in Markdown. 
 
 ```html "example": "Configuring ReSpec to use Markdown."
+<html>
+<title>Using Markdown</title>
 <script>
 var respecConfig = {
   format: "markdown"
@@ -19,6 +21,8 @@ I'm a paragraph.
  * list item
  * another list item
 
+</body>
+</html>
 ```
 
 The markdown is interpreted as [Github Flavored Markdown (GFM)](https://guides.github.com/features/mastering-markdown/) and you can mix HTML and markdown.
