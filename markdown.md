@@ -5,7 +5,7 @@ You can use markdown to write ReSpec based documents. But you **must follow mark
 To enable markdown globally, set [`format`](format) to "markdown" (see below). And, in the `<body>`, make sure you keep all text flushed to the left. This is required because whitespace is significant in Markdown. 
 
 ```html "example": "Configuring ReSpec to use Markdown."
-<scrip>
+<script>
 var respecConfig = {
   format: "markdown"
 }
