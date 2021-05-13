@@ -68,22 +68,15 @@ By default, ReSpec uses heading's text content to generate IDs for you. The IDs 
 
 You can use triple-backticks to create code-blocks ([`<pre>`](pre-and-code-elements) elements). Syntax highlighting for various languages, including an advanced syntax highlighter for WebIDL is available out of the box.
 
-Lets go through a few examples!
-
-````markdown "example": "A simple code-block."
-```
-// ReSpec will try its best to guess the language for syntax highlighting.
-console.log("hey!");
-```
-````
-
 ````markdown "example": "A simple code-block with language hint."
 ```js
-// ReSpec will use the provided language hint for syntax highlighting.
-// It's nice to be explicit.
-console.log("hey!");
+function hello() {
+  console.log("hey!");
+}
 ```
 ````
+
+And for WebIDL:
 
 ````markdown "example": "A WebIDL block."
 ```webidl
@@ -92,14 +85,11 @@ interface Paint { };
 ```
 ````
 
-````markdown "example": "A pre.example."
-```js "example": "I'm example title"
-console.log(navigator.myAPI.rocks()); // of course
-```
-
 ## HTML and Markdown
 
-Please remember that markdown requires double newlines between an HTML tag and markdown text.
+Please remember that markdown requires double newlines between an HTML tag and markdown text. 
+
+Whitespace is also significant! So, keep things aligned to the left.
 
 ```markdown "example": "Mixing HTML and markdown."
 <aside class="note">
