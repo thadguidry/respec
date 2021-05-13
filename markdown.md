@@ -4,7 +4,7 @@ You can use markdown to write ReSpec based documents. But you **must follow mark
  
 To enable markdown globally, set [`format`](format) to "markdown" (see below). And, in the `<body>`, make sure you keep all text flushed to the left. This is required because whitespace is significant in Markdown. 
 
-```html
+```html "example": "Configuring ReSpec to use Markdown."
 <scrip>
 var respecConfig = {
   format: "markdown"
@@ -96,13 +96,6 @@ interface Paint { };
 ```js "example": "I'm example title"
 console.log(navigator.myAPI.rocks()); // of course
 ```
-
-above is equivalent to writing:
-
-<pre class="example js" title="I'm example title">
-console.log(navigator.myAPI.rocks()); // of course
-</pre>
-````
 
 ## HTML and Markdown
 
