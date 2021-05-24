@@ -1,44 +1,20 @@
 # `Person`
 
-A person object (used for [`editors`](editors), [`authors`](authors)) contains the following fields (most of the fields are straightforward). Only the `name` field is required.
-
-<dl>
-	<dt><code>name</code></dt>
-	<dd>Name of the person</dd>
-	<dt><code>mailto</code></dt>
-	<dd>email address (turned into a mailto URL by respec)</dd>
-	<dt><code>url</code></dt>
-	<dd>home page of the author</dd>
-	<dt><code>company</code></dt>
-	<dd>company name</dd>
-	<dt><code>companyURL</code></dt>
-	<dd>url of the company</dd>
-	<dt><code>w3cid</code></dt>
-	<dd>identifier of the persons’ W3C account, if applicable. (This id can be found through the <a href="https://www.w3.org/users/myprofile">“my profile”</a> URL that will be redirected to the user’s page; the id appears in the address bar).</dd>
-	<dt><code>orcid</code></dt>
-	<dd>identifier or full URL of the persons' <a href="https://orcid.org/">ORCID</a> account.</dd>
-	<dt><code>retiredDate</code></dt>
-	<dd>indicates the date in which an editor has retired from editing a specification. The format is yyyy-mm-dd. Additionally, if a person object is under <code>editors</code> and contains <code>retiredDate</code>, it will be automatically moved to <code>formerEditors</code>.</dd>
-	<dt><code>note</code></dt>
-	<dd>any text in this field will appear at the end of the person’s identification in parenthesis</dd>
-	<dt><code>extras</code></dt>
-	<dd>refers to an array of extras (see below) objects, displayed at the end of the person's identification</dd>
-</dl>
-
-The “extras” are objects, each rendered as a separate `span` element, with the following fields:
-
-<dl>
-	<dt><code>name</code></dt>
-	<dd>the content of the resulting <code>span</code>; this can contain html elements</dd>
-	<dt><code>class</code></dt>
-	<dd>a value of the class attribute added to the enclosing <code>span</code> (can be used for styling)</dd>
-	<dt><code>href</code></dt>
-	<dd>if set, the content within the enclosing <code>span</code> is turned into an active link pointing to the value of <code>href</code></dd>
-</dl>
-
-# `Person` A person object (used for [`editors`](editors), [`authors`](authors))
+A person object (used for [`editors`](editors), [`authors`](authors))
 contains the following fields (most of the fields are straightforward). Only the
-`name` field is required.
+`name` property is required.
+
+```js "example": "A typical person object."
+{
+  name: "Ben De Meester",
+  company: "Ghent University - iMinds - Data Science Lab",
+  companyURL: "https://www.iminds.be/",
+  url: "https://users.ugent.be/~bjdmeest/",
+  retiredDate: "2020-03-26",
+  orcid: "0000-0003-0248-0987",
+  w3cid: "73403"
+};
+```
 
 <dl>
   <dt>`name`</dt>
@@ -75,56 +51,42 @@ contains the following fields (most of the fields are straightforward). Only the
   </dd>
   <dt>`extras`</dt>
   <dd>
-    refers to an array of extras (see below) objects, displayed at the end of
+    Refers to an array of extras (see below) objects, displayed at the end of
     the person's identification
   </dd>
   <dt>`mailto` (**deprecated**)</dt>
   <dd>An email address. Please use url instead (e.g., `"url": "mailto:"`)</dd>
 </dl>
 
-The “extras” are objects, each rendered as a separate `span` element, with the
-following fields:
+### Extras
+
+The “extras” are objects, with the following fields:
 
 <dl>
-  <dt>`name`</dt>
+  <dt>`name` (required)</dt>
   <dd>
-    the content of the resulting `span`; this can contain html
+    The content of the resulting `span`; this can contain html
     elements
   </dd>
   <dt>`class`</dt>
   <dd>
-    a value of the class attribute added to the enclosing `span` (can
-    be used for styling)
+    A CSS class value (can be used for styling)
   </dd>
   <dt>`href`</dt>
   <dd>
-    if set, the content within the enclosing `span` is turned into an
-    active link pointing to the value of `href`
+    Optionally, a hyperlink.
   </dd>
 </dl>
 
-A simple example:
-
-```js "example": "A simple person object."
-{
-  name: "Benjamin Young",
-  company: "John Wiley &amp; Sons, Inc.",
-  companyURL: "https://www.wiley.com/",
-  url: "mailto:byoung@bigbluehat.com",
-  w3cid: 65468
-}
-```
-
-A more complex example, using the <code>extras</code> field to include a reference to the person’s ORCID id (with a logo):
-
-```js "example": "A more complex person object."
+```js "example": "Using extras."
 {
   name: "Ben De Meester",
-  company: "Ghent University - iMinds - Data Science Lab",
-  companyURL: "https://www.iminds.be/",
-  url: "https://users.ugent.be/~bjdmeest/",
-  retiredDate: "2020-03-26",
-  orcid: "0000-0003-0248-0987",
-  w3cid: "73403"
+  extras: [
+    {
+      name: "Some custom thing",
+      href: "https://example.com/",
+      class: "css-class-value"
+    }
+  ]
 };
 ```
