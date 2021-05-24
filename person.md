@@ -10,9 +10,8 @@ contains the following fields (most of the fields are straightforward). Only the
   company: "Ghent University - iMinds - Data Science Lab",
   companyURL: "https://www.iminds.be/",
   url: "https://users.ugent.be/~bjdmeest/",
-  retiredDate: "2020-03-26",
   orcid: "0000-0003-0248-0987",
-  w3cid: "73403"
+  w3cid: "00000"
 };
 ```
 
