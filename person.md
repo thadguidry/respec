@@ -17,44 +17,40 @@ contains the following fields (most of the fields are straightforward). Only the
 
 <dl>
   <dt>`name`</dt>
-  <dd>Name of the person</dd>
+  <dd>Name of the person.</dd>
   <dt>`url`</dt>
-  <dd>home page of the author</dd>
+  <dd>Home page of the person.</dd>
   <dt>`company`</dt>
-  <dd>company name</dd>
+  <dd>Name of the company the person is affiliated with.</dd>
   <dt>`companyURL`</dt>
-  <dd>url of the company</dd>
+  <dd>url of the company.</dd>
   <dt>`w3cid`</dt>
   <dd>
-    identifier of the persons’ W3C account, if applicable. (This id can be found
-    through the
-    <a href="https://www.w3.org/users/myprofile">“my profile”</a> URL that will
-    be redirected to the user’s page; the id appears in the address bar).
+    For W3C documents, an identifier of the persons’ W3C account. This id can be found
+    in <a href="https://www.w3.org/users/myprofile">my profile</a> URL that will
+    be redirected to the user’s page; the id appears in the address bar (e.g., https://www.w3.org/users/12345).
   </dd>
   <dt>`orcid`</dt>
   <dd>
-    identifier or full URL of the persons'
-    <a href="https://orcid.org/">ORCID</a> account.
+    Identifier or full URL of the persons' <a href="https://orcid.org/">ORCID</a> account. This can be a URL or the ORCID. 
   </dd>
   <dt>`retiredDate`</dt>
   <dd>
-    indicates the date in which an editor has retired from editing a
-    specification. The format is yyyy-mm-dd. Additionally, if a person object is
-    under `editors` and contains `retiredDate`, it will be
-    automatically moved to `formerEditors`.
+    The date in which an person has retired from working on a
+    specification. The format is yyyy-mm-dd.
   </dd>
   <dt>`note`</dt>
   <dd>
-    any text in this field will appear at the end of the person’s identification
-    in parenthesis
+    Any text in this field will appear at the end of the person’s identification
+    in parenthesis.
   </dd>
   <dt>`extras`</dt>
   <dd>
     Refers to an array of extras (see below) objects, displayed at the end of
-    the person's identification
+    the person's identification.
   </dd>
   <dt>`mailto` (**deprecated**)</dt>
-  <dd>An email address. Please use url instead (e.g., `"url": "mailto:"`)</dd>
+  <dd>An email address. Please use url instead (e.g., `"url": "mailto:"`).</dd>
 </dl>
 
 ### Extras
@@ -65,11 +61,11 @@ The “extras” are objects, with the following fields:
   <dt>`name` (required)</dt>
   <dd>
     The content of the resulting `span`; this can contain html
-    elements
+    elements.
   </dd>
   <dt>`class`</dt>
   <dd>
-    A CSS class value (can be used for styling)
+    A CSS class value (can be used for styling).
   </dd>
   <dt>`href`</dt>
   <dd>
