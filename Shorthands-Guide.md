@@ -11,8 +11,8 @@ Note: Only WebIDL identifiers are case sensitive.
 | [WebIDL](#webidl-shorthands)                     | `{{WebIDLThing}}`       | `{{PaymentRequest}}` <br> `{{PaymentRequest/show()}}` |
 | [Concepts in specs](#concept-shorthands)         | `[=normal link=]`       | `[=queue a task=]`                                    |
 | [Variable in an algorithm](#variable-shorthands) | `\|variable:Type\|`     | Let `\|p:Promise\|` be a new `{{Promise}}`            |
-| [HTML elements](#element-shorthands)             | `[^element^]`           | `[^iframe^]`                                          |
-| [HTML attributes](#element-shorthands)           | `[^element/attribute^]` | `[^iframe/allow^]`                                    |
+| [HTML/SVG elements](#element-shorthands)         | `[^element^]`           | `[^iframe^]`                                          |
+| [Element attributes](#element-shorthands)        | `[^element/attribute^]` | `[^iframe/allow^]`                                    |
 | [References](#reference-shorthands)              | `[[shortName]]`         | `[[RFC2119]]`                                         |
 | [Expansions](#reference-shorthands)              | `[[[#some-id]]]`        | `[[[#example-2]]]` expands and links to `"Example 2"` |
 
@@ -131,7 +131,7 @@ This helps readers know where variables were declared and where they are used. I
 | Variable                  | `\|variable\|`          | `\|value\|`           |
 | Variable with a data type | `\|variable:dataType\|` | `\|value:DOMString\|` |
 
-## HTML Elements and attributes {#element-shorthands}
+## HTML/SVG Elements and attributes {#element-shorthands}
 
 To reference HTML elements, use the following syntax: `[^tagname^]`. \* Here, the `tagname` is a valid HTML tag that is defined in the HTML spec or some other spec that defines the tag.
 
