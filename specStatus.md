@@ -1,10 +1,10 @@
-# `specStatus`
+# `specStatus` (W3C)
 
-The specification's type, which can be a maturity level (e.g. Working Draft) if it
-is on a publication track, but can also take other values for other types of documents
-(e.g. `"unofficial"` for unofficial documents).
+For W3C documents, it represents the type or status (e.g. a Working Draft, an Unofficial document, etc).
+
 
 <table>
+  <caption>W3C Status</caption> 
   <thead>
     <tr>
       <th>Value</th>
@@ -53,7 +53,6 @@ is on a publication track, but can also take other values for other types of doc
       </td>
       <td>
         <ul>
-          <li><a href="edDraftURI">edDraftURI</a>.</li>
           <li>You can skip the "Latest Published Version" link by using <code>latestVersion: null</code> (See <a href="https://github.com/w3c/respec/pull/2968">#2968</a> for details).</li>
         </ul>
       </td>
@@ -119,6 +118,14 @@ is on a publication track, but can also take other values for other types of doc
           <li><a href="crEnd">crEnd</a></li>
           <li><a href="implementationReportURI">implementationReportURI</a></li>
         </ul>
+      </td>
+    </tr>
+      <td>CRD</td>
+      <td>
+        Candidate Recommendation Draft.
+      </td>
+      <td>
+        Same as CR above.
       </td>
     </tr>
     <tr id="specStatus-pr">
