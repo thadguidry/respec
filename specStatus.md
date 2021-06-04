@@ -1,7 +1,10 @@
-# `specStatus` (W3C)
+# `specStatus`
 
-For W3C documents, it represents the type or status (e.g. a Working Draft, an Unofficial document, etc).
+Specifications can be given a status (e.g. a Working Draft, an Unofficial document, etc). However, what that status means is up to the publisher, or standards body, that is publishing the specification. 
 
+## W3C 
+
+For W3C documents, the following status are supported.
 
 <table>
   <caption>W3C Status</caption> 
