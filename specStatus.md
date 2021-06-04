@@ -2,6 +2,49 @@
 
 Specifications can be given a status (e.g. a Working Draft, an Unofficial document, etc). However, what that status means is up to the publisher, or standards body, that is publishing the specification. 
 
+```js "example": "Set specification's status to 'unofficial'."
+var respecConfig = {
+  specStatus: "unofficial",
+};
+```
+
+<table>
+  <caption>Default Status</caption> 
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th>Meaning</th>
+      <th>Must also include</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="specStatus-base">
+      <td>base (default)</td>
+      <td>
+        Just the basic template, not a specification. Use this for public documentation produced
+        by a group that has no current clear plan to be officially published.
+      </td>
+      <td>None.
+      </td>
+    </tr>
+    <tr id="specStatus-unofficial">
+      <td>unofficial</td>
+      <td>
+        An unofficial draft. Use this if you're producing a document
+        to use styles that match those of W3C specifications, for instance to propose
+        a new document while hosting it on your own server. Note that this automatically
+        licenses the content under CC-BY v3.0. If you want a different copyright,
+        you will need to set the various copyright configuration options.
+      </td>
+      <td><ul>
+          <li><a href="xref">xref</a> (required only if linking built-in IDL types).</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
 ## W3C 
 
 For W3C documents, the following status are supported.
@@ -16,15 +59,6 @@ For W3C documents, the following status are supported.
     </tr>
   </thead>
   <tbody>
-    <tr id="specStatus-base">
-      <td>base</td>
-      <td>
-        Just the basic template, not a specification. Use this for public documentation produced
-        by a group that has no current clear plan to be officially published.
-      </td>
-      <td>None.
-      </td>
-    </tr>
     <tr id="specStatus-mo">
       <td>MO</td>
       <td>
@@ -35,20 +69,6 @@ For W3C documents, the following status are supported.
       <td>None.
       </td>
     </tr>
-    <tr id="specStatus-unofficial">
-      <td>unofficial</td>
-      <td>
-        An unofficial draft. Use this if you're producing a document outside of W3C but want
-        to use styles that match those of W3C specifications, for instance to propose
-        a new document while hosting it on your own server. Note that this automatically
-        licenses the content under CC-BY v3.0. If you want a different copyright,
-        you will need to set the various copyright configuration options.
-      </td>
-      <td><ul>
-          <li><a href="xref">xref</a> (required only if linking built-in IDL types).</li>
-        </ul>
-      </td>
-    </tr>
     <tr id="specStatus-ed">
       <td>ED</td>
       <td>
@@ -56,7 +76,7 @@ For W3C documents, the following status are supported.
       </td>
       <td>
         <ul>
-          <li>You can skip the "Latest Published Version" link by using <code>latestVersion: null</code> (See <a href="https://github.com/w3c/respec/pull/2968">#2968</a> for details).</li>
+          <li>Note: You can exclude the "Latest Published Version" link by using <code>latestVersion: null</code> (See <a href="https://github.com/w3c/respec/pull/2968">#2968</a> for details).</li>
         </ul>
       </td>
     </tr>
@@ -255,9 +275,3 @@ For W3C documents, the following status are supported.
   </tbody>
 </table>
 
-
-```js "example": "Set specification's status to 'unofficial'."
-var respecConfig = {
-  specStatus: "unofficial",
-};
-```
