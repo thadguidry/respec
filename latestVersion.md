@@ -1,6 +1,6 @@
 # `latestVersion`
 
-For W3C Community Groups and Business Groups, it allows you to specify a URL for where the "Latest Version" of a specification can be found (e.g., on Github, using GitHub pages).
+For W3C Community Groups and Business Groups, it allows you to specify a URL for where the "Latest Version" of a specification can be found (e.g., on GitHub, using GitHub pages).
   
 For regular W3C Working Groups,`latestVersion` is automatically set. However, in rare cases, you can override the "Latest Version" to point to a different path or URL. 
 
