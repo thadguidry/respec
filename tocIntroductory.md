@@ -1,10 +1,6 @@
 # `tocIntroductory`
 
+Warning: This is **deprecated**. Use the [`.notoc`](notoc-class) CSS class instead.
+
 A boolean, which when set to true, will cause the introductory sections to also show up in the table of contents. This is rarely needed, but some groups prefer to have it.
 
-
-```js "example": "Show introductory sections in Table of Contents."
-var respecConfig = {
-  tocIntroductory: true,
-};
-```
