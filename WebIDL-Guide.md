@@ -64,7 +64,7 @@ The above provides convenient linking to the section where the interface is defi
 
 ## Using `data-dfn-for`
 
-The `data-dfn-for` attribute allows you to describe one or more aspects of an interface at once within a section of your document.
+When defining things, the `data-dfn-for` creates child-parent relationships (e.g., a `.method()` is "for", or part of, `SomeInterface`).
 
 For example, the following defines both the `url` and the `clone` method.
 
