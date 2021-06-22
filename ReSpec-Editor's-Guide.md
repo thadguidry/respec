@@ -96,7 +96,7 @@ The following code is used to include a ReSpec document, usually in the `<head>`
 
 ReSpec is regularly updated and this will allow you to automatically benefit from bug and security fixes and enhancements.
 
-### Configuring ReSpec
+### Configuring ReSpec {#respecConfig}
 
 ReSpec is configured using a JSON-like object, which is assigned to a `respecConfig` JavaScript variable:
 
