@@ -13,6 +13,7 @@
 - [caniuse](caniuse)
 - [edDraftURI](edDraftURI)
 - [editors](editors)
+- [favicon](favicon)
 - [format](format) (markdown)
 - [formerEditors](formerEditors)
 - [github](github)
