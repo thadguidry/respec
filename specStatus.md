@@ -264,6 +264,14 @@ For W3C documents, the following status are supported.
       </td>
       <td>None.</td>
     </tr>
+    <tr id="specStatus-editor-draft-finding">
+      <td>editor-draft-finding</td>
+      <td>
+        Editor Draft TAG Finding. If you're working on a TAG document maintained on GitHub rather than
+        in the old datedspace system, use this.
+      </td>
+      <td>None.</td>
+    </tr>
     <tr id="specStatus-finding">
       <td>finding</td>
       <td>
