@@ -26,3 +26,7 @@ An array of errors found during ReSpec's processing, with each item containing a
 ## `document.respec.warnings`
 
 Similar to `document.respec.errors`, but contains warnings instead of errors.
+
+## `document.respec.toHTML()`
+
+Returns a promise that resolves with the markup resulting from ReSpec's processing, as a string.
