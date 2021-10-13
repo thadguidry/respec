@@ -12,7 +12,7 @@
 <dt>w3c-software</dt>
 <dd>A permissive and attributions license (but GPL-compatible).</dd>
 <dt>w3c-software-doc</dt>
-<dd>The W3C Software and <a href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">Document License</a>.</dd>
+<dd>The <a href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">W3C Software and Document License</a>.</dd>
 <dd>This is default for the W3C profile.</dd>
 <dt>document</dt> 
 <dd>NOT RECOMMENDED - use the "w3c-software-doc" license instead.</dd>
