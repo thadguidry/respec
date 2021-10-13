@@ -14,4 +14,8 @@
 <dt>w3c-software-doc</dt>
 <dd>The W3C Software and <a href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">Document License</a>.</dd>
 <dd>This is default for the W3C profile.</dd>
+<dt>document</dt> 
+<dd>NOT RECOMMENDED - use the "w3c-software-doc" license instead.</dd>
+<dt>dual</dt>
+<dd><a href="https://www.w3.org/Consortium/Legal/2013/copyright-documents-dual.html">W3C dual license</a> - uses W3C document license + cc-by (recommended you use "w3c-software-doc" instead)</dd>
 </dl>
