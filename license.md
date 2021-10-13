@@ -7,8 +7,7 @@
 <dd>Experimentally available in some groups (but likely to be phased out).</dd>
 <dd>Note that this is a dual licensing regime.</dd>
 <dt>cc0</dt>
-<dd>An extremely permissive license.</dd>
-<dd>It is only recommended if you are working on a document that is intended to be pushed to the WHATWG.</dd>
+<dd>An extremely permissive license. It is only recommended if you are working on a document that is intended to be pushed to the WHATWG. Not supported for W3C documents.</dd>
 <dt>w3c-software</dt>
 <dd>A permissive and attributions license (but GPL-compatible).</dd>
 <dt>w3c-software-doc</dt>
