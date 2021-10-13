@@ -18,3 +18,11 @@ The following example shows how to use `document.respec.isReady`.
   });
 </script>
 ```
+
+## `document.respec.errors`
+
+An array of errors found during ReSpec's processing, with each item containing an error `message` and the `plugin` name where that error occurred. See [`RespecError`](https://github.com/w3c/respec/blob/1bd0786fc2f58d99b2eb9df141a156f6fd25eb20/src/core/utils.js#L849-L872) for all available fields and their details.
+
+## `document.respec.warnings`
+
+Similar to `document.respec.errors`, but contains warnings instead of errors.
