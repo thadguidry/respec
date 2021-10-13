@@ -162,5 +162,9 @@ Handled by ReSpec for you.
 
 ### Special properties
 
-- [`document.respecIsReady`](respecIsReady)
+- [`document.respec`](document.respec)
+  - [`isReady`](document.respec#documentrespecisready)
+  - [`errors`](document.respec#documentrespecerrors)
+  - [`warnings`](document.respec#documentrespecwarnings)
+  - [`toHTML()`](document.respec#documentrespectohtml)
 - [`window.respecVersion`](respecVersion)
