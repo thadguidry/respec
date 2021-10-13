@@ -44,7 +44,6 @@
 - [subjectPrefix](subjectPrefix)
 - [subtitle](subtitle)
 - [testSuiteURI](testSuiteURI)
-- [tocIntroductory](tocIntroductory)
 - [xref](xref)
 
 ### W3C Configuration options
