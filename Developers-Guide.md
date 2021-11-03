@@ -17,7 +17,7 @@ Note: You can use Firefox and ChromeCanary in the above.
 
 That will start up "[Karma](https://karma-runner.github.io/latest/index.html)" and a local http server for you.
 
-Open the url given (usually http://127.0.0.1:5000). And go to "examples".
+Open the url given (usually http://127.0.0.1:8000). And go to "examples".
 
 Usually "basic.html" is a good place to start hacking from.
 
@@ -52,15 +52,15 @@ Before any plugins are run, however, it adds the following property to the `docu
 ```js
 // The following only resolves once all plugins have run
 // and ReSpec has finished doing whatever it needs to do.
-document.respecIsReady;
+document.respec.isReady;
 ```
 
 After that, the Base Runner starts looping over an array of given plugins: literally just a call to a `.runAll(arrayOfPlugins)` method. For each plugin, it waits until a plugin has finished doing its work before continuing to the next plugin. It does this by calling the `run()` function exported from a plugin, and `await`ing for that function to finish. Some plugins may export a `Plugin` class with a `run()` method instead.
 
-Once all the plugins have "run", ReSpec resolves the `respecIsReady` promise on the Document object.
+Once all the plugins have "run", ReSpec resolves the `respec.isReady` promise on the Document object.
 
 ```js
-document.respecIsReady.then(() => {
+document.respec.isReady.then(() => {
   console.log("ReSpec has finished processing this document");
 });
 ```
@@ -194,7 +194,7 @@ In `examples/`, make a copy of "basic.html" and point the `<script>` tag at your
 npm start -- --profile YOUR_PROFILE_NAME --browser Chrome
 ```
 
-That will start a web server, so you can now load up `http://localhost:5000/examples` and have play with your custom profile.
+That will start a web server, so you can now load up `http://localhost:8000/examples` and have play with your custom profile.
 
 ### Testing your profile
 
