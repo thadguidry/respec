@@ -1,5 +1,3 @@
-## Quick start
-
 Clone the repo and install the needed dependencies:
 
 ```bash
