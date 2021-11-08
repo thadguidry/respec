@@ -19,7 +19,7 @@ Open the url given (usually http://127.0.0.1:8000). And go to "examples".
 
 Usually "basic.html" is a good place to start hacking from.
 
-## ReSpec's architecture
+### ReSpec's architecture
 
 ReSpec is an application that runs mostly synchronous bits of JS after a `Document` loads. These JavaScript fragments are referred to as "plugins". When a bunch of plugins are combined together, they create a "profile".
 
@@ -41,7 +41,7 @@ See [`profile/w3c.js`](https://github.com/w3c/respec/blob/develop/profiles/w3c.j
 1. Wait for the document's "DOMContentLoaded" event to fire.
 1. Once DOM is ready, run each plugin in order, waiting for each plugin to finish.
 
-## Core Base runner (`core/base-runner.js`)
+### Core Base runner (`core/base-runner.js`)
 
 The first and most important plugin ([`core/base-runner`](https://github.com/w3c/respec/blob/develop/src/core/base-runner.js)), is actually the "brains" of ReSpec: it is the thing that "runs" all other plugins in order.
 
@@ -67,7 +67,7 @@ This is potentially useful for scripts that depend on ReSpec's output. They can 
 
 Alternatively, if you really need to run things immediately before or after ReSpec runs the plugins, you can define `preProcess` or `postProcess` properties on the configuration object. See [`preProcess`](preProcess) and [`postProcess`](postProcess) more details and for examples.
 
-## Plugins
+### Plugins
 
 Plugins are simple ES6 modules that live in the "[src/](https://github.com/w3c/respec/tree/develop/src)" folder. They have two parts: A synchronous initialization, and an optionally exported `run()` function that is called asynchronously.
 
@@ -116,7 +116,7 @@ These "warn" and "error" messages will be picked up by ReSpec's UI (the "pill"),
 
 IMPORTANT: Don't show JavaScript errors to the user - as they won't be able to fix these, and the minified JS output will make these messages really unhelpful!
 
-## `npm start`
+### `npm start`
 
 The `start` script in [package.json](https://github.com/w3c/respec/blob/develop/package.json) contains the commands useful during development. It runs a static HTTP server, watches files for change and re-build the profile, and run unit tests.
 
@@ -151,7 +151,7 @@ npm start -- --grep="SEO"
 
 If you want to run all tests whose description includes "SEO".
 
-### Interactive mode
+#### Interactive mode
 
 You can also `run start` in "interactive" mode. This gives you more control over when tests are run and, by default, turns off automatic file watching.
 
@@ -161,7 +161,7 @@ npm start -- --interactive
 
 This is useful for more advanced debugging sessions, and can be combined with `--grep` to test just what you want, when you want.
 
-### Testing without opening browser window
+#### Testing without opening browser window
 
 You can also run tests without opening a full browser window. Test results will be visible in your terminal.
 
@@ -172,7 +172,7 @@ npm start -- --browser FirefoxHeadless
 
 Look at the help dialog when you run `npm start` for more options.
 
-## Custom profiles
+### Custom profiles
 
 If you are a company, standards consortium, or government entity, you might want to consider maintaining your own ReSpec profile. That allows you have your own content templates, load whatever plugins you need, and generally keep control over how ReSpec runs.
 
@@ -184,7 +184,7 @@ To create a custom profile:
 
 If the profile is popular, then please send a pull request to the main repository and we can host as part of the main project.
 
-### Working with your new profile
+#### Working with your new profile
 
 In `examples/`, make a copy of "basic.html" and point the `<script>` tag at your new profile. Now run:
 
@@ -194,7 +194,7 @@ npm start -- --profile YOUR_PROFILE_NAME --browser Chrome
 
 That will start a web server, so you can now load up `http://localhost:8000/examples` and have play with your custom profile.
 
-### Testing your profile
+#### Testing your profile
 
 If you are writing custom [Jasmine](https://jasmine.github.io/) tests, simply place them into `tests/spec/YOUR-PROFILE-NAME/`. And then run:
 
