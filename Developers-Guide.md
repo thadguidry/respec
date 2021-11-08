@@ -161,7 +161,7 @@ You can also `run start` in "interactive" mode. This gives you more control over
 npm start -- --interactive
 ```
 
-This is useful for more advanced debugging sessions, and can be combined with `--grep` to test just what you want, when you want. 😎
+This is useful for more advanced debugging sessions, and can be combined with `--grep` to test just what you want, when you want.
 
 ### Testing without opening browser window
 
