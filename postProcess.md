@@ -1,15 +1,17 @@
 # `postProcess`
 
-Takes an array of JavaScript functions. The functions are invoked in the order after ReSpec has processed the HTML source. The function’s signature includes a reference to the config object (i.e., the initial configuration object in the ReSpec source, plus some additional internal data) and the reference to the DOM Document element.
+Takes an array of JavaScript functions which ReSpec then runs in order. Each function is called with the ReSpec config object (i.e., the `var respecConfig` object, plus some additional internal data).
 
 The following examples shows two functions run in order after processing.
 
 ```js "example": "Run two functions in order after processing."
-function doThing(config, document){...}
-function doOtherThing(config, document){...}
+function doThing(config){...}
+function doOtherThing(config){...}
 
 var respecConfig = {
   // After processing, run the following
   postProcess: [doThing, doOtherThing]
 }
 ```
+
+Note: there are no special requirements or "best practices" for how you process HTML either before or after ReSpec has finished doing its thing. Once ReSpec is finished processing the document, it stops running and you a free to do whatever you like to your document. Having said that, you should follow web development best practices for Web Development when manipulating any generated document (i.e., "it's just HTML, JS, and CSS").
