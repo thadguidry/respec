@@ -197,17 +197,26 @@ For W3C documents, the following status are supported.
           <li><a href="previousMaturity">previousMaturity</a></li>
       </td>
     </tr>
-    <tr id="specStatus-fpwd-note">
-      <td>FPWD-NOTE</td>
+    <tr id="specStatus-rscnd">
+      <td>STMT</td>
       <td>
-        First Public Working Draft of a Note.
+        Statement.
       </td>
+      <td>
+        <ul>
+          <li><a href="previousPublishDate">previousPublishDate</a></li>
+          <li><a href="previousMaturity">previousMaturity</a></li>
+      </td>
+    </tr>
+    <tr id="specStatus-wg-note">
+      <td>DNOTE</td>
+      <td>Draft Group Note.</td>
       <td>None.
       </td>
     </tr>
     <tr id="specStatus-wg-note">
-      <td>WG-NOTE</td>
-      <td>Working Group Note.</td>
+      <td>NOTE</td>
+      <td>Group Note.</td>
       <td>None.
       </td>
     </tr>
@@ -223,17 +232,6 @@ For W3C documents, the following status are supported.
       <td>Community Group Draft or Final Report.
       </td>
       <td>None.
-      </td>
-    </tr>
-    <tr id="specStatus-ig-note">
-      <td>IG-NOTE</td>
-      <td>
-        Interest Group Note.
-      </td>
-      <td>
-        <ul>
-          <li><a href="charterDisclosureURI">charterDisclosureURI</a></li>
-        </ul>
       </td>
     </tr>
     <tr id="specStatus-member-subm">
