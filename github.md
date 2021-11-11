@@ -15,6 +15,8 @@ This automatically generates:
 
 It adds "Feedback:" to the header of the document, with the appropriate links to your GitHub repository.
 
+![feedback header, with links to pull request, open issues, and create new issue on Github](https://user-images.githubusercontent.com/870154/141234860-7335ff12-6690-44bf-b9fe-81142edc3476.png)
+
 This is normally what you want:
 
 ```js "example": "Set GitHub repository"
