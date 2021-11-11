@@ -13,7 +13,7 @@ This automatically generates:
 - [issueBase](issueBase)
 - [edDraftURI](edDraftURI)
 
-It also adds an object to [otherLinks](otherLinks) for under "Participate", with the appropriate links to your GitHub repository.
+It adds "Feedback:" to the header of the document, with the appropriate links to your GitHub repository.
 
 This is normally what you want:
 
