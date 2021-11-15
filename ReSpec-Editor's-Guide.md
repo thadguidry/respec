@@ -206,7 +206,7 @@ As shown, sections are automatically numbered and uniquely `id`'s for you. Use `
 
 ReSpec sections understand some specific CSS classes: [`introductory`](introductory), [`informative`](informative), and [`appendix`](appendix).
 
-Note: To you can use the special syntax `[[[!#some-id]]]` to link to a section.
+Note: You can use the special syntax `[[[!#some-id]]]` to link to a section.
 
 ### Table of Contents
 
