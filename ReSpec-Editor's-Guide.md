@@ -193,7 +193,7 @@ Sections, subsections, appendices, and whatever other structural items are marke
   <p>Some text.</p>
   <section class="informative">
     <h3>I'm a sub-section</h3>
-    <p>Subsetion text.</p>
+    <p>Sub-section text.</p>
   </section>
 </section>
 ```
