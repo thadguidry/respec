@@ -231,7 +231,7 @@ Which renders as:
 
 <img width="276" alt="Screenshot of a figure and figure caption" src="https://user-images.githubusercontent.com/870154/108666252-d0609980-752a-11eb-8f9b-3f5c759f41bc.png">
 
-Automatic linking to figures works just as it does for sections, with `[[[!#some-figure]]]`.
+Automatic linking to figures works just as it does for sections, with `[[[#some-figure]]]`.
 
 To add a "List of Figures", include `<section id="tof">` anywhere in the document. ReSpec will do its best to guess if it should be an appendix, introductory, or just a regular section.
 
