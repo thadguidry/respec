@@ -78,7 +78,7 @@ By default, ReSpec uses heading's text content to generate IDs for you. The IDs 
 
 ## Code blocks
 
-You can use triple-backticks to create code-blocks ([`<pre>/<code>`](pre-and-code-elements) elements). Respec supports syntax highlighting of various languages.
+You can use triple-backticks to create code-blocks ([`<pre>/<code>` elements](pre-and-code-elements)). Respec supports syntax highlighting of various languages.
 
 ````markdown "example": "A simple code-block with language hint."
 ```js
