@@ -1,6 +1,6 @@
 # `<pre>`/`<code>`
 
-ReSpec provides code highlighting for blocks of code marked up with the `<pre>` or `<code>` elements. ReSpec will try to guess the code language, or it can be added as a class:
+ReSpec provides code highlighting for blocks of code marked up with the `<pre>` or `<code>` elements. ReSpec will try to guess the code language, or it can be added as a class (to disable syntax highlighting use the "[nohighlight](nohighlight)" class):
 
 ```html "example": "A code block with HTML syntax highlighting."
 <pre> <!-- or <pre class="html"> -->
@@ -13,7 +13,7 @@ function magic() {
 </pre>
 ```
 
-Respec supports the following languages by default:
+Respec uses [highlight.js](https://github.com/highlightjs/highlight.js) for syntax highlighting and supports the following languages by default:
 
 - ABNF
 - CSS
@@ -22,6 +22,8 @@ Respec supports the following languages by default:
 - JavaScript
 - JSON
 - XML
+
+An advanced syntax highlighter for [WebIDL](webidl-shorthands) is also available out of the box.
 
 To highlight code in other languages you need to define a function that loads a highlighter.js package for the language you want, and to request the language be loaded as a respec `preProcess` option:
 
