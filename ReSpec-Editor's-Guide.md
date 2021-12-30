@@ -245,7 +245,7 @@ Renders as:
 
 ### Examples
 
-Any `<pre class="example">` or `<aside class="example">` gets the additional example header and style. Content inside [pre elements](pre-and-code-elements) is syntax highlighted. You can specify the language in the class attribute, for example `<pre class="js">`. 
+Any `<pre class="example">` or `<aside class="example">` gets the additional example header and style. Content inside [`<pre>/<code>` elements](pre-and-code-elements) is syntax highlighted. You can specify the language in the class attribute, for example `<pre class="js">`. 
 
 ```html "example": "Creating an example"
 <aside class="example" title="How to use it">
@@ -263,17 +263,6 @@ Any `<pre class="example">` or `<aside class="example">` gets the additional exa
 which is rendered as:
 
 <img width="354" alt="Example of an example" src="https://user-images.githubusercontent.com/870154/117596699-4322fd80-b187-11eb-80d5-04244939dd64.png">
-
-Supported highlighters:
-
-* abnf
-* css
-* http
-* js or javascript 
-* json 
-* xml
-
-You can disable syntax highlighting on a pre element by adding a "[nohighlight](nohighlight)" class.
 
 ### External Includes
 
