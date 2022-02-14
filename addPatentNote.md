@@ -1,9 +1,3 @@
-# `addPatentNote`
+# `addPatentNote` (Deprecated)
 
-Content that gets inserted at the end of the <abbr title="status of this document">SotD</abbr>. Used in case the patent situation of your specification requires some specific mentions (e.g. for an ongoing PAG).
-
-```js "example": "Add a patent note."
-var respecConfig = {
-  addPatentNote: "Please be aware that Company X has excluded some patents.",
-};
-```
+This is no longer supported by ReSpec. Please write any patent-related notes directly into the "Status of This Document" section instead. 
