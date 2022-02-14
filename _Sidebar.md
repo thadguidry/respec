@@ -49,7 +49,7 @@
 ### W3C Configuration options
 
 - [additionalCopyrightHolders](additionalCopyrightHolders)
-- [addPatentNote](addPatentNote)
+- [~~addPatentNote~~](addPatentNote) (Deprecated)
 - [alternateFormats](alternateFormats)
 - [canonicalURI](canonicalURI)
 - [charterDisclosureURI](charterDisclosureURI)
