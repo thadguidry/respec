@@ -13,7 +13,7 @@ To fix this issue, follow these steps:
    1. Otherwise, the error is due to an invalid for-context (i.e., term is defined in-context of some other term) or type-context (like referencing an exception using syntax meant for referencing concepts). Copy-paste the "How to Cite" of the relevant match from [XRef Search UI](https://respec.org/xref/).
 1. If the term is not found:
    1. Try searching for similar terms. The term might not be defined exactly. Use the [shorthands syntax](Shorthands-Guide) to alias the term in prose if needed.
-   1. Check if the term is exported from the other spec, i.e., the `<dfn>` should have a `data-export` attribute.
+   1. Check if the term is exported from the other spec, i.e., the `<dfn>` should have a "[export](data-export)" css class.
       1. If the term is not exported, ask the specification editors to export it. Feel free to ping ReSpec maintainers if you need help.
       1. If the term is exported but not found through XRef Search UI, then the specification might not be in [our database](https://respec.org/xref/meta/specs). Please file an issue at ReSpec repository or contact ReSpec maintainers by other means.
          1. Note: Terms from ECMA/IETF specifications are not presently available in the terms database. Use the [`data-cite`](data-cite) attribute to reference those terms.
