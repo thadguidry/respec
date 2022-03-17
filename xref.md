@@ -23,7 +23,7 @@ And then simply write the terms you want to link to:
 And ReSpec will know what to do. If ReSpec can't find a term, it will show an error. 
 If you are unsure if a term is exported, head over to https://respec.org/xref/ to see if it's exported.
 
-If a term is not exported, ask the Editors of that spec to export the term by using `data-export=""`.  
+If a term is not exported, ask the Editors of that spec to export the term by using the ["export"](data-export) CSS class.  
 
 ## xref configuration options
 
