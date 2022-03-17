@@ -1,4 +1,4 @@
-# "export" CSS class
+# `export`
 
 Use `<dfn class="export">` to export a definition to W3C's [Webref](http://github.com/w3c/webref/) database.
 
