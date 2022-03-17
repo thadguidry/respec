@@ -31,8 +31,7 @@ It renders as:
 <dd>(required) Can I Use feature key</dd>
 
 <dt><code>browsers</code></dt>
-<dd>Array of browsers to show support for. <br>
-Default is set automatically if missing. <br>
+<dd>Array of browsers to show support for. Default is set automatically if missing and will change over time to best represent the browser market. <br>
 Supported Values:
 <ul>
  <li><code>and_chr</code> - Chrome (Android)</li>
