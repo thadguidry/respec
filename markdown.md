@@ -97,6 +97,20 @@ interface Paint { };
 ```
 ````
 
+### Links in code blocks
+The markdown parser automatically adds converts any URLs into anchors, including those found in code blocks. 
+
+You can turn off that functionality by adding the `.nolinks` css class. Sadly, it means you have to use a `<pre>` element to create a code block.
+
+```HTML
+<pre class="js nolinks">
+async function() {
+   // https://example.com won't link
+   neitherWillThis("https://example.com");
+}
+</pre> 
+```  
+
 ## HTML and Markdown
 
 Please remember that markdown requires double newlines between an HTML tag and markdown text. 
