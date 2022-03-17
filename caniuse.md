@@ -19,10 +19,6 @@ var respecConfig = {
 
 **Note:** This feature is only available in "live" Editor's Drafts. Because this feature relies on JavaScript, it's not exported out when a document is saved as HTML. In exported document, the table is replaced by a link to [caniuse.com](https://caniuse.com).
 
-It renders as:
-
-<img width="400" src="https://user-images.githubusercontent.com/8426945/39532698-f23688c6-4e4a-11e8-93a7-ab501fc1ecfe.png" alt="Can I Use preview for Payment Request API">
-
 ## Configuration Options:
 
 <dl>
@@ -52,7 +48,7 @@ Supported Values:
 </ul>
 </dd>
 
-<dt><code>versions</code></dt>
+<dt><del><code>versions</code></del> (Deprecated)</dt>
 <dd>Number of browser versions to show<br>
 Default: <code>4</code></dd>
 
@@ -60,8 +56,4 @@ Default: <code>4</code></dd>
 <dd>Cache duration (in ms). <br>
 Set to <code>0</code> to get fresh data each on each request.<br>
 Default: <code>86400000</code>  // 24 hours</dd>
-
-<dt><code>apiURL</code></dt>
-<dd>(INTERNAL, for testing only) Use a custom URL that returns a JSON response with <code>stats</code> key as the browser data object.<br>
-Use <code>{FEATURE}</code> as placeholder in URL to replace it by a value of <code>caniuse.feature</code></dd>
 </dl>
