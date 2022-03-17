@@ -15,11 +15,15 @@ var respecConfig = {
 <body>
 
 <section id="abstract">
+
 Showing how to use Markdown.
+
 </section>
 
 <section id="sotd">
+
 Custom paragraph.
+
 </section>
 
 ## This is a heading
