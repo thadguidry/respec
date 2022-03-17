@@ -32,20 +32,20 @@ It renders as:
 
 <dt><code>browsers</code></dt>
 <dd>Array of browsers to show support for. <br>
-Default: <code>["chrome", "firefox", "safari", "edge"]</code><br>
+Default is set automatically if missing. <br>
 Supported Values:
 <ul>
  <li><code>and_chr</code> - Chrome (Android)</li>
  <li><code>and_ff</code> - Firefox (Android)</li>
  <li><code>and_uc</code> - UC Browser (Android)</li>
  <li><code>android</code> - Android</li>
- <li><code>bb</code> - Blackberry</li>
+ <li><del><code>bb</code> - Blackberry</del></li>
  <li><code>chrome</code> - Chrome</li>
  <li><code>edge</code> - Edge</li>
  <li><code>firefox</code> - Firefox</li>
- <li><code>ie</code> - IE</li>
+ <li><del><code>ie</code> - IE</del></li>
  <li><code>ios_saf</code> - Safari (iOS)</li>
- <li><code>op_mini</code> - Opera Mini</li>
+ <li><del><code>op_mini</code> - Opera Mini</del></li>
  <li><code>op_mob</code> - Opera Mobile</li>
  <li><code>opera</code> - Opera</li>
  <li><code>safari</code> - Safari</li>
