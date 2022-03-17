@@ -122,7 +122,6 @@ Handled by ReSpec for you.
 - [~~data-cite~~](data-cite) (Not recommended)
 - [data-dfn-for](data-dfn-for)
 - [data-dfn-type](data-dfn-type)
-- [data-export](data-export)
 - [data-format](data-format)
 - [data-include-format](data-include-format)
 - [data-include-replace](data-include-replace)
