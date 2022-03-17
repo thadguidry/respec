@@ -2,7 +2,6 @@
 
 Indicates that a code block should not be syntax highlighted.
 
-
 This block will not be syntax highlighted:
 
 ```html "example": "Disable syntax highlighting."
