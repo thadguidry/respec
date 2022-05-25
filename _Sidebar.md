@@ -164,7 +164,7 @@ Handled by ReSpec for you.
 ### Special properties
 
 - [`document.respec`](document.respec)
-  - [`isReady`](document.respec#documentrespecisready)
+  - [`ready`](document.respec#documentrespecisready)
   - [`errors`](document.respec#documentrespecerrors)
   - [`warnings`](document.respec#documentrespecwarnings)
   - [`toHTML()`](document.respec#documentrespectohtml)
