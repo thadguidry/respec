@@ -50,15 +50,15 @@ Before any plugins are run, however, it adds the following property to the `docu
 ```js
 // The following only resolves once all plugins have run
 // and ReSpec has finished doing whatever it needs to do.
-document.respec.isReady;
+document.respec.ready;
 ```
 
 After that, the Base Runner starts looping over an array of given plugins: literally just a call to a `.runAll(arrayOfPlugins)` method. For each plugin, it waits until a plugin has finished doing its work before continuing to the next plugin. It does this by calling the `run()` function exported from a plugin, and `await`ing for that function to finish. Some plugins may export a `Plugin` class with a `run()` method instead.
 
-Once all the plugins have "run", ReSpec resolves the `respec.isReady` promise on the Document object.
+Once all the plugins have "run", ReSpec resolves the `respec.ready` promise on the Document object.
 
 ```js
-document.respec.isReady.then(() => {
+document.respec.ready.then(() => {
   console.log("ReSpec has finished processing this document");
 });
 ```
