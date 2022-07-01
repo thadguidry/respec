@@ -338,7 +338,7 @@ For simple/single nouns, ReSpec handles pluralization automatically:
 
 ```html
 <dfn>banana</dfn>
-<!- these are the same -->
+<!-- these are the same -->
 These [=bananas=] are better than those <a>bananas</a>
 ``` 
 
