@@ -25,3 +25,5 @@ var respecConfig = {
   group: "wg/wot",
 };
 ```
+
+Closed groups aren't listed at https://respec.org/w3c/groups/, but you can access their details by writing both group type and shortname in `respecConfig.group` (like `wg/csv`). https://www.w3.org/groups/ might be helpful in finding shortname and type in such cases.
