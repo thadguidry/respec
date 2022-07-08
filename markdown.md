@@ -88,6 +88,7 @@ If there's a `title` part in a markdown image, it's treated as a `<figcaption>`.
 ![alt text 1](src1.png)
 ![alt text 2](src2.png "title")
 ```
+
 is converted into:
 
 ```html
