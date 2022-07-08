@@ -82,9 +82,9 @@ By default, ReSpec uses heading's text content to generate IDs for you. The IDs 
 
 ## Figures
 
-If there's a `title` part in a markdown image, it's treated as a `<figcaption>`.
+If there's a `title` part in a markdown image, it's treated as a `<figcaption>`. So,
 
-```markdown "example": "Markdown syntax for img and figure." So,
+```markdown "example": "Markdown syntax for img and figure."
 ![alt text 1](src1.png)
 ![alt text 2](src2.png "title")
 ```
