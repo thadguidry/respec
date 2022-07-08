@@ -80,6 +80,24 @@ By default, ReSpec uses heading's text content to generate IDs for you. The IDs 
 ## I'm a heading {#custom-heading-id}
 ```
 
+## Figures
+
+If there's a `title` part in a markdown image, it's treated as a `<figcaption>`.
+
+```markdown "example": "Markdown syntax for img and figure." So,
+![alt text 1](src1.png)
+![alt text 2](src2.png "title")
+```
+is converted into:
+
+```html
+<img src="src1.png" alt="alt text 1" />
+<figure>
+  <img src="src2.png" alt="alt text 2" />
+  <figcaption>title</figcaption>
+</figure>
+```
+
 ## Code blocks
 
 You can use triple-backticks to create code-blocks ([`<pre>/<code>` elements](pre-and-code-elements)). Respec supports syntax highlighting of various languages.
@@ -114,6 +132,7 @@ async function() {
 }
 </pre> 
 ```  
+
 
 ## HTML and Markdown
 
