@@ -101,18 +101,20 @@ The exported run method SHOULD have arguments (conf):
 
 ### Warning users of errors
 
-If you are creating a plugin that needs to show warnings to a user, you can use the "core/pubsubhub" utility. As the name suggests, this is a simple pub-sub-hub dispatcher. You should use this to dispatch "warn" or "error" messages to a user:
+If you are creating a plugin that needs to show warnings to a user, you can use the `showWarning` utility.
 
 ```js
-import { pub } from "./core/pubsubhub.js";
+import { showWarning, showError } from "./core/utils.js";
 export async function run(conf) {
   if (!"something" in conf) {
-    pub("warn", "Markdown that represents a warning");
+    showWarning("Some error message", "plugin-name");
+    // You can pass additional details like a `hint` how to fix, list of `elements` that caused the issue etc.
+    // See showWarning and showError in core/utils.js
   }
 }
 ```
 
-These "warn" and "error" messages will be picked up by ReSpec's UI (the "pill"), and displayed to the end-user. You should only "error" on things that the user needs to fix to successfully publish their document. Likewise, only warn on things the user SHOULD fix.
+These messages will be picked up by ReSpec's UI (the "pill"), and displayed to the end-user. You should only "error" on things that the user needs to fix to successfully publish their document. Likewise, only warn on things the user SHOULD fix.
 
 IMPORTANT: Don't show JavaScript errors to the user - as they won't be able to fix these, and the minified JS output will make these messages really unhelpful!
 
