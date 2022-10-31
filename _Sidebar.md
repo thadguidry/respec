@@ -155,6 +155,7 @@ Handled by ReSpec for you.
 - [notoc](notoc)
 - [note](note)
 - [override](override)
+- [permission](permission)
 - [practice](practice)
 - [practicedesc](practicedesc)
 - [practicelab](practicelab)
