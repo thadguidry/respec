@@ -46,12 +46,12 @@ Warning: Aliasing is not recommended.
 
 You can alias WebIDL method names if you think the original name is adding noise.
 
-| **Input**                                                                    | **Renders as**                     |
-| ---------------------------------------------------------------------------- | ---------------------------------- |
-| `{{ EventTarget/addEventListener(type, callback) }}`                         | `addEventListener(type, callback)` |
-| `{{ EventTarget/addEventListener(type, callback)\|addEventListener(type) }}` | `addEventListener(type)`           |
-| `{{ EventTarget/addEventListener(type, callback)\|addEventListener() }}`     | `addEventListener()`               |
-| `{{ EventTarget/addEventListener(type, callback)\|addEventListener }}`       | `addEventListener`                 |
+| **Input**                                                       | **Renders as**                                                                                                                                               |
+| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `{{ Window/postMessage(message, options) }}`                    | <code>[postMessage](https://html.spec.whatwg.org/multipage/web-messaging.html#dom-window-postmessage-options)(<var>message</var>, <var>options</var>)</code> |
+| `{{ Window/postMessage(message, options)\|postMessage(message) }}` | <code>[postMessage](https://html.spec.whatwg.org/multipage/web-messaging.html#dom-window-postmessage-options)(<var>message</var>)</code>                     |
+| `{{ Window/postMessage(message, options)\|postMessage() }}`     | <code>[postMessage](https://html.spec.whatwg.org/multipage/web-messaging.html#dom-window-postmessage-options)()</code>                                       |
+| `{{ Window/postMessage(message, options)\|postMessage }}`       | <code>[postMessage](https://html.spec.whatwg.org/multipage/web-messaging.html#dom-window-postmessage-options)()</code>                                       |
 
 ## Concepts {#concept-shorthands}
 
