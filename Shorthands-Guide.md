@@ -40,6 +40,19 @@ You can link attributes, methods, or members by using the interface name, `/`, a
 | [Enum Value]                                    | `{{Identifier/"value"}}`                                                | `{{PaymentComplete/"success"}}`                                            |
 | [DOM Exception]                                 | `{{"Identifier"}}`                                                      | `{{"NotAllowedError"}}`                                                    |
 
+### Aliasing methods
+
+Warning: Aliasing is not recommended.
+
+You can alias WebIDL method names if you think the original name is adding noise.
+
+| **Input**                                                                    | **Renders as**                     |
+| ---------------------------------------------------------------------------- | ---------------------------------- |
+| `{{ EventTarget/addEventListener(type, callback) }}`                         | `addEventListener(type, callback)` |
+| `{{ EventTarget/addEventListener(type, callback)\|addEventListener(type) }}` | `addEventListener(type)`           |
+| `{{ EventTarget/addEventListener(type, callback)\|addEventListener() }}`     | `addEventListener()`               |
+| `{{ EventTarget/addEventListener(type, callback)\|addEventListener }}`       | `addEventListener`                 |
+
 ## Concepts {#concept-shorthands}
 
 Concepts include: ideas, named algorithms, useful terms, and/or non-webIDL things that are defined in a spec.
