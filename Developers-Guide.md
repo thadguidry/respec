@@ -1,14 +1,26 @@
-Clone the repo and install the needed dependencies:
+As a first step, clone the repository:
 
 ```bash
 git clone git@github.com:w3c/respec.git
-npm install
+```
+
+Developing ReSpec requires Node.js v18.14+ and `pnpm` v8+. You can "install" `pnpm` with [`corepack`](https://nodejs.org/docs/latest-v18.x/api/corepack.html) as:
+
+```bash
+corepack enable
+corepack prepare --activate # run this from repository root
+```
+
+and install the needed dependencies:
+
+```bash
+pnpm install
 ```
 
 Now you can start the local development servers:
 
 ```bash
-npm start -- --browser Chrome
+pnpm start -- --browser Chrome
 ```
 
 Note: You can use Firefox and ChromeCanary in the above.    
@@ -118,37 +130,37 @@ These messages will be picked up by ReSpec's UI (the "pill"), and displayed to t
 
 IMPORTANT: Don't show JavaScript errors to the user - as they won't be able to fix these, and the minified JS output will make these messages really unhelpful!
 
-## `npm start`
+## `pnpm start`
 
 The `start` script in [package.json](https://github.com/w3c/respec/blob/develop/package.json) contains the commands useful during development. It runs a static HTTP server, watches files for change and re-build the profile, and run unit tests.
 
 ## Built-in HTTP server
 
-You can launch a built in HTTP server during development by simply typing: `npm start`.
-If you wish not to run tests and other parts of start script, you can alternatively run `npm run server`.
+You can launch a built in HTTP server during development by simply typing: `pnpm start`.
+If you wish not to run tests and other parts of start script, you can alternatively run `pnpm run server`.
 
 ### Testing
 
 ReSpec's unit tests are written using [Jasmine](https://jasmine.github.io) and run on [Karma](https://karma-runner.github.io/latest/index.html). To start the testing server:
 
 ```bash
-npm start -- --browser Firefox
+pnpm start -- --browser Firefox
 ```
 
 You can run test in different browsers by setting `browsers` value above to any of: Firefox, FirefoxHeadless, Chrome, ChromeHeadless, Safari. Same can be set using the `BROWSERS` environment variable:
 
 ```bash
-BROWSERS="ChromeHeadless Firefox" npm start
+BROWSERS="ChromeHeadless Firefox" pnpm start
 ```
 
 For debugging purposes, you can click on the Debug button when the tests start in the browser - this will allow you to see the tests summary in browser itself as well as allow you to re-run any particular test.
 
-Please refer to [Jasmine documentation](https://jasmine.github.io) regarding [focused specs](https://jasmine.github.io/2.1/focused_specs.html) (`fdescribe()`, `fit()`) to see how to run only specific tests when running `npm run karma`. This will save you a lot of time and pain.
+Please refer to [Jasmine documentation](https://jasmine.github.io) regarding [focused specs](https://jasmine.github.io/2.1/focused_specs.html) (`fdescribe()`, `fit()`) to see how to run only specific tests when running `pnpm run karma`. This will save you a lot of time and pain.
 
 You can also select individual tests by filtering those which match a particular pattern:
 
 ```bash
-npm start -- --grep="SEO"
+pnpm start -- --grep="SEO"
 ```
 
 If you want to run all tests whose description includes "SEO".
@@ -158,7 +170,7 @@ If you want to run all tests whose description includes "SEO".
 You can also `run start` in "interactive" mode. This gives you more control over when tests are run and, by default, turns off automatic file watching.
 
 ```bash
-npm start -- --interactive
+pnpm start -- --interactive
 ```
 
 This is useful for more advanced debugging sessions, and can be combined with `--grep` to test just what you want, when you want.
@@ -168,11 +180,11 @@ This is useful for more advanced debugging sessions, and can be combined with `-
 You can also run tests without opening a full browser window. Test results will be visible in your terminal.
 
 ```bash
-npm start -- --browser FirefoxHeadless
+pnpm start -- --browser FirefoxHeadless
 # or use ChromeHeadless
 ```
 
-Look at the help dialog when you run `npm start` for more options.
+Look at the help dialog when you run `pnpm start` for more options.
 
 ### Custom profiles
 
@@ -191,7 +203,7 @@ If the profile is popular, then please send a pull request to the main repositor
 In `examples/`, make a copy of "basic.html" and point the `<script>` tag at your new profile. Now run:
 
 ```bash
-npm start -- --profile YOUR_PROFILE_NAME --browser Chrome
+pnpm start -- --profile YOUR_PROFILE_NAME --browser Chrome
 ```
 
 That will start a web server, so you can now load up `http://localhost:8000/examples` and have play with your custom profile.
@@ -201,7 +213,7 @@ That will start a web server, so you can now load up `http://localhost:8000/exam
 If you are writing custom [Jasmine](https://jasmine.github.io/) tests, simply place them into `tests/spec/YOUR-PROFILE-NAME/`. And then run:
 
 ```bash
-npm start -- --interactive --profile=YOUR-PROFILE-NAME --browser Chrome
+pnpm start -- --interactive --profile=YOUR-PROFILE-NAME --browser Chrome
 ```
 
 If you prefer to use a different browser, that's ok too. 
