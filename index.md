@@ -11,7 +11,7 @@ Adding a `<section id="index">` in your document instructs ReSpec to gather all 
 You can also add a custom header and content to your `index`:
 
 ```html "example": "Terms index with custom header and content."
-<section id="idl-index" class="appendix">
+<section id="index" class="appendix">
   <h2>List All The Terms!</h2>
   <p>Wow, that's a lot of terms!</p>
   <!-- All the terms will magically appear here -->
