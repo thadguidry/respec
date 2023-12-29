@@ -20,7 +20,7 @@ pnpm install
 Now you can start the local development servers:
 
 ```bash
-pnpm start -- --browser Chrome
+pnpm start --browser Chrome
 ```
 
 Note: You can use Firefox and ChromeCanary in the above.    
