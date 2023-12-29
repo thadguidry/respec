@@ -144,7 +144,7 @@ If you wish not to run tests and other parts of start script, you can alternativ
 ReSpec's unit tests are written using [Jasmine](https://jasmine.github.io) and run on [Karma](https://karma-runner.github.io/latest/index.html). To start the testing server:
 
 ```bash
-pnpm start -- --browser Firefox
+pnpm start --browser Firefox
 ```
 
 You can run test in different browsers by setting `browsers` value above to any of: Firefox, FirefoxHeadless, Chrome, ChromeHeadless, Safari. Same can be set using the `BROWSERS` environment variable:
@@ -160,7 +160,7 @@ Please refer to [Jasmine documentation](https://jasmine.github.io) regarding [fo
 You can also select individual tests by filtering those which match a particular pattern:
 
 ```bash
-pnpm start -- --grep="SEO"
+pnpm start --grep="SEO"
 ```
 
 If you want to run all tests whose description includes "SEO".
@@ -170,7 +170,7 @@ If you want to run all tests whose description includes "SEO".
 You can also `run start` in "interactive" mode. This gives you more control over when tests are run and, by default, turns off automatic file watching.
 
 ```bash
-pnpm start -- --interactive
+pnpm start --interactive
 ```
 
 This is useful for more advanced debugging sessions, and can be combined with `--grep` to test just what you want, when you want.
@@ -180,7 +180,7 @@ This is useful for more advanced debugging sessions, and can be combined with `-
 You can also run tests without opening a full browser window. Test results will be visible in your terminal.
 
 ```bash
-pnpm start -- --browser FirefoxHeadless
+pnpm start --browser FirefoxHeadless
 # or use ChromeHeadless
 ```
 
@@ -203,7 +203,7 @@ If the profile is popular, then please send a pull request to the main repositor
 In `examples/`, make a copy of "basic.html" and point the `<script>` tag at your new profile. Now run:
 
 ```bash
-pnpm start -- --profile YOUR_PROFILE_NAME --browser Chrome
+pnpm start --profile YOUR_PROFILE_NAME --browser Chrome
 ```
 
 That will start a web server, so you can now load up `http://localhost:8000/examples` and have play with your custom profile.
@@ -213,7 +213,7 @@ That will start a web server, so you can now load up `http://localhost:8000/exam
 If you are writing custom [Jasmine](https://jasmine.github.io/) tests, simply place them into `tests/spec/YOUR-PROFILE-NAME/`. And then run:
 
 ```bash
-pnpm start -- --interactive --profile=YOUR-PROFILE-NAME --browser Chrome
+pnpm start --interactive --profile=YOUR-PROFILE-NAME --browser Chrome
 ```
 
 If you prefer to use a different browser, that's ok too. 
