@@ -137,6 +137,7 @@ Handled by ReSpec for you.
 - [data-sort](data-sort-attribute)
 - [data-tests](data-tests)
 - [~~data-transform~~](data-transform) (Deprecated)
+- [data-type](data-type)
 - [dir](dir)
 - [lang](lang)
 
