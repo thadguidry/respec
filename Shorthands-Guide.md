@@ -107,8 +107,8 @@ For example, the definition of a `forEach()` method for a `list` behaves differe
 To associate a concept with another concept, use `data-dfn-for` to indicate who or what owns the concept. This tells Respec who or what the concept is "for". See the example below:
 
 ```html "example": "Concepts scoped to other concepts."
-A <dfn>car</dfn> has a <dfn data-for="car">engine</dfn>, which burns petroleum.
-A <dfn>browser</dfn> has a <dfn data-for="browser">engine</dfn>, which burns
+A <dfn>car</dfn> has a <dfn data-dfn-for="car">engine</dfn>, which burns petroleum.
+A <dfn>browser</dfn> has a <dfn data-dfn-for="browser">engine</dfn>, which burns
 democracy.
 ```
 
