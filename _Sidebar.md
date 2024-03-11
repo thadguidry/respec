@@ -55,6 +55,7 @@
 - [charterDisclosureURI](charterDisclosureURI)
 - [copyrightStart](copyrightStart)
 - [crEnd](crEnd)
+- [darkMode](darkMode)
 - [doJsonLd](doJsonLd)
 - [errata](errata)
 - [group](group)
