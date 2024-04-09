@@ -6,6 +6,6 @@ A date in the format `YYYY-MM-DD`. Documents that are in Proposed Recommendation
 ```js "example": "Set Last Call review end date to January 3, 2016."
 var respecConfig = {
   specStatus: "PR",
-  lcEnd: "2016-01-03",
+  prEnd: "2016-01-03",
 };
 ```
