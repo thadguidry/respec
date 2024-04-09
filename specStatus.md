@@ -100,19 +100,6 @@ For W3C documents, the following status are supported.
         </ul>
       </td>
     </tr>
-    <tr id="specStatus-lc">
-      <td>LC</td>
-      <td>
-        Last Call Working Draft.
-      </td>
-      <td>
-        <ul>
-          <li><a href="previousPublishDate">previousPublishDate</a></li>
-          <li><a href="previousMaturity">previousMaturity</a></li>
-          <li><a href="lcEnd">lcEnd</a></li>
-        </ul>
-      </td>
-    </tr>
     <tr id="specStatus-ld">
       <td>LD</td>
       <td>
