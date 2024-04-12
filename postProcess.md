@@ -1,12 +1,12 @@
 # `postProcess`
 
-Takes an array of JavaScript functions which ReSpec then runs in order. Each function is called with the ReSpec config object (i.e., the `var respecConfig` object, plus some additional internal data).
+Takes an array of JavaScript functions which ReSpec then runs in order. Each function is called with the ReSpec config object (i.e., the `var respecConfig` object, plus some additional internal data), the reference to the DOM Document element and a [utils](./extension-utils-object) object.
 
 The following examples shows two functions run in order after processing.
 
 ```js "example": "Run two functions in order after processing."
-function doThing(config){...}
-function doOtherThing(config){...}
+function doThing(config, doc, utils){...}
+function doOtherThing(config, doc, utils){...}
 
 var respecConfig = {
   // After processing, run the following
