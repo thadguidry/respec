@@ -427,7 +427,7 @@ Which renders as:
 
 <img width="595" alt="Screenshot to text above and automatically generated References section" src="https://user-images.githubusercontent.com/870154/117608243-06fc9680-b1a1-11eb-8835-f2c99521eaa9.png">
 
-If you would like the reference a specification by its full name, you can use the three square brackets to "expand it":
+If you would like to reference a specification by its full name, you can use the three square brackets to "expand it":
 
 ```HTML
 <p>
