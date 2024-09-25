@@ -22,7 +22,7 @@ dependencies:
     version: 1.8.1
   serve-static:
     specifier: ^1.15.0
-    version: 1.15.0
+    version: 1.16.0
 
 devDependencies:
   '@rollup/plugin-alias':
@@ -3712,8 +3712,8 @@ packages:
       range-parser: 1.2.0
     dev: true
 
-  /serve-static@1.15.0:
-    resolution: {integrity: sha512-XGuRDNjXUijsUL0vl6nSD7cwURuzEgglbOaFuZM9g3kwDXOWVTck0jLzjPzGD+TazWbboZYu52/9/XPdUgne9g==}
+  /serve-static@1.16.0:
+    resolution: {integrity: sha512-pDLK8zwl2eKaYrs8mrPZBJua4hMplRWJ1tIFksVC3FtBEBnl8dxgeHtsaMS8DhS9i4fLObaon6ABoc4/hQGdPA==}
     engines: {node: '>= 0.8.0'}
     dependencies:
       encodeurl: 1.0.2
